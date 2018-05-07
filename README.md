@@ -1,9 +1,24 @@
 **module under construction**
 # elayer
-### Install
+### Install as package
 
-    npm i [-g] hu2prod/elayer --unsafe-perm
+    npm i hu2prod/elayer
 
-The global install adds these commands (which are mutual aliases) to your shell:
+### Usage as package
 
-    elayer
+    elayer = require 'elayer'
+    elayer.compile 'code'
+    elayer.eval 'code'
+
+### Install global
+
+    npm i -g iced-coffee-script
+    npm i -g hu2prod/elayer --unsafe-perm
+
+The global install adds `elayer` command to your shell.
+### Usage
+
+    elayer hello.elayer
+    elayer hello.elayer -c # compiles into hello.coffee
+    elayer -i 'console.log "hello world"'
+    elayer -i 'console.log "hello world"' -o # output coffee instaead of eval
