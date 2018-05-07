@@ -4,7 +4,7 @@ require 'fy'
 require 'iced-coffee-script/register'
 fs = require 'fs'
 _iced = require 'iced-coffee-script'
-{_gen} = require '..'
+{_gen} = require './index'
 argv = require('minimist')(process.argv.slice(2))
 if !file = argv._[0]
   perr 'No file specified'
