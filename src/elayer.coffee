@@ -1,6 +1,7 @@
 #!/usr/bin/env iced
 ### !pragma coverage-skip-block ###
 require 'fy'
+require 'iced-coffee-script/register'
 fs = require 'fs'
 _iced = require 'iced-coffee-script'
 {_gen} = require './index'
