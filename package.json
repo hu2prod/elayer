@@ -9,6 +9,13 @@
     "test-simple": "mocha --recursive --compilers coffee:iced-coffee-script/register --require iced-coffee-coverage/register-istanbul test && istanbul report",
     "test-watch": "mocha --recursive --compilers coffee:iced-coffee-script/register --watch --full-trace --watch-extensions=js,coffee"
   },
+  "husky": {
+    "hooks": {
+      "pre-push" : {
+        "npm test-simple && make && git add lib && git commit -m 'pre-push autocompile'"
+      }
+    }
+  },
   "bin": {
     "elayer": "bin/elayer"
   },
@@ -24,6 +31,7 @@
   "homepage": "https://github.com/hu2prod/elayer#readme",
   "devDependencies": {
     "coveralls": "^2.13.0",
+    "husky": "^0.14.3",
     "iced-coffee-coverage": "^1.0.21",
     "iced-coffee-script": "^108.0.11",
     "istanbul": "^0.4.5",
