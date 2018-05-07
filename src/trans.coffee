@@ -134,7 +134,6 @@ class @Gen_context
     #    operators
     # ###################################################################################################
     when "Bin_op"
-      p "TODO probably fix me"
       # rt + ct
       _a = gen ast.a, ctx
       _b = gen ast.b, ctx
@@ -144,21 +143,18 @@ class @Gen_context
         module.bin_op_name_cb_map[ast.op](_a, _b)
     
     when "Un_op"
-      p "TODO probably fix me"
       module.un_op_name_cb_map[ast.op] gen ast.a, ctx
     # ###################################################################################################
     when "Field_access"
-      p "TODO probably fix me"
       "(#{gen(ast.t, ctx)}).#{ast.name}"
     # ###################################################################################################
     #    
     # ###################################################################################################
     when "Fn_call"
-      p "TODO probably fix me"
       ret = ""
       if ast.fn.constructor.name == 'Field_access'
         t = ast.fn.t
-        ret = switch t.type.main
+        ret = switch t.type?.main
           when 'array'
             switch ast.fn.name
               when 'remove_idx', 'slice', 'pop', 'push', 'remove', 'idx', 'append', 'clone'
