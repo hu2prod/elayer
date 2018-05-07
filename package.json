@@ -27,14 +27,13 @@
     "coveralls": "^2.13.0",
     "husky": "^0.14.3",
     "iced-coffee-coverage": "^1.0.21",
-    "iced-coffee-script": "^108.0.11",
     "istanbul": "^0.4.5",
     "minimist": "^1.2.0",
     "mocha": "^3.2.0",
     "shelljs": "^0.7.8"
   },
   "dependencies": {
-    "iced-runtime": "1.0.3",
+    "iced-coffee-script": "^108.0.11",
     "fy": "github:hu2prod/fy",
     "lang_gen": "github:hu2prod/lang_gen",
     "meta_block_gen": "github:hu2prod/meta_block_gen"
