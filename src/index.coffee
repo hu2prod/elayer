@@ -5,6 +5,7 @@ module = @
 @type_inference = require './type_inference'
 @rt_ct_inference = require './rt_ct_inference'
 @trans    = require './trans'
+_iced = require 'iced-coffee-script'
 
 
 @_gen = (str)->
@@ -20,3 +21,7 @@ module = @
   
   
 # @gen will be async
+
+# coffee-script compatible API
+@compile= (str)->module._gen str
+@eval   = (str)->_iced.eval module._gen str
