@@ -397,6 +397,12 @@ describe 'trans section', ()->
         ((a).b)(c)
         '''
         
+        '''
+        a b c
+        ''' : '''
+        (a)((b)(c))
+        '''
+        
       for mbg_code, coffee_code of hash
         do (mbg_code, coffee_code)->
           it "'#{mbg_code}' -> '#{coffee_code}'", ()->
