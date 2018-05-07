@@ -113,7 +113,7 @@ q("str_const", "#tok_string_dq")                      .mx("ult=const ti=const ty
 
 q('stmt', 'var #tok_identifier ":" #type')          .mx("ult=var_decl ti=var_decl")
 
-q('lvalue', '#rvalue "." #tok_identifier')          .mx("priority=#{base_priority} ult=field_access ti=macro").strict("$1.priority==#{base_priority}")
+q('lvalue', '#rvalue "." #tok_identifier')          .mx("priority=#{base_priority} ult=field_access ti=macro tail_space=#tok_identifier.tail_space").strict("$1.priority==#{base_priority}")
 
 q('stmt', 'if #rvalue #block #if_tail_stmt?')                       .mx("ult=if ti=if eol=1")
 q('if_tail_stmt', 'else if #rvalue #block #if_tail_stmt?')          .mx("ult=else_if ti=else_if eol=1")
@@ -152,7 +152,7 @@ q('stmt', 'class #tok_identifier #block')         .mx('ult=class_decl eol=1')
 q('fn_call_arg_list', '#rvalue')
 q('fn_call_arg_list', '#rvalue "," #fn_call_arg_list')
 q('rvalue', '#rvalue "(" #fn_call_arg_list? ")"')     .mx("priority=#{base_priority} ult=fn_call").strict("$1.priority==#{base_priority}")
-q('rvalue', '#rvalue #fn_call_arg_list ')        .mx("priority=#{base_priority} ult=fn_call").strict("$1.priority==#{base_priority} $1.tail_space")
+q('rvalue', '#rvalue #fn_call_arg_list')        .mx("priority=#{base_priority} ult=fn_call").strict("$1.priority==#{base_priority} $1.tail_space")
 
 q("stmt", '#lvalue #block')                           .mx("ult=directive_fn_call ti=macro eol=1")
 q("stmt", '#lvalue #fn_call_arg_list #block')         .mx("ult=directive_fn_call ti=macro eol=1")           .strict("!!$1.tail_space")

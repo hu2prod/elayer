@@ -1902,7 +1902,7 @@
             /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u117 */
             stack.push([112, start_pos, only_new]);
 
-            /* rule_Hrvalue_Hfn_call_arg_list__priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 */
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 */
             stack.push([114, start_pos, only_new]);
 
             /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_HstmtXultEEdirective_fn_call_u122 */
@@ -1952,7 +1952,7 @@
             /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u117 */
             node_list.append(FAcache[start_pos][112]);
 
-            /* rule_Hrvalue_Hfn_call_arg_list__priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 */
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 */
             node_list.append(FAcache[start_pos][114]);
 
             /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_HstmtXultEEdirective_fn_call_u122 */
@@ -1975,7 +1975,6 @@
                 FAdrop[start_pos][20] = 0;
                 FAdrop[start_pos][25] = 0;
                 FAdrop[start_pos][31] = 0;
-                FAdrop[start_pos][39] = 0;
                 stack.push([118, start_pos, 1]);
 
                 /* rule_Hlvalue_priorityEX9000_tail_spaceEX1Xtail_space_ultEdeep__tiEpass__u5 */
@@ -1996,13 +1995,10 @@
                 /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u73 */
                 stack.push([102, start_pos, 1]);
 
-                /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u74 */
-                stack.push([104, start_pos, 1]);
-
                 /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u117 */
                 stack.push([112, start_pos, 1]);
 
-                /* rule_Hrvalue_Hfn_call_arg_list__priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 */
+                /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 */
                 stack.push([114, start_pos, 1]);
 
                 /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_HstmtXultEEdirective_fn_call_u122 */
@@ -2192,7 +2188,7 @@
             /* rule_Htok_identifier_priorityEX9000_tail_spaceEX1Xtail_space_ultEid_tiEid__u7 */
             stack.push([160, start_pos, only_new]);
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_X1XpriorityEEX9000_u88 */
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 */
             stack.push([162, start_pos, only_new]);
             break;
           case 164:
@@ -2203,7 +2199,7 @@
             /* rule_Htok_identifier_priorityEX9000_tail_spaceEX1Xtail_space_ultEid_tiEid__u7 */
             node_list.append(FAcache[start_pos][160]);
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_X1XpriorityEEX9000_u88 */
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 */
             node_list.append(FAcache[start_pos][162]);
             for (_n = 0, _len4 = node_list.length; _n < _len4; _n++) {
               node = node_list[_n];
@@ -2224,7 +2220,7 @@
                 FAdrop[start_pos][23] = 0;
                 stack.push([164, start_pos, 1]);
 
-                /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_X1XpriorityEEX9000_u88 */
+                /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 */
                 stack.push([162, start_pos, 1]);
                 stack.push([23, start_pos, 1]);
               }
@@ -4802,7 +4798,7 @@
             break;
           case 114:
 
-            /* rule_Hrvalue_Hfn_call_arg_list__priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 queue */
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 queue */
             chk_len = stack.push([114, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -4838,7 +4834,7 @@
             break;
           case 115:
 
-            /* rule_Hrvalue_Hfn_call_arg_list__priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 collect */
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -4872,7 +4868,7 @@
                   continue;
                 }
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hrvalue_Hfn_call_arg_list__priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118";
+                mx_hash_stub.rule = "rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u118";
                 mx_hash_stub.hash_key = "rvalue";
                 mx_hash_stub.hash_key_idx = 23;
                 mx_hash_stub["priority"] = -9000;
@@ -8183,7 +8179,7 @@
             break;
           case 162:
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_X1XpriorityEEX9000_u88 queue */
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 queue */
             chk_len = stack.push([162, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -8232,7 +8228,7 @@
             break;
           case 163:
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_X1XpriorityEEX9000_u88 collect */
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8273,12 +8269,13 @@
                     continue;
                   }
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_X1XpriorityEEX9000_u88";
+                  mx_hash_stub.rule = "rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88";
                   mx_hash_stub.hash_key = "lvalue";
                   mx_hash_stub.hash_key_idx = 25;
                   mx_hash_stub["priority"] = -9000;
                   mx_hash_stub["ult"] = "field_access";
                   mx_hash_stub["ti"] = "macro";
+                  mx_hash_stub["tail_space"] = arg_list[2].mx_hash.tail_space;
                   node.b = node.value_array.last().b;
                   ret_list.push(node.clone());
                   node.value_array.pop();
