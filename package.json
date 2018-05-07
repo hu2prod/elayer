@@ -1,7 +1,7 @@
 {
   "name": "elayer",
   "version": "1.0.0",
-  "description": "",
+  "description": "block-style dsl for project generation",
   "main": "lib/index.js",
   "scripts": {
     "install": "iced -o lib -c src",
