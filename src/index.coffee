@@ -1,10 +1,10 @@
 module = @
-@tok      = require '../tok.gen.coffee'
-@gram     = require '../gram.gen.coffee'
-@node2ast = require './node2ast.coffee'
-@type_inference = require './type_inference.coffee'
-@rt_ct_inference = require './rt_ct_inference.coffee'
-@trans    = require './trans.coffee'
+@tok      = require '../tok.gen'
+@gram     = require '../gram.gen'
+@node2ast = require './node2ast'
+@type_inference = require './type_inference'
+@rt_ct_inference = require './rt_ct_inference'
+@trans    = require './trans'
 
 
 @_gen = (str)->
