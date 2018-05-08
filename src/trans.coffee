@@ -116,7 +116,10 @@ class @Gen_context
       #     ast.val
     
     when "Var"
+      # NOTE BUG rt + ct
+      # ct is not detecting properly yet!!!
       if ctx.is_serialized_block
+        # can be translated to const if ct var
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         return """
         (()->
@@ -148,6 +151,7 @@ class @Gen_context
       # ct is not detecting properly yet!!!
       if ctx.is_serialized_block
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        # TODO detect const + const case
         _a = gen ast.a, ctx
         _b = gen ast.b, ctx
         return """
@@ -245,6 +249,21 @@ class @Gen_context
     #    stmt
     # ###################################################################################################
     when "Scope"
+      if ctx.is_serialized_block
+        list_jl = []
+        for v in ast.list
+          t = gen v, ctx
+          list_jl.push t if t != ''
+        if list_jl.length == 1
+          return list_jl[0]
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.list = [#{join_list list_jl, '  '}]
+          #{var_name}
+        )
+        """
       jl = []
       for v in ast.list
         t = gen v, ctx
@@ -256,6 +275,21 @@ class @Gen_context
     # НО! При сериализации ast мы должны выполнить ct часть
     
     when "If"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        cond = gen ast.cond, ctx
+        t = gen ast.t, ctx
+        f = gen ast.f, ctx
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.cond = #{make_tab cond, '  '}()
+          #{var_name}.t = #{make_tab t, '  '}()
+          #{var_name}.f = #{make_tab f, '  '}()
+          #{var_name}
+        )
+        """
+      
       cond = gen ast.cond, ctx
       t = gen ast.t, ctx
       f = gen ast.f, ctx
