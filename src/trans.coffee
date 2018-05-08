@@ -154,10 +154,27 @@ class @Gen_context
       _b = gen ast.b, ctx
       if op = module.bin_op_name_map[ast.op]
         "(#{_a} #{op} #{_b})"
-      else
+      else if module.bin_op_name_cb_map[ast.op]
         module.bin_op_name_cb_map[ast.op](_a, _b)
+      else
+        ### !pragma coverage-skip-block ###
+        throw new Error "unknown operation '#{ast.op}'"
     
     when "Un_op"
+      # NOTE BUG rt + ct
+      # ct is not detecting properly yet!!!
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        _a = gen ast.a, ctx
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.a = #{make_tab _a, '  '}()
+          #{var_name}.op = #{JSON.stringify ast.op}
+          #{var_name}
+        )
+        """
+        
       module.un_op_name_cb_map[ast.op] gen ast.a, ctx
     # ###################################################################################################
     when "Field_access"
