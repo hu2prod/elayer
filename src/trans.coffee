@@ -145,6 +145,7 @@ class @Gen_context
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.a = #{make_tab _a, '  '}()
           #{var_name}.b = #{make_tab _b, '  '}()
+          #{var_name}.op = #{JSON.stringify ast.op}
           #{var_name}
         )
         """

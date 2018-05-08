@@ -588,6 +588,7 @@ describe 'trans section', ()->
             _tmp_Var_2.name = "b"
             _tmp_Var_2
           )()
+          _tmp_Bin_op_0.op = "ASSIGN"
           _tmp_Bin_op_0
         )())
       '''
