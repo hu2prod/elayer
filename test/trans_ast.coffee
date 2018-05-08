@@ -5,6 +5,202 @@ require 'shelljs/global'
 {_gen} = require('../src/index.coffee')
 
 describe 'trans ast section', ()->
+  describe "block flow variants", ()->
+    hash =
+      # macro
+      '''
+      block
+        z
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      # macro
+      '''
+      block a
+        z
+      ''' : '''
+      ((block)(a).ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      # macro
+      '''
+      block a, b
+        z
+      ''' : '''
+      ((block)(a, b).ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      # fn_call
+      '''
+      block()
+        z
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      # fn_call
+      '''
+      block(a)
+        z
+      ''' : '''
+      ((block)(a).ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      # fn_call
+      '''
+      block(a,b)
+        z
+      ''' : '''
+      ((block)(a, b).ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      # macro
+      '''
+      res = block
+        z
+      ''' : '''
+      (res = ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )()))
+      '''
+      
+      # macro
+      # в res должен присвоится результат вызова block(a).ast_call(__b__)
+      '''
+      res = block a
+        z
+      ''' : '''
+      (res = ((block)(a).ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )()))
+      '''
+      
+      # experimental
+      '''
+      block.a
+        z
+      ''' : '''
+      (((block).a)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      '''
+      res = block a
+        z
+      c
+      ''' : '''
+      (res = ((block)(a).ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "z"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
+        )()))
+      c
+      '''
+      # experimental
+      # Всё-таки нельзя
+      # '''
+      # (block)
+      #   b
+      # ''' : '''
+      # TBD
+      # '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  
   describe "id", ()->
     hash =
       
@@ -13,9 +209,15 @@ describe 'trans ast section', ()->
         a
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_Var_0 = new ast.Var
-          _tmp_Var_0.name = "a"
-          _tmp_Var_0
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Var_1 = new ast.Var
+              _tmp_Var_1.name = "a"
+              _tmp_Var_1
+            )()
+            ]
+          _tmp_Scope_0
         )())
       '''
     for mbg_code, coffee_code of hash
@@ -23,6 +225,7 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+  
   describe "const", ()->
     hash =
       
@@ -31,9 +234,15 @@ describe 'trans ast section', ()->
         1
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_Const_0 = new ast.Const
-          _tmp_Const_0.val = "1"
-          _tmp_Const_0
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Const_1 = new ast.Const
+              _tmp_Const_1.val = "1"
+              _tmp_Const_1
+            )()
+            ]
+          _tmp_Scope_0
         )())
       '''
       
@@ -42,9 +251,15 @@ describe 'trans ast section', ()->
         '1'
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_Const_0 = new ast.Const
-          _tmp_Const_0.val = "'1'"
-          _tmp_Const_0
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Const_1 = new ast.Const
+              _tmp_Const_1.val = "'1'"
+              _tmp_Const_1
+            )()
+            ]
+          _tmp_Scope_0
         )())
       '''
       
@@ -53,9 +268,15 @@ describe 'trans ast section', ()->
         "1"
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_Const_0 = new ast.Const
-          _tmp_Const_0.val = "\\"1\\""
-          _tmp_Const_0
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Const_1 = new ast.Const
+              _tmp_Const_1.val = "\\"1\\""
+              _tmp_Const_1
+            )()
+            ]
+          _tmp_Scope_0
         )())
       '''
     for mbg_code, coffee_code of hash
@@ -63,6 +284,7 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+  
   describe "un_op", ()->
     hash =
       
@@ -71,14 +293,20 @@ describe 'trans ast section', ()->
         +a
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_Un_op_0 = new ast.Un_op
-          _tmp_Un_op_0.a = (()->
-            _tmp_Var_1 = new ast.Var
-            _tmp_Var_1.name = "a"
-            _tmp_Var_1
-          )()
-          _tmp_Un_op_0.op = "PLUS"
-          _tmp_Un_op_0
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Un_op_1 = new ast.Un_op
+              _tmp_Un_op_1.a = (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "a"
+                _tmp_Var_2
+              )()
+              _tmp_Un_op_1.op = "PLUS"
+              _tmp_Un_op_1
+            )()
+            ]
+          _tmp_Scope_0
         )())
       '''
     for mbg_code, coffee_code of hash
@@ -86,6 +314,7 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+  
   describe "bin_op", ()->
     hash =
       
@@ -94,19 +323,25 @@ describe 'trans ast section', ()->
         a = b
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_Bin_op_0 = new ast.Bin_op
-          _tmp_Bin_op_0.a = (()->
-            _tmp_Var_1 = new ast.Var
-            _tmp_Var_1.name = "a"
-            _tmp_Var_1
-          )()
-          _tmp_Bin_op_0.b = (()->
-            _tmp_Var_2 = new ast.Var
-            _tmp_Var_2.name = "b"
-            _tmp_Var_2
-          )()
-          _tmp_Bin_op_0.op = "ASSIGN"
-          _tmp_Bin_op_0
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Bin_op_1 = new ast.Bin_op
+              _tmp_Bin_op_1.a = (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "a"
+                _tmp_Var_2
+              )()
+              _tmp_Bin_op_1.b = (()->
+                _tmp_Var_3 = new ast.Var
+                _tmp_Var_3.name = "b"
+                _tmp_Var_3
+              )()
+              _tmp_Bin_op_1.op = "ASSIGN"
+              _tmp_Bin_op_1
+            )()
+            ]
+          _tmp_Scope_0
         )())
       '''
     for mbg_code, coffee_code of hash
@@ -124,23 +359,35 @@ describe 'trans ast section', ()->
           b
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_If_0 = new ast.If
-          _tmp_If_0.cond = (()->
-            _tmp_Var_1 = new ast.Var
-            _tmp_Var_1.name = "a"
-            _tmp_Var_1
-          )()
-          _tmp_If_0.t = (()->
-            _tmp_Var_2 = new ast.Var
-            _tmp_Var_2.name = "b"
-            _tmp_Var_2
-          )()
-          _tmp_If_0.f = (()->
-            _tmp_Scope_3 = new ast.Scope
-            _tmp_Scope_3.list = []
-            _tmp_Scope_3
-          )()
-          _tmp_If_0
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_If_1 = new ast.If
+              _tmp_If_1.cond = (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "a"
+                _tmp_Var_2
+              )()
+              _tmp_If_1.t = (()->
+                _tmp_Scope_3 = new ast.Scope
+                _tmp_Scope_3.list = [
+                  (()->
+                    _tmp_Var_4 = new ast.Var
+                    _tmp_Var_4.name = "b"
+                    _tmp_Var_4
+                  )()
+                  ]
+                _tmp_Scope_3
+              )()
+              _tmp_If_1.f = (()->
+                _tmp_Scope_5 = new ast.Scope
+                _tmp_Scope_5.list = []
+                _tmp_Scope_5
+              )()
+              _tmp_If_1
+            )()
+            ]
+          _tmp_Scope_0
         )())
       '''
     for mbg_code, coffee_code of hash

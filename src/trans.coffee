@@ -105,7 +105,7 @@ class @Gen_context
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.val = #{JSON.stringify ast.val}
           #{var_name}
-        )
+        )()
         """
         
       ast.val
@@ -126,7 +126,7 @@ class @Gen_context
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.name = #{JSON.stringify ast.name}
           #{var_name}
-        )
+        )()
         """
       ast.name
     # ###################################################################################################
@@ -157,11 +157,11 @@ class @Gen_context
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
-          #{var_name}.a = #{make_tab _a, '  '}()
-          #{var_name}.b = #{make_tab _b, '  '}()
+          #{var_name}.a = #{make_tab _a, '  '}
+          #{var_name}.b = #{make_tab _b, '  '}
           #{var_name}.op = #{JSON.stringify ast.op}
           #{var_name}
-        )
+        )()
         """
       
       _a = gen ast.a, ctx
@@ -183,10 +183,10 @@ class @Gen_context
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
-          #{var_name}.a = #{make_tab _a, '  '}()
+          #{var_name}.a = #{make_tab _a, '  '}
           #{var_name}.op = #{JSON.stringify ast.op}
           #{var_name}
-        )
+        )()
         """
         
       module.un_op_name_cb_map[ast.op] gen ast.a, ctx
@@ -250,19 +250,20 @@ class @Gen_context
     # ###################################################################################################
     when "Scope"
       if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         list_jl = []
         for v in ast.list
           t = gen v, ctx
           list_jl.push t if t != ''
-        if list_jl.length == 1
-          return list_jl[0]
-        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        if list_jl.length
+          list_jl.unshift ""
+          list_jl.push ""
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
-          #{var_name}.list = [#{join_list list_jl, '  '}]
+          #{var_name}.list = [#{join_list list_jl, '    '}]
           #{var_name}
-        )
+        )()
         """
       jl = []
       for v in ast.list
@@ -283,11 +284,11 @@ class @Gen_context
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
-          #{var_name}.cond = #{make_tab cond, '  '}()
-          #{var_name}.t = #{make_tab t, '  '}()
-          #{var_name}.f = #{make_tab f, '  '}()
+          #{var_name}.cond = #{make_tab cond, '  '}
+          #{var_name}.t = #{make_tab t, '  '}
+          #{var_name}.f = #{make_tab f, '  '}
           #{var_name}
-        )
+        )()
         """
       
       cond = gen ast.cond, ctx
@@ -474,7 +475,7 @@ class @Gen_context
       ctx_nest.is_serialized_block = true
       scope = gen ast.scope, ctx_nest
       """
-      ((#{target_str})(#{trans_arg_list.join ', '}).ast_call #{make_tab scope, '  '}())
+      ((#{target_str})(#{trans_arg_list.join ', '}).ast_call #{make_tab scope, '  '})
       """
     
     else
