@@ -134,7 +134,21 @@ class @Gen_context
     #    operators
     # ###################################################################################################
     when "Bin_op"
-      # rt + ct
+      # NOTE BUG rt + ct
+      # ct is not detecting properly yet!!!
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        _a = gen ast.a, ctx
+        _b = gen ast.b, ctx
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.a = #{make_tab _a, '  '}()
+          #{var_name}.b = #{make_tab _b, '  '}()
+          #{var_name}
+        )
+        """
+      
       _a = gen ast.a, ctx
       _b = gen ast.b, ctx
       if op = module.bin_op_name_map[ast.op]
