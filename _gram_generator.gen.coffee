@@ -15,7 +15,7 @@ base_priority = -9000
 q("const", "#num_const")                          .mx("ult=deep ti=pass")
 q("const", "#str_const")                          .mx("ult=deep ti=pass")
 q("rvalue","#const")                              .mx("priority=#{base_priority} ult=deep  ti=pass")
-q("stmt",  "#rvalue")                             .mx("ult=deep ti=pass")
+q("stmt",  "#rvalue")                             .mx("ult=deep ti=pass eol=$1.eol")
 q("rvalue", "#lvalue")                            .mx("priority=#{base_priority} tail_space=$1.tail_space ult=deep  ti=pass")
 
 q('block', '#indent #stmt_plus #dedent')          .mx("priority=#{base_priority} ult=block ti=block")
@@ -156,9 +156,9 @@ q('rvalue', '#rvalue #fn_call_arg_list')        .mx("priority=#{base_priority} u
 
 q("stmt", '#lvalue #block')                           .mx("ult=directive_fn_call ti=macro eol=1")
 q("stmt", '#lvalue #fn_call_arg_list #block')         .mx("ult=directive_fn_call ti=macro eol=1")           .strict("!!$1.tail_space")
-q('stmt', '#lvalue "(" #fn_call_arg_list? ")" #block').mx("priority=#{base_priority} ult=directive_fn_call").strict("!$1.tail_space")
+q('stmt', '#lvalue "(" #fn_call_arg_list? ")" #block').mx("priority=#{base_priority} ult=directive_fn_call eol=1").strict("!$1.tail_space")
 # спецкостыль для =
-q('rvalue', '#lvalue #bin_op #stmt')                  .mx("priority=#bin_op.priority ult=bin_op ti=bin_op") .strict("#stmt.ult==directive_fn_call")
+q('rvalue', '#lvalue #bin_op #stmt')                  .mx("priority=#bin_op.priority ult=bin_op ti=bin_op eol=1") .strict("#stmt.ult==directive_fn_call")
 
 q('type_list', '#type')
 q('type_list', '#type "," #type_list')

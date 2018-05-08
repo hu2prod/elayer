@@ -544,6 +544,18 @@ describe 'trans section', ()->
         )())
       '''
       
+      '''
+      res = block a
+        b
+      c
+      ''' : '''
+      (res = ((block)(a).ast_call (()->
+          _tmp_Var_0 = new ast.Var
+          _tmp_Var_0.name = "b"
+          _tmp_Var_0
+        )()))
+      c
+      '''
       # experimental
       # Всё-таки нельзя
       # '''
