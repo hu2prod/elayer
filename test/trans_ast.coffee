@@ -5,9 +5,67 @@ require 'shelljs/global'
 {_gen} = require('../src/index.coffee')
 
 describe 'trans ast section', ()->
+  describe "id", ()->
+    hash =
+      
+      '''
+      block
+        a
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Var_0 = new ast.Var
+          _tmp_Var_0.name = "a"
+          _tmp_Var_0
+        )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  describe "const", ()->
+    hash =
+      
+      '''
+      block
+        1
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Const_0 = new ast.Const
+          _tmp_Const_0.val = "1"
+          _tmp_Const_0
+        )())
+      '''
+      
+      '''
+      block
+        '1'
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Const_0 = new ast.Const
+          _tmp_Const_0.val = "'1'"
+          _tmp_Const_0
+        )())
+      '''
+      
+      '''
+      block
+        "1"
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Const_0 = new ast.Const
+          _tmp_Const_0.val = "\\"1\\""
+          _tmp_Const_0
+        )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
   describe "un_op", ()->
     hash =
-      # macro
+      
       '''
       block
         +a
@@ -30,7 +88,7 @@ describe 'trans ast section', ()->
           assert.equal res, coffee_code
   describe "bin_op", ()->
     hash =
-      # macro
+      
       '''
       block
         a = b

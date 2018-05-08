@@ -98,6 +98,16 @@ class @Gen_context
     #    expr
     # ###################################################################################################
     when "Const"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.val = #{JSON.stringify ast.val}
+          #{var_name}
+        )
+        """
+        
       ast.val
       # switch ast.type.main
       #   when 'bool', 'int', 'float'
