@@ -359,12 +359,34 @@ class @Gen_context
       """
     
     when "Loop"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        scope = gen ast.scope, ctx
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.scope = #{make_tab scope, '  '}
+          #{var_name}
+        )()
+        """
       """
       loop
         #{make_tab gen(ast.scope, ctx), '  '}
       """
     
     when "While"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        cond = gen ast.cond, ctx
+        scope = gen ast.scope, ctx
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.cond = #{make_tab cond, '  '}
+          #{var_name}.scope = #{make_tab scope, '  '}
+          #{var_name}
+        )()
+        """
       """
       while #{gen ast.cond, ctx}
         #{make_tab gen(ast.scope, ctx), '  '}

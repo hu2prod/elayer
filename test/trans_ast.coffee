@@ -5,6 +5,9 @@ require 'shelljs/global'
 {_gen} = require('../src/index.coffee')
 
 describe 'trans ast section', ()->
+  # ###################################################################################################
+  #    block flow variants
+  # ###################################################################################################
   describe "block flow variants", ()->
     hash =
       # macro
@@ -200,7 +203,9 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
-  
+  # ###################################################################################################
+  #    id
+  # ###################################################################################################
   describe "id", ()->
     hash =
       
@@ -225,7 +230,9 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
-  
+  # ###################################################################################################
+  #    const
+  # ###################################################################################################
   describe "const", ()->
     hash =
       
@@ -284,7 +291,9 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
-  
+  # ###################################################################################################
+  #    un_op
+  # ###################################################################################################
   describe "un_op", ()->
     hash =
       
@@ -314,7 +323,9 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
-  
+  # ###################################################################################################
+  #    bin_op
+  # ###################################################################################################
   describe "bin_op", ()->
     hash =
       
@@ -349,7 +360,9 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
-  
+  # ###################################################################################################
+  #    if
+  # ###################################################################################################
   describe "if", ()->
     hash =
       
@@ -441,7 +454,9 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
-  
+  # ###################################################################################################
+  #    switch
+  # ###################################################################################################
   describe "switch", ()->
     hash =
       
@@ -530,6 +545,89 @@ describe 'trans ast section', ()->
           _tmp_Scope_0
         )())
       '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  # ###################################################################################################
+  #    loop
+  # ###################################################################################################
+  describe "loop", ()->
+    hash =
+      
+      '''
+      block
+        loop
+          b
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Loop_1 = new ast.Loop
+              _tmp_Loop_1.scope = (()->
+                _tmp_Scope_2 = new ast.Scope
+                _tmp_Scope_2.list = [
+                  (()->
+                    _tmp_Var_3 = new ast.Var
+                    _tmp_Var_3.name = "b"
+                    _tmp_Var_3
+                  )()
+                  ]
+                _tmp_Scope_2
+              )()
+              _tmp_Loop_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  # ###################################################################################################
+  #    while
+  # ###################################################################################################
+  describe "while", ()->
+    hash =
+      
+      '''
+      block
+        while a
+          b
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_While_1 = new ast.While
+              _tmp_While_1.cond = (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "a"
+                _tmp_Var_2
+              )()
+              _tmp_While_1.scope = (()->
+                _tmp_Scope_3 = new ast.Scope
+                _tmp_Scope_3.list = [
+                  (()->
+                    _tmp_Var_4 = new ast.Var
+                    _tmp_Var_4.name = "b"
+                    _tmp_Var_4
+                  )()
+                  ]
+                _tmp_Scope_3
+              )()
+              _tmp_While_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
