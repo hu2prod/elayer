@@ -190,6 +190,30 @@ describe 'trans ast section', ()->
       )()))
       c
       '''
+      
+      '''
+      a
+        b
+          c
+      ''' : '''
+      ((a).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          ((b).ast_call (()->
+            _tmp_Scope_1 = new ast.Scope
+            _tmp_Scope_1.list = [
+              (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "c"
+                _tmp_Var_2
+              )()
+              ]
+            _tmp_Scope_1
+          )())
+          ]
+        _tmp_Scope_0
+      )())
+      '''
       # experimental
       # Всё-таки нельзя
       # '''

@@ -555,7 +555,10 @@ class @Gen_context
         """
     
     when "Ast_call"
-      target_str = gen ast.target, ctx
+      ctx_nest = ctx.mk_nest()
+      ctx_nest.is_serialized_block = false
+      
+      target_str = gen ast.target, ctx_nest
       trans_arg_list = []
       for arg in ast.arg_list
         trans_arg_list.push gen arg, ctx
