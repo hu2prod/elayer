@@ -3,9 +3,6 @@ module = @
   assign_bin_op_hash
   Var
 } = require 'ast4gen'
-# patch ast.Var
-Var.prototype.is_rt = false
-Var.prototype.is_ct = false
 
 class Context
   parent  : null
@@ -101,6 +98,16 @@ class Context
             walk ast.a, ctx.mk_nest_mark_ct()
           else
             walk ast.a, ctx.mk_nest_mark_rt()
+          walk ast.b, ctx
+        else
+          walk ast.a, ctx
+          walk ast.b, ctx
+        
+        if ast.a.is_rt and ast.b.is_rt
+          ast.is_rt = true
+        if ast.a.is_ct and ast.b.is_ct
+          ast.is_ct = true
+        
         ast
       # ###################################################################################################
       #    stmt

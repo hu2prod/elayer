@@ -33,9 +33,10 @@
     "shelljs": "^0.7.8"
   },
   "dependencies": {
-    "iced-coffee-script": "^108.0.11",
     "fy": "github:hu2prod/fy",
+    "iced-coffee-script": "^108.0.11",
     "lang_gen": "github:hu2prod/lang_gen",
-    "meta_block_gen": "github:hu2prod/meta_block_gen"
+    "meta_block_gen": "github:hu2prod/meta_block_gen",
+    "type": "github:hu2prod/type"
   }
 }

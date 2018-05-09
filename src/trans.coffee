@@ -119,6 +119,17 @@ class @Gen_context
       # NOTE BUG rt + ct
       # ct is not detecting properly yet!!!
       if ctx.is_serialized_block
+        if ast.is_ct
+          var_name = "_tmp_Const_#{ctx.uid()}"
+          return """
+          (()->
+            #{var_name} = new ast.Const
+            _tmp_expr = #{ast.name}
+            #{var_name}.val  = wrap_ct(_tmp_expr)
+            #{var_name}.type = wrap_ct_type(_tmp_expr)
+            #{var_name}
+          )()
+          """
         # can be translated to const if ct var
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         return """
@@ -505,6 +516,16 @@ class @Gen_context
       "throw new Error(#{gen ast.t, ctx})"
     
     when "Var_decl"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.name = #{JSON.stringify ast.name}
+          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{var_name}
+        )()
+        """
       if ctx.in_class
         "#{ast.name} : #{module.default_value_from_type[ast.type.main]}"
       else

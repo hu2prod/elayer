@@ -9,6 +9,36 @@ describe 'trans ast section', ()->
   # ###################################################################################################
   #    id
   # ###################################################################################################
+  describe "id", ()->
+    hash =
+      '''
+      block
+        var a: int
+        a
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Var_decl_1 = new ast.Var_decl
+            _tmp_Var_decl_1.name = "a"
+            _tmp_Var_decl_1.type = new Type "int"
+            _tmp_Var_decl_1
+          )()
+          (()->
+            _tmp_Var_2 = new ast.Var
+            _tmp_Var_2.name = "a"
+            _tmp_Var_2
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
   # ###################################################################################################
   #    const
   # ###################################################################################################
@@ -18,6 +48,49 @@ describe 'trans ast section', ()->
   # ###################################################################################################
   #    bin_op
   # ###################################################################################################
+  describe "bin_op", ()->
+    hash =
+      '''
+      var ct: int
+      block
+        var rt: int
+        rt = ct
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Var_decl_1 = new ast.Var_decl
+            _tmp_Var_decl_1.name = "rt"
+            _tmp_Var_decl_1.type = new Type "int"
+            _tmp_Var_decl_1
+          )()
+          (()->
+            _tmp_Bin_op_2 = new ast.Bin_op
+            _tmp_Bin_op_2.a = (()->
+              _tmp_Var_3 = new ast.Var
+              _tmp_Var_3.name = "rt"
+              _tmp_Var_3
+            )()
+            _tmp_Bin_op_2.b = (()->
+              _tmp_Const_4 = new ast.Const
+              _tmp_expr = ct
+              _tmp_Const_4.val  = wrap_ct(_tmp_expr)
+              _tmp_Const_4.type = wrap_ct_type(_tmp_expr)
+              _tmp_Const_4
+            )()
+            _tmp_Bin_op_2.op = "ASSIGN"
+            _tmp_Bin_op_2
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
   # ###################################################################################################
   #    if
   # ###################################################################################################
