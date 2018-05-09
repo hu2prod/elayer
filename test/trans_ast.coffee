@@ -449,6 +449,91 @@ describe 'trans ast section', ()->
           _tmp_Scope_0
         )())
       '''
+      
+      '''
+      var a: int
+      block
+        if a
+          b
+        else
+          c
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              if a
+                (()->
+                  _tmp_Scope_1 = new ast.Scope
+                  _tmp_Scope_1.list = [
+                    (()->
+                      _tmp_Var_2 = new ast.Var
+                      _tmp_Var_2.name = "b"
+                      _tmp_Var_2
+                    )()
+                    ]
+                  _tmp_Scope_1
+                )()
+              else
+                (()->
+                  _tmp_Scope_3 = new ast.Scope
+                  _tmp_Scope_3.list = [
+                    (()->
+                      _tmp_Var_4 = new ast.Var
+                      _tmp_Var_4.name = "c"
+                      _tmp_Var_4
+                    )()
+                    ]
+                  _tmp_Scope_3
+                )()
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      '''
+      a = 1
+      block
+        if a
+          b
+        else
+          c
+      ''' : '''
+      (a = 1)
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              if a
+                (()->
+                  _tmp_Scope_1 = new ast.Scope
+                  _tmp_Scope_1.list = [
+                    (()->
+                      _tmp_Var_2 = new ast.Var
+                      _tmp_Var_2.name = "b"
+                      _tmp_Var_2
+                    )()
+                    ]
+                  _tmp_Scope_1
+                )()
+              else
+                (()->
+                  _tmp_Scope_3 = new ast.Scope
+                  _tmp_Scope_3.list = [
+                    (()->
+                      _tmp_Var_4 = new ast.Var
+                      _tmp_Var_4.name = "c"
+                      _tmp_Var_4
+                    )()
+                    ]
+                  _tmp_Scope_3
+                )()
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->

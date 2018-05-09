@@ -274,9 +274,21 @@ class @Gen_context
     # TODO fix context translation
     # если внутри ast, то мы не должны транслировать как код, а должны просто сериализовать ast
     # НО! При сериализации ast мы должны выполнить ct часть
-    
     when "If"
       if ctx.is_serialized_block
+        if ast.cond.is_ct
+          t = gen ast.t, ctx
+          f = gen ast.f, ctx
+          ctx_nest = ctx.mk_nest()
+          ctx_nest.is_serialized_block = false
+          return """
+          (()->
+            if #{gen ast.cond, ctx_nest}
+              #{make_tab t, '    '}
+            else
+              #{make_tab f, '    '}
+          )()
+          """
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         cond = gen ast.cond, ctx
         t = gen ast.t, ctx
