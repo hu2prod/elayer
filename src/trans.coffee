@@ -393,9 +393,17 @@ class @Gen_context
       """
     
     when "Break"
+      if ctx.is_serialized_block
+        return """
+        (new ast.#{ast.constructor.name})
+        """
       "break"
     
     when "Continue"
+      if ctx.is_serialized_block
+        return """
+        (new ast.#{ast.constructor.name})
+        """
       "continue"
     
     when "For_range"

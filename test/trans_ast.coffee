@@ -584,6 +584,66 @@ describe 'trans ast section', ()->
         )())
       '''
       
+      '''
+      block
+        loop
+          b
+          break
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Loop_1 = new ast.Loop
+              _tmp_Loop_1.scope = (()->
+                _tmp_Scope_2 = new ast.Scope
+                _tmp_Scope_2.list = [
+                  (()->
+                    _tmp_Var_3 = new ast.Var
+                    _tmp_Var_3.name = "b"
+                    _tmp_Var_3
+                  )()
+                  (new ast.Break)
+                  ]
+                _tmp_Scope_2
+              )()
+              _tmp_Loop_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      '''
+      block
+        loop
+          b
+          continue
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Loop_1 = new ast.Loop
+              _tmp_Loop_1.scope = (()->
+                _tmp_Scope_2 = new ast.Scope
+                _tmp_Scope_2.list = [
+                  (()->
+                    _tmp_Var_3 = new ast.Var
+                    _tmp_Var_3.name = "b"
+                    _tmp_Var_3
+                  )()
+                  (new ast.Continue)
+                  ]
+                _tmp_Scope_2
+              )()
+              _tmp_Loop_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
