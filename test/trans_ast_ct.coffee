@@ -243,106 +243,7 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
-  # ###################################################################################################
-  #    loop
-  # ###################################################################################################
-  return
-  describe "loop", ()->
-    hash =
-      
-      '''
-      block
-        loop
-          b
-      ''' : '''
-      ((block)().ast_call (()->
-          _tmp_Scope_0 = new ast.Scope
-          _tmp_Scope_0.list = [
-            (()->
-              _tmp_Loop_1 = new ast.Loop
-              _tmp_Loop_1.scope = (()->
-                _tmp_Scope_2 = new ast.Scope
-                _tmp_Scope_2.list = [
-                  (()->
-                    _tmp_Var_3 = new ast.Var
-                    _tmp_Var_3.name = "b"
-                    _tmp_Var_3
-                  )()
-                  ]
-                _tmp_Scope_2
-              )()
-              _tmp_Loop_1
-            )()
-            ]
-          _tmp_Scope_0
-        )())
-      '''
-      
-      '''
-      block
-        loop
-          b
-          break
-      ''' : '''
-      ((block)().ast_call (()->
-          _tmp_Scope_0 = new ast.Scope
-          _tmp_Scope_0.list = [
-            (()->
-              _tmp_Loop_1 = new ast.Loop
-              _tmp_Loop_1.scope = (()->
-                _tmp_Scope_2 = new ast.Scope
-                _tmp_Scope_2.list = [
-                  (()->
-                    _tmp_Var_3 = new ast.Var
-                    _tmp_Var_3.name = "b"
-                    _tmp_Var_3
-                  )()
-                  (new ast.Break)
-                  ]
-                _tmp_Scope_2
-              )()
-              _tmp_Loop_1
-            )()
-            ]
-          _tmp_Scope_0
-        )())
-      '''
-      
-      '''
-      block
-        loop
-          b
-          continue
-      ''' : '''
-      ((block)().ast_call (()->
-          _tmp_Scope_0 = new ast.Scope
-          _tmp_Scope_0.list = [
-            (()->
-              _tmp_Loop_1 = new ast.Loop
-              _tmp_Loop_1.scope = (()->
-                _tmp_Scope_2 = new ast.Scope
-                _tmp_Scope_2.list = [
-                  (()->
-                    _tmp_Var_3 = new ast.Var
-                    _tmp_Var_3.name = "b"
-                    _tmp_Var_3
-                  )()
-                  (new ast.Continue)
-                  ]
-                _tmp_Scope_2
-              )()
-              _tmp_Loop_1
-            )()
-            ]
-          _tmp_Scope_0
-        )())
-      '''
-      
-    for mbg_code, coffee_code of hash
-      do (mbg_code, coffee_code)->
-        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
-          res = _gen mbg_code
-          assert.equal res, coffee_code
+  
   # ###################################################################################################
   #    while
   # ###################################################################################################
@@ -350,37 +251,62 @@ describe 'trans ast section', ()->
     hash =
       
       '''
+      var a: bool
       block
         while a
           b
       ''' : '''
       ((block)().ast_call (()->
-          _tmp_Scope_0 = new ast.Scope
-          _tmp_Scope_0.list = [
-            (()->
-              _tmp_While_1 = new ast.While
-              _tmp_While_1.cond = (()->
-                _tmp_Var_2 = new ast.Var
-                _tmp_Var_2.name = "a"
-                _tmp_Var_2
-              )()
-              _tmp_While_1.scope = (()->
-                _tmp_Scope_3 = new ast.Scope
-                _tmp_Scope_3.list = [
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            while a
+              (()->
+                _tmp_Scope_1 = new ast.Scope
+                _tmp_Scope_1.list = [
                   (()->
-                    _tmp_Var_4 = new ast.Var
-                    _tmp_Var_4.name = "b"
-                    _tmp_Var_4
+                    _tmp_Var_2 = new ast.Var
+                    _tmp_Var_2.name = "b"
+                    _tmp_Var_2
                   )()
                   ]
-                _tmp_Scope_3
+                _tmp_Scope_1
               )()
-              _tmp_While_1
-            )()
-            ]
-          _tmp_Scope_0
-        )())
+          )()
+          ]
+        _tmp_Scope_0
+      )())
       '''
+      
+      # '''
+      # var a: bool
+      # block
+      #   while a
+      #     b
+      #     break
+      # ''' : '''
+      # ((block)().ast_call (()->
+      #   _tmp_Scope_0 = new ast.Scope
+      #   _tmp_Scope_0.list = [
+      #     (()->
+      #       while a
+      #         (()->
+      #           _tmp_Scope_1 = new ast.Scope
+      #           _tmp_Scope_1.list = [
+      #             (()->
+      #               _tmp_Var_2 = new ast.Var
+      #               _tmp_Var_2.name = "b"
+      #               _tmp_Var_2
+      #             )()
+      #             ]
+      #           _tmp_Scope_1
+      #         )()
+      #         break
+      #     )()
+      #     ]
+      #   _tmp_Scope_0
+      # )())
+      # '''
       
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->

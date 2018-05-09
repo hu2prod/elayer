@@ -407,6 +407,16 @@ class @Gen_context
     
     when "While"
       if ctx.is_serialized_block
+        if ast.cond.is_ct
+          scope = gen ast.scope, ctx
+          ctx_nest = ctx.mk_nest()
+          ctx_nest.is_serialized_block = false
+          return """
+          (()->
+            while #{gen ast.cond, ctx_nest}
+              #{make_tab scope, '    '}
+          )()
+          """
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         cond = gen ast.cond, ctx
         scope = gen ast.scope, ctx

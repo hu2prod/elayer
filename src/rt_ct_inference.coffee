@@ -62,6 +62,8 @@ class Context
   
   walk = (ast, ctx)->
     switch ast.constructor.name
+      when "Const"
+        ast
       when "Var_decl"
         if ctx.var_hash[ast.name]
           throw new Error "var '#{ast.name}' is already defined"
@@ -117,6 +119,20 @@ class Context
         for k,v of ast.hash
           walk v, ctx
         walk ast.f, ctx
+        ast
+      when "While"
+        walk ast.cond, ctx
+        walk ast.scope, ctx
+        ast
+      when "Loop"
+        walk ast.scope, ctx
+        ast
+      # when "For_range"
+      #   walk ast.scope, ctx
+      #   ast
+      when "Break", "Continue"
+        ast
+      when "Field_access"
         ast
       when "Ast_call"
         for v in ast.arg_list
