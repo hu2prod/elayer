@@ -5,9 +5,10 @@ for k,v of hash
   @[k] = v
 
 class @Ast_call
-  target : null
-  arg_list : []
-  scope  : null
+  target  : null
+  arg_list: []
+  call    : false
+  scope   : null
   constructor:()->
     @arg_list = []
   

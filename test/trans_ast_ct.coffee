@@ -32,7 +32,7 @@ describe 'trans ast section', ()->
         else
           c
       ''' : '''
-      ((block)().ast_call (()->
+      ((block).ast_call (()->
         _tmp_Scope_0 = new ast.Scope
         _tmp_Scope_0.list = [
           (()->
@@ -73,7 +73,7 @@ describe 'trans ast section', ()->
           b
           c
       ''' : '''
-      ((block)().ast_call (()->
+      ((block).ast_call (()->
         _tmp_Scope_0 = new ast.Scope
         _tmp_Scope_0.list = [
           (()->
@@ -115,7 +115,7 @@ describe 'trans ast section', ()->
           c
       ''' : '''
       (a = 1)
-      ((block)().ast_call (()->
+      ((block).ast_call (()->
         _tmp_Scope_0 = new ast.Scope
         _tmp_Scope_0.list = [
           (()->
@@ -166,7 +166,7 @@ describe 'trans ast section', ()->
           when "b"
             c
       ''' : '''
-      ((block)().ast_call (()->
+      ((block).ast_call (()->
         _tmp_Scope_0 = new ast.Scope
         _tmp_Scope_0.list = [
           (()->
@@ -204,7 +204,7 @@ describe 'trans ast section', ()->
           else
             d
       ''' : '''
-      ((block)().ast_call (()->
+      ((block).ast_call (()->
         _tmp_Scope_0 = new ast.Scope
         _tmp_Scope_0.list = [
           (()->
@@ -256,7 +256,7 @@ describe 'trans ast section', ()->
         while a
           b
       ''' : '''
-      ((block)().ast_call (()->
+      ((block).ast_call (()->
         _tmp_Scope_0 = new ast.Scope
         _tmp_Scope_0.list = [
           (()->
@@ -285,7 +285,7 @@ describe 'trans ast section', ()->
       #     b
       #     break
       # ''' : '''
-      # ((block)().ast_call (()->
+      # ((block).ast_call (()->
       #   _tmp_Scope_0 = new ast.Scope
       #   _tmp_Scope_0.list = [
       #     (()->

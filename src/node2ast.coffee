@@ -139,18 +139,19 @@ gen = null
     
 
 ast_call = (target, arg_list, scope)->
-  # pp target
   target_ast = gen target
   if target_ast.constructor.name == 'Var'
-    if arg_list.length <= 1
+    if !arg_list or arg_list.length == 1
       if fn = macro_fn_map[target_ast.name]
-        return fn(arg_list[0], scope)
+        return fn(arg_list?[0], scope)
     # 
   
   ret = new ast.Ast_call
   ret.target = target_ast
-  for v in arg_list
-    ret.arg_list.push gen v
+  if arg_list
+    ret.call = true
+    for v in arg_list
+      ret.arg_list.push gen v
   
   ret.scope = gen scope
   
@@ -468,8 +469,10 @@ ast_call = (target, arg_list, scope)->
     
     
     when "directive_fn_call"
-      arg_list = []
+      arg_list = null
       fn_call_arg_list = seek_token 'fn_call_arg_list', root
+      if root.value_array[1].value == "("
+        arg_list = []
       if fn_call_arg_list
         arg_list = seek_token_list_deep 'rvalue', fn_call_arg_list
         

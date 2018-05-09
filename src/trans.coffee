@@ -563,8 +563,12 @@ class @Gen_context
       ctx_nest = ctx.mk_nest()
       ctx_nest.is_serialized_block = true
       scope = gen ast.scope, ctx_nest
+      
+      aux_call = ""
+      if ast.call
+        aux_call = "(#{trans_arg_list.join ', '})"
       """
-      ((#{target_str})(#{trans_arg_list.join ', '}).ast_call #{scope})
+      ((#{target_str})#{aux_call}.ast_call #{scope})
       """
     
     else
