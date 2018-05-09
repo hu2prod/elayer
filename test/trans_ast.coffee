@@ -390,6 +390,146 @@ describe 'trans ast section', ()->
           _tmp_Scope_0
         )())
       '''
+      
+      '''
+      block
+        if a
+          b
+        else
+          c
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_If_1 = new ast.If
+              _tmp_If_1.cond = (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "a"
+                _tmp_Var_2
+              )()
+              _tmp_If_1.t = (()->
+                _tmp_Scope_3 = new ast.Scope
+                _tmp_Scope_3.list = [
+                  (()->
+                    _tmp_Var_4 = new ast.Var
+                    _tmp_Var_4.name = "b"
+                    _tmp_Var_4
+                  )()
+                  ]
+                _tmp_Scope_3
+              )()
+              _tmp_If_1.f = (()->
+                _tmp_Scope_5 = new ast.Scope
+                _tmp_Scope_5.list = [
+                  (()->
+                    _tmp_Var_6 = new ast.Var
+                    _tmp_Var_6.name = "c"
+                    _tmp_Var_6
+                  )()
+                  ]
+                _tmp_Scope_5
+              )()
+              _tmp_If_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  
+  describe "switch", ()->
+    hash =
+      
+      '''
+      block
+        switch a
+          when "b"
+            c
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Switch_1 = new ast.Switch
+              _tmp_Switch_1.cond = (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "a"
+                _tmp_Var_2
+              )()
+              _tmp_Switch_1.hash["\\"b\\""] = (()->
+                _tmp_Scope_3 = new ast.Scope
+                _tmp_Scope_3.list = [
+                  (()->
+                    _tmp_Var_4 = new ast.Var
+                    _tmp_Var_4.name = "c"
+                    _tmp_Var_4
+                  )()
+                  ]
+                _tmp_Scope_3
+              )()
+              _tmp_Switch_1.f = (()->
+                _tmp_Scope_5 = new ast.Scope
+                _tmp_Scope_5.list = []
+                _tmp_Scope_5
+              )()
+              _tmp_Switch_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
+      
+      '''
+      block
+        switch a
+          when "b"
+            c
+          else
+            d
+      ''' : '''
+      ((block)().ast_call (()->
+          _tmp_Scope_0 = new ast.Scope
+          _tmp_Scope_0.list = [
+            (()->
+              _tmp_Switch_1 = new ast.Switch
+              _tmp_Switch_1.cond = (()->
+                _tmp_Var_2 = new ast.Var
+                _tmp_Var_2.name = "a"
+                _tmp_Var_2
+              )()
+              _tmp_Switch_1.hash["\\"b\\""] = (()->
+                _tmp_Scope_3 = new ast.Scope
+                _tmp_Scope_3.list = [
+                  (()->
+                    _tmp_Var_4 = new ast.Var
+                    _tmp_Var_4.name = "c"
+                    _tmp_Var_4
+                  )()
+                  ]
+                _tmp_Scope_3
+              )()
+              _tmp_Switch_1.f = (()->
+                _tmp_Scope_5 = new ast.Scope
+                _tmp_Scope_5.list = [
+                  (()->
+                    _tmp_Var_6 = new ast.Var
+                    _tmp_Var_6.name = "d"
+                    _tmp_Var_6
+                  )()
+                  ]
+                _tmp_Scope_5
+              )()
+              _tmp_Switch_1
+            )()
+            ]
+          _tmp_Scope_0
+        )())
+      '''
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->

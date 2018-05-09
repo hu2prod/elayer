@@ -320,6 +320,24 @@ class @Gen_context
           """
     
     when "Switch"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        hash_jl = []
+        cond = gen ast.cond, ctx
+        for k,v of ast.hash
+          hash_jl.push """
+            #{var_name}.hash[#{JSON.stringify k}] = #{gen v, ctx}
+            """
+        f = gen ast.f, ctx
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.cond = #{make_tab cond, '  '}
+          #{join_list hash_jl, '  '}
+          #{var_name}.f = #{make_tab f, '  '}
+          #{var_name}
+        )()
+        """
       jl = []
       for k,v of ast.hash
         if ast.cond.type?.main == 'string'
