@@ -333,6 +333,25 @@ class @Gen_context
     
     when "Switch"
       if ctx.is_serialized_block
+        if ast.cond.is_ct
+          hash_jl = []
+          for k,v of ast.hash
+            hash_jl.push """
+              when #{k}
+                #{make_tab gen(v, ctx), '  '}
+              """
+          f = gen ast.f, ctx
+          ctx_nest = ctx.mk_nest()
+          ctx_nest.is_serialized_block = false
+          return """
+          (()->
+            switch #{gen ast.cond, ctx_nest}
+              #{join_list hash_jl, '    '}
+              else
+                #{make_tab f, '      '}
+          )()
+          """
+        
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         hash_jl = []
         cond = gen ast.cond, ctx
@@ -535,7 +554,7 @@ class @Gen_context
       ctx_nest.is_serialized_block = true
       scope = gen ast.scope, ctx_nest
       """
-      ((#{target_str})(#{trans_arg_list.join ', '}).ast_call #{make_tab scope, '  '})
+      ((#{target_str})(#{trans_arg_list.join ', '}).ast_call #{scope})
       """
     
     else

@@ -112,6 +112,12 @@ class Context
         walk ast.t, ctx
         walk ast.f, ctx
         ast
+      when "Switch"
+        walk ast.cond, ctx
+        for k,v of ast.hash
+          walk v, ctx
+        walk ast.f, ctx
+        ast
       when "Ast_call"
         for v in ast.arg_list
           walk v, ctx
