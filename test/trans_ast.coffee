@@ -721,6 +721,206 @@ describe 'trans ast section', ()->
   #    for col
   # ###################################################################################################
   describe "for col", ()->
+    hash =
+      
+      '''
+      block
+        var arr : array<int>
+        for v in arr
+          v
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Var_decl_1 = new ast.Var_decl
+            _tmp_Var_decl_1.name = "arr"
+            _tmp_Var_decl_1.type = new Type "array<int>"
+            _tmp_Var_decl_1
+          )()
+          (()->
+            _tmp_For_col_2 = new ast.For_col
+            _tmp_For_col_2.t = (()->
+              _tmp_Var_3 = new ast.Var
+              _tmp_Var_3.name = "arr"
+              _tmp_Var_3
+            )()
+            _tmp_For_col_2.k = null
+            _tmp_For_col_2.v = (()->
+              _tmp_Var_4 = new ast.Var
+              _tmp_Var_4.name = "v"
+              _tmp_Var_4
+            )()
+            _tmp_For_col_2.scope = (()->
+              _tmp_Scope_5 = new ast.Scope
+              _tmp_Scope_5.list = [
+                (()->
+                  _tmp_Var_6 = new ast.Var
+                  _tmp_Var_6.name = "v"
+                  _tmp_Var_6
+                )()
+                ]
+              _tmp_Scope_5
+            )()
+            _tmp_For_col_2
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+      '''
+      block
+        var arr : array<int>
+        for k,v in arr
+          v
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Var_decl_1 = new ast.Var_decl
+            _tmp_Var_decl_1.name = "arr"
+            _tmp_Var_decl_1.type = new Type "array<int>"
+            _tmp_Var_decl_1
+          )()
+          (()->
+            _tmp_For_col_2 = new ast.For_col
+            _tmp_For_col_2.t = (()->
+              _tmp_Var_3 = new ast.Var
+              _tmp_Var_3.name = "arr"
+              _tmp_Var_3
+            )()
+            _tmp_For_col_2.k = (()->
+              _tmp_Var_4 = new ast.Var
+              _tmp_Var_4.name = "k"
+              _tmp_Var_4
+            )()
+            _tmp_For_col_2.v = (()->
+              _tmp_Var_5 = new ast.Var
+              _tmp_Var_5.name = "v"
+              _tmp_Var_5
+            )()
+            _tmp_For_col_2.scope = (()->
+              _tmp_Scope_6 = new ast.Scope
+              _tmp_Scope_6.list = [
+                (()->
+                  _tmp_Var_7 = new ast.Var
+                  _tmp_Var_7.name = "v"
+                  _tmp_Var_7
+                )()
+                ]
+              _tmp_Scope_6
+            )()
+            _tmp_For_col_2
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+      
+      '''
+      block
+        var hash : hash<int>
+        for v in hash
+          v
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Var_decl_1 = new ast.Var_decl
+            _tmp_Var_decl_1.name = "hash"
+            _tmp_Var_decl_1.type = new Type "hash<int>"
+            _tmp_Var_decl_1
+          )()
+          (()->
+            _tmp_For_col_2 = new ast.For_col
+            _tmp_For_col_2.t = (()->
+              _tmp_Var_3 = new ast.Var
+              _tmp_Var_3.name = "hash"
+              _tmp_Var_3
+            )()
+            _tmp_For_col_2.k = null
+            _tmp_For_col_2.v = (()->
+              _tmp_Var_4 = new ast.Var
+              _tmp_Var_4.name = "v"
+              _tmp_Var_4
+            )()
+            _tmp_For_col_2.scope = (()->
+              _tmp_Scope_5 = new ast.Scope
+              _tmp_Scope_5.list = [
+                (()->
+                  _tmp_Var_6 = new ast.Var
+                  _tmp_Var_6.name = "v"
+                  _tmp_Var_6
+                )()
+                ]
+              _tmp_Scope_5
+            )()
+            _tmp_For_col_2
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+      '''
+      block
+        var hash : hash<int>
+        for k,v in hash
+          v
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Var_decl_1 = new ast.Var_decl
+            _tmp_Var_decl_1.name = "hash"
+            _tmp_Var_decl_1.type = new Type "hash<int>"
+            _tmp_Var_decl_1
+          )()
+          (()->
+            _tmp_For_col_2 = new ast.For_col
+            _tmp_For_col_2.t = (()->
+              _tmp_Var_3 = new ast.Var
+              _tmp_Var_3.name = "hash"
+              _tmp_Var_3
+            )()
+            _tmp_For_col_2.k = (()->
+              _tmp_Var_4 = new ast.Var
+              _tmp_Var_4.name = "k"
+              _tmp_Var_4
+            )()
+            _tmp_For_col_2.v = (()->
+              _tmp_Var_5 = new ast.Var
+              _tmp_Var_5.name = "v"
+              _tmp_Var_5
+            )()
+            _tmp_For_col_2.scope = (()->
+              _tmp_Scope_6 = new ast.Scope
+              _tmp_Scope_6.list = [
+                (()->
+                  _tmp_Var_7 = new ast.Var
+                  _tmp_Var_7.name = "v"
+                  _tmp_Var_7
+                )()
+                ]
+              _tmp_Scope_6
+            )()
+            _tmp_For_col_2
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
     it 'for array'
     it 'for hash'
   # ###################################################################################################

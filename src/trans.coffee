@@ -471,6 +471,40 @@ class @Gen_context
     when "For_col"
       if !ast.t.type
         throw new Error "can't compile for col because can't detect collection type"
+      
+      if ctx.is_serialized_block
+        # if ast.cond.is_ct
+        #   scope = gen ast.scope, ctx
+        #   ctx_nest = ctx.mk_nest()
+        #   ctx_nest.is_serialized_block = false
+        #   return """
+        #   (()->
+        #     while #{gen ast.cond, ctx_nest}
+        #       #{make_tab scope, '    '}
+        #   )()
+        #   """
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        t = gen ast.t, ctx
+        if ast.k
+          aux_k = gen ast.k, ctx
+        else
+          aux_k = "null"
+        if ast.v
+          aux_v = gen ast.v, ctx
+        else
+          aux_v = "null"
+        scope = gen ast.scope, ctx
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.t = #{make_tab t, '  '}
+          #{var_name}.k = #{make_tab aux_k, '  '}
+          #{var_name}.v = #{make_tab aux_v, '  '}
+          #{var_name}.scope = #{make_tab scope, '  '}
+          #{var_name}
+        )()
+        """
+      
       if ast.t.type.main == 'array'
         if ast.v
           aux_v = gen ast.v, ctx
