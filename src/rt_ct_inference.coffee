@@ -24,11 +24,10 @@ class Context
   # ###################################################################################################
   #    for scope separation
   # ###################################################################################################
-  mk_nest_scope : ()->
-    ret = @mk_nest()
-    ret.is_ct = false
-    ret.var_hash = {}
-    ret
+  # mk_nest_scope : ()->
+  #   ret = @mk_nest()
+  #   ret.var_hash = {}
+  #   ret
   
   mk_nest_rt : ()->
     ret = @mk_nest()
@@ -133,6 +132,34 @@ class Context
         ast
       when "Loop"
         walk ast.scope, ctx
+        ast
+      when "For_col"
+        walk ast.t, ctx
+        ctx_nest = ctx.mk_nest()
+        if ctx.is_ct
+          if ast.k
+            ast.k.is_ct = true
+            ctx_nest.var_hash[ast.k.name] = 'ct'
+          if ast.v
+            ast.v.is_ct = true
+            ctx_nest.var_hash[ast.v.name] = 'ct'
+        else
+          if ast.t.is_ct
+            if ast.k
+              ast.k.is_ct = true
+              ctx_nest.var_hash[ast.k.name] = 'ct'
+            if ast.v
+              ast.v.is_ct = true
+              ctx_nest.var_hash[ast.v.name] = 'ct'
+          if ast.t.is_rt
+            if ast.k
+              ast.k.is_rt = true
+              ctx_nest.var_hash[ast.k.name] = 'rt'
+            if ast.v
+              ast.v.is_rt = true
+              ctx_nest.var_hash[ast.v.name] = 'rt'
+        
+        walk ast.scope, ctx_nest
         ast
       # when "For_range"
       #   walk ast.scope, ctx

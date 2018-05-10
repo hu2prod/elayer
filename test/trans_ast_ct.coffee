@@ -392,3 +392,44 @@ describe 'trans ast section', ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
     it 'while ct_break' # LATER or NEVER
+  # ###################################################################################################
+  #    for col
+  # ###################################################################################################
+  describe "for col", ()->
+    hash =
+      
+      '''
+      var arr : array<int>
+      block
+        for v in arr
+          v
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            for v in arr
+              (()->
+                _tmp_Scope_1 = new ast.Scope
+                _tmp_Scope_1.list = [
+                  (()->
+                    _tmp_Const_2 = new ast.Const
+                    _tmp_expr = v
+                    _tmp_Const_2.val  = wrap_ct(_tmp_expr)
+                    _tmp_Const_2.type = wrap_ct_type(_tmp_expr)
+                    _tmp_Const_2
+                  )()
+                  ]
+                _tmp_Scope_1
+              )()
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  

@@ -473,7 +473,41 @@ class @Gen_context
         throw new Error "can't compile for col because can't detect collection type"
       
       if ctx.is_serialized_block
-        # if ast.cond.is_ct
+        if ast.t.is_ct
+          ctx_nest = ctx.mk_nest()
+          ctx_nest.is_serialized_block = false
+          if ast.t.type.main == 'array'
+            aux_k = ""
+            if ast.k
+              aux_k = ",#{gen ast.k, ctx_nest}"
+            
+            if ast.v
+              aux_v = gen ast.v, ctx_nest
+            else
+              aux_v = "_skip"
+            
+            return """
+            (()->
+              for #{aux_v}#{aux_k} in #{gen ast.t, ctx_nest}
+                #{make_tab gen(ast.scope, ctx), '    '}
+            )()
+            """
+          else
+            if ast.k
+              aux_k = gen ast.k, ctx_nest
+            else
+              aux_k = "_skip"
+            
+            aux_v = ""
+            if ast.v
+              aux_v = ",#{gen ast.v, ctx_nest}"
+            
+            return """
+            (()->
+              for #{aux_k}#{aux_v} of #{gen ast.t, ctx_nest}
+                #{make_tab gen(ast.scope, ctx), '    '}
+            )()
+            """
         #   scope = gen ast.scope, ctx
         #   ctx_nest = ctx.mk_nest()
         #   ctx_nest.is_serialized_block = false
@@ -506,14 +540,14 @@ class @Gen_context
         """
       
       if ast.t.type.main == 'array'
+        aux_k = ""
+        if ast.k
+          aux_k = ",#{gen ast.k, ctx}"
+        
         if ast.v
           aux_v = gen ast.v, ctx
         else
           aux_v = "_skip"
-        
-        aux_k = ""
-        if ast.k
-          aux_k = ",#{gen ast.k, ctx}"
         """
         for #{aux_v}#{aux_k} in #{gen ast.t, ctx}
           #{make_tab gen(ast.scope, ctx), '  '}
