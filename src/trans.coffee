@@ -508,15 +508,7 @@ class @Gen_context
                 #{make_tab gen(ast.scope, ctx), '    '}
             )()
             """
-        #   scope = gen ast.scope, ctx
-        #   ctx_nest = ctx.mk_nest()
-        #   ctx_nest.is_serialized_block = false
-        #   return """
-        #   (()->
-        #     while #{gen ast.cond, ctx_nest}
-        #       #{make_tab scope, '    '}
-        #   )()
-        #   """
+        # pure rt code
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         t = gen ast.t, ctx
         if ast.k
