@@ -433,3 +433,7 @@ describe 'trans section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+  
+  describe "try", ()->
+    it 'try catch'
+    it 'throw'

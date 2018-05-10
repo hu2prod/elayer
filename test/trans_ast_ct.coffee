@@ -91,6 +91,9 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+    it 'rt + rt'
+    it 'rt + ct'
+    it 'ct + ct'
   # ###################################################################################################
   #    if
   # ###################################################################################################
@@ -226,6 +229,8 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+    it 'if rt + ct'
+    it 'if ct + ct'
   # ###################################################################################################
   #    switch
   # ###################################################################################################
@@ -386,3 +391,4 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+    it 'while ct_break' # LATER or NEVER
