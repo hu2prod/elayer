@@ -433,3 +433,4 @@ describe 'trans ast section', ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
   
+  

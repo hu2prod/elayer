@@ -220,6 +220,24 @@ class @Gen_context
     #    
     # ###################################################################################################
     when "Fn_call"
+      if ctx.is_serialized_block
+        # if ctx.is_ct
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        fn = gen(ast.fn, ctx)
+        arg_list = []
+        for v in ast.arg_list
+          arg_list.push gen v, ctx
+        arg_list_str = ''
+        if arg_list.length
+          arg_list_str = arg_list.join '\n'
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.fn = #{make_tab fn, '  '}
+          #{var_name}.arg_list = [#{make_tab arg_list_str, '  '}]
+          #{var_name}
+        )()
+        """
       ret = ""
       if ast.fn.constructor.name == 'Field_access'
         t = ast.fn.t

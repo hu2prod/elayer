@@ -1004,3 +1004,93 @@ describe 'trans ast section', ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
   
+  # ###################################################################################################
+  #    fn call
+  # ###################################################################################################
+  describe "fn call", ()->
+    hash =
+      
+      '''
+      block
+        fn()
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_call_1 = new ast.Fn_call
+            _tmp_Fn_call_1.fn = (()->
+              _tmp_Var_2 = new ast.Var
+              _tmp_Var_2.name = "fn"
+              _tmp_Var_2
+            )()
+            _tmp_Fn_call_1.arg_list = []
+            _tmp_Fn_call_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+      '''
+      block
+        fn(a)
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_call_1 = new ast.Fn_call
+            _tmp_Fn_call_1.fn = (()->
+              _tmp_Var_2 = new ast.Var
+              _tmp_Var_2.name = "fn"
+              _tmp_Var_2
+            )()
+            _tmp_Fn_call_1.arg_list = [(()->
+              _tmp_Var_3 = new ast.Var
+              _tmp_Var_3.name = "a"
+              _tmp_Var_3
+            )()]
+            _tmp_Fn_call_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+      '''
+      block
+        fn(a, b)
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_call_1 = new ast.Fn_call
+            _tmp_Fn_call_1.fn = (()->
+              _tmp_Var_2 = new ast.Var
+              _tmp_Var_2.name = "fn"
+              _tmp_Var_2
+            )()
+            _tmp_Fn_call_1.arg_list = [(()->
+              _tmp_Var_3 = new ast.Var
+              _tmp_Var_3.name = "a"
+              _tmp_Var_3
+            )()
+            (()->
+              _tmp_Var_4 = new ast.Var
+              _tmp_Var_4.name = "b"
+              _tmp_Var_4
+            )()]
+            _tmp_Fn_call_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  
