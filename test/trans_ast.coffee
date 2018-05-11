@@ -1208,6 +1208,35 @@ describe 'trans ast section', ()->
         _tmp_Scope_0
       )())
       '''
+      
+      '''
+      block
+        a.fn()
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_call_1 = new ast.Fn_call
+            _tmp_Fn_call_1.fn = (()->
+              _tmp_Field_access_2 = new ast.Field_access
+              _tmp_Field_access_2.t = (()->
+                _tmp_Var_3 = new ast.Var
+                _tmp_Var_3.name = "a"
+                _tmp_Var_3.type = new Type "any"
+                _tmp_Var_3
+              )()
+              _tmp_Field_access_2.name = "fn"
+              _tmp_Field_access_2.type = new Type "any"
+              _tmp_Field_access_2
+            )()
+            _tmp_Fn_call_1.arg_list = []
+            _tmp_Fn_call_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
