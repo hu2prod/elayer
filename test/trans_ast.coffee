@@ -961,3 +961,44 @@ describe 'trans ast section', ()->
   describe "try catch", ()->
     it 'try catch'
     it 'throw'
+  
+  # ###################################################################################################
+  #    fn decl
+  # ###################################################################################################
+  describe "fn decl", ()->
+    hash =
+      
+      '''
+      block
+        fn():void->
+          v
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_decl_1 = new ast.Fn_decl
+            _tmp_Fn_decl_1.arg_name_list = []
+            _tmp_Fn_decl_1.scope = (()->
+              _tmp_Scope_2 = new ast.Scope
+              _tmp_Scope_2.list = [
+                (()->
+                  _tmp_Var_3 = new ast.Var
+                  _tmp_Var_3.name = "v"
+                  _tmp_Var_3
+                )()
+                ]
+              _tmp_Scope_2
+            )()
+            _tmp_Fn_decl_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  

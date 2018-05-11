@@ -628,6 +628,16 @@ class @Gen_context
       """
     
     when "Fn_decl"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.arg_name_list = #{JSON.stringify ast.arg_name_list}
+          #{var_name}.scope = #{make_tab gen(ast.scope, ctx), '  '}
+          #{var_name}
+        )()
+        """
       arg_list = ast.arg_name_list
       ctx_nest = ctx.mk_nest()
       ctx_nest.in_class = false
