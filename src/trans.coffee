@@ -589,6 +589,18 @@ class @Gen_context
         """
     
     when "Ret"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        aux_t = ""
+        if ast.t
+          aux_t = "#{var_name}.t = #{gen ast.t, ctx}"
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{make_tab aux_t, '  '}
+          #{var_name}
+        )()
+        """
       aux = ""
       if ast.t
         aux = " (#{gen ast.t, ctx})"

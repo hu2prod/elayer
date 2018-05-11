@@ -998,6 +998,72 @@ describe 'trans ast section', ()->
         _tmp_Scope_0
       )())
       '''
+      
+      '''
+      block
+        fn():void->
+          return
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_decl_1 = new ast.Fn_decl
+            _tmp_Fn_decl_1.name = "fn"
+            _tmp_Fn_decl_1.arg_name_list = []
+            _tmp_Fn_decl_1.type = new Type "function<void>"
+            _tmp_Fn_decl_1.scope = (()->
+              _tmp_Scope_2 = new ast.Scope
+              _tmp_Scope_2.list = [
+                (()->
+                  _tmp_Ret_3 = new ast.Ret
+                  
+                  _tmp_Ret_3
+                )()
+                ]
+              _tmp_Scope_2
+            )()
+            _tmp_Fn_decl_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+      '''
+      block
+        fn():void->
+          return v
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_decl_1 = new ast.Fn_decl
+            _tmp_Fn_decl_1.name = "fn"
+            _tmp_Fn_decl_1.arg_name_list = []
+            _tmp_Fn_decl_1.type = new Type "function<void>"
+            _tmp_Fn_decl_1.scope = (()->
+              _tmp_Scope_2 = new ast.Scope
+              _tmp_Scope_2.list = [
+                (()->
+                  _tmp_Ret_3 = new ast.Ret
+                  _tmp_Ret_3.t = (()->
+                    _tmp_Var_4 = new ast.Var
+                    _tmp_Var_4.name = "v"
+                    _tmp_Var_4
+                  )()
+                  _tmp_Ret_3
+                )()
+                ]
+              _tmp_Scope_2
+            )()
+            _tmp_Fn_decl_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
