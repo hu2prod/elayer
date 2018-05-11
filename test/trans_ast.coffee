@@ -405,6 +405,7 @@ describe 'trans ast section', ()->
               _tmp_Var_2
             )()
             _tmp_Field_access_1.name = "b"
+            _tmp_Field_access_1.type = new Type "any"
             _tmp_Field_access_1
           )()
           ]

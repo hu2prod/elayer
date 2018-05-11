@@ -1,6 +1,6 @@
 module = @
 require 'fy/codegen'
-
+Type = require 'type'
 
 @default_value_from_type =
   'int'   : "0"
@@ -203,6 +203,7 @@ class @Gen_context
       module.un_op_name_cb_map[ast.op] gen ast.a, ctx
     # ###################################################################################################
     when "Field_access"
+      ast.type ?= new Type "any"
       if ctx.is_serialized_block
         # if ctx.is_ct
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
@@ -211,6 +212,7 @@ class @Gen_context
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.t = #{make_tab gen(ast.t, ctx), '  '}
           #{var_name}.name = #{JSON.stringify ast.name}
+          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
           #{var_name}
         )()
         """
