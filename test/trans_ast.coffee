@@ -21,6 +21,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -39,6 +40,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -57,6 +59,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -75,6 +78,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -92,6 +96,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -110,6 +115,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -128,6 +134,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -147,6 +154,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -165,6 +173,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -183,6 +192,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -205,6 +215,7 @@ describe 'trans ast section', ()->
               (()->
                 _tmp_Var_2 = new ast.Var
                 _tmp_Var_2.name = "c"
+                _tmp_Var_2.type = new Type "any"
                 _tmp_Var_2
               )()
               ]
@@ -243,6 +254,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_1 = new ast.Var
             _tmp_Var_1.name = "a"
+            _tmp_Var_1.type = new Type "any"
             _tmp_Var_1
           )()
           ]
@@ -333,6 +345,7 @@ describe 'trans ast section', ()->
             _tmp_Un_op_1.a = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Un_op_1.op = "PLUS"
@@ -365,11 +378,13 @@ describe 'trans ast section', ()->
             _tmp_Bin_op_1.a = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Bin_op_1.b = (()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "b"
+              _tmp_Var_3.type = new Type "any"
               _tmp_Var_3
             )()
             _tmp_Bin_op_1.op = "ASSIGN"
@@ -402,6 +417,7 @@ describe 'trans ast section', ()->
             _tmp_Field_access_1.t = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Field_access_1.name = "b"
@@ -436,6 +452,7 @@ describe 'trans ast section', ()->
             _tmp_If_1.cond = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_If_1.t = (()->
@@ -444,6 +461,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_4 = new ast.Var
                   _tmp_Var_4.name = "b"
+                  _tmp_Var_4.type = new Type "any"
                   _tmp_Var_4
                 )()
                 ]
@@ -476,6 +494,7 @@ describe 'trans ast section', ()->
             _tmp_If_1.cond = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_If_1.t = (()->
@@ -484,6 +503,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_4 = new ast.Var
                   _tmp_Var_4.name = "b"
+                  _tmp_Var_4.type = new Type "any"
                   _tmp_Var_4
                 )()
                 ]
@@ -495,6 +515,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_6 = new ast.Var
                   _tmp_Var_6.name = "c"
+                  _tmp_Var_6.type = new Type "any"
                   _tmp_Var_6
                 )()
                 ]
@@ -531,6 +552,7 @@ describe 'trans ast section', ()->
             _tmp_Switch_1.cond = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Switch_1.hash["\\"b\\""] = (()->
@@ -539,6 +561,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_4 = new ast.Var
                   _tmp_Var_4.name = "c"
+                  _tmp_Var_4.type = new Type "any"
                   _tmp_Var_4
                 )()
                 ]
@@ -572,6 +595,7 @@ describe 'trans ast section', ()->
             _tmp_Switch_1.cond = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Switch_1.hash["\\"b\\""] = (()->
@@ -580,6 +604,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_4 = new ast.Var
                   _tmp_Var_4.name = "c"
+                  _tmp_Var_4.type = new Type "any"
                   _tmp_Var_4
                 )()
                 ]
@@ -591,6 +616,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_6 = new ast.Var
                   _tmp_Var_6.name = "d"
+                  _tmp_Var_6.type = new Type "any"
                   _tmp_Var_6
                 )()
                 ]
@@ -629,6 +655,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_3 = new ast.Var
                   _tmp_Var_3.name = "b"
+                  _tmp_Var_3.type = new Type "any"
                   _tmp_Var_3
                 )()
                 ]
@@ -658,6 +685,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_3 = new ast.Var
                   _tmp_Var_3.name = "b"
+                  _tmp_Var_3.type = new Type "any"
                   _tmp_Var_3
                 )()
                 (new ast.Break)
@@ -688,6 +716,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_3 = new ast.Var
                   _tmp_Var_3.name = "b"
+                  _tmp_Var_3.type = new Type "any"
                   _tmp_Var_3
                 )()
                 (new ast.Continue)
@@ -725,6 +754,7 @@ describe 'trans ast section', ()->
             _tmp_While_1.cond = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "a"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_While_1.scope = (()->
@@ -733,6 +763,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_4 = new ast.Var
                   _tmp_Var_4.name = "b"
+                  _tmp_Var_4.type = new Type "any"
                   _tmp_Var_4
                 )()
                 ]
@@ -776,12 +807,14 @@ describe 'trans ast section', ()->
             _tmp_For_col_2.t = (()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "arr"
+              _tmp_Var_3.type = new Type "array<int>"
               _tmp_Var_3
             )()
             _tmp_For_col_2.k = null
             _tmp_For_col_2.v = (()->
               _tmp_Var_4 = new ast.Var
               _tmp_Var_4.name = "v"
+              _tmp_Var_4.type = new Type "any"
               _tmp_Var_4
             )()
             _tmp_For_col_2.scope = (()->
@@ -790,6 +823,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_6 = new ast.Var
                   _tmp_Var_6.name = "v"
+                  _tmp_Var_6.type = new Type "any"
                   _tmp_Var_6
                 )()
                 ]
@@ -822,16 +856,19 @@ describe 'trans ast section', ()->
             _tmp_For_col_2.t = (()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "arr"
+              _tmp_Var_3.type = new Type "array<int>"
               _tmp_Var_3
             )()
             _tmp_For_col_2.k = (()->
               _tmp_Var_4 = new ast.Var
               _tmp_Var_4.name = "k"
+              _tmp_Var_4.type = new Type "any"
               _tmp_Var_4
             )()
             _tmp_For_col_2.v = (()->
               _tmp_Var_5 = new ast.Var
               _tmp_Var_5.name = "v"
+              _tmp_Var_5.type = new Type "any"
               _tmp_Var_5
             )()
             _tmp_For_col_2.scope = (()->
@@ -840,6 +877,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_7 = new ast.Var
                   _tmp_Var_7.name = "v"
+                  _tmp_Var_7.type = new Type "any"
                   _tmp_Var_7
                 )()
                 ]
@@ -873,12 +911,14 @@ describe 'trans ast section', ()->
             _tmp_For_col_2.t = (()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "hash"
+              _tmp_Var_3.type = new Type "hash<int>"
               _tmp_Var_3
             )()
             _tmp_For_col_2.k = null
             _tmp_For_col_2.v = (()->
               _tmp_Var_4 = new ast.Var
               _tmp_Var_4.name = "v"
+              _tmp_Var_4.type = new Type "any"
               _tmp_Var_4
             )()
             _tmp_For_col_2.scope = (()->
@@ -887,6 +927,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_6 = new ast.Var
                   _tmp_Var_6.name = "v"
+                  _tmp_Var_6.type = new Type "any"
                   _tmp_Var_6
                 )()
                 ]
@@ -919,16 +960,19 @@ describe 'trans ast section', ()->
             _tmp_For_col_2.t = (()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "hash"
+              _tmp_Var_3.type = new Type "hash<int>"
               _tmp_Var_3
             )()
             _tmp_For_col_2.k = (()->
               _tmp_Var_4 = new ast.Var
               _tmp_Var_4.name = "k"
+              _tmp_Var_4.type = new Type "any"
               _tmp_Var_4
             )()
             _tmp_For_col_2.v = (()->
               _tmp_Var_5 = new ast.Var
               _tmp_Var_5.name = "v"
+              _tmp_Var_5.type = new Type "any"
               _tmp_Var_5
             )()
             _tmp_For_col_2.scope = (()->
@@ -937,6 +981,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_7 = new ast.Var
                   _tmp_Var_7.name = "v"
+                  _tmp_Var_7.type = new Type "any"
                   _tmp_Var_7
                 )()
                 ]
@@ -988,6 +1033,7 @@ describe 'trans ast section', ()->
                 (()->
                   _tmp_Var_3 = new ast.Var
                   _tmp_Var_3.name = "v"
+                  _tmp_Var_3.type = new Type "any"
                   _tmp_Var_3
                 )()
                 ]
@@ -1052,6 +1098,7 @@ describe 'trans ast section', ()->
                   _tmp_Ret_3.t = (()->
                     _tmp_Var_4 = new ast.Var
                     _tmp_Var_4.name = "v"
+                    _tmp_Var_4.type = new Type "any"
                     _tmp_Var_4
                   )()
                   _tmp_Ret_3
@@ -1089,6 +1136,7 @@ describe 'trans ast section', ()->
             _tmp_Fn_call_1.fn = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "fn"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Fn_call_1.arg_list = []
@@ -1111,11 +1159,13 @@ describe 'trans ast section', ()->
             _tmp_Fn_call_1.fn = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "fn"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Fn_call_1.arg_list = [(()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "a"
+              _tmp_Var_3.type = new Type "any"
               _tmp_Var_3
             )()]
             _tmp_Fn_call_1
@@ -1137,16 +1187,19 @@ describe 'trans ast section', ()->
             _tmp_Fn_call_1.fn = (()->
               _tmp_Var_2 = new ast.Var
               _tmp_Var_2.name = "fn"
+              _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
             _tmp_Fn_call_1.arg_list = [(()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "a"
+              _tmp_Var_3.type = new Type "any"
               _tmp_Var_3
             )()
             (()->
               _tmp_Var_4 = new ast.Var
               _tmp_Var_4.name = "b"
+              _tmp_Var_4.type = new Type "any"
               _tmp_Var_4
             )()]
             _tmp_Fn_call_1

@@ -5,7 +5,6 @@ require 'shelljs/global'
 {_gen} = require('../src/index.coffee')
 
 describe 'trans ast section', ()->
-  
   # ###################################################################################################
   #    id
   # ###################################################################################################
@@ -28,6 +27,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Var_2 = new ast.Var
             _tmp_Var_2.name = "a"
+            _tmp_Var_2.type = new Type "int"
             _tmp_Var_2
           )()
           ]
@@ -70,6 +70,7 @@ describe 'trans ast section', ()->
             _tmp_Bin_op_2.a = (()->
               _tmp_Var_3 = new ast.Var
               _tmp_Var_3.name = "rt"
+              _tmp_Var_3.type = new Type "int"
               _tmp_Var_3
             )()
             _tmp_Bin_op_2.b = (()->
@@ -119,6 +120,7 @@ describe 'trans ast section', ()->
                   (()->
                     _tmp_Var_2 = new ast.Var
                     _tmp_Var_2.name = "b"
+                    _tmp_Var_2.type = new Type "any"
                     _tmp_Var_2
                   )()
                   ]
@@ -131,6 +133,7 @@ describe 'trans ast section', ()->
                   (()->
                     _tmp_Var_4 = new ast.Var
                     _tmp_Var_4.name = "c"
+                    _tmp_Var_4.type = new Type "any"
                     _tmp_Var_4
                   )()
                   ]
@@ -160,11 +163,13 @@ describe 'trans ast section', ()->
                   (()->
                     _tmp_Var_2 = new ast.Var
                     _tmp_Var_2.name = "b"
+                    _tmp_Var_2.type = new Type "any"
                     _tmp_Var_2
                   )()
                   (()->
                     _tmp_Var_3 = new ast.Var
                     _tmp_Var_3.name = "c"
+                    _tmp_Var_3.type = new Type "any"
                     _tmp_Var_3
                   )()
                   ]
@@ -202,6 +207,7 @@ describe 'trans ast section', ()->
                   (()->
                     _tmp_Var_2 = new ast.Var
                     _tmp_Var_2.name = "b"
+                    _tmp_Var_2.type = new Type "any"
                     _tmp_Var_2
                   )()
                   ]
@@ -214,6 +220,7 @@ describe 'trans ast section', ()->
                   (()->
                     _tmp_Var_4 = new ast.Var
                     _tmp_Var_4.name = "c"
+                    _tmp_Var_4.type = new Type "any"
                     _tmp_Var_4
                   )()
                   ]
@@ -256,6 +263,7 @@ describe 'trans ast section', ()->
                     (()->
                       _tmp_Var_2 = new ast.Var
                       _tmp_Var_2.name = "c"
+                      _tmp_Var_2.type = new Type "any"
                       _tmp_Var_2
                     )()
                     ]
@@ -294,6 +302,7 @@ describe 'trans ast section', ()->
                     (()->
                       _tmp_Var_2 = new ast.Var
                       _tmp_Var_2.name = "c"
+                      _tmp_Var_2.type = new Type "any"
                       _tmp_Var_2
                     )()
                     ]
@@ -306,6 +315,7 @@ describe 'trans ast section', ()->
                     (()->
                       _tmp_Var_4 = new ast.Var
                       _tmp_Var_4.name = "d"
+                      _tmp_Var_4.type = new Type "any"
                       _tmp_Var_4
                     )()
                     ]
@@ -345,6 +355,7 @@ describe 'trans ast section', ()->
                   (()->
                     _tmp_Var_2 = new ast.Var
                     _tmp_Var_2.name = "b"
+                    _tmp_Var_2.type = new Type "any"
                     _tmp_Var_2
                   )()
                   ]
@@ -374,6 +385,7 @@ describe 'trans ast section', ()->
       #             (()->
       #               _tmp_Var_2 = new ast.Var
       #               _tmp_Var_2.name = "b"
+      #               _tmp_Var_2.type = new Type "any"
       #               _tmp_Var_2
       #             )()
       #             ]

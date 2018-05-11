@@ -118,6 +118,7 @@ class @Gen_context
     when "Var"
       # NOTE BUG rt + ct
       # ct is not detecting properly yet!!!
+      ast.type ?= new Type "any"
       if ctx.is_serialized_block
         if ast.is_ct
           var_name = "_tmp_Const_#{ctx.uid()}"
@@ -136,6 +137,7 @@ class @Gen_context
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.name = #{JSON.stringify ast.name}
+          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
           #{var_name}
         )()
         """
