@@ -978,7 +978,9 @@ describe 'trans ast section', ()->
         _tmp_Scope_0.list = [
           (()->
             _tmp_Fn_decl_1 = new ast.Fn_decl
+            _tmp_Fn_decl_1.name = "fn"
             _tmp_Fn_decl_1.arg_name_list = []
+            _tmp_Fn_decl_1.type = new Type "function<void>"
             _tmp_Fn_decl_1.scope = (()->
               _tmp_Scope_2 = new ast.Scope
               _tmp_Scope_2.list = [

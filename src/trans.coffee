@@ -633,7 +633,9 @@ class @Gen_context
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.name = #{JSON.stringify ast.name}
           #{var_name}.arg_name_list = #{JSON.stringify ast.arg_name_list}
+          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
           #{var_name}.scope = #{make_tab gen(ast.scope, ctx), '  '}
           #{var_name}
         )()
