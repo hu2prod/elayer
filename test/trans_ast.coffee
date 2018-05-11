@@ -385,6 +385,38 @@ describe 'trans ast section', ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
   # ###################################################################################################
+  #    Field_access
+  # ###################################################################################################
+  describe "bin_op", ()->
+    hash =
+      
+      '''
+      block
+        a.b
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Field_access_1 = new ast.Field_access
+            _tmp_Field_access_1.t = (()->
+              _tmp_Var_2 = new ast.Var
+              _tmp_Var_2.name = "a"
+              _tmp_Var_2
+            )()
+            _tmp_Field_access_1.name = "b"
+            _tmp_Field_access_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
+  # ###################################################################################################
   #    if
   # ###################################################################################################
   describe "if", ()->

@@ -203,6 +203,18 @@ class @Gen_context
       module.un_op_name_cb_map[ast.op] gen ast.a, ctx
     # ###################################################################################################
     when "Field_access"
+      if ctx.is_serialized_block
+        # if ctx.is_ct
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.t = #{make_tab gen(ast.t, ctx), '  '}
+          #{var_name}.name = #{JSON.stringify ast.name}
+          #{var_name}
+        )()
+        """
+        
       "(#{gen(ast.t, ctx)}).#{ast.name}"
     # ###################################################################################################
     #    
