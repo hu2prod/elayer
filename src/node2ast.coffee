@@ -112,6 +112,12 @@ wrap_scope = (stmt)->
   ret.list.push stmt
   ret
 
+hash_key_to_value = (key)->
+  if key[0] in ["'", '"']
+    eval key
+  else
+    key
+
 # ###################################################################################################
 #    macro+
 # ###################################################################################################
@@ -458,6 +464,18 @@ ast_call = (target, arg_list, scope)->
       
       if scope = seek_token 'block', root
         ret.scope = gen scope, opt
+      
+      ret
+    
+    when "struct_init"
+      ret = new ast.Struct_init
+      seek_and_set_line_pos ret, root
+      
+      kv_list = seek_token_list_deep 'struct_init_kv', root
+      for kv in kv_list
+        key   = hash_key_to_value kv.value_array[0].value
+        value = gen kv.value_array[2], opt
+        ret.hash[key] = value
       
       ret
     # ###################################################################################################

@@ -115,6 +115,20 @@ q('stmt', 'var #tok_identifier ":" #type')          .mx("ult=var_decl ti=var_dec
 
 q('lvalue', '#rvalue "." #tok_identifier')          .mx("priority=#{base_priority} ult=field_access ti=macro tail_space=#tok_identifier.tail_space").strict("$1.priority==#{base_priority}")
 
+q('struct_init_kv', '#tok_identifier ":" #rvalue').mx('eol=#rvalue.eol')
+q('struct_init_kv', '#tok_string_sq ":" #rvalue') .mx('eol=#rvalue.eol')
+q('struct_init_kv', '#tok_string_dq ":" #rvalue') .mx('eol=#rvalue.eol')
+q('struct_init_list', '#struct_init_kv')          .mx('eol=$1.eol struct_init_inline=1')
+q('struct_init_list', '#struct_init_kv #struct_init_list').strict('#struct_init_kv.eol') .mx('struct_init_inline=0')
+q('struct_init_list', '#struct_init_kv #eol #struct_init_list')     .mx('struct_init_inline=0')
+q('struct_init_list', '#struct_init_kv "," #struct_init_list')      .mx('struct_init_inline=#struct_init_list.struct_init_inline')
+q('struct_init_list', '#struct_init_kv "," #eol #struct_init_list') .mx('struct_init_inline=0')
+q('struct_init', '"{" #struct_init_list? "}"')
+q('struct_init', '"{" #indent #struct_init_list? #dedent "}"')
+q('rvalue', '#struct_init') .mx("priority=#{base_priority} ult=struct_init bracketless_hash=$1.bracketless_hash")
+q('struct_init', '#indent #struct_init_list #dedent').mx('bracketless_hash=1')
+q('struct_init', '#struct_init_list').mx('bracketless_hash=1').strict('$1.struct_init_inline')
+
 q('stmt', 'if #rvalue #block #if_tail_stmt?')                       .mx("ult=if ti=if eol=1")
 q('if_tail_stmt', 'else if #rvalue #block #if_tail_stmt?')          .mx("ult=else_if ti=else_if eol=1")
 q('if_tail_stmt', 'elseif|elsif|elif #rvalue #block #if_tail_stmt?').mx("ult=else_if ti=else_if eol=1")
@@ -149,8 +163,8 @@ q('rvalue', '"(" #fn_decl_arg_list? ")" ":" #type "=>" #rvalue').mx("priority=#{
 q('stmt', 'class #tok_identifier')                .mx('ult=class_decl')
 q('stmt', 'class #tok_identifier #block')         .mx('ult=class_decl eol=1')
 
-q('fn_call_arg_list', '#rvalue')
-q('fn_call_arg_list', '#rvalue "," #fn_call_arg_list')
+q('fn_call_arg_list', '#rvalue')                        .mx('bracketless_hash=$1.bracketless_hash')
+q('fn_call_arg_list', '#rvalue "," #fn_call_arg_list')  .mx('bracketless_hash=$1.bracketless_hash') .strict('!$1.bracketless_hash||!$3.bracketless_hash')
 q('rvalue', '#rvalue "(" #fn_call_arg_list? ")"')     .mx("priority=#{base_priority} ult=fn_call").strict("$1.priority==#{base_priority}")
 q('rvalue', '#rvalue #fn_call_arg_list')        .mx("priority=#{base_priority} ult=fn_call").strict("$1.priority==#{base_priority} $1.tail_space")
 
@@ -166,7 +180,7 @@ q('type_nest', '"<" #type_list ">"')
 q('type_field_kv', '#tok_identifier ":" #type')
 q('type_field_kv_list', '#type_field_kv')
 q('type_field_kv_list', '#type_field_kv "," #type_field_kv_list')
-q('type_field', '"{" #type_field_kv_list "}"')
+q('type_field', '"{" #type_field_kv_list? "}"')
 q('type', '#tok_identifier #type_nest? #type_field?').mx("ult=type_name ti=pass")
 
 

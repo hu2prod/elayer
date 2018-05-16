@@ -693,6 +693,12 @@ class @Gen_context
           #{make_tab gen(ast.scope, ctx_nest), '  '}
         """
     
+    when "Struct_init"
+      jl = []
+      for k,v of ast.hash
+        jl.push "#{JSON.stringify k}: #{gen v, ctx}"
+      "{#{jl.join ', '}}"
+    
     when "Ast_call"
       ctx_nest = ctx.mk_nest()
       ctx_nest.is_serialized_block = false

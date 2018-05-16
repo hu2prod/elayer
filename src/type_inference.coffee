@@ -221,6 +221,14 @@ class_prepare = (ctx, t)->
         walk t.scope, ctx_nest
         t.type
       
+      when "Struct_init"
+        field_hash = {}
+        for k,v of t.hash
+          field_hash[k] = walk v, opt
+        t.type = new Type "struct"
+        t.type.field_hash = field_hash
+        t.type
+      
       when "Ast_call"
         walk t.scope, ctx.mk_nest()
         null

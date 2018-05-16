@@ -64,6 +64,9 @@ main.inject ()->
   col.gen 'gram_str_family'
   col.gen 'gram_var_decl'
   col.gen 'gram_field_access'
+  gram_struct_init = col.gen 'gram_struct_init'
+  gram_struct_init.hash.bracketless_indent = true
+  gram_struct_init.hash.bracketless_inline = true
   # macro = col.gen 'gram_macro'
   # macro.hash.token = 'rvalue'
   # macro.hash.aux_mx = 'priority=-9000'
