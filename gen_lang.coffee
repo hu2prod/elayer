@@ -53,6 +53,7 @@ main.inject ()->
   col.gen 'gram_id'
   bin_op = col.gen 'gram_bin_op'
   bin_op.hash.space_fix = true
+  bin_op.hash.eol_fix = true
   col.gen 'gram_pre_op'
   col.gen 'gram_post_op'
   col.gen 'gram_index_access'

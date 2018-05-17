@@ -10,7 +10,6 @@ _iced = require 'iced-coffee-script'
 
 @_gen = (str)->
   tok_list = module.tok._tokenize str
-  debugger
   gram_ast_list = module.gram._parse tok_list
   
   gram_ast = gram_ast_list[0]

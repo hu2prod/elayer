@@ -22,57 +22,60 @@ q('block', '#indent #stmt_plus #dedent')          .mx("priority=#{base_priority}
 
 q("lvalue", "#tok_identifier")                    .mx("priority=#{base_priority} tail_space=$1.tail_space ult=id ti=id")
 
-q("bin_op", "\"+\"")                              .mx("priority=6 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"-\"")                              .mx("priority=6 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"*\"")                              .mx("priority=5 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"/\"")                              .mx("priority=5 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"%\"")                              .mx("priority=5 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"**\"")                             .mx("priority=4 tail_space=$1.tail_space  left_assoc=1")#
-q("bin_op", "\"//\"")                             .mx("priority=4 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"%%\"")                             .mx("priority=4 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"<<\"")                             .mx("priority=7 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\">>\"")                             .mx("priority=7 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\">>>\"")                            .mx("priority=7 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"&&\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"||\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"^^\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"and\"")                            .mx("priority=11 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"or\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"xor\"")                            .mx("priority=11 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"&\"")                              .mx("priority=10 tail_space=$1.tail_space ")      #
-q("bin_op", "\"|\"")                              .mx("priority=10 tail_space=$1.tail_space ")      #
-q("bin_op", "\"^\"")                              .mx("priority=10 tail_space=$1.tail_space ")      #
-q("bin_op", "\"==\"")                             .mx("priority=9 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"!=\"")                             .mx("priority=9 tail_space=$1.tail_space  right_assoc=1")#
-q("bin_op", "\"<\"")                              .mx("priority=9 tail_space=$1.tail_space ")       #
-q("bin_op", "\"<=\"")                             .mx("priority=9 tail_space=$1.tail_space ")       #
-q("bin_op", "\">\"")                              .mx("priority=9 tail_space=$1.tail_space ")       #
-q("bin_op", "\">=\"")                             .mx("priority=9 tail_space=$1.tail_space ")       #
-q("bin_op", "\"<>\"")                             .mx("priority=9 tail_space=$1.tail_space ")       #
-q("bin_op", "\"=\"")                              .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"+=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"-=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"*=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"/=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"%=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"**=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"//=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"%%=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"<<=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\">>=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\">>>=\"")                           .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"&&=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"||=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"^^=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"and=\"")                           .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"or=\"")                            .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"xor=\"")                           .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"&=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"|=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
-q("bin_op", "\"^=\"")                             .mx("priority=12 tail_space=$1.tail_space ")      #
+q("bin_op", "\"+\"")                              .mx("priority=6 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"-\"")                              .mx("priority=6 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"*\"")                              .mx("priority=5 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"/\"")                              .mx("priority=5 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"%\"")                              .mx("priority=5 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"**\"")                             .mx("priority=4 tail_space=$1.tail_space  left_assoc=1 eol=$1.eol")#
+q("bin_op", "\"//\"")                             .mx("priority=4 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"%%\"")                             .mx("priority=4 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"<<\"")                             .mx("priority=7 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\">>\"")                             .mx("priority=7 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\">>>\"")                            .mx("priority=7 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"&&\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"||\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"^^\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"and\"")                            .mx("priority=11 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"or\"")                             .mx("priority=11 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"xor\"")                            .mx("priority=11 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"&\"")                              .mx("priority=10 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"|\"")                              .mx("priority=10 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"^\"")                              .mx("priority=10 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"==\"")                             .mx("priority=9 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"!=\"")                             .mx("priority=9 tail_space=$1.tail_space  right_assoc=1 eol=$1.eol")#
+q("bin_op", "\"<\"")                              .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"<=\"")                             .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\">\"")                              .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\">=\"")                             .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"<>\"")                             .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"=\"")                              .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"+=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"-=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"*=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"/=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"%=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"**=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"//=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"%%=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"<<=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\">>=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\">>>=\"")                           .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"&&=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"||=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"^^=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"and=\"")                           .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"or=\"")                            .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"xor=\"")                           .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"&=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"|=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"^=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
 q("rvalue",  "#rvalue #bin_op #rvalue")           .mx("priority=#bin_op.priority ult=bin_op ti=bin_op")   .strict("$1.priority<#bin_op.priority  $3.priority<#bin_op.priority  !!$1.tail_space<=!!$2.tail_space")
 q("rvalue",  "#rvalue #bin_op #rvalue")           .mx("priority=#bin_op.priority ult=bin_op ti=bin_op")   .strict("$1.priority<#bin_op.priority  $3.priority==#bin_op.priority !!$1.tail_space<=!!$2.tail_space #bin_op.left_assoc")
 q("rvalue",  "#rvalue #bin_op #rvalue")           .mx("priority=#bin_op.priority ult=bin_op ti=bin_op")   .strict("$1.priority==#bin_op.priority $3.priority<#bin_op.priority  !!$1.tail_space<=!!$2.tail_space #bin_op.right_assoc")
+q("rvalue",  "#rvalue #bin_op #rvalue")           .mx("priority=#bin_op.priority ult=bin_op ti=bin_op")   .strict("$1.priority<#bin_op.priority  $3.priority<#bin_op.priority  $2.eol")
+q("rvalue",  "#rvalue #bin_op #rvalue")           .mx("priority=#bin_op.priority ult=bin_op ti=bin_op")   .strict("$1.priority<#bin_op.priority  $3.priority==#bin_op.priority $2.eol #bin_op.left_assoc")
+q("rvalue",  "#rvalue #bin_op #rvalue")           .mx("priority=#bin_op.priority ult=bin_op ti=bin_op")   .strict("$1.priority==#bin_op.priority $3.priority<#bin_op.priority  $2.eol #bin_op.right_assoc")
 
 q("pre_op", "\"+\"")                              .mx("priority=1")                                 .strict(" !$1.tail_space")                        
 q("pre_op", "\"-\"")                              .mx("priority=1")                                 .strict(" !$1.tail_space")                        

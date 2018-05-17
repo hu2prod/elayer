@@ -474,18 +474,18 @@ describe 'trans section', ()->
       c =
         a:1
         b:2
-      ''' : '(c = {"a": 1, "b":2})'
+      ''' : '(c = {"a": 1, "b": 2})'
       
       '''
       c =
         a:1,
         b:2
-      ''' : '(c = {"a": 1, "b":2})'
+      ''' : '(c = {"a": 1, "b": 2})'
       
       '''
       c =
         a:1,b:2
-      ''' : '(c = {"a": 1, "b":2})'
+      ''' : '(c = {"a": 1, "b": 2})'
       
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->

@@ -20,7 +20,7 @@
 
   counter_stub = [];
 
-  for (i = _j = 0; _j < 417; i = ++_j) {
+  for (i = _j = 0; _j < 432; i = ++_j) {
     counter_stub.push(0);
   }
 
@@ -57,8 +57,8 @@
       this.proxy2 = new this.Node;
       for (idx = _k = 0, _len = token_list_list.length; _k < _len; idx = ++_k) {
         token_list = token_list_list[idx];
-        stub = new Array(262);
-        for (k = _l = 0; _l < 262; k = ++_l) {
+        stub = new Array(268);
+        for (k = _l = 0; _l < 268; k = ++_l) {
           stub[k] = [];
         }
         for (_m = 0, _len1 = token_list.length; _m < _len1; _m++) {
@@ -84,12 +84,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XPX_priorityE6_tail_spaceEX1Xtail_space__right_assocE1__u8";
+        mx_hash_stub.rule = "rule_XPX_priorityE6_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u8";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 6;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -108,12 +109,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE6_tail_spaceEX1Xtail_space__right_assocE1__u9";
+        mx_hash_stub.rule = "rule_XXX_priorityE6_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u9";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 6;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -132,12 +134,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XSX_priorityE5_tail_spaceEX1Xtail_space__right_assocE1__u10";
+        mx_hash_stub.rule = "rule_XSX_priorityE5_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u10";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 5;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -156,12 +159,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE5_tail_spaceEX1Xtail_space__right_assocE1__u11";
+        mx_hash_stub.rule = "rule_XXX_priorityE5_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u11";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 5;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -180,12 +184,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE5_tail_spaceEX1Xtail_space__right_assocE1__u12";
+        mx_hash_stub.rule = "rule_XXX_priorityE5_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u12";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 5;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -204,12 +209,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XSSX_priorityE4_tail_spaceEX1Xtail_space__left_assocE1__u13";
+        mx_hash_stub.rule = "rule_XSSX_priorityE4_tail_spaceEX1Xtail_space__left_assocE1_eolEX1Xeol__u13";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 4;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["left_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -228,12 +234,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE4_tail_spaceEX1Xtail_space__right_assocE1__u14";
+        mx_hash_stub.rule = "rule_XXXX_priorityE4_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u14";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 4;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -252,12 +259,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE4_tail_spaceEX1Xtail_space__right_assocE1__u15";
+        mx_hash_stub.rule = "rule_XXXX_priorityE4_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u15";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 4;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -276,12 +284,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE7_tail_spaceEX1Xtail_space__right_assocE1__u16";
+        mx_hash_stub.rule = "rule_XXXX_priorityE7_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u16";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 7;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -300,12 +309,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE7_tail_spaceEX1Xtail_space__right_assocE1__u17";
+        mx_hash_stub.rule = "rule_XXXX_priorityE7_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u17";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 7;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -324,12 +334,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXXX_priorityE7_tail_spaceEX1Xtail_space__right_assocE1__u18";
+        mx_hash_stub.rule = "rule_XXXXX_priorityE7_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u18";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 7;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -348,12 +359,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1__u19";
+        mx_hash_stub.rule = "rule_XXXX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u19";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 11;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -372,12 +384,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1__u20";
+        mx_hash_stub.rule = "rule_XXXX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u20";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 11;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -396,12 +409,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1__u21";
+        mx_hash_stub.rule = "rule_XXXX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u21";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 11;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -420,12 +434,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XandX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1__u22";
+        mx_hash_stub.rule = "rule_XandX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u22";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 11;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -444,12 +459,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XorX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1__u23";
+        mx_hash_stub.rule = "rule_XorX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u23";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 11;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -468,12 +484,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XxorX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1__u24";
+        mx_hash_stub.rule = "rule_XxorX_priorityE11_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u24";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 11;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -492,11 +509,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE10_tail_spaceEX1Xtail_space___u25";
+        mx_hash_stub.rule = "rule_XXX_priorityE10_tail_spaceEX1Xtail_space__eolEX1Xeol__u25";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 10;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -515,11 +533,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE10_tail_spaceEX1Xtail_space___u26";
+        mx_hash_stub.rule = "rule_XXX_priorityE10_tail_spaceEX1Xtail_space__eolEX1Xeol__u26";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 10;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -538,11 +557,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE10_tail_spaceEX1Xtail_space___u27";
+        mx_hash_stub.rule = "rule_XXX_priorityE10_tail_spaceEX1Xtail_space__eolEX1Xeol__u27";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 10;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -561,12 +581,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XEEX_priorityE9_tail_spaceEX1Xtail_space__right_assocE1__u28";
+        mx_hash_stub.rule = "rule_XEEX_priorityE9_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u28";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 9;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -585,12 +606,13 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE9_tail_spaceEX1Xtail_space__right_assocE1__u29";
+        mx_hash_stub.rule = "rule_XXEX_priorityE9_tail_spaceEX1Xtail_space__right_assocE1_eolEX1Xeol__u29";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 9;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
         mx_hash_stub["right_assoc"] = 1;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -609,11 +631,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE9_tail_spaceEX1Xtail_space___u30";
+        mx_hash_stub.rule = "rule_XXX_priorityE9_tail_spaceEX1Xtail_space__eolEX1Xeol__u30";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 9;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -632,11 +655,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE9_tail_spaceEX1Xtail_space___u31";
+        mx_hash_stub.rule = "rule_XXEX_priorityE9_tail_spaceEX1Xtail_space__eolEX1Xeol__u31";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 9;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -655,11 +679,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE9_tail_spaceEX1Xtail_space___u32";
+        mx_hash_stub.rule = "rule_XXX_priorityE9_tail_spaceEX1Xtail_space__eolEX1Xeol__u32";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 9;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -678,11 +703,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE9_tail_spaceEX1Xtail_space___u33";
+        mx_hash_stub.rule = "rule_XXEX_priorityE9_tail_spaceEX1Xtail_space__eolEX1Xeol__u33";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 9;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -701,11 +727,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE9_tail_spaceEX1Xtail_space___u34";
+        mx_hash_stub.rule = "rule_XXXX_priorityE9_tail_spaceEX1Xtail_space__eolEX1Xeol__u34";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 9;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -724,11 +751,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XEX_priorityE12_tail_spaceEX1Xtail_space___u35";
+        mx_hash_stub.rule = "rule_XEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u35";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -747,11 +775,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XPEX_priorityE12_tail_spaceEX1Xtail_space___u36";
+        mx_hash_stub.rule = "rule_XPEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u36";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -770,11 +799,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space___u37";
+        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u37";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -793,11 +823,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XSEX_priorityE12_tail_spaceEX1Xtail_space___u38";
+        mx_hash_stub.rule = "rule_XSEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u38";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -816,11 +847,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space___u39";
+        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u39";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -839,11 +871,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space___u40";
+        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u40";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -862,11 +895,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XSSEX_priorityE12_tail_spaceEX1Xtail_space___u41";
+        mx_hash_stub.rule = "rule_XSSEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u41";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -885,11 +919,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space___u42";
+        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u42";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -908,11 +943,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space___u43";
+        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u43";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -931,11 +967,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space___u44";
+        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u44";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -954,11 +991,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space___u45";
+        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u45";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -977,11 +1015,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXXEX_priorityE12_tail_spaceEX1Xtail_space___u46";
+        mx_hash_stub.rule = "rule_XXXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u46";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1000,11 +1039,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space___u47";
+        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u47";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1023,11 +1063,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space___u48";
+        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u48";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1046,11 +1087,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space___u49";
+        mx_hash_stub.rule = "rule_XXXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u49";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1069,11 +1111,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XandEX_priorityE12_tail_spaceEX1Xtail_space___u50";
+        mx_hash_stub.rule = "rule_XandEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u50";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1092,11 +1135,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XorEX_priorityE12_tail_spaceEX1Xtail_space___u51";
+        mx_hash_stub.rule = "rule_XorEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u51";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1115,11 +1159,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XxorEX_priorityE12_tail_spaceEX1Xtail_space___u52";
+        mx_hash_stub.rule = "rule_XxorEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u52";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1138,11 +1183,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space___u53";
+        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u53";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1161,11 +1207,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space___u54";
+        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u54";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1184,11 +1231,12 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space___u55";
+        mx_hash_stub.rule = "rule_XXEX_priorityE12_tail_spaceEX1Xtail_space__eolEX1Xeol__u55";
         mx_hash_stub.hash_key = "bin_op";
         mx_hash_stub.hash_key_idx = 30;
         mx_hash_stub["priority"] = 12;
         mx_hash_stub["tail_space"] = arg_list[0].mx_hash.tail_space;
+        mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
         node.a = node.value_array[0].a;
         node.b = node.value_array.last().b;
         _pos_list = this.cache[idx];
@@ -1211,7 +1259,7 @@
           continue;
         }
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XPX_priorityE1__XX1Xtail_space_u59";
+        mx_hash_stub.rule = "rule_XPX_priorityE1__XX1Xtail_space_u62";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 1;
@@ -1237,7 +1285,7 @@
           continue;
         }
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE1__XX1Xtail_space_u60";
+        mx_hash_stub.rule = "rule_XXX_priorityE1__XX1Xtail_space_u63";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 1;
@@ -1259,7 +1307,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XPPX_priorityE1__u61";
+        mx_hash_stub.rule = "rule_XPPX_priorityE1__u64";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 1;
@@ -1281,7 +1329,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE1__u62";
+        mx_hash_stub.rule = "rule_XXXX_priorityE1__u65";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 1;
@@ -1303,7 +1351,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE1__u63";
+        mx_hash_stub.rule = "rule_XXX_priorityE1__u66";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 1;
@@ -1325,7 +1373,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXX_priorityE1__u64";
+        mx_hash_stub.rule = "rule_XXX_priorityE1__u67";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 1;
@@ -1347,7 +1395,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XnotX_priorityE1__u65";
+        mx_hash_stub.rule = "rule_XnotX_priorityE1__u68";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 1;
@@ -1369,7 +1417,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XnewX_priorityE15__u66";
+        mx_hash_stub.rule = "rule_XnewX_priorityE15__u69";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 15;
@@ -1391,7 +1439,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XdeleteX_priorityE15__u67";
+        mx_hash_stub.rule = "rule_XdeleteX_priorityE15__u70";
         mx_hash_stub.hash_key = "pre_op";
         mx_hash_stub.hash_key_idx = 31;
         mx_hash_stub["priority"] = 15;
@@ -1413,7 +1461,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XPPX_priorityE1__u69";
+        mx_hash_stub.rule = "rule_XPPX_priorityE1__u72";
         mx_hash_stub.hash_key = "post_op";
         mx_hash_stub.hash_key_idx = 32;
         mx_hash_stub["priority"] = 1;
@@ -1435,7 +1483,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_priorityE1__u70";
+        mx_hash_stub.rule = "rule_XXXX_priorityE1__u73";
         mx_hash_stub.hash_key = "post_op";
         mx_hash_stub.hash_key_idx = 32;
         mx_hash_stub["priority"] = 1;
@@ -1457,7 +1505,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXQUESTIONXX_priorityE1__u71";
+        mx_hash_stub.rule = "rule_XXQUESTIONXX_priorityE1__u74";
         mx_hash_stub.hash_key = "post_op";
         mx_hash_stub.hash_key_idx = 32;
         mx_hash_stub["priority"] = 1;
@@ -1479,7 +1527,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXX_ultEmacro_tiEmacro_eolE1__u110";
+        mx_hash_stub.rule = "rule_XXXX_ultEmacro_tiEmacro_eolE1__u113";
         mx_hash_stub.hash_key = "ranger";
         mx_hash_stub.hash_key_idx = 40;
         mx_hash_stub["ult"] = "macro";
@@ -1503,7 +1551,7 @@
         node.value_array.push(token);
         arg_list = node.value_array;
         mx_hash_stub = node.mx_hash = {};
-        mx_hash_stub.rule = "rule_XXXXX_ultEmacro_tiEmacro_eolE1__u111";
+        mx_hash_stub.rule = "rule_XXXXX_ultEmacro_tiEmacro_eolE1__u114";
         mx_hash_stub.hash_key = "ranger";
         mx_hash_stub.hash_key_idx = 40;
         mx_hash_stub["ult"] = "macro";
@@ -1548,7 +1596,7 @@
     };
 
     Parser.prototype.fsm = function() {
-      var FAcache, FAcounter, FAstate, append_list, arg_list, b_0, b_1, b_10, b_11, b_2, b_3, b_4, b_5, b_6, b_7, b_8, b_9, chk_len, cur, hki, hyp_list_1, hyp_list_2, hyp_list_3, hyp_list_4, hyp_list_5, idx_1, length, list_1, list_10, list_11, list_2, list_3, list_4, list_5, list_6, list_7, list_8, list_9, mx_hash_stub, node, node_list, old_node, only_new, request_make, ret_list, safe_collect, stack, start_pos, state, state_1, state_10, state_11, state_2, state_3, state_4, state_5, state_6, state_7, state_8, state_9, tok, tok_list, _aa, _ab, _ac, _ad, _ae, _af, _ag, _ah, _ai, _aj, _ak, _al, _am, _an, _ao, _ap, _aq, _ar, _as, _at, _au, _av, _aw, _ax, _ay, _az, _ba, _bb, _bc, _bd, _be, _bf, _bg, _bh, _bi, _bj, _bk, _bl, _bm, _bn, _bo, _bp, _bq, _br, _bs, _bt, _bu, _bv, _bw, _bx, _by, _bz, _ca, _cb, _cc, _cd, _ce, _cf, _cg, _ch, _ci, _cj, _ck, _cl, _cm, _cn, _co, _cp, _cq, _cr, _cs, _ct, _cu, _cv, _cw, _cx, _cy, _cz, _da, _db, _dc, _dd, _de, _df, _dg, _dh, _di, _dj, _dk, _dl, _dm, _dn, _do, _dp, _dq, _dr, _ds, _dt, _du, _dv, _dw, _dx, _dy, _dz, _ea, _eb, _ec, _ed, _ee, _ef, _eg, _eh, _ei, _ej, _ek, _el, _em, _en, _eo, _ep, _eq, _er, _es, _et, _eu, _ev, _ew, _ex, _ey, _ez, _fa, _fb, _fc, _fd, _fe, _ff, _fg, _fh, _fi, _fj, _fk, _fl, _fm, _fn, _fo, _fp, _fq, _fr, _fs, _ft, _fu, _fv, _fw, _fx, _fy, _fz, _ga, _gb, _gc, _gd, _ge, _gf, _gg, _gh, _gi, _gj, _gk, _gl, _gm, _gn, _go, _gp, _gq, _gr, _gs, _gt, _gu, _gv, _gw, _gx, _gy, _gz, _ha, _hb, _hc, _hd, _he, _hf, _hg, _hh, _hi, _hj, _hk, _hl, _hm, _hn, _ho, _hp, _hq, _hr, _hs, _ht, _hu, _hv, _hw, _hx, _hy, _hz, _i_2, _i_3, _i_4, _i_5, _ia, _ib, _ic, _id, _ie, _if, _ig, _ih, _ii, _ij, _ik, _il, _im, _in, _io, _ip, _iq, _ir, _is, _it, _iu, _iv, _iw, _ix, _iy, _iz, _ja, _jb, _jc, _jd, _je, _jf, _jg, _jh, _ji, _jj, _jk, _jl, _jm, _jn, _jo, _jp, _jq, _jr, _js, _jt, _ju, _jv, _jw, _jx, _jy, _jz, _k, _ka, _kb, _kc, _kd, _ke, _kf, _kg, _kh, _ki, _kj, _kk, _kl, _km, _kn, _ko, _kp, _kq, _kr, _ks, _kt, _ku, _kv, _kw, _kx, _ky, _kz, _l, _la, _lb, _lc, _ld, _le, _len, _len1, _len10, _len100, _len101, _len102, _len103, _len104, _len105, _len106, _len107, _len108, _len109, _len11, _len110, _len111, _len112, _len113, _len114, _len115, _len116, _len117, _len118, _len119, _len12, _len120, _len121, _len122, _len123, _len124, _len125, _len126, _len127, _len128, _len129, _len13, _len130, _len131, _len132, _len133, _len134, _len135, _len136, _len137, _len138, _len139, _len14, _len140, _len141, _len142, _len143, _len144, _len145, _len146, _len147, _len148, _len149, _len15, _len150, _len151, _len152, _len153, _len154, _len155, _len156, _len157, _len158, _len159, _len16, _len160, _len161, _len162, _len163, _len164, _len165, _len166, _len167, _len168, _len169, _len17, _len170, _len171, _len172, _len173, _len174, _len175, _len176, _len177, _len178, _len179, _len18, _len180, _len181, _len182, _len183, _len184, _len185, _len186, _len187, _len188, _len189, _len19, _len190, _len191, _len192, _len193, _len194, _len195, _len196, _len197, _len198, _len199, _len2, _len20, _len200, _len201, _len202, _len203, _len204, _len205, _len206, _len207, _len208, _len209, _len21, _len210, _len211, _len212, _len213, _len214, _len215, _len216, _len217, _len218, _len219, _len22, _len220, _len221, _len222, _len223, _len224, _len225, _len226, _len227, _len228, _len229, _len23, _len230, _len231, _len232, _len233, _len234, _len235, _len236, _len237, _len238, _len239, _len24, _len240, _len241, _len242, _len243, _len244, _len245, _len246, _len247, _len248, _len249, _len25, _len250, _len251, _len252, _len253, _len254, _len255, _len256, _len257, _len258, _len259, _len26, _len260, _len261, _len262, _len263, _len264, _len265, _len266, _len267, _len268, _len269, _len27, _len270, _len271, _len272, _len273, _len274, _len275, _len276, _len277, _len278, _len279, _len28, _len280, _len281, _len282, _len283, _len284, _len285, _len286, _len287, _len288, _len289, _len29, _len290, _len291, _len292, _len293, _len294, _len295, _len296, _len297, _len298, _len299, _len3, _len30, _len300, _len301, _len302, _len303, _len304, _len305, _len306, _len307, _len308, _len309, _len31, _len310, _len311, _len312, _len313, _len314, _len315, _len316, _len317, _len32, _len33, _len34, _len35, _len36, _len37, _len38, _len39, _len4, _len40, _len41, _len42, _len43, _len44, _len45, _len46, _len47, _len48, _len49, _len5, _len50, _len51, _len52, _len53, _len54, _len55, _len56, _len57, _len58, _len59, _len6, _len60, _len61, _len62, _len63, _len64, _len65, _len66, _len67, _len68, _len69, _len7, _len70, _len71, _len72, _len73, _len74, _len75, _len76, _len77, _len78, _len79, _len8, _len80, _len81, _len82, _len83, _len84, _len85, _len86, _len87, _len88, _len89, _len9, _len90, _len91, _len92, _len93, _len94, _len95, _len96, _len97, _len98, _len99, _lf, _lg, _lh, _li, _lj, _lk, _ll, _lm, _ln, _lo, _lp, _lq, _lr, _ls, _lt, _lu, _lv, _lw, _lx, _ly, _lz, _m, _ma, _mb, _mc, _md, _me, _mf, _mg, _mh, _mi, _mj, _mk, _ml, _mm, _mn, _mo, _mp, _mq, _mr, _ms, _mt, _mu, _mv, _mw, _mx, _my, _mz, _n, _na, _nb, _nc, _nd, _ne, _nf, _ng, _nh, _ni, _nj, _nk, _nl, _nm, _nn, _no, _np, _nq, _nr, _ns, _nt, _nu, _nv, _nw, _nx, _ny, _nz, _o, _oa, _ob, _oc, _od, _oe, _of, _og, _oh, _oi, _oj, _ok, _ol, _om, _on, _oo, _op, _oq, _or, _os, _ot, _ou, _ov, _ow, _ox, _oy, _oz, _p, _pa, _pb, _pc, _pd, _pe, _pf, _pg, _ph, _pi, _pj, _pk, _pl, _pm, _pn, _po, _pp, _pq, _pr, _ps, _pt, _pu, _pv, _pw, _px, _py, _pz, _q, _qa, _qb, _qc, _qd, _qe, _qf, _qg, _qh, _qi, _qj, _qk, _ql, _qm, _qn, _qo, _qp, _qq, _qr, _qs, _qt, _qu, _qv, _qw, _qx, _qy, _qz, _r, _ra, _rb, _rc, _rd, _re, _ref, _ref1, _ref10, _ref100, _ref101, _ref102, _ref103, _ref104, _ref105, _ref106, _ref107, _ref108, _ref109, _ref11, _ref110, _ref111, _ref112, _ref113, _ref114, _ref115, _ref116, _ref117, _ref118, _ref119, _ref12, _ref120, _ref121, _ref122, _ref123, _ref124, _ref125, _ref126, _ref127, _ref128, _ref129, _ref13, _ref130, _ref131, _ref132, _ref133, _ref134, _ref135, _ref136, _ref137, _ref138, _ref139, _ref14, _ref140, _ref141, _ref142, _ref143, _ref144, _ref145, _ref146, _ref147, _ref148, _ref149, _ref15, _ref150, _ref151, _ref152, _ref153, _ref154, _ref155, _ref156, _ref157, _ref158, _ref159, _ref16, _ref160, _ref161, _ref162, _ref163, _ref164, _ref165, _ref166, _ref167, _ref168, _ref169, _ref17, _ref170, _ref171, _ref172, _ref173, _ref174, _ref175, _ref176, _ref177, _ref178, _ref179, _ref18, _ref180, _ref181, _ref182, _ref183, _ref184, _ref185, _ref186, _ref187, _ref188, _ref189, _ref19, _ref190, _ref191, _ref192, _ref193, _ref194, _ref195, _ref196, _ref197, _ref198, _ref199, _ref2, _ref20, _ref200, _ref201, _ref202, _ref203, _ref204, _ref205, _ref206, _ref207, _ref208, _ref209, _ref21, _ref210, _ref211, _ref212, _ref213, _ref214, _ref215, _ref216, _ref217, _ref218, _ref219, _ref22, _ref220, _ref221, _ref222, _ref223, _ref224, _ref225, _ref226, _ref227, _ref228, _ref229, _ref23, _ref230, _ref231, _ref232, _ref233, _ref234, _ref235, _ref236, _ref237, _ref238, _ref239, _ref24, _ref240, _ref241, _ref242, _ref243, _ref244, _ref245, _ref246, _ref247, _ref248, _ref249, _ref25, _ref250, _ref251, _ref252, _ref253, _ref254, _ref255, _ref256, _ref257, _ref258, _ref259, _ref26, _ref260, _ref261, _ref262, _ref263, _ref264, _ref265, _ref266, _ref267, _ref268, _ref269, _ref27, _ref270, _ref271, _ref272, _ref273, _ref274, _ref275, _ref276, _ref277, _ref278, _ref279, _ref28, _ref280, _ref281, _ref282, _ref283, _ref284, _ref285, _ref286, _ref287, _ref288, _ref29, _ref3, _ref30, _ref31, _ref32, _ref33, _ref34, _ref35, _ref36, _ref37, _ref38, _ref39, _ref4, _ref40, _ref41, _ref42, _ref43, _ref44, _ref45, _ref46, _ref47, _ref48, _ref49, _ref5, _ref50, _ref51, _ref52, _ref53, _ref54, _ref55, _ref56, _ref57, _ref58, _ref59, _ref6, _ref60, _ref61, _ref62, _ref63, _ref64, _ref65, _ref66, _ref67, _ref68, _ref69, _ref7, _ref70, _ref71, _ref72, _ref73, _ref74, _ref75, _ref76, _ref77, _ref78, _ref79, _ref8, _ref80, _ref81, _ref82, _ref83, _ref84, _ref85, _ref86, _ref87, _ref88, _ref89, _ref9, _ref90, _ref91, _ref92, _ref93, _ref94, _ref95, _ref96, _ref97, _ref98, _ref99, _rf, _rg, _rh, _ri, _rj, _rk, _rl, _rm, _rn, _ro, _rp, _rq, _rr, _rs, _rt, _ru, _rv, _rw, _rx, _ry, _rz, _s, _sa, _sb, _sc, _sd, _se, _sf, _sg, _sh, _si, _sj, _sk, _sl, _sm, _sn, _so, _sp, _sq, _sr, _ss, _st, _su, _sv, _sw, _sx, _sy, _sz, _t, _ta, _tb, _tc, _td, _te, _tf, _tg, _th, _ti, _tj, _tk, _tl, _tm, _tn, _to, _tp, _tq, _tr, _ts, _tt, _tu, _tv, _tw, _u, _v, _w, _x, _y, _z;
+      var FAcache, FAcounter, FAstate, append_list, arg_list, b_0, b_1, b_10, b_11, b_2, b_3, b_4, b_5, b_6, b_7, b_8, b_9, chk_len, cur, hki, hyp_list_1, hyp_list_2, hyp_list_3, hyp_list_4, hyp_list_5, idx_1, length, list_1, list_10, list_11, list_2, list_3, list_4, list_5, list_6, list_7, list_8, list_9, mx_hash_stub, node, node_list, old_node, only_new, request_make, ret_list, safe_collect, stack, start_pos, state, state_1, state_10, state_11, state_2, state_3, state_4, state_5, state_6, state_7, state_8, state_9, tok, tok_list, _aa, _ab, _ac, _ad, _ae, _af, _ag, _ah, _ai, _aj, _ak, _al, _am, _an, _ao, _ap, _aq, _ar, _as, _at, _au, _av, _aw, _ax, _ay, _az, _ba, _bb, _bc, _bd, _be, _bf, _bg, _bh, _bi, _bj, _bk, _bl, _bm, _bn, _bo, _bp, _bq, _br, _bs, _bt, _bu, _bv, _bw, _bx, _by, _bz, _ca, _cb, _cc, _cd, _ce, _cf, _cg, _ch, _ci, _cj, _ck, _cl, _cm, _cn, _co, _cp, _cq, _cr, _cs, _ct, _cu, _cv, _cw, _cx, _cy, _cz, _da, _db, _dc, _dd, _de, _df, _dg, _dh, _di, _dj, _dk, _dl, _dm, _dn, _do, _dp, _dq, _dr, _ds, _dt, _du, _dv, _dw, _dx, _dy, _dz, _ea, _eb, _ec, _ed, _ee, _ef, _eg, _eh, _ei, _ej, _ek, _el, _em, _en, _eo, _ep, _eq, _er, _es, _et, _eu, _ev, _ew, _ex, _ey, _ez, _fa, _fb, _fc, _fd, _fe, _ff, _fg, _fh, _fi, _fj, _fk, _fl, _fm, _fn, _fo, _fp, _fq, _fr, _fs, _ft, _fu, _fv, _fw, _fx, _fy, _fz, _ga, _gb, _gc, _gd, _ge, _gf, _gg, _gh, _gi, _gj, _gk, _gl, _gm, _gn, _go, _gp, _gq, _gr, _gs, _gt, _gu, _gv, _gw, _gx, _gy, _gz, _ha, _hb, _hc, _hd, _he, _hf, _hg, _hh, _hi, _hj, _hk, _hl, _hm, _hn, _ho, _hp, _hq, _hr, _hs, _ht, _hu, _hv, _hw, _hx, _hy, _hz, _i_2, _i_3, _i_4, _i_5, _ia, _ib, _ic, _id, _ie, _if, _ig, _ih, _ii, _ij, _ik, _il, _im, _in, _io, _ip, _iq, _ir, _is, _it, _iu, _iv, _iw, _ix, _iy, _iz, _ja, _jb, _jc, _jd, _je, _jf, _jg, _jh, _ji, _jj, _jk, _jl, _jm, _jn, _jo, _jp, _jq, _jr, _js, _jt, _ju, _jv, _jw, _jx, _jy, _jz, _k, _ka, _kb, _kc, _kd, _ke, _kf, _kg, _kh, _ki, _kj, _kk, _kl, _km, _kn, _ko, _kp, _kq, _kr, _ks, _kt, _ku, _kv, _kw, _kx, _ky, _kz, _l, _la, _lb, _lc, _ld, _le, _len, _len1, _len10, _len100, _len101, _len102, _len103, _len104, _len105, _len106, _len107, _len108, _len109, _len11, _len110, _len111, _len112, _len113, _len114, _len115, _len116, _len117, _len118, _len119, _len12, _len120, _len121, _len122, _len123, _len124, _len125, _len126, _len127, _len128, _len129, _len13, _len130, _len131, _len132, _len133, _len134, _len135, _len136, _len137, _len138, _len139, _len14, _len140, _len141, _len142, _len143, _len144, _len145, _len146, _len147, _len148, _len149, _len15, _len150, _len151, _len152, _len153, _len154, _len155, _len156, _len157, _len158, _len159, _len16, _len160, _len161, _len162, _len163, _len164, _len165, _len166, _len167, _len168, _len169, _len17, _len170, _len171, _len172, _len173, _len174, _len175, _len176, _len177, _len178, _len179, _len18, _len180, _len181, _len182, _len183, _len184, _len185, _len186, _len187, _len188, _len189, _len19, _len190, _len191, _len192, _len193, _len194, _len195, _len196, _len197, _len198, _len199, _len2, _len20, _len200, _len201, _len202, _len203, _len204, _len205, _len206, _len207, _len208, _len209, _len21, _len210, _len211, _len212, _len213, _len214, _len215, _len216, _len217, _len218, _len219, _len22, _len220, _len221, _len222, _len223, _len224, _len225, _len226, _len227, _len228, _len229, _len23, _len230, _len231, _len232, _len233, _len234, _len235, _len236, _len237, _len238, _len239, _len24, _len240, _len241, _len242, _len243, _len244, _len245, _len246, _len247, _len248, _len249, _len25, _len250, _len251, _len252, _len253, _len254, _len255, _len256, _len257, _len258, _len259, _len26, _len260, _len261, _len262, _len263, _len264, _len265, _len266, _len267, _len268, _len269, _len27, _len270, _len271, _len272, _len273, _len274, _len275, _len276, _len277, _len278, _len279, _len28, _len280, _len281, _len282, _len283, _len284, _len285, _len286, _len287, _len288, _len289, _len29, _len290, _len291, _len292, _len293, _len294, _len295, _len296, _len297, _len298, _len299, _len3, _len30, _len300, _len301, _len302, _len303, _len304, _len305, _len306, _len307, _len308, _len309, _len31, _len310, _len311, _len312, _len313, _len314, _len315, _len316, _len317, _len318, _len319, _len32, _len320, _len321, _len322, _len323, _len324, _len325, _len326, _len33, _len34, _len35, _len36, _len37, _len38, _len39, _len4, _len40, _len41, _len42, _len43, _len44, _len45, _len46, _len47, _len48, _len49, _len5, _len50, _len51, _len52, _len53, _len54, _len55, _len56, _len57, _len58, _len59, _len6, _len60, _len61, _len62, _len63, _len64, _len65, _len66, _len67, _len68, _len69, _len7, _len70, _len71, _len72, _len73, _len74, _len75, _len76, _len77, _len78, _len79, _len8, _len80, _len81, _len82, _len83, _len84, _len85, _len86, _len87, _len88, _len89, _len9, _len90, _len91, _len92, _len93, _len94, _len95, _len96, _len97, _len98, _len99, _lf, _lg, _lh, _li, _lj, _lk, _ll, _lm, _ln, _lo, _lp, _lq, _lr, _ls, _lt, _lu, _lv, _lw, _lx, _ly, _lz, _m, _ma, _mb, _mc, _md, _me, _mf, _mg, _mh, _mi, _mj, _mk, _ml, _mm, _mn, _mo, _mp, _mq, _mr, _ms, _mt, _mu, _mv, _mw, _mx, _my, _mz, _n, _na, _nb, _nc, _nd, _ne, _nf, _ng, _nh, _ni, _nj, _nk, _nl, _nm, _nn, _no, _np, _nq, _nr, _ns, _nt, _nu, _nv, _nw, _nx, _ny, _nz, _o, _oa, _ob, _oc, _od, _oe, _of, _og, _oh, _oi, _oj, _ok, _ol, _om, _on, _oo, _op, _oq, _or, _os, _ot, _ou, _ov, _ow, _ox, _oy, _oz, _p, _pa, _pb, _pc, _pd, _pe, _pf, _pg, _ph, _pi, _pj, _pk, _pl, _pm, _pn, _po, _pp, _pq, _pr, _ps, _pt, _pu, _pv, _pw, _px, _py, _pz, _q, _qa, _qb, _qc, _qd, _qe, _qf, _qg, _qh, _qi, _qj, _qk, _ql, _qm, _qn, _qo, _qp, _qq, _qr, _qs, _qt, _qu, _qv, _qw, _qx, _qy, _qz, _r, _ra, _rb, _rc, _rd, _re, _ref, _ref1, _ref10, _ref100, _ref101, _ref102, _ref103, _ref104, _ref105, _ref106, _ref107, _ref108, _ref109, _ref11, _ref110, _ref111, _ref112, _ref113, _ref114, _ref115, _ref116, _ref117, _ref118, _ref119, _ref12, _ref120, _ref121, _ref122, _ref123, _ref124, _ref125, _ref126, _ref127, _ref128, _ref129, _ref13, _ref130, _ref131, _ref132, _ref133, _ref134, _ref135, _ref136, _ref137, _ref138, _ref139, _ref14, _ref140, _ref141, _ref142, _ref143, _ref144, _ref145, _ref146, _ref147, _ref148, _ref149, _ref15, _ref150, _ref151, _ref152, _ref153, _ref154, _ref155, _ref156, _ref157, _ref158, _ref159, _ref16, _ref160, _ref161, _ref162, _ref163, _ref164, _ref165, _ref166, _ref167, _ref168, _ref169, _ref17, _ref170, _ref171, _ref172, _ref173, _ref174, _ref175, _ref176, _ref177, _ref178, _ref179, _ref18, _ref180, _ref181, _ref182, _ref183, _ref184, _ref185, _ref186, _ref187, _ref188, _ref189, _ref19, _ref190, _ref191, _ref192, _ref193, _ref194, _ref195, _ref196, _ref197, _ref198, _ref199, _ref2, _ref20, _ref200, _ref201, _ref202, _ref203, _ref204, _ref205, _ref206, _ref207, _ref208, _ref209, _ref21, _ref210, _ref211, _ref212, _ref213, _ref214, _ref215, _ref216, _ref217, _ref218, _ref219, _ref22, _ref220, _ref221, _ref222, _ref223, _ref224, _ref225, _ref226, _ref227, _ref228, _ref229, _ref23, _ref230, _ref231, _ref232, _ref233, _ref234, _ref235, _ref236, _ref237, _ref238, _ref239, _ref24, _ref240, _ref241, _ref242, _ref243, _ref244, _ref245, _ref246, _ref247, _ref248, _ref249, _ref25, _ref250, _ref251, _ref252, _ref253, _ref254, _ref255, _ref256, _ref257, _ref258, _ref259, _ref26, _ref260, _ref261, _ref262, _ref263, _ref264, _ref265, _ref266, _ref267, _ref268, _ref269, _ref27, _ref270, _ref271, _ref272, _ref273, _ref274, _ref275, _ref276, _ref277, _ref278, _ref279, _ref28, _ref280, _ref281, _ref282, _ref283, _ref284, _ref285, _ref286, _ref287, _ref288, _ref289, _ref29, _ref290, _ref291, _ref292, _ref293, _ref294, _ref295, _ref296, _ref297, _ref298, _ref299, _ref3, _ref30, _ref300, _ref31, _ref32, _ref33, _ref34, _ref35, _ref36, _ref37, _ref38, _ref39, _ref4, _ref40, _ref41, _ref42, _ref43, _ref44, _ref45, _ref46, _ref47, _ref48, _ref49, _ref5, _ref50, _ref51, _ref52, _ref53, _ref54, _ref55, _ref56, _ref57, _ref58, _ref59, _ref6, _ref60, _ref61, _ref62, _ref63, _ref64, _ref65, _ref66, _ref67, _ref68, _ref69, _ref7, _ref70, _ref71, _ref72, _ref73, _ref74, _ref75, _ref76, _ref77, _ref78, _ref79, _ref8, _ref80, _ref81, _ref82, _ref83, _ref84, _ref85, _ref86, _ref87, _ref88, _ref89, _ref9, _ref90, _ref91, _ref92, _ref93, _ref94, _ref95, _ref96, _ref97, _ref98, _ref99, _rf, _rg, _rh, _ri, _rj, _rk, _rl, _rm, _rn, _ro, _rp, _rq, _rr, _rs, _rt, _ru, _rv, _rw, _rx, _ry, _rz, _s, _sa, _sb, _sc, _sd, _se, _sf, _sg, _sh, _si, _sj, _sk, _sl, _sm, _sn, _so, _sp, _sq, _sr, _ss, _st, _su, _sv, _sw, _sx, _sy, _sz, _t, _ta, _tb, _tc, _td, _te, _tf, _tg, _th, _ti, _tj, _tk, _tl, _tm, _tn, _to, _tp, _tq, _tr, _ts, _tt, _tu, _tv, _tw, _tx, _ty, _tz, _u, _ua, _ub, _uc, _ud, _ue, _uf, _ug, _uh, _ui, _uj, _uk, _ul, _v, _w, _x, _y, _z;
       FAcache = this.cache;
       FAstate = this.state;
       FAcounter = this.counter;
@@ -1884,19 +1932,19 @@
             /* token_num_const queue */
             stack.push([85, start_pos, only_new]);
 
-            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u80 */
+            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u83 */
             stack.push([75, start_pos, only_new]);
 
-            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u81 */
+            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u84 */
             stack.push([77, start_pos, only_new]);
 
-            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u82 */
+            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u85 */
             stack.push([79, start_pos, only_new]);
 
-            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u83 */
+            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u86 */
             stack.push([81, start_pos, only_new]);
 
-            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u84 */
+            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u87 */
             stack.push([83, start_pos, only_new]);
             break;
           case 85:
@@ -1904,19 +1952,19 @@
             /* token_num_const collect */
             node_list = [];
 
-            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u80 */
+            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u83 */
             node_list.append(FAcache[start_pos][75]);
 
-            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u81 */
+            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u84 */
             node_list.append(FAcache[start_pos][77]);
 
-            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u82 */
+            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u85 */
             node_list.append(FAcache[start_pos][79]);
 
-            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u83 */
+            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u86 */
             node_list.append(FAcache[start_pos][81]);
 
-            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u84 */
+            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u87 */
             node_list.append(FAcache[start_pos][83]);
             FAstate[start_pos][21] = STATE_FL;
             FAcache[start_pos][21].uappend(node_list);
@@ -1926,10 +1974,10 @@
             /* token_str_const queue */
             stack.push([90, start_pos, only_new]);
 
-            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u85 */
+            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u88 */
             stack.push([86, start_pos, only_new]);
 
-            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u86 */
+            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u89 */
             stack.push([88, start_pos, only_new]);
             break;
           case 90:
@@ -1937,10 +1985,10 @@
             /* token_str_const collect */
             node_list = [];
 
-            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u85 */
+            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u88 */
             node_list.append(FAcache[start_pos][86]);
 
-            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u86 */
+            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u89 */
             node_list.append(FAcache[start_pos][88]);
             FAstate[start_pos][22] = STATE_FL;
             FAcache[start_pos][22].uappend(node_list);
@@ -1948,7 +1996,7 @@
           case 23:
 
             /* token_rvalue queue */
-            stack.push([123, start_pos, only_new]);
+            stack.push([129, start_pos, only_new]);
 
             /* rule_Hconst_priorityEX9000_ultEdeep__tiEpass__u3 */
             stack.push([91, start_pos, only_new]);
@@ -1965,40 +2013,49 @@
             /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityEEHbin_opXpriority_X3XpriorityXHbin_opXpriority__XXX1Xtail_spaceXEXXX2Xtail_space_Hbin_opXright_assoc_u58 */
             stack.push([99, start_pos, only_new]);
 
-            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u68 */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityXHbin_opXpriority__X2Xeol_u59 */
             stack.push([101, start_pos, only_new]);
 
-            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u72 */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityEEHbin_opXpriority_X2Xeol_Hbin_opXleft_assoc_u60 */
             stack.push([103, start_pos, only_new]);
 
-            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u73 */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityEEHbin_opXpriority_X3XpriorityXHbin_opXpriority__X2Xeol_Hbin_opXright_assoc_u61 */
             stack.push([105, start_pos, only_new]);
 
-            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u74 */
+            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u71 */
             stack.push([107, start_pos, only_new]);
 
-            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u99 */
+            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u75 */
             stack.push([109, start_pos, only_new]);
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u123 */
+            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u76 */
             stack.push([111, start_pos, only_new]);
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u124 */
+            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u77 */
             stack.push([113, start_pos, only_new]);
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u125 */
+            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u102 */
             stack.push([115, start_pos, only_new]);
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u130 */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u126 */
             stack.push([117, start_pos, only_new]);
 
-            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u131 */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u127 */
             stack.push([119, start_pos, only_new]);
 
-            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u135 */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u128 */
             stack.push([121, start_pos, only_new]);
+
+            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u133 */
+            stack.push([123, start_pos, only_new]);
+
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u134 */
+            stack.push([125, start_pos, only_new]);
+
+            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u138 */
+            stack.push([127, start_pos, only_new]);
             break;
-          case 123:
+          case 129:
 
             /* token_rvalue collect */
             node_list = [];
@@ -2018,38 +2075,47 @@
             /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityEEHbin_opXpriority_X3XpriorityXHbin_opXpriority__XXX1Xtail_spaceXEXXX2Xtail_space_Hbin_opXright_assoc_u58 */
             node_list.append(FAcache[start_pos][99]);
 
-            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u68 */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityXHbin_opXpriority__X2Xeol_u59 */
             node_list.append(FAcache[start_pos][101]);
 
-            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u72 */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityEEHbin_opXpriority_X2Xeol_Hbin_opXleft_assoc_u60 */
             node_list.append(FAcache[start_pos][103]);
 
-            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u73 */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityEEHbin_opXpriority_X3XpriorityXHbin_opXpriority__X2Xeol_Hbin_opXright_assoc_u61 */
             node_list.append(FAcache[start_pos][105]);
 
-            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u74 */
+            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u71 */
             node_list.append(FAcache[start_pos][107]);
 
-            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u99 */
+            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u75 */
             node_list.append(FAcache[start_pos][109]);
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u123 */
+            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u76 */
             node_list.append(FAcache[start_pos][111]);
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u124 */
+            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u77 */
             node_list.append(FAcache[start_pos][113]);
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u125 */
+            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u102 */
             node_list.append(FAcache[start_pos][115]);
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u130 */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u126 */
             node_list.append(FAcache[start_pos][117]);
 
-            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u131 */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u127 */
             node_list.append(FAcache[start_pos][119]);
 
-            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u135 */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u128 */
             node_list.append(FAcache[start_pos][121]);
+
+            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u133 */
+            node_list.append(FAcache[start_pos][123]);
+
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u134 */
+            node_list.append(FAcache[start_pos][125]);
+
+            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u138 */
+            node_list.append(FAcache[start_pos][127]);
             for (_k = 0, _len = node_list.length; _k < _len; _k++) {
               node = node_list[_k];
               node._is_new = true;
@@ -2074,132 +2140,132 @@
           case 24:
 
             /* token_stmt queue */
-            stack.push([164, start_pos, only_new]);
+            stack.push([170, start_pos, only_new]);
 
             /* rule_Hrvalue_ultEdeep_tiEpass_eolEX1Xeol__u4 */
-            stack.push([124, start_pos, only_new]);
-
-            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u78 */
-            stack.push([126, start_pos, only_new]);
-
-            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u79 */
-            stack.push([128, start_pos, only_new]);
-
-            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u87 */
             stack.push([130, start_pos, only_new]);
 
-            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u102 */
+            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u81 */
             stack.push([132, start_pos, only_new]);
 
-            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u106 */
+            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u82 */
             stack.push([134, start_pos, only_new]);
 
-            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u107 */
+            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u90 */
             stack.push([136, start_pos, only_new]);
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u112 */
+            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u105 */
             stack.push([138, start_pos, only_new]);
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u113 */
+            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u109 */
             stack.push([140, start_pos, only_new]);
 
-            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u114 */
+            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u110 */
             stack.push([142, start_pos, only_new]);
 
-            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u115 */
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u115 */
             stack.push([144, start_pos, only_new]);
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u119 */
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u116 */
             stack.push([146, start_pos, only_new]);
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u120 */
+            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u117 */
             stack.push([148, start_pos, only_new]);
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u121 */
+            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u118 */
             stack.push([150, start_pos, only_new]);
 
-            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u122 */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u122 */
             stack.push([152, start_pos, only_new]);
 
-            /* rule_class_Htok_identifier_ultEclass_decl__u126 */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u123 */
             stack.push([154, start_pos, only_new]);
 
-            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u127 */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u124 */
             stack.push([156, start_pos, only_new]);
 
-            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u132 */
+            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u125 */
             stack.push([158, start_pos, only_new]);
 
-            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u133 */
+            /* rule_class_Htok_identifier_ultEclass_decl__u129 */
             stack.push([160, start_pos, only_new]);
 
-            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u134 */
+            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u130 */
             stack.push([162, start_pos, only_new]);
+
+            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u135 */
+            stack.push([164, start_pos, only_new]);
+
+            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u136 */
+            stack.push([166, start_pos, only_new]);
+
+            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u137 */
+            stack.push([168, start_pos, only_new]);
             break;
-          case 164:
+          case 170:
 
             /* token_stmt collect */
             node_list = [];
 
             /* rule_Hrvalue_ultEdeep_tiEpass_eolEX1Xeol__u4 */
-            node_list.append(FAcache[start_pos][124]);
-
-            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u78 */
-            node_list.append(FAcache[start_pos][126]);
-
-            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u79 */
-            node_list.append(FAcache[start_pos][128]);
-
-            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u87 */
             node_list.append(FAcache[start_pos][130]);
 
-            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u102 */
+            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u81 */
             node_list.append(FAcache[start_pos][132]);
 
-            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u106 */
+            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u82 */
             node_list.append(FAcache[start_pos][134]);
 
-            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u107 */
+            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u90 */
             node_list.append(FAcache[start_pos][136]);
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u112 */
+            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u105 */
             node_list.append(FAcache[start_pos][138]);
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u113 */
+            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u109 */
             node_list.append(FAcache[start_pos][140]);
 
-            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u114 */
+            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u110 */
             node_list.append(FAcache[start_pos][142]);
 
-            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u115 */
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u115 */
             node_list.append(FAcache[start_pos][144]);
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u119 */
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u116 */
             node_list.append(FAcache[start_pos][146]);
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u120 */
+            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u117 */
             node_list.append(FAcache[start_pos][148]);
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u121 */
+            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u118 */
             node_list.append(FAcache[start_pos][150]);
 
-            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u122 */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u122 */
             node_list.append(FAcache[start_pos][152]);
 
-            /* rule_class_Htok_identifier_ultEclass_decl__u126 */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u123 */
             node_list.append(FAcache[start_pos][154]);
 
-            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u127 */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u124 */
             node_list.append(FAcache[start_pos][156]);
 
-            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u132 */
+            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u125 */
             node_list.append(FAcache[start_pos][158]);
 
-            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u133 */
+            /* rule_class_Htok_identifier_ultEclass_decl__u129 */
             node_list.append(FAcache[start_pos][160]);
 
-            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u134 */
+            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u130 */
             node_list.append(FAcache[start_pos][162]);
+
+            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u135 */
+            node_list.append(FAcache[start_pos][164]);
+
+            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u136 */
+            node_list.append(FAcache[start_pos][166]);
+
+            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u137 */
+            node_list.append(FAcache[start_pos][168]);
             for (_m = 0, _len2 = node_list.length; _m < _len2; _m++) {
               node = node_list[_m];
               node._is_new = true;
@@ -2223,24 +2289,24 @@
           case 25:
 
             /* token_lvalue queue */
-            stack.push([169, start_pos, only_new]);
+            stack.push([175, start_pos, only_new]);
 
             /* rule_Htok_identifier_priorityEX9000_tail_spaceEX1Xtail_space_ultEid_tiEid__u7 */
-            stack.push([165, start_pos, only_new]);
+            stack.push([171, start_pos, only_new]);
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 */
-            stack.push([167, start_pos, only_new]);
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u91 */
+            stack.push([173, start_pos, only_new]);
             break;
-          case 169:
+          case 175:
 
             /* token_lvalue collect */
             node_list = [];
 
             /* rule_Htok_identifier_priorityEX9000_tail_spaceEX1Xtail_space_ultEid_tiEid__u7 */
-            node_list.append(FAcache[start_pos][165]);
+            node_list.append(FAcache[start_pos][171]);
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 */
-            node_list.append(FAcache[start_pos][167]);
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u91 */
+            node_list.append(FAcache[start_pos][173]);
             for (_o = 0, _len4 = node_list.length; _o < _len4; _o++) {
               node = node_list[_o];
               node._is_new = true;
@@ -2264,27 +2330,27 @@
           case 26:
 
             /* token_block queue */
-            stack.push([172, start_pos, only_new]);
+            stack.push([178, start_pos, only_new]);
 
             /* rule_Hindent_Hstmt_plus_Hdedent_priorityEX9000_ultEblock_tiEblock__u6 */
-            stack.push([170, start_pos, only_new]);
+            stack.push([176, start_pos, only_new]);
             break;
-          case 172:
+          case 178:
 
             /* token_block collect */
             node_list = [];
 
             /* rule_Hindent_Hstmt_plus_Hdedent_priorityEX9000_ultEblock_tiEblock__u6 */
-            node_list.append(FAcache[start_pos][170]);
+            node_list.append(FAcache[start_pos][176]);
             FAstate[start_pos][26] = STATE_FL;
             FAcache[start_pos][26].uappend(node_list);
             break;
           case 27:
 
             /* token_indent queue */
-            stack.push([173, start_pos, only_new]);
+            stack.push([179, start_pos, only_new]);
             break;
-          case 173:
+          case 179:
 
             /* token_indent collect */
             node_list = [];
@@ -2294,39 +2360,39 @@
           case 28:
 
             /* token_stmt_plus queue */
+            stack.push([186, start_pos, only_new]);
+
+            /* rule_Hstmt_ultEdeep_scope_tiEpass__u78 */
             stack.push([180, start_pos, only_new]);
 
-            /* rule_Hstmt_ultEdeep_scope_tiEpass__u75 */
-            stack.push([174, start_pos, only_new]);
+            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u79 */
+            stack.push([182, start_pos, only_new]);
 
-            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u76 */
-            stack.push([176, start_pos, only_new]);
-
-            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u77 */
-            stack.push([178, start_pos, only_new]);
+            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u80 */
+            stack.push([184, start_pos, only_new]);
             break;
-          case 180:
+          case 186:
 
             /* token_stmt_plus collect */
             node_list = [];
 
-            /* rule_Hstmt_ultEdeep_scope_tiEpass__u75 */
-            node_list.append(FAcache[start_pos][174]);
+            /* rule_Hstmt_ultEdeep_scope_tiEpass__u78 */
+            node_list.append(FAcache[start_pos][180]);
 
-            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u76 */
-            node_list.append(FAcache[start_pos][176]);
+            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u79 */
+            node_list.append(FAcache[start_pos][182]);
 
-            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u77 */
-            node_list.append(FAcache[start_pos][178]);
+            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u80 */
+            node_list.append(FAcache[start_pos][184]);
             FAstate[start_pos][28] = STATE_FL;
             FAcache[start_pos][28].uappend(node_list);
             break;
           case 29:
 
             /* token_dedent queue */
-            stack.push([181, start_pos, only_new]);
+            stack.push([187, start_pos, only_new]);
             break;
-          case 181:
+          case 187:
 
             /* token_dedent collect */
             node_list = [];
@@ -2336,9 +2402,9 @@
           case 30:
 
             /* token_bin_op queue */
-            stack.push([182, start_pos, only_new]);
+            stack.push([188, start_pos, only_new]);
             break;
-          case 182:
+          case 188:
 
             /* token_bin_op collect */
             node_list = [];
@@ -2348,9 +2414,9 @@
           case 31:
 
             /* token_pre_op queue */
-            stack.push([183, start_pos, only_new]);
+            stack.push([189, start_pos, only_new]);
             break;
-          case 183:
+          case 189:
 
             /* token_pre_op collect */
             node_list = [];
@@ -2360,9 +2426,9 @@
           case 32:
 
             /* token_post_op queue */
-            stack.push([184, start_pos, only_new]);
+            stack.push([190, start_pos, only_new]);
             break;
-          case 184:
+          case 190:
 
             /* token_post_op collect */
             node_list = [];
@@ -2372,9 +2438,9 @@
           case 33:
 
             /* token_eol queue */
-            stack.push([185, start_pos, only_new]);
+            stack.push([191, start_pos, only_new]);
             break;
-          case 185:
+          case 191:
 
             /* token_eol collect */
             node_list = [];
@@ -2384,189 +2450,189 @@
           case 34:
 
             /* token_type queue */
-            stack.push([188, start_pos, only_new]);
+            stack.push([194, start_pos, only_new]);
 
-            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u143 */
-            stack.push([186, start_pos, only_new]);
+            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u146 */
+            stack.push([192, start_pos, only_new]);
             break;
-          case 188:
+          case 194:
 
             /* token_type collect */
             node_list = [];
 
-            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u143 */
-            node_list.append(FAcache[start_pos][186]);
+            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u146 */
+            node_list.append(FAcache[start_pos][192]);
             FAstate[start_pos][34] = STATE_FL;
             FAcache[start_pos][34].uappend(node_list);
             break;
           case 35:
 
             /* token_struct_init_kv queue */
+            stack.push([201, start_pos, only_new]);
+
+            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u92 */
             stack.push([195, start_pos, only_new]);
 
-            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u89 */
-            stack.push([189, start_pos, only_new]);
+            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u93 */
+            stack.push([197, start_pos, only_new]);
 
-            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u90 */
-            stack.push([191, start_pos, only_new]);
-
-            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u91 */
-            stack.push([193, start_pos, only_new]);
+            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u94 */
+            stack.push([199, start_pos, only_new]);
             break;
-          case 195:
+          case 201:
 
             /* token_struct_init_kv collect */
             node_list = [];
 
-            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u89 */
-            node_list.append(FAcache[start_pos][189]);
+            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u92 */
+            node_list.append(FAcache[start_pos][195]);
 
-            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u90 */
-            node_list.append(FAcache[start_pos][191]);
+            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u93 */
+            node_list.append(FAcache[start_pos][197]);
 
-            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u91 */
-            node_list.append(FAcache[start_pos][193]);
+            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u94 */
+            node_list.append(FAcache[start_pos][199]);
             FAstate[start_pos][35] = STATE_FL;
             FAcache[start_pos][35].uappend(node_list);
             break;
           case 36:
 
             /* token_struct_init_list queue */
-            stack.push([206, start_pos, only_new]);
+            stack.push([212, start_pos, only_new]);
 
-            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u92 */
-            stack.push([196, start_pos, only_new]);
-
-            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u93 */
-            stack.push([198, start_pos, only_new]);
-
-            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u94 */
-            stack.push([200, start_pos, only_new]);
-
-            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u95 */
+            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u95 */
             stack.push([202, start_pos, only_new]);
 
-            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u96 */
+            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u96 */
             stack.push([204, start_pos, only_new]);
+
+            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u97 */
+            stack.push([206, start_pos, only_new]);
+
+            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u98 */
+            stack.push([208, start_pos, only_new]);
+
+            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u99 */
+            stack.push([210, start_pos, only_new]);
             break;
-          case 206:
+          case 212:
 
             /* token_struct_init_list collect */
             node_list = [];
 
-            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u92 */
-            node_list.append(FAcache[start_pos][196]);
-
-            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u93 */
-            node_list.append(FAcache[start_pos][198]);
-
-            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u94 */
-            node_list.append(FAcache[start_pos][200]);
-
-            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u95 */
+            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u95 */
             node_list.append(FAcache[start_pos][202]);
 
-            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u96 */
+            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u96 */
             node_list.append(FAcache[start_pos][204]);
+
+            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u97 */
+            node_list.append(FAcache[start_pos][206]);
+
+            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u98 */
+            node_list.append(FAcache[start_pos][208]);
+
+            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u99 */
+            node_list.append(FAcache[start_pos][210]);
             FAstate[start_pos][36] = STATE_FL;
             FAcache[start_pos][36].uappend(node_list);
             break;
           case 37:
 
             /* token_struct_init queue */
+            stack.push([221, start_pos, only_new]);
+
+            /* rule_XXX_Hstruct_init_listO_XXX___u100 */
+            stack.push([213, start_pos, only_new]);
+
+            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u101 */
             stack.push([215, start_pos, only_new]);
 
-            /* rule_XXX_Hstruct_init_listO_XXX___u97 */
-            stack.push([207, start_pos, only_new]);
+            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u103 */
+            stack.push([217, start_pos, only_new]);
 
-            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u98 */
-            stack.push([209, start_pos, only_new]);
-
-            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u100 */
-            stack.push([211, start_pos, only_new]);
-
-            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u101 */
-            stack.push([213, start_pos, only_new]);
+            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u104 */
+            stack.push([219, start_pos, only_new]);
             break;
-          case 215:
+          case 221:
 
             /* token_struct_init collect */
             node_list = [];
 
-            /* rule_XXX_Hstruct_init_listO_XXX___u97 */
-            node_list.append(FAcache[start_pos][207]);
-
-            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u98 */
-            node_list.append(FAcache[start_pos][209]);
-
-            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u100 */
-            node_list.append(FAcache[start_pos][211]);
-
-            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u101 */
+            /* rule_XXX_Hstruct_init_listO_XXX___u100 */
             node_list.append(FAcache[start_pos][213]);
+
+            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u101 */
+            node_list.append(FAcache[start_pos][215]);
+
+            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u103 */
+            node_list.append(FAcache[start_pos][217]);
+
+            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u104 */
+            node_list.append(FAcache[start_pos][219]);
             FAstate[start_pos][37] = STATE_FL;
             FAcache[start_pos][37].uappend(node_list);
             break;
           case 38:
 
             /* token_if_tail_stmt queue */
+            stack.push([228, start_pos, only_new]);
+
+            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u106 */
             stack.push([222, start_pos, only_new]);
 
-            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u103 */
-            stack.push([216, start_pos, only_new]);
+            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u107 */
+            stack.push([224, start_pos, only_new]);
 
-            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u104 */
-            stack.push([218, start_pos, only_new]);
-
-            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u105 */
-            stack.push([220, start_pos, only_new]);
+            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u108 */
+            stack.push([226, start_pos, only_new]);
             break;
-          case 222:
+          case 228:
 
             /* token_if_tail_stmt collect */
             node_list = [];
 
-            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u103 */
-            node_list.append(FAcache[start_pos][216]);
+            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u106 */
+            node_list.append(FAcache[start_pos][222]);
 
-            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u104 */
-            node_list.append(FAcache[start_pos][218]);
+            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u107 */
+            node_list.append(FAcache[start_pos][224]);
 
-            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u105 */
-            node_list.append(FAcache[start_pos][220]);
+            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u108 */
+            node_list.append(FAcache[start_pos][226]);
             FAstate[start_pos][38] = STATE_FL;
             FAcache[start_pos][38].uappend(node_list);
             break;
           case 39:
 
             /* token_switch_tail_stmt queue */
-            stack.push([227, start_pos, only_new]);
+            stack.push([233, start_pos, only_new]);
 
-            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u108 */
-            stack.push([223, start_pos, only_new]);
+            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u111 */
+            stack.push([229, start_pos, only_new]);
 
-            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u109 */
-            stack.push([225, start_pos, only_new]);
+            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u112 */
+            stack.push([231, start_pos, only_new]);
             break;
-          case 227:
+          case 233:
 
             /* token_switch_tail_stmt collect */
             node_list = [];
 
-            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u108 */
-            node_list.append(FAcache[start_pos][223]);
+            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u111 */
+            node_list.append(FAcache[start_pos][229]);
 
-            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u109 */
-            node_list.append(FAcache[start_pos][225]);
+            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u112 */
+            node_list.append(FAcache[start_pos][231]);
             FAstate[start_pos][39] = STATE_FL;
             FAcache[start_pos][39].uappend(node_list);
             break;
           case 40:
 
             /* token_ranger queue */
-            stack.push([228, start_pos, only_new]);
+            stack.push([234, start_pos, only_new]);
             break;
-          case 228:
+          case 234:
 
             /* token_ranger collect */
             node_list = [];
@@ -2576,51 +2642,51 @@
           case 41:
 
             /* token_fn_decl_arg queue */
-            stack.push([231, start_pos, only_new]);
+            stack.push([237, start_pos, only_new]);
 
-            /* rule_Htok_identifier_XXX_Htype___u116 */
-            stack.push([229, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Htype___u119 */
+            stack.push([235, start_pos, only_new]);
             break;
-          case 231:
+          case 237:
 
             /* token_fn_decl_arg collect */
             node_list = [];
 
-            /* rule_Htok_identifier_XXX_Htype___u116 */
-            node_list.append(FAcache[start_pos][229]);
+            /* rule_Htok_identifier_XXX_Htype___u119 */
+            node_list.append(FAcache[start_pos][235]);
             FAstate[start_pos][41] = STATE_FL;
             FAcache[start_pos][41].uappend(node_list);
             break;
           case 42:
 
             /* token_fn_decl_arg_list queue */
-            stack.push([236, start_pos, only_new]);
+            stack.push([242, start_pos, only_new]);
 
-            /* rule_Hfn_decl_arg___u117 */
-            stack.push([232, start_pos, only_new]);
+            /* rule_Hfn_decl_arg___u120 */
+            stack.push([238, start_pos, only_new]);
 
-            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u118 */
-            stack.push([234, start_pos, only_new]);
+            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u121 */
+            stack.push([240, start_pos, only_new]);
             break;
-          case 236:
+          case 242:
 
             /* token_fn_decl_arg_list collect */
             node_list = [];
 
-            /* rule_Hfn_decl_arg___u117 */
-            node_list.append(FAcache[start_pos][232]);
+            /* rule_Hfn_decl_arg___u120 */
+            node_list.append(FAcache[start_pos][238]);
 
-            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u118 */
-            node_list.append(FAcache[start_pos][234]);
+            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u121 */
+            node_list.append(FAcache[start_pos][240]);
             FAstate[start_pos][42] = STATE_FL;
             FAcache[start_pos][42].uappend(node_list);
             break;
           case 43:
 
             /* token_return queue */
-            stack.push([237, start_pos, only_new]);
+            stack.push([243, start_pos, only_new]);
             break;
-          case 237:
+          case 243:
 
             /* token_return collect */
             node_list = [];
@@ -2630,126 +2696,126 @@
           case 44:
 
             /* token_fn_call_arg_list queue */
-            stack.push([242, start_pos, only_new]);
+            stack.push([248, start_pos, only_new]);
 
-            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u128 */
-            stack.push([238, start_pos, only_new]);
+            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u131 */
+            stack.push([244, start_pos, only_new]);
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u129 */
-            stack.push([240, start_pos, only_new]);
+            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u132 */
+            stack.push([246, start_pos, only_new]);
             break;
-          case 242:
+          case 248:
 
             /* token_fn_call_arg_list collect */
             node_list = [];
 
-            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u128 */
-            node_list.append(FAcache[start_pos][238]);
+            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u131 */
+            node_list.append(FAcache[start_pos][244]);
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u129 */
-            node_list.append(FAcache[start_pos][240]);
+            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u132 */
+            node_list.append(FAcache[start_pos][246]);
             FAstate[start_pos][44] = STATE_FL;
             FAcache[start_pos][44].uappend(node_list);
             break;
           case 45:
 
             /* token_type_list queue */
-            stack.push([247, start_pos, only_new]);
+            stack.push([253, start_pos, only_new]);
 
-            /* rule_Htype___u136 */
-            stack.push([243, start_pos, only_new]);
+            /* rule_Htype___u139 */
+            stack.push([249, start_pos, only_new]);
 
-            /* rule_Htype_XXX_Htype_list___u137 */
-            stack.push([245, start_pos, only_new]);
+            /* rule_Htype_XXX_Htype_list___u140 */
+            stack.push([251, start_pos, only_new]);
             break;
-          case 247:
+          case 253:
 
             /* token_type_list collect */
             node_list = [];
 
-            /* rule_Htype___u136 */
-            node_list.append(FAcache[start_pos][243]);
+            /* rule_Htype___u139 */
+            node_list.append(FAcache[start_pos][249]);
 
-            /* rule_Htype_XXX_Htype_list___u137 */
-            node_list.append(FAcache[start_pos][245]);
+            /* rule_Htype_XXX_Htype_list___u140 */
+            node_list.append(FAcache[start_pos][251]);
             FAstate[start_pos][45] = STATE_FL;
             FAcache[start_pos][45].uappend(node_list);
             break;
           case 46:
 
             /* token_type_nest queue */
-            stack.push([250, start_pos, only_new]);
+            stack.push([256, start_pos, only_new]);
 
-            /* rule_XXX_Htype_list_XXX___u138 */
-            stack.push([248, start_pos, only_new]);
+            /* rule_XXX_Htype_list_XXX___u141 */
+            stack.push([254, start_pos, only_new]);
             break;
-          case 250:
+          case 256:
 
             /* token_type_nest collect */
             node_list = [];
 
-            /* rule_XXX_Htype_list_XXX___u138 */
-            node_list.append(FAcache[start_pos][248]);
+            /* rule_XXX_Htype_list_XXX___u141 */
+            node_list.append(FAcache[start_pos][254]);
             FAstate[start_pos][46] = STATE_FL;
             FAcache[start_pos][46].uappend(node_list);
             break;
           case 47:
 
             /* token_type_field_kv queue */
-            stack.push([253, start_pos, only_new]);
+            stack.push([259, start_pos, only_new]);
 
-            /* rule_Htok_identifier_XXX_Htype___u139 */
-            stack.push([251, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Htype___u142 */
+            stack.push([257, start_pos, only_new]);
             break;
-          case 253:
+          case 259:
 
             /* token_type_field_kv collect */
             node_list = [];
 
-            /* rule_Htok_identifier_XXX_Htype___u139 */
-            node_list.append(FAcache[start_pos][251]);
+            /* rule_Htok_identifier_XXX_Htype___u142 */
+            node_list.append(FAcache[start_pos][257]);
             FAstate[start_pos][47] = STATE_FL;
             FAcache[start_pos][47].uappend(node_list);
             break;
           case 48:
 
             /* token_type_field_kv_list queue */
-            stack.push([258, start_pos, only_new]);
+            stack.push([264, start_pos, only_new]);
 
-            /* rule_Htype_field_kv___u140 */
-            stack.push([254, start_pos, only_new]);
+            /* rule_Htype_field_kv___u143 */
+            stack.push([260, start_pos, only_new]);
 
-            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u141 */
-            stack.push([256, start_pos, only_new]);
+            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u144 */
+            stack.push([262, start_pos, only_new]);
             break;
-          case 258:
+          case 264:
 
             /* token_type_field_kv_list collect */
             node_list = [];
 
-            /* rule_Htype_field_kv___u140 */
-            node_list.append(FAcache[start_pos][254]);
+            /* rule_Htype_field_kv___u143 */
+            node_list.append(FAcache[start_pos][260]);
 
-            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u141 */
-            node_list.append(FAcache[start_pos][256]);
+            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u144 */
+            node_list.append(FAcache[start_pos][262]);
             FAstate[start_pos][48] = STATE_FL;
             FAcache[start_pos][48].uappend(node_list);
             break;
           case 49:
 
             /* token_type_field queue */
-            stack.push([261, start_pos, only_new]);
+            stack.push([267, start_pos, only_new]);
 
-            /* rule_XXX_Htype_field_kv_listO_XXX___u142 */
-            stack.push([259, start_pos, only_new]);
+            /* rule_XXX_Htype_field_kv_listO_XXX___u145 */
+            stack.push([265, start_pos, only_new]);
             break;
-          case 261:
+          case 267:
 
             /* token_type_field collect */
             node_list = [];
 
-            /* rule_XXX_Htype_field_kv_listO_XXX___u142 */
-            node_list.append(FAcache[start_pos][259]);
+            /* rule_XXX_Htype_field_kv_listO_XXX___u145 */
+            node_list.append(FAcache[start_pos][265]);
             FAstate[start_pos][49] = STATE_FL;
             FAcache[start_pos][49].uappend(node_list);
             break;
@@ -2847,7 +2913,7 @@
             break;
           case 75:
 
-            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u80 queue */
+            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u83 queue */
             chk_len = stack.push([75, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -2866,7 +2932,7 @@
             break;
           case 76:
 
-            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u80 collect */
+            /* rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u83 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -2879,7 +2945,7 @@
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u80";
+              mx_hash_stub.rule = "rule_Htok_decimal_literal_ultEconst_tiEconst_typeEint__u83";
               mx_hash_stub.hash_key = "num_const";
               mx_hash_stub.hash_key_idx = 21;
               mx_hash_stub["ult"] = "const";
@@ -2894,7 +2960,7 @@
             break;
           case 77:
 
-            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u81 queue */
+            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u84 queue */
             chk_len = stack.push([77, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -2913,7 +2979,7 @@
             break;
           case 78:
 
-            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u81 collect */
+            /* rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u84 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -2926,7 +2992,7 @@
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u81";
+              mx_hash_stub.rule = "rule_Htok_octal_literal_ultEconst_tiEconst_typeEint__u84";
               mx_hash_stub.hash_key = "num_const";
               mx_hash_stub.hash_key_idx = 21;
               mx_hash_stub["ult"] = "const";
@@ -2941,7 +3007,7 @@
             break;
           case 79:
 
-            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u82 queue */
+            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u85 queue */
             chk_len = stack.push([79, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -2960,7 +3026,7 @@
             break;
           case 80:
 
-            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u82 collect */
+            /* rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u85 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -2973,7 +3039,7 @@
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u82";
+              mx_hash_stub.rule = "rule_Htok_hexadecimal_literal_ultEconst_tiEconst_typeEint__u85";
               mx_hash_stub.hash_key = "num_const";
               mx_hash_stub.hash_key_idx = 21;
               mx_hash_stub["ult"] = "const";
@@ -2988,7 +3054,7 @@
             break;
           case 81:
 
-            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u83 queue */
+            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u86 queue */
             chk_len = stack.push([81, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -3007,7 +3073,7 @@
             break;
           case 82:
 
-            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u83 collect */
+            /* rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u86 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -3020,7 +3086,7 @@
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u83";
+              mx_hash_stub.rule = "rule_Htok_binary_literal_ultEconst_tiEconst_typeEint__u86";
               mx_hash_stub.hash_key = "num_const";
               mx_hash_stub.hash_key_idx = 21;
               mx_hash_stub["ult"] = "const";
@@ -3035,7 +3101,7 @@
             break;
           case 83:
 
-            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u84 queue */
+            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u87 queue */
             chk_len = stack.push([83, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -3054,7 +3120,7 @@
             break;
           case 84:
 
-            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u84 collect */
+            /* rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u87 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -3067,7 +3133,7 @@
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u84";
+              mx_hash_stub.rule = "rule_Htok_float_literal_ultEconst_tiEconst_typeEfloat__u87";
               mx_hash_stub.hash_key = "num_const";
               mx_hash_stub.hash_key_idx = 21;
               mx_hash_stub["ult"] = "const";
@@ -3082,7 +3148,7 @@
             break;
           case 86:
 
-            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u85 queue */
+            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u88 queue */
             chk_len = stack.push([86, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -3101,7 +3167,7 @@
             break;
           case 87:
 
-            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u85 collect */
+            /* rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u88 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -3114,7 +3180,7 @@
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u85";
+              mx_hash_stub.rule = "rule_Htok_string_sq_ultEconst_tiEconst_typeEstring__u88";
               mx_hash_stub.hash_key = "str_const";
               mx_hash_stub.hash_key_idx = 22;
               mx_hash_stub["ult"] = "const";
@@ -3129,7 +3195,7 @@
             break;
           case 88:
 
-            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u86 queue */
+            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u89 queue */
             chk_len = stack.push([88, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -3148,7 +3214,7 @@
             break;
           case 89:
 
-            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u86 collect */
+            /* rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u89 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -3161,7 +3227,7 @@
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u86";
+              mx_hash_stub.rule = "rule_Htok_string_dq_ultEconst_tiEconst_typeEstring__u89";
               mx_hash_stub.hash_key = "str_const";
               mx_hash_stub.hash_key_idx = 22;
               mx_hash_stub["ult"] = "const";
@@ -3624,20 +3690,20 @@
             break;
           case 101:
 
-            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u68 queue */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityXHbin_opXpriority__X2Xeol_u59 queue */
             chk_len = stack.push([101, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
-            state_1 = FAstate[b_0][31];
+            state_1 = FAstate[b_0][23];
             if (state_1 !== STATE_FL) {
-              if (request_make(31, b_0, 0)) {
+              if (request_make(23, b_0, 0)) {
                 continue;
               }
             }
-            list_1 = FAcache[b_0][31];
-            for (idx_1 = _aq = _ref37 = FAcounter[b_0][26], _ref38 = list_1.length; _aq < _ref38; idx_1 = _aq += 1) {
+            list_1 = FAcache[b_0][23];
+            for (idx_1 = _aq = _ref37 = FAcounter[b_0][27], _ref38 = list_1.length; _aq < _ref38; idx_1 = _aq += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -3645,13 +3711,30 @@
                 node.value_array.pop();
                 continue;
               }
-              state_2 = FAstate[b_1][23];
+              state_2 = FAstate[b_1][30];
               if (state_2 !== STATE_FL) {
-                if (request_make(23, b_1, 0)) {
+                if (request_make(30, b_1, 0)) {
                   continue;
                 }
               }
-              list_2 = FAcache[b_1][23];
+              list_2 = FAcache[b_1][30];
+              for (_ar = 0, _len15 = list_2.length; _ar < _len15; _ar++) {
+                tok = list_2[_ar];
+                b_2 = tok.b;
+                node.value_array.push(tok);
+                if (b_2 >= length) {
+                  node.value_array.pop();
+                  continue;
+                }
+                state_3 = FAstate[b_2][23];
+                if (state_3 !== STATE_FL) {
+                  if (request_make(23, b_2, 0)) {
+                    continue;
+                  }
+                }
+                list_3 = FAcache[b_2][23];
+                node.value_array.pop();
+              }
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
@@ -3660,14 +3743,14 @@
             break;
           case 102:
 
-            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u68 collect */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityXHbin_opXpriority__X2Xeol_u59 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
-            list_1 = FAcache[b_0][31];
-            for (idx_1 = _ar = _ref39 = FAcounter[b_0][28], _ref40 = list_1.length; _ar < _ref40; idx_1 = _ar += 1) {
+            list_1 = FAcache[b_0][23];
+            for (idx_1 = _as = _ref39 = FAcounter[b_0][30], _ref40 = list_1.length; _as < _ref40; idx_1 = _as += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -3675,35 +3758,54 @@
                 node.value_array.pop();
                 continue;
               }
-              list_2 = FAcache[b_1][23];
-              for (_as = 0, _len15 = list_2.length; _as < _len15; _as++) {
-                tok = list_2[_as];
+              list_2 = FAcache[b_1][30];
+              for (_at = 0, _len16 = list_2.length; _at < _len16; _at++) {
+                tok = list_2[_at];
                 b_2 = tok.b;
                 node.value_array.push(tok);
-                arg_list = node.value_array;
-                if (!(arg_list[1].mx_hash.priority <= arg_list[0].mx_hash.priority)) {
+                if (b_2 >= length) {
                   node.value_array.pop();
                   continue;
                 }
-                mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u68";
-                mx_hash_stub.hash_key = "rvalue";
-                mx_hash_stub.hash_key_idx = 23;
-                mx_hash_stub["priority"] = arg_list[0].mx_hash.priority;
-                mx_hash_stub["ult"] = "pre_op";
-                mx_hash_stub["ti"] = "pre_op";
-                node.b = node.value_array.last().b;
-                ret_list.push(node.clone());
+                list_3 = FAcache[b_2][23];
+                for (_au = 0, _len17 = list_3.length; _au < _len17; _au++) {
+                  tok = list_3[_au];
+                  b_3 = tok.b;
+                  node.value_array.push(tok);
+                  arg_list = node.value_array;
+                  if (!(arg_list[0].mx_hash.priority < arg_list[1].mx_hash.priority)) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  if (!(arg_list[2].mx_hash.priority < arg_list[1].mx_hash.priority)) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  if (!arg_list[1].mx_hash.eol) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  mx_hash_stub = node.mx_hash = {};
+                  mx_hash_stub.rule = "rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityXHbin_opXpriority__X2Xeol_u59";
+                  mx_hash_stub.hash_key = "rvalue";
+                  mx_hash_stub.hash_key_idx = 23;
+                  mx_hash_stub["priority"] = arg_list[1].mx_hash.priority;
+                  mx_hash_stub["ult"] = "bin_op";
+                  mx_hash_stub["ti"] = "bin_op";
+                  node.b = node.value_array.last().b;
+                  ret_list.push(node.clone());
+                  node.value_array.pop();
+                }
                 node.value_array.pop();
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][28] = list_1.length;
+            FAcounter[b_0][30] = list_1.length;
             FAcache[start_pos][101].append(ret_list);
             break;
           case 103:
 
-            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u72 queue */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityEEHbin_opXpriority_X2Xeol_Hbin_opXleft_assoc_u60 queue */
             chk_len = stack.push([103, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -3716,7 +3818,7 @@
               }
             }
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _at = _ref41 = FAcounter[b_0][29], _ref42 = list_1.length; _at < _ref42; idx_1 = _at += 1) {
+            for (idx_1 = _av = _ref41 = FAcounter[b_0][32], _ref42 = list_1.length; _av < _ref42; idx_1 = _av += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -3724,13 +3826,30 @@
                 node.value_array.pop();
                 continue;
               }
-              state_2 = FAstate[b_1][32];
+              state_2 = FAstate[b_1][30];
               if (state_2 !== STATE_FL) {
-                if (request_make(32, b_1, 0)) {
+                if (request_make(30, b_1, 0)) {
                   continue;
                 }
               }
-              list_2 = FAcache[b_1][32];
+              list_2 = FAcache[b_1][30];
+              for (_aw = 0, _len18 = list_2.length; _aw < _len18; _aw++) {
+                tok = list_2[_aw];
+                b_2 = tok.b;
+                node.value_array.push(tok);
+                if (b_2 >= length) {
+                  node.value_array.pop();
+                  continue;
+                }
+                state_3 = FAstate[b_2][23];
+                if (state_3 !== STATE_FL) {
+                  if (request_make(23, b_2, 0)) {
+                    continue;
+                  }
+                }
+                list_3 = FAcache[b_2][23];
+                node.value_array.pop();
+              }
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
@@ -3739,14 +3858,14 @@
             break;
           case 104:
 
-            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u72 collect */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityEEHbin_opXpriority_X2Xeol_Hbin_opXleft_assoc_u60 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _au = _ref43 = FAcounter[b_0][31], _ref44 = list_1.length; _au < _ref44; idx_1 = _au += 1) {
+            for (idx_1 = _ax = _ref43 = FAcounter[b_0][35], _ref44 = list_1.length; _ax < _ref44; idx_1 = _ax += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -3754,39 +3873,58 @@
                 node.value_array.pop();
                 continue;
               }
-              list_2 = FAcache[b_1][32];
-              for (_av = 0, _len16 = list_2.length; _av < _len16; _av++) {
-                tok = list_2[_av];
+              list_2 = FAcache[b_1][30];
+              for (_ay = 0, _len19 = list_2.length; _ay < _len19; _ay++) {
+                tok = list_2[_ay];
                 b_2 = tok.b;
                 node.value_array.push(tok);
-                arg_list = node.value_array;
-                if (!(arg_list[0].mx_hash.priority < arg_list[1].mx_hash.priority)) {
+                if (b_2 >= length) {
                   node.value_array.pop();
                   continue;
                 }
-                if (!(!arg_list[0].mx_hash.tail_space)) {
+                list_3 = FAcache[b_2][23];
+                for (_az = 0, _len20 = list_3.length; _az < _len20; _az++) {
+                  tok = list_3[_az];
+                  b_3 = tok.b;
+                  node.value_array.push(tok);
+                  arg_list = node.value_array;
+                  if (!(arg_list[0].mx_hash.priority < arg_list[1].mx_hash.priority)) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  if (!(arg_list[2].mx_hash.priority === arg_list[1].mx_hash.priority)) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  if (!arg_list[1].mx_hash.eol) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  if (!arg_list[1].mx_hash.left_assoc) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  mx_hash_stub = node.mx_hash = {};
+                  mx_hash_stub.rule = "rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityXHbin_opXpriority__X3XpriorityEEHbin_opXpriority_X2Xeol_Hbin_opXleft_assoc_u60";
+                  mx_hash_stub.hash_key = "rvalue";
+                  mx_hash_stub.hash_key_idx = 23;
+                  mx_hash_stub["priority"] = arg_list[1].mx_hash.priority;
+                  mx_hash_stub["ult"] = "bin_op";
+                  mx_hash_stub["ti"] = "bin_op";
+                  node.b = node.value_array.last().b;
+                  ret_list.push(node.clone());
                   node.value_array.pop();
-                  continue;
                 }
-                mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u72";
-                mx_hash_stub.hash_key = "rvalue";
-                mx_hash_stub.hash_key_idx = 23;
-                mx_hash_stub["priority"] = arg_list[1].mx_hash.priority;
-                mx_hash_stub["ult"] = "post_op";
-                mx_hash_stub["ti"] = "post_op";
-                node.b = node.value_array.last().b;
-                ret_list.push(node.clone());
                 node.value_array.pop();
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][31] = list_1.length;
+            FAcounter[b_0][35] = list_1.length;
             FAcache[start_pos][103].append(ret_list);
             break;
           case 105:
 
-            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u73 queue */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityEEHbin_opXpriority_X3XpriorityXHbin_opXpriority__X2Xeol_Hbin_opXright_assoc_u61 queue */
             chk_len = stack.push([105, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
@@ -3799,7 +3937,7 @@
               }
             }
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _aw = _ref45 = FAcounter[b_0][33], _ref46 = list_1.length; _aw < _ref46; idx_1 = _aw += 1) {
+            for (idx_1 = _ba = _ref45 = FAcounter[b_0][37], _ref46 = list_1.length; _ba < _ref46; idx_1 = _ba += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -3807,12 +3945,15 @@
                 node.value_array.pop();
                 continue;
               }
-              list_2 = FAcache[b_1][0];
-              for (_ax = 0, _len17 = list_2.length; _ax < _len17; _ax++) {
-                tok = list_2[_ax];
-                if (tok.value !== '[') {
+              state_2 = FAstate[b_1][30];
+              if (state_2 !== STATE_FL) {
+                if (request_make(30, b_1, 0)) {
                   continue;
                 }
+              }
+              list_2 = FAcache[b_1][30];
+              for (_bb = 0, _len21 = list_2.length; _bb < _len21; _bb++) {
+                tok = list_2[_bb];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -3836,14 +3977,14 @@
             break;
           case 106:
 
-            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u73 collect */
+            /* rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityEEHbin_opXpriority_X3XpriorityXHbin_opXpriority__X2Xeol_Hbin_opXright_assoc_u61 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _ay = _ref47 = FAcounter[b_0][37], _ref48 = list_1.length; _ay < _ref48; idx_1 = _ay += 1) {
+            for (idx_1 = _bc = _ref47 = FAcounter[b_0][40], _ref48 = list_1.length; _bc < _ref48; idx_1 = _bc += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -3851,12 +3992,9 @@
                 node.value_array.pop();
                 continue;
               }
-              list_2 = FAcache[b_1][0];
-              for (_az = 0, _len18 = list_2.length; _az < _len18; _az++) {
-                tok = list_2[_az];
-                if (tok.value !== '[') {
-                  continue;
-                }
+              list_2 = FAcache[b_1][30];
+              for (_bd = 0, _len22 = list_2.length; _bd < _len22; _bd++) {
+                tok = list_2[_bd];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -3864,61 +4002,62 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][23];
-                for (_ba = 0, _len19 = list_3.length; _ba < _len19; _ba++) {
-                  tok = list_3[_ba];
+                for (_be = 0, _len23 = list_3.length; _be < _len23; _be++) {
+                  tok = list_3[_be];
                   b_3 = tok.b;
                   node.value_array.push(tok);
-                  if (b_3 >= length) {
+                  arg_list = node.value_array;
+                  if (!(arg_list[0].mx_hash.priority === arg_list[1].mx_hash.priority)) {
                     node.value_array.pop();
                     continue;
                   }
-                  list_4 = FAcache[b_3][0];
-                  for (_bb = 0, _len20 = list_4.length; _bb < _len20; _bb++) {
-                    tok = list_4[_bb];
-                    if (tok.value !== ']') {
-                      continue;
-                    }
-                    b_4 = tok.b;
-                    node.value_array.push(tok);
-                    arg_list = node.value_array;
-                    if (!(arg_list[0].mx_hash.priority === -9000)) {
-                      node.value_array.pop();
-                      continue;
-                    }
-                    mx_hash_stub = node.mx_hash = {};
-                    mx_hash_stub.rule = "rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u73";
-                    mx_hash_stub.hash_key = "rvalue";
-                    mx_hash_stub.hash_key_idx = 23;
-                    mx_hash_stub["priority"] = -9000;
-                    mx_hash_stub["ult"] = "index_access";
-                    mx_hash_stub["ti"] = "index_access";
-                    node.b = node.value_array.last().b;
-                    ret_list.push(node.clone());
+                  if (!(arg_list[2].mx_hash.priority < arg_list[1].mx_hash.priority)) {
                     node.value_array.pop();
+                    continue;
                   }
+                  if (!arg_list[1].mx_hash.eol) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  if (!arg_list[1].mx_hash.right_assoc) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  mx_hash_stub = node.mx_hash = {};
+                  mx_hash_stub.rule = "rule_Hrvalue_Hbin_op_Hrvalue_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_X1XpriorityEEHbin_opXpriority_X3XpriorityXHbin_opXpriority__X2Xeol_Hbin_opXright_assoc_u61";
+                  mx_hash_stub.hash_key = "rvalue";
+                  mx_hash_stub.hash_key_idx = 23;
+                  mx_hash_stub["priority"] = arg_list[1].mx_hash.priority;
+                  mx_hash_stub["ult"] = "bin_op";
+                  mx_hash_stub["ti"] = "bin_op";
+                  node.b = node.value_array.last().b;
+                  ret_list.push(node.clone());
                   node.value_array.pop();
                 }
                 node.value_array.pop();
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][37] = list_1.length;
+            FAcounter[b_0][40] = list_1.length;
             FAcache[start_pos][105].append(ret_list);
             break;
           case 107:
 
-            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u74 queue */
+            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u71 queue */
             chk_len = stack.push([107, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
-            list_1 = FAcache[b_0][0];
-            for (idx_1 = _bc = _ref49 = FAcounter[b_0][38], _ref50 = list_1.length; _bc < _ref50; idx_1 = _bc += 1) {
-              tok = list_1[idx_1];
-              if (tok.value !== '(') {
+            state_1 = FAstate[b_0][31];
+            if (state_1 !== STATE_FL) {
+              if (request_make(31, b_0, 0)) {
                 continue;
               }
+            }
+            list_1 = FAcache[b_0][31];
+            for (idx_1 = _bf = _ref49 = FAcounter[b_0][41], _ref50 = list_1.length; _bf < _ref50; idx_1 = _bf += 1) {
+              tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               if (b_1 >= length) {
@@ -3940,14 +4079,294 @@
             break;
           case 108:
 
-            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u74 collect */
+            /* rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u71 collect */
+            ret_list = [];
+            b_0 = start_pos;
+            node = this.proxy2;
+            node.value_array.clear();
+            node.a = start_pos;
+            list_1 = FAcache[b_0][31];
+            for (idx_1 = _bg = _ref51 = FAcounter[b_0][43], _ref52 = list_1.length; _bg < _ref52; idx_1 = _bg += 1) {
+              tok = list_1[idx_1];
+              b_1 = tok.b;
+              node.value_array.push(tok);
+              if (b_1 >= length) {
+                node.value_array.pop();
+                continue;
+              }
+              list_2 = FAcache[b_1][23];
+              for (_bh = 0, _len24 = list_2.length; _bh < _len24; _bh++) {
+                tok = list_2[_bh];
+                b_2 = tok.b;
+                node.value_array.push(tok);
+                arg_list = node.value_array;
+                if (!(arg_list[1].mx_hash.priority <= arg_list[0].mx_hash.priority)) {
+                  node.value_array.pop();
+                  continue;
+                }
+                mx_hash_stub = node.mx_hash = {};
+                mx_hash_stub.rule = "rule_Hpre_op_Hrvalue_priorityEHpre_opXpriority_ultEpre_op_tiEpre_op_HrvalueX1XXpriorityXEHpre_opXpriority_u71";
+                mx_hash_stub.hash_key = "rvalue";
+                mx_hash_stub.hash_key_idx = 23;
+                mx_hash_stub["priority"] = arg_list[0].mx_hash.priority;
+                mx_hash_stub["ult"] = "pre_op";
+                mx_hash_stub["ti"] = "pre_op";
+                node.b = node.value_array.last().b;
+                ret_list.push(node.clone());
+                node.value_array.pop();
+              }
+              node.value_array.pop();
+            }
+            FAcounter[b_0][43] = list_1.length;
+            FAcache[start_pos][107].append(ret_list);
+            break;
+          case 109:
+
+            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u75 queue */
+            chk_len = stack.push([109, start_pos, only_new]);
+            ret_list = [];
+            b_0 = start_pos;
+            node = this.proxy2;
+            node.value_array.clear();
+            state_1 = FAstate[b_0][23];
+            if (state_1 !== STATE_FL) {
+              if (request_make(23, b_0, 0)) {
+                continue;
+              }
+            }
+            list_1 = FAcache[b_0][23];
+            for (idx_1 = _bi = _ref53 = FAcounter[b_0][44], _ref54 = list_1.length; _bi < _ref54; idx_1 = _bi += 1) {
+              tok = list_1[idx_1];
+              b_1 = tok.b;
+              node.value_array.push(tok);
+              if (b_1 >= length) {
+                node.value_array.pop();
+                continue;
+              }
+              state_2 = FAstate[b_1][32];
+              if (state_2 !== STATE_FL) {
+                if (request_make(32, b_1, 0)) {
+                  continue;
+                }
+              }
+              list_2 = FAcache[b_1][32];
+              node.value_array.pop();
+            }
+            if (chk_len === stack.length) {
+              stack[chk_len - 1][0] = 110;
+            }
+            break;
+          case 110:
+
+            /* rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u75 collect */
+            ret_list = [];
+            b_0 = start_pos;
+            node = this.proxy2;
+            node.value_array.clear();
+            node.a = start_pos;
+            list_1 = FAcache[b_0][23];
+            for (idx_1 = _bj = _ref55 = FAcounter[b_0][46], _ref56 = list_1.length; _bj < _ref56; idx_1 = _bj += 1) {
+              tok = list_1[idx_1];
+              b_1 = tok.b;
+              node.value_array.push(tok);
+              if (b_1 >= length) {
+                node.value_array.pop();
+                continue;
+              }
+              list_2 = FAcache[b_1][32];
+              for (_bk = 0, _len25 = list_2.length; _bk < _len25; _bk++) {
+                tok = list_2[_bk];
+                b_2 = tok.b;
+                node.value_array.push(tok);
+                arg_list = node.value_array;
+                if (!(arg_list[0].mx_hash.priority < arg_list[1].mx_hash.priority)) {
+                  node.value_array.pop();
+                  continue;
+                }
+                if (!(!arg_list[0].mx_hash.tail_space)) {
+                  node.value_array.pop();
+                  continue;
+                }
+                mx_hash_stub = node.mx_hash = {};
+                mx_hash_stub.rule = "rule_Hrvalue_Hpost_op_priorityEHpost_opXpriority_ultEpost_op_tiEpost_op_HrvalueX1XXpriorityXHpost_opXpriority_XHrvalueXtail_space_u75";
+                mx_hash_stub.hash_key = "rvalue";
+                mx_hash_stub.hash_key_idx = 23;
+                mx_hash_stub["priority"] = arg_list[1].mx_hash.priority;
+                mx_hash_stub["ult"] = "post_op";
+                mx_hash_stub["ti"] = "post_op";
+                node.b = node.value_array.last().b;
+                ret_list.push(node.clone());
+                node.value_array.pop();
+              }
+              node.value_array.pop();
+            }
+            FAcounter[b_0][46] = list_1.length;
+            FAcache[start_pos][109].append(ret_list);
+            break;
+          case 111:
+
+            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u76 queue */
+            chk_len = stack.push([111, start_pos, only_new]);
+            ret_list = [];
+            b_0 = start_pos;
+            node = this.proxy2;
+            node.value_array.clear();
+            state_1 = FAstate[b_0][23];
+            if (state_1 !== STATE_FL) {
+              if (request_make(23, b_0, 0)) {
+                continue;
+              }
+            }
+            list_1 = FAcache[b_0][23];
+            for (idx_1 = _bl = _ref57 = FAcounter[b_0][48], _ref58 = list_1.length; _bl < _ref58; idx_1 = _bl += 1) {
+              tok = list_1[idx_1];
+              b_1 = tok.b;
+              node.value_array.push(tok);
+              if (b_1 >= length) {
+                node.value_array.pop();
+                continue;
+              }
+              list_2 = FAcache[b_1][0];
+              for (_bm = 0, _len26 = list_2.length; _bm < _len26; _bm++) {
+                tok = list_2[_bm];
+                if (tok.value !== '[') {
+                  continue;
+                }
+                b_2 = tok.b;
+                node.value_array.push(tok);
+                if (b_2 >= length) {
+                  node.value_array.pop();
+                  continue;
+                }
+                state_3 = FAstate[b_2][23];
+                if (state_3 !== STATE_FL) {
+                  if (request_make(23, b_2, 0)) {
+                    continue;
+                  }
+                }
+                list_3 = FAcache[b_2][23];
+                node.value_array.pop();
+              }
+              node.value_array.pop();
+            }
+            if (chk_len === stack.length) {
+              stack[chk_len - 1][0] = 112;
+            }
+            break;
+          case 112:
+
+            /* rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u76 collect */
+            ret_list = [];
+            b_0 = start_pos;
+            node = this.proxy2;
+            node.value_array.clear();
+            node.a = start_pos;
+            list_1 = FAcache[b_0][23];
+            for (idx_1 = _bn = _ref59 = FAcounter[b_0][52], _ref60 = list_1.length; _bn < _ref60; idx_1 = _bn += 1) {
+              tok = list_1[idx_1];
+              b_1 = tok.b;
+              node.value_array.push(tok);
+              if (b_1 >= length) {
+                node.value_array.pop();
+                continue;
+              }
+              list_2 = FAcache[b_1][0];
+              for (_bo = 0, _len27 = list_2.length; _bo < _len27; _bo++) {
+                tok = list_2[_bo];
+                if (tok.value !== '[') {
+                  continue;
+                }
+                b_2 = tok.b;
+                node.value_array.push(tok);
+                if (b_2 >= length) {
+                  node.value_array.pop();
+                  continue;
+                }
+                list_3 = FAcache[b_2][23];
+                for (_bp = 0, _len28 = list_3.length; _bp < _len28; _bp++) {
+                  tok = list_3[_bp];
+                  b_3 = tok.b;
+                  node.value_array.push(tok);
+                  if (b_3 >= length) {
+                    node.value_array.pop();
+                    continue;
+                  }
+                  list_4 = FAcache[b_3][0];
+                  for (_bq = 0, _len29 = list_4.length; _bq < _len29; _bq++) {
+                    tok = list_4[_bq];
+                    if (tok.value !== ']') {
+                      continue;
+                    }
+                    b_4 = tok.b;
+                    node.value_array.push(tok);
+                    arg_list = node.value_array;
+                    if (!(arg_list[0].mx_hash.priority === -9000)) {
+                      node.value_array.pop();
+                      continue;
+                    }
+                    mx_hash_stub = node.mx_hash = {};
+                    mx_hash_stub.rule = "rule_Hrvalue_XXX_Hrvalue_XXX_priorityEX9000_ultEindex_access_tiEindex_access_X1XpriorityEEX9000_u76";
+                    mx_hash_stub.hash_key = "rvalue";
+                    mx_hash_stub.hash_key_idx = 23;
+                    mx_hash_stub["priority"] = -9000;
+                    mx_hash_stub["ult"] = "index_access";
+                    mx_hash_stub["ti"] = "index_access";
+                    node.b = node.value_array.last().b;
+                    ret_list.push(node.clone());
+                    node.value_array.pop();
+                  }
+                  node.value_array.pop();
+                }
+                node.value_array.pop();
+              }
+              node.value_array.pop();
+            }
+            FAcounter[b_0][52] = list_1.length;
+            FAcache[start_pos][111].append(ret_list);
+            break;
+          case 113:
+
+            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u77 queue */
+            chk_len = stack.push([113, start_pos, only_new]);
+            ret_list = [];
+            b_0 = start_pos;
+            node = this.proxy2;
+            node.value_array.clear();
+            list_1 = FAcache[b_0][0];
+            for (idx_1 = _br = _ref61 = FAcounter[b_0][53], _ref62 = list_1.length; _br < _ref62; idx_1 = _br += 1) {
+              tok = list_1[idx_1];
+              if (tok.value !== '(') {
+                continue;
+              }
+              b_1 = tok.b;
+              node.value_array.push(tok);
+              if (b_1 >= length) {
+                node.value_array.pop();
+                continue;
+              }
+              state_2 = FAstate[b_1][23];
+              if (state_2 !== STATE_FL) {
+                if (request_make(23, b_1, 0)) {
+                  continue;
+                }
+              }
+              list_2 = FAcache[b_1][23];
+              node.value_array.pop();
+            }
+            if (chk_len === stack.length) {
+              stack[chk_len - 1][0] = 114;
+            }
+            break;
+          case 114:
+
+            /* rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u77 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _bd = _ref51 = FAcounter[b_0][41], _ref52 = list_1.length; _bd < _ref52; idx_1 = _bd += 1) {
+            for (idx_1 = _bs = _ref63 = FAcounter[b_0][56], _ref64 = list_1.length; _bs < _ref64; idx_1 = _bs += 1) {
               tok = list_1[idx_1];
               if (tok.value !== '(') {
                 continue;
@@ -3959,8 +4378,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][23];
-              for (_be = 0, _len21 = list_2.length; _be < _len21; _be++) {
-                tok = list_2[_be];
+              for (_bt = 0, _len30 = list_2.length; _bt < _len30; _bt++) {
+                tok = list_2[_bt];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -3968,8 +4387,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_bf = 0, _len22 = list_3.length; _bf < _len22; _bf++) {
-                  tok = list_3[_bf];
+                for (_bu = 0, _len31 = list_3.length; _bu < _len31; _bu++) {
+                  tok = list_3[_bu];
                   if (tok.value !== ')') {
                     continue;
                   }
@@ -3977,7 +4396,7 @@
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u74";
+                  mx_hash_stub.rule = "rule_XXX_Hrvalue_XXX_priorityEX9000_ultEbracket_tiEpass__u77";
                   mx_hash_stub.hash_key = "rvalue";
                   mx_hash_stub.hash_key_idx = 23;
                   mx_hash_stub["priority"] = -9000;
@@ -3991,13 +4410,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][41] = list_1.length;
-            FAcache[start_pos][107].append(ret_list);
+            FAcounter[b_0][56] = list_1.length;
+            FAcache[start_pos][113].append(ret_list);
             break;
-          case 109:
+          case 115:
 
-            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u99 queue */
-            chk_len = stack.push([109, start_pos, only_new]);
+            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u102 queue */
+            chk_len = stack.push([115, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -4010,25 +4429,25 @@
             }
             list_1 = FAcache[b_0][37];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 110;
+              stack[chk_len - 1][0] = 116;
             }
             break;
-          case 110:
+          case 116:
 
-            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u99 collect */
+            /* rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u102 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][37];
-            for (idx_1 = _bg = _ref53 = FAcounter[b_0][42], _ref54 = list_1.length; _bg < _ref54; idx_1 = _bg += 1) {
+            for (idx_1 = _bv = _ref65 = FAcounter[b_0][57], _ref66 = list_1.length; _bv < _ref66; idx_1 = _bv += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u99";
+              mx_hash_stub.rule = "rule_Hstruct_init_priorityEX9000_ultEstruct_init_bracketless_hashEX1Xbracketless_hash__u102";
               mx_hash_stub.hash_key = "rvalue";
               mx_hash_stub.hash_key_idx = 23;
               mx_hash_stub["priority"] = -9000;
@@ -4038,19 +4457,19 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][42] = list_1.length;
-            FAcache[start_pos][109].append(ret_list);
+            FAcounter[b_0][57] = list_1.length;
+            FAcache[start_pos][115].append(ret_list);
             break;
-          case 111:
+          case 117:
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u123 queue */
-            chk_len = stack.push([111, start_pos, only_new]);
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u126 queue */
+            chk_len = stack.push([117, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _bh = _ref55 = FAcounter[b_0][46], _ref56 = list_1.length; _bh < _ref56; idx_1 = _bh += 1) {
+            for (idx_1 = _bw = _ref67 = FAcounter[b_0][61], _ref68 = list_1.length; _bw < _ref68; idx_1 = _bw += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "(") {
                 continue;
@@ -4060,12 +4479,12 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _bi = 0; _bi < 1; _i_2 = ++_bi) {
+              for (_i_2 = _bx = 0; _bx < 1; _i_2 = ++_bx) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _bj = 0; _bj < 1; _i_2 = ++_bj) {
+              for (_i_2 = _by = 0; _by < 1; _i_2 = ++_by) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
@@ -4077,8 +4496,8 @@
                   }
                 }
                 list_2 = FAcache[b_1][42];
-                for (_bk = 0, _len23 = list_2.length; _bk < _len23; _bk++) {
-                  tok = list_2[_bk];
+                for (_bz = 0, _len32 = list_2.length; _bz < _len32; _bz++) {
+                  tok = list_2[_bz];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -4086,8 +4505,8 @@
                 }
               }
               node = old_node;
-              for (_bl = 0, _len24 = hyp_list_2.length; _bl < _len24; _bl++) {
-                tok_list = hyp_list_2[_bl];
+              for (_ca = 0, _len33 = hyp_list_2.length; _ca < _len33; _ca++) {
+                tok_list = hyp_list_2[_ca];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -4095,8 +4514,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_bm = 0, _len25 = list_3.length; _bm < _len25; _bm++) {
-                  tok = list_3[_bm];
+                for (_cb = 0, _len34 = list_3.length; _cb < _len34; _cb++) {
+                  tok = list_3[_cb];
                   if (tok.value !== ")") {
                     continue;
                   }
@@ -4107,8 +4526,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_bn = 0, _len26 = list_4.length; _bn < _len26; _bn++) {
-                    tok = list_4[_bn];
+                  for (_cc = 0, _len35 = list_4.length; _cc < _len35; _cc++) {
+                    tok = list_4[_cc];
                     if (tok.value !== ":") {
                       continue;
                     }
@@ -4134,19 +4553,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 112;
+              stack[chk_len - 1][0] = 118;
             }
             break;
-          case 112:
+          case 118:
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u123 collect */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u126 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _bo = _ref57 = FAcounter[b_0][52], _ref58 = list_1.length; _bo < _ref58; idx_1 = _bo += 1) {
+            for (idx_1 = _cd = _ref69 = FAcounter[b_0][67], _ref70 = list_1.length; _cd < _ref70; idx_1 = _cd += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "(") {
                 continue;
@@ -4156,19 +4575,19 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _bp = 0; _bp < 1; _i_2 = ++_bp) {
+              for (_i_2 = _ce = 0; _ce < 1; _i_2 = ++_ce) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _bq = 0; _bq < 1; _i_2 = ++_bq) {
+              for (_i_2 = _cf = 0; _cf < 1; _i_2 = ++_cf) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
                 }
                 list_2 = FAcache[b_1][42];
-                for (_br = 0, _len27 = list_2.length; _br < _len27; _br++) {
-                  tok = list_2[_br];
+                for (_cg = 0, _len36 = list_2.length; _cg < _len36; _cg++) {
+                  tok = list_2[_cg];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -4176,8 +4595,8 @@
                 }
               }
               node = old_node;
-              for (_bs = 0, _len28 = hyp_list_2.length; _bs < _len28; _bs++) {
-                tok_list = hyp_list_2[_bs];
+              for (_ch = 0, _len37 = hyp_list_2.length; _ch < _len37; _ch++) {
+                tok_list = hyp_list_2[_ch];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -4185,8 +4604,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_bt = 0, _len29 = list_3.length; _bt < _len29; _bt++) {
-                  tok = list_3[_bt];
+                for (_ci = 0, _len38 = list_3.length; _ci < _len38; _ci++) {
+                  tok = list_3[_ci];
                   if (tok.value !== ")") {
                     continue;
                   }
@@ -4197,8 +4616,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_bu = 0, _len30 = list_4.length; _bu < _len30; _bu++) {
-                    tok = list_4[_bu];
+                  for (_cj = 0, _len39 = list_4.length; _cj < _len39; _cj++) {
+                    tok = list_4[_cj];
                     if (tok.value !== ":") {
                       continue;
                     }
@@ -4209,8 +4628,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][34];
-                    for (_bv = 0, _len31 = list_5.length; _bv < _len31; _bv++) {
-                      tok = list_5[_bv];
+                    for (_ck = 0, _len40 = list_5.length; _ck < _len40; _ck++) {
+                      tok = list_5[_ck];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -4218,8 +4637,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][0];
-                      for (_bw = 0, _len32 = list_6.length; _bw < _len32; _bw++) {
-                        tok = list_6[_bw];
+                      for (_cl = 0, _len41 = list_6.length; _cl < _len41; _cl++) {
+                        tok = list_6[_cl];
                         if (tok.value !== "=>") {
                           continue;
                         }
@@ -4227,7 +4646,7 @@
                         node.value_array.push(tok);
                         arg_list = node.value_array;
                         mx_hash_stub = node.mx_hash = {};
-                        mx_hash_stub.rule = "rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u123";
+                        mx_hash_stub.rule = "rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_priorityEX9000_ultEcl_decl__u126";
                         mx_hash_stub.hash_key = "rvalue";
                         mx_hash_stub.hash_key_idx = 23;
                         mx_hash_stub["priority"] = -9000;
@@ -4246,19 +4665,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][52] = list_1.length;
-            FAcache[start_pos][111].append(ret_list);
+            FAcounter[b_0][67] = list_1.length;
+            FAcache[start_pos][117].append(ret_list);
             break;
-          case 113:
+          case 119:
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u124 queue */
-            chk_len = stack.push([113, start_pos, only_new]);
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u127 queue */
+            chk_len = stack.push([119, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _bx = _ref59 = FAcounter[b_0][58], _ref60 = list_1.length; _bx < _ref60; idx_1 = _bx += 1) {
+            for (idx_1 = _cm = _ref71 = FAcounter[b_0][73], _ref72 = list_1.length; _cm < _ref72; idx_1 = _cm += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "(") {
                 continue;
@@ -4268,12 +4687,12 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _by = 0; _by < 1; _i_2 = ++_by) {
+              for (_i_2 = _cn = 0; _cn < 1; _i_2 = ++_cn) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _bz = 0; _bz < 1; _i_2 = ++_bz) {
+              for (_i_2 = _co = 0; _co < 1; _i_2 = ++_co) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
@@ -4285,8 +4704,8 @@
                   }
                 }
                 list_2 = FAcache[b_1][42];
-                for (_ca = 0, _len33 = list_2.length; _ca < _len33; _ca++) {
-                  tok = list_2[_ca];
+                for (_cp = 0, _len42 = list_2.length; _cp < _len42; _cp++) {
+                  tok = list_2[_cp];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -4294,8 +4713,8 @@
                 }
               }
               node = old_node;
-              for (_cb = 0, _len34 = hyp_list_2.length; _cb < _len34; _cb++) {
-                tok_list = hyp_list_2[_cb];
+              for (_cq = 0, _len43 = hyp_list_2.length; _cq < _len43; _cq++) {
+                tok_list = hyp_list_2[_cq];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -4303,8 +4722,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_cc = 0, _len35 = list_3.length; _cc < _len35; _cc++) {
-                  tok = list_3[_cc];
+                for (_cr = 0, _len44 = list_3.length; _cr < _len44; _cr++) {
+                  tok = list_3[_cr];
                   if (tok.value !== ")") {
                     continue;
                   }
@@ -4315,8 +4734,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_cd = 0, _len36 = list_4.length; _cd < _len36; _cd++) {
-                    tok = list_4[_cd];
+                  for (_cs = 0, _len45 = list_4.length; _cs < _len45; _cs++) {
+                    tok = list_4[_cs];
                     if (tok.value !== ":") {
                       continue;
                     }
@@ -4333,8 +4752,8 @@
                       }
                     }
                     list_5 = FAcache[b_4][34];
-                    for (_ce = 0, _len37 = list_5.length; _ce < _len37; _ce++) {
-                      tok = list_5[_ce];
+                    for (_ct = 0, _len46 = list_5.length; _ct < _len46; _ct++) {
+                      tok = list_5[_ct];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -4342,8 +4761,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][0];
-                      for (_cf = 0, _len38 = list_6.length; _cf < _len38; _cf++) {
-                        tok = list_6[_cf];
+                      for (_cu = 0, _len47 = list_6.length; _cu < _len47; _cu++) {
+                        tok = list_6[_cu];
                         if (tok.value !== "=>") {
                           continue;
                         }
@@ -4373,19 +4792,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 114;
+              stack[chk_len - 1][0] = 120;
             }
             break;
-          case 114:
+          case 120:
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u124 collect */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u127 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _cg = _ref61 = FAcounter[b_0][65], _ref62 = list_1.length; _cg < _ref62; idx_1 = _cg += 1) {
+            for (idx_1 = _cv = _ref73 = FAcounter[b_0][80], _ref74 = list_1.length; _cv < _ref74; idx_1 = _cv += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "(") {
                 continue;
@@ -4395,19 +4814,19 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _ch = 0; _ch < 1; _i_2 = ++_ch) {
+              for (_i_2 = _cw = 0; _cw < 1; _i_2 = ++_cw) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _ci = 0; _ci < 1; _i_2 = ++_ci) {
+              for (_i_2 = _cx = 0; _cx < 1; _i_2 = ++_cx) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
                 }
                 list_2 = FAcache[b_1][42];
-                for (_cj = 0, _len39 = list_2.length; _cj < _len39; _cj++) {
-                  tok = list_2[_cj];
+                for (_cy = 0, _len48 = list_2.length; _cy < _len48; _cy++) {
+                  tok = list_2[_cy];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -4415,8 +4834,8 @@
                 }
               }
               node = old_node;
-              for (_ck = 0, _len40 = hyp_list_2.length; _ck < _len40; _ck++) {
-                tok_list = hyp_list_2[_ck];
+              for (_cz = 0, _len49 = hyp_list_2.length; _cz < _len49; _cz++) {
+                tok_list = hyp_list_2[_cz];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -4424,8 +4843,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_cl = 0, _len41 = list_3.length; _cl < _len41; _cl++) {
-                  tok = list_3[_cl];
+                for (_da = 0, _len50 = list_3.length; _da < _len50; _da++) {
+                  tok = list_3[_da];
                   if (tok.value !== ")") {
                     continue;
                   }
@@ -4436,8 +4855,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_cm = 0, _len42 = list_4.length; _cm < _len42; _cm++) {
-                    tok = list_4[_cm];
+                  for (_db = 0, _len51 = list_4.length; _db < _len51; _db++) {
+                    tok = list_4[_db];
                     if (tok.value !== ":") {
                       continue;
                     }
@@ -4448,8 +4867,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][34];
-                    for (_cn = 0, _len43 = list_5.length; _cn < _len43; _cn++) {
-                      tok = list_5[_cn];
+                    for (_dc = 0, _len52 = list_5.length; _dc < _len52; _dc++) {
+                      tok = list_5[_dc];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -4457,8 +4876,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][0];
-                      for (_co = 0, _len44 = list_6.length; _co < _len44; _co++) {
-                        tok = list_6[_co];
+                      for (_dd = 0, _len53 = list_6.length; _dd < _len53; _dd++) {
+                        tok = list_6[_dd];
                         if (tok.value !== "=>") {
                           continue;
                         }
@@ -4469,13 +4888,13 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][26];
-                        for (_cp = 0, _len45 = list_7.length; _cp < _len45; _cp++) {
-                          tok = list_7[_cp];
+                        for (_de = 0, _len54 = list_7.length; _de < _len54; _de++) {
+                          tok = list_7[_de];
                           b_7 = tok.b;
                           node.value_array.push(tok);
                           arg_list = node.value_array;
                           mx_hash_stub = node.mx_hash = {};
-                          mx_hash_stub.rule = "rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u124";
+                          mx_hash_stub.rule = "rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hblock_priorityEX9000_ultEcl_decl_eolE1__u127";
                           mx_hash_stub.hash_key = "rvalue";
                           mx_hash_stub.hash_key_idx = 23;
                           mx_hash_stub["priority"] = -9000;
@@ -4497,19 +4916,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][65] = list_1.length;
-            FAcache[start_pos][113].append(ret_list);
+            FAcounter[b_0][80] = list_1.length;
+            FAcache[start_pos][119].append(ret_list);
             break;
-          case 115:
+          case 121:
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u125 queue */
-            chk_len = stack.push([115, start_pos, only_new]);
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u128 queue */
+            chk_len = stack.push([121, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _cq = _ref63 = FAcounter[b_0][71], _ref64 = list_1.length; _cq < _ref64; idx_1 = _cq += 1) {
+            for (idx_1 = _df = _ref75 = FAcounter[b_0][86], _ref76 = list_1.length; _df < _ref76; idx_1 = _df += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "(") {
                 continue;
@@ -4519,12 +4938,12 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _cr = 0; _cr < 1; _i_2 = ++_cr) {
+              for (_i_2 = _dg = 0; _dg < 1; _i_2 = ++_dg) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _cs = 0; _cs < 1; _i_2 = ++_cs) {
+              for (_i_2 = _dh = 0; _dh < 1; _i_2 = ++_dh) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
@@ -4536,8 +4955,8 @@
                   }
                 }
                 list_2 = FAcache[b_1][42];
-                for (_ct = 0, _len46 = list_2.length; _ct < _len46; _ct++) {
-                  tok = list_2[_ct];
+                for (_di = 0, _len55 = list_2.length; _di < _len55; _di++) {
+                  tok = list_2[_di];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -4545,8 +4964,8 @@
                 }
               }
               node = old_node;
-              for (_cu = 0, _len47 = hyp_list_2.length; _cu < _len47; _cu++) {
-                tok_list = hyp_list_2[_cu];
+              for (_dj = 0, _len56 = hyp_list_2.length; _dj < _len56; _dj++) {
+                tok_list = hyp_list_2[_dj];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -4554,8 +4973,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_cv = 0, _len48 = list_3.length; _cv < _len48; _cv++) {
-                  tok = list_3[_cv];
+                for (_dk = 0, _len57 = list_3.length; _dk < _len57; _dk++) {
+                  tok = list_3[_dk];
                   if (tok.value !== ")") {
                     continue;
                   }
@@ -4566,8 +4985,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_cw = 0, _len49 = list_4.length; _cw < _len49; _cw++) {
-                    tok = list_4[_cw];
+                  for (_dl = 0, _len58 = list_4.length; _dl < _len58; _dl++) {
+                    tok = list_4[_dl];
                     if (tok.value !== ":") {
                       continue;
                     }
@@ -4584,8 +5003,8 @@
                       }
                     }
                     list_5 = FAcache[b_4][34];
-                    for (_cx = 0, _len50 = list_5.length; _cx < _len50; _cx++) {
-                      tok = list_5[_cx];
+                    for (_dm = 0, _len59 = list_5.length; _dm < _len59; _dm++) {
+                      tok = list_5[_dm];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -4593,8 +5012,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][0];
-                      for (_cy = 0, _len51 = list_6.length; _cy < _len51; _cy++) {
-                        tok = list_6[_cy];
+                      for (_dn = 0, _len60 = list_6.length; _dn < _len60; _dn++) {
+                        tok = list_6[_dn];
                         if (tok.value !== "=>") {
                           continue;
                         }
@@ -4624,19 +5043,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 116;
+              stack[chk_len - 1][0] = 122;
             }
             break;
-          case 116:
+          case 122:
 
-            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u125 collect */
+            /* rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u128 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _cz = _ref65 = FAcounter[b_0][78], _ref66 = list_1.length; _cz < _ref66; idx_1 = _cz += 1) {
+            for (idx_1 = _do = _ref77 = FAcounter[b_0][93], _ref78 = list_1.length; _do < _ref78; idx_1 = _do += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "(") {
                 continue;
@@ -4646,19 +5065,19 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _da = 0; _da < 1; _i_2 = ++_da) {
+              for (_i_2 = _dp = 0; _dp < 1; _i_2 = ++_dp) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _db = 0; _db < 1; _i_2 = ++_db) {
+              for (_i_2 = _dq = 0; _dq < 1; _i_2 = ++_dq) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
                 }
                 list_2 = FAcache[b_1][42];
-                for (_dc = 0, _len52 = list_2.length; _dc < _len52; _dc++) {
-                  tok = list_2[_dc];
+                for (_dr = 0, _len61 = list_2.length; _dr < _len61; _dr++) {
+                  tok = list_2[_dr];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -4666,8 +5085,8 @@
                 }
               }
               node = old_node;
-              for (_dd = 0, _len53 = hyp_list_2.length; _dd < _len53; _dd++) {
-                tok_list = hyp_list_2[_dd];
+              for (_ds = 0, _len62 = hyp_list_2.length; _ds < _len62; _ds++) {
+                tok_list = hyp_list_2[_ds];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -4675,8 +5094,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_de = 0, _len54 = list_3.length; _de < _len54; _de++) {
-                  tok = list_3[_de];
+                for (_dt = 0, _len63 = list_3.length; _dt < _len63; _dt++) {
+                  tok = list_3[_dt];
                   if (tok.value !== ")") {
                     continue;
                   }
@@ -4687,8 +5106,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_df = 0, _len55 = list_4.length; _df < _len55; _df++) {
-                    tok = list_4[_df];
+                  for (_du = 0, _len64 = list_4.length; _du < _len64; _du++) {
+                    tok = list_4[_du];
                     if (tok.value !== ":") {
                       continue;
                     }
@@ -4699,8 +5118,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][34];
-                    for (_dg = 0, _len56 = list_5.length; _dg < _len56; _dg++) {
-                      tok = list_5[_dg];
+                    for (_dv = 0, _len65 = list_5.length; _dv < _len65; _dv++) {
+                      tok = list_5[_dv];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -4708,8 +5127,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][0];
-                      for (_dh = 0, _len57 = list_6.length; _dh < _len57; _dh++) {
-                        tok = list_6[_dh];
+                      for (_dw = 0, _len66 = list_6.length; _dw < _len66; _dw++) {
+                        tok = list_6[_dw];
                         if (tok.value !== "=>") {
                           continue;
                         }
@@ -4720,13 +5139,13 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][23];
-                        for (_di = 0, _len58 = list_7.length; _di < _len58; _di++) {
-                          tok = list_7[_di];
+                        for (_dx = 0, _len67 = list_7.length; _dx < _len67; _dx++) {
+                          tok = list_7[_dx];
                           b_7 = tok.b;
                           node.value_array.push(tok);
                           arg_list = node.value_array;
                           mx_hash_stub = node.mx_hash = {};
-                          mx_hash_stub.rule = "rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u125";
+                          mx_hash_stub.rule = "rule_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XEXX_Hrvalue_priorityEX9000_ultEcl_decl__u128";
                           mx_hash_stub.hash_key = "rvalue";
                           mx_hash_stub.hash_key_idx = 23;
                           mx_hash_stub["priority"] = -9000;
@@ -4747,13 +5166,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][78] = list_1.length;
-            FAcache[start_pos][115].append(ret_list);
+            FAcounter[b_0][93] = list_1.length;
+            FAcache[start_pos][121].append(ret_list);
             break;
-          case 117:
+          case 123:
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u130 queue */
-            chk_len = stack.push([117, start_pos, only_new]);
+            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u133 queue */
+            chk_len = stack.push([123, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -4765,7 +5184,7 @@
               }
             }
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _dj = _ref67 = FAcounter[b_0][81], _ref68 = list_1.length; _dj < _ref68; idx_1 = _dj += 1) {
+            for (idx_1 = _dy = _ref79 = FAcounter[b_0][96], _ref80 = list_1.length; _dy < _ref80; idx_1 = _dy += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -4774,8 +5193,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_dk = 0, _len59 = list_2.length; _dk < _len59; _dk++) {
-                tok = list_2[_dk];
+              for (_dz = 0, _len68 = list_2.length; _dz < _len68; _dz++) {
+                tok = list_2[_dz];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -4784,12 +5203,12 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _dl = 0; _dl < 1; _i_3 = ++_dl) {
+                for (_i_3 = _ea = 0; _ea < 1; _i_3 = ++_ea) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _dm = 0; _dm < 1; _i_3 = ++_dm) {
+                for (_i_3 = _eb = 0; _eb < 1; _i_3 = ++_eb) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
@@ -4801,8 +5220,8 @@
                     }
                   }
                   list_3 = FAcache[b_2][44];
-                  for (_dn = 0, _len60 = list_3.length; _dn < _len60; _dn++) {
-                    tok = list_3[_dn];
+                  for (_ec = 0, _len69 = list_3.length; _ec < _len69; _ec++) {
+                    tok = list_3[_ec];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -4810,8 +5229,8 @@
                   }
                 }
                 node = old_node;
-                for (_do = 0, _len61 = hyp_list_3.length; _do < _len61; _do++) {
-                  tok_list = hyp_list_3[_do];
+                for (_ed = 0, _len70 = hyp_list_3.length; _ed < _len70; _ed++) {
+                  tok_list = hyp_list_3[_ed];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   node.value_array.length -= tok_list.length;
@@ -4821,19 +5240,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 118;
+              stack[chk_len - 1][0] = 124;
             }
             break;
-          case 118:
+          case 124:
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u130 collect */
+            /* rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u133 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _dp = _ref69 = FAcounter[b_0][85], _ref70 = list_1.length; _dp < _ref70; idx_1 = _dp += 1) {
+            for (idx_1 = _ee = _ref81 = FAcounter[b_0][100], _ref82 = list_1.length; _ee < _ref82; idx_1 = _ee += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -4842,8 +5261,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_dq = 0, _len62 = list_2.length; _dq < _len62; _dq++) {
-                tok = list_2[_dq];
+              for (_ef = 0, _len71 = list_2.length; _ef < _len71; _ef++) {
+                tok = list_2[_ef];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -4852,19 +5271,19 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _dr = 0; _dr < 1; _i_3 = ++_dr) {
+                for (_i_3 = _eg = 0; _eg < 1; _i_3 = ++_eg) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _ds = 0; _ds < 1; _i_3 = ++_ds) {
+                for (_i_3 = _eh = 0; _eh < 1; _i_3 = ++_eh) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
                   }
                   list_3 = FAcache[b_2][44];
-                  for (_dt = 0, _len63 = list_3.length; _dt < _len63; _dt++) {
-                    tok = list_3[_dt];
+                  for (_ei = 0, _len72 = list_3.length; _ei < _len72; _ei++) {
+                    tok = list_3[_ei];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -4872,8 +5291,8 @@
                   }
                 }
                 node = old_node;
-                for (_du = 0, _len64 = hyp_list_3.length; _du < _len64; _du++) {
-                  tok_list = hyp_list_3[_du];
+                for (_ej = 0, _len73 = hyp_list_3.length; _ej < _len73; _ej++) {
+                  tok_list = hyp_list_3[_ej];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -4881,8 +5300,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_dv = 0, _len65 = list_4.length; _dv < _len65; _dv++) {
-                    tok = list_4[_dv];
+                  for (_ek = 0, _len74 = list_4.length; _ek < _len74; _ek++) {
+                    tok = list_4[_ek];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -4894,7 +5313,7 @@
                       continue;
                     }
                     mx_hash_stub = node.mx_hash = {};
-                    mx_hash_stub.rule = "rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u130";
+                    mx_hash_stub.rule = "rule_Hrvalue_XXX_Hfn_call_arg_listO_XXX_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_u133";
                     mx_hash_stub.hash_key = "rvalue";
                     mx_hash_stub.hash_key_idx = 23;
                     mx_hash_stub["priority"] = -9000;
@@ -4909,13 +5328,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][85] = list_1.length;
-            FAcache[start_pos][117].append(ret_list);
+            FAcounter[b_0][100] = list_1.length;
+            FAcache[start_pos][123].append(ret_list);
             break;
-          case 119:
+          case 125:
 
-            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u131 queue */
-            chk_len = stack.push([119, start_pos, only_new]);
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u134 queue */
+            chk_len = stack.push([125, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -4927,7 +5346,7 @@
               }
             }
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _dw = _ref71 = FAcounter[b_0][86], _ref72 = list_1.length; _dw < _ref72; idx_1 = _dw += 1) {
+            for (idx_1 = _el = _ref83 = FAcounter[b_0][101], _ref84 = list_1.length; _el < _ref84; idx_1 = _el += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -4945,19 +5364,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 120;
+              stack[chk_len - 1][0] = 126;
             }
             break;
-          case 120:
+          case 126:
 
-            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u131 collect */
+            /* rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u134 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _dx = _ref73 = FAcounter[b_0][88], _ref74 = list_1.length; _dx < _ref74; idx_1 = _dx += 1) {
+            for (idx_1 = _em = _ref85 = FAcounter[b_0][103], _ref86 = list_1.length; _em < _ref86; idx_1 = _em += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -4966,8 +5385,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][44];
-              for (_dy = 0, _len66 = list_2.length; _dy < _len66; _dy++) {
-                tok = list_2[_dy];
+              for (_en = 0, _len75 = list_2.length; _en < _len75; _en++) {
+                tok = list_2[_en];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 arg_list = node.value_array;
@@ -4980,7 +5399,7 @@
                   continue;
                 }
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u131";
+                mx_hash_stub.rule = "rule_Hrvalue_Hfn_call_arg_list_priorityEX9000_ultEfn_call_X1XpriorityEEX9000_X1Xtail_space_u134";
                 mx_hash_stub.hash_key = "rvalue";
                 mx_hash_stub.hash_key_idx = 23;
                 mx_hash_stub["priority"] = -9000;
@@ -4991,13 +5410,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][88] = list_1.length;
-            FAcache[start_pos][119].append(ret_list);
+            FAcounter[b_0][103] = list_1.length;
+            FAcache[start_pos][125].append(ret_list);
             break;
-          case 121:
+          case 127:
 
-            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u135 queue */
-            chk_len = stack.push([121, start_pos, only_new]);
+            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u138 queue */
+            chk_len = stack.push([127, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -5009,7 +5428,7 @@
               }
             }
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _dz = _ref75 = FAcounter[b_0][90], _ref76 = list_1.length; _dz < _ref76; idx_1 = _dz += 1) {
+            for (idx_1 = _eo = _ref87 = FAcounter[b_0][105], _ref88 = list_1.length; _eo < _ref88; idx_1 = _eo += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -5024,8 +5443,8 @@
                 }
               }
               list_2 = FAcache[b_1][30];
-              for (_ea = 0, _len67 = list_2.length; _ea < _len67; _ea++) {
-                tok = list_2[_ea];
+              for (_ep = 0, _len76 = list_2.length; _ep < _len76; _ep++) {
+                tok = list_2[_ep];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5044,19 +5463,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 122;
+              stack[chk_len - 1][0] = 128;
             }
             break;
-          case 122:
+          case 128:
 
-            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u135 collect */
+            /* rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u138 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _eb = _ref77 = FAcounter[b_0][93], _ref78 = list_1.length; _eb < _ref78; idx_1 = _eb += 1) {
+            for (idx_1 = _eq = _ref89 = FAcounter[b_0][108], _ref90 = list_1.length; _eq < _ref90; idx_1 = _eq += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -5065,8 +5484,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][30];
-              for (_ec = 0, _len68 = list_2.length; _ec < _len68; _ec++) {
-                tok = list_2[_ec];
+              for (_er = 0, _len77 = list_2.length; _er < _len77; _er++) {
+                tok = list_2[_er];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5074,8 +5493,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][24];
-                for (_ed = 0, _len69 = list_3.length; _ed < _len69; _ed++) {
-                  tok = list_3[_ed];
+                for (_es = 0, _len78 = list_3.length; _es < _len78; _es++) {
+                  tok = list_3[_es];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
@@ -5084,7 +5503,7 @@
                     continue;
                   }
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u135";
+                  mx_hash_stub.rule = "rule_Hlvalue_Hbin_op_Hstmt_priorityEHbin_opXpriority_ultEbin_op_tiEbin_op_eolE1_HstmtXultEEdirective_fn_call_u138";
                   mx_hash_stub.hash_key = "rvalue";
                   mx_hash_stub.hash_key_idx = 23;
                   mx_hash_stub["priority"] = arg_list[1].mx_hash.priority;
@@ -5099,13 +5518,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][93] = list_1.length;
-            FAcache[start_pos][121].append(ret_list);
+            FAcounter[b_0][108] = list_1.length;
+            FAcache[start_pos][127].append(ret_list);
             break;
-          case 124:
+          case 130:
 
             /* rule_Hrvalue_ultEdeep_tiEpass_eolEX1Xeol__u4 queue */
-            chk_len = stack.push([124, start_pos, only_new]);
+            chk_len = stack.push([130, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -5118,10 +5537,10 @@
             }
             list_1 = FAcache[b_0][23];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 125;
+              stack[chk_len - 1][0] = 131;
             }
             break;
-          case 125:
+          case 131:
 
             /* rule_Hrvalue_ultEdeep_tiEpass_eolEX1Xeol__u4 collect */
             ret_list = [];
@@ -5130,7 +5549,7 @@
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _ee = _ref79 = FAcounter[b_0][94], _ref80 = list_1.length; _ee < _ref80; idx_1 = _ee += 1) {
+            for (idx_1 = _et = _ref91 = FAcounter[b_0][109], _ref92 = list_1.length; _et < _ref92; idx_1 = _et += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -5146,13 +5565,13 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][94] = list_1.length;
-            FAcache[start_pos][124].append(ret_list);
+            FAcounter[b_0][109] = list_1.length;
+            FAcache[start_pos][130].append(ret_list);
             break;
-          case 126:
+          case 132:
 
-            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u78 queue */
-            chk_len = stack.push([126, start_pos, only_new]);
+            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u81 queue */
+            chk_len = stack.push([132, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -5165,25 +5584,25 @@
             }
             list_1 = FAcache[b_0][13];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 127;
+              stack[chk_len - 1][0] = 133;
             }
             break;
-          case 127:
+          case 133:
 
-            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u78 collect */
+            /* rule_Htok_inline_comment_ultEcomment_tiEpass__u81 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][13];
-            for (idx_1 = _ef = _ref81 = FAcounter[b_0][95], _ref82 = list_1.length; _ef < _ref82; idx_1 = _ef += 1) {
+            for (idx_1 = _eu = _ref93 = FAcounter[b_0][110], _ref94 = list_1.length; _eu < _ref94; idx_1 = _eu += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_inline_comment_ultEcomment_tiEpass__u78";
+              mx_hash_stub.rule = "rule_Htok_inline_comment_ultEcomment_tiEpass__u81";
               mx_hash_stub.hash_key = "stmt";
               mx_hash_stub.hash_key_idx = 24;
               mx_hash_stub["ult"] = "comment";
@@ -5192,13 +5611,13 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][95] = list_1.length;
-            FAcache[start_pos][126].append(ret_list);
+            FAcounter[b_0][110] = list_1.length;
+            FAcache[start_pos][132].append(ret_list);
             break;
-          case 128:
+          case 134:
 
-            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u79 queue */
-            chk_len = stack.push([128, start_pos, only_new]);
+            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u82 queue */
+            chk_len = stack.push([134, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -5211,25 +5630,25 @@
             }
             list_1 = FAcache[b_0][14];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 129;
+              stack[chk_len - 1][0] = 135;
             }
             break;
-          case 129:
+          case 135:
 
-            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u79 collect */
+            /* rule_Htok_multiline_comment_ultEcomment_tiEpass__u82 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][14];
-            for (idx_1 = _eg = _ref83 = FAcounter[b_0][96], _ref84 = list_1.length; _eg < _ref84; idx_1 = _eg += 1) {
+            for (idx_1 = _ev = _ref95 = FAcounter[b_0][111], _ref96 = list_1.length; _ev < _ref96; idx_1 = _ev += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htok_multiline_comment_ultEcomment_tiEpass__u79";
+              mx_hash_stub.rule = "rule_Htok_multiline_comment_ultEcomment_tiEpass__u82";
               mx_hash_stub.hash_key = "stmt";
               mx_hash_stub.hash_key_idx = 24;
               mx_hash_stub["ult"] = "comment";
@@ -5238,19 +5657,19 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][96] = list_1.length;
-            FAcache[start_pos][128].append(ret_list);
+            FAcounter[b_0][111] = list_1.length;
+            FAcache[start_pos][134].append(ret_list);
             break;
-          case 130:
+          case 136:
 
-            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u87 queue */
-            chk_len = stack.push([130, start_pos, only_new]);
+            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u90 queue */
+            chk_len = stack.push([136, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _eh = _ref85 = FAcounter[b_0][99], _ref86 = list_1.length; _eh < _ref86; idx_1 = _eh += 1) {
+            for (idx_1 = _ew = _ref97 = FAcounter[b_0][114], _ref98 = list_1.length; _ew < _ref98; idx_1 = _ew += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "var") {
                 continue;
@@ -5268,8 +5687,8 @@
                 }
               }
               list_2 = FAcache[b_1][2];
-              for (_ei = 0, _len70 = list_2.length; _ei < _len70; _ei++) {
-                tok = list_2[_ei];
+              for (_ex = 0, _len79 = list_2.length; _ex < _len79; _ex++) {
+                tok = list_2[_ex];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5277,8 +5696,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_ej = 0, _len71 = list_3.length; _ej < _len71; _ej++) {
-                  tok = list_3[_ej];
+                for (_ey = 0, _len80 = list_3.length; _ey < _len80; _ey++) {
+                  tok = list_3[_ey];
                   if (tok.value !== ":") {
                     continue;
                   }
@@ -5302,19 +5721,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 131;
+              stack[chk_len - 1][0] = 137;
             }
             break;
-          case 131:
+          case 137:
 
-            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u87 collect */
+            /* rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u90 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _ek = _ref87 = FAcounter[b_0][103], _ref88 = list_1.length; _ek < _ref88; idx_1 = _ek += 1) {
+            for (idx_1 = _ez = _ref99 = FAcounter[b_0][118], _ref100 = list_1.length; _ez < _ref100; idx_1 = _ez += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "var") {
                 continue;
@@ -5326,8 +5745,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][2];
-              for (_el = 0, _len72 = list_2.length; _el < _len72; _el++) {
-                tok = list_2[_el];
+              for (_fa = 0, _len81 = list_2.length; _fa < _len81; _fa++) {
+                tok = list_2[_fa];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5335,8 +5754,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_em = 0, _len73 = list_3.length; _em < _len73; _em++) {
-                  tok = list_3[_em];
+                for (_fb = 0, _len82 = list_3.length; _fb < _len82; _fb++) {
+                  tok = list_3[_fb];
                   if (tok.value !== ":") {
                     continue;
                   }
@@ -5347,13 +5766,13 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][34];
-                  for (_en = 0, _len74 = list_4.length; _en < _len74; _en++) {
-                    tok = list_4[_en];
+                  for (_fc = 0, _len83 = list_4.length; _fc < _len83; _fc++) {
+                    tok = list_4[_fc];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     arg_list = node.value_array;
                     mx_hash_stub = node.mx_hash = {};
-                    mx_hash_stub.rule = "rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u87";
+                    mx_hash_stub.rule = "rule_var_Htok_identifier_XXX_Htype_ultEvar_decl_tiEvar_decl__u90";
                     mx_hash_stub.hash_key = "stmt";
                     mx_hash_stub.hash_key_idx = 24;
                     mx_hash_stub["ult"] = "var_decl";
@@ -5368,19 +5787,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][103] = list_1.length;
-            FAcache[start_pos][130].append(ret_list);
+            FAcounter[b_0][118] = list_1.length;
+            FAcache[start_pos][136].append(ret_list);
             break;
-          case 132:
+          case 138:
 
-            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u102 queue */
-            chk_len = stack.push([132, start_pos, only_new]);
+            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u105 queue */
+            chk_len = stack.push([138, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _eo = _ref89 = FAcounter[b_0][107], _ref90 = list_1.length; _eo < _ref90; idx_1 = _eo += 1) {
+            for (idx_1 = _fd = _ref101 = FAcounter[b_0][122], _ref102 = list_1.length; _fd < _ref102; idx_1 = _fd += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "if") {
                 continue;
@@ -5398,8 +5817,8 @@
                 }
               }
               list_2 = FAcache[b_1][23];
-              for (_ep = 0, _len75 = list_2.length; _ep < _len75; _ep++) {
-                tok = list_2[_ep];
+              for (_fe = 0, _len84 = list_2.length; _fe < _len84; _fe++) {
+                tok = list_2[_fe];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5413,19 +5832,19 @@
                   }
                 }
                 list_3 = FAcache[b_2][26];
-                for (_eq = 0, _len76 = list_3.length; _eq < _len76; _eq++) {
-                  tok = list_3[_eq];
+                for (_ff = 0, _len85 = list_3.length; _ff < _len85; _ff++) {
+                  tok = list_3[_ff];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_4 = [];
                   old_node = node;
                   node = this.proxy;
-                  for (_i_4 = _er = 0; _er < 1; _i_4 = ++_er) {
+                  for (_i_4 = _fg = 0; _fg < 1; _i_4 = ++_fg) {
 
                     /* NOPE */
                     hyp_list_4.push(node.value_array.clone());
                   }
-                  for (_i_4 = _es = 0; _es < 1; _i_4 = ++_es) {
+                  for (_i_4 = _fh = 0; _fh < 1; _i_4 = ++_fh) {
                     if (b_3 >= length) {
                       node.value_array.pop();
                       continue;
@@ -5437,8 +5856,8 @@
                       }
                     }
                     list_4 = FAcache[b_3][38];
-                    for (_et = 0, _len77 = list_4.length; _et < _len77; _et++) {
-                      tok = list_4[_et];
+                    for (_fi = 0, _len86 = list_4.length; _fi < _len86; _fi++) {
+                      tok = list_4[_fi];
                       b_4 = tok.b;
                       node.value_array.push(tok);
                       hyp_list_4.push(node.value_array.clone());
@@ -5446,8 +5865,8 @@
                     }
                   }
                   node = old_node;
-                  for (_eu = 0, _len78 = hyp_list_4.length; _eu < _len78; _eu++) {
-                    tok_list = hyp_list_4[_eu];
+                  for (_fj = 0, _len87 = hyp_list_4.length; _fj < _len87; _fj++) {
+                    tok_list = hyp_list_4[_fj];
                     node.value_array.append(tok_list);
                     b_4 = node.value_array.last().b;
                     node.value_array.length -= tok_list.length;
@@ -5459,19 +5878,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 133;
+              stack[chk_len - 1][0] = 139;
             }
             break;
-          case 133:
+          case 139:
 
-            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u102 collect */
+            /* rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u105 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _ev = _ref91 = FAcounter[b_0][111], _ref92 = list_1.length; _ev < _ref92; idx_1 = _ev += 1) {
+            for (idx_1 = _fk = _ref103 = FAcounter[b_0][126], _ref104 = list_1.length; _fk < _ref104; idx_1 = _fk += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "if") {
                 continue;
@@ -5483,8 +5902,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][23];
-              for (_ew = 0, _len79 = list_2.length; _ew < _len79; _ew++) {
-                tok = list_2[_ew];
+              for (_fl = 0, _len88 = list_2.length; _fl < _len88; _fl++) {
+                tok = list_2[_fl];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5492,26 +5911,26 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][26];
-                for (_ex = 0, _len80 = list_3.length; _ex < _len80; _ex++) {
-                  tok = list_3[_ex];
+                for (_fm = 0, _len89 = list_3.length; _fm < _len89; _fm++) {
+                  tok = list_3[_fm];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_4 = [];
                   old_node = node;
                   node = this.proxy;
-                  for (_i_4 = _ey = 0; _ey < 1; _i_4 = ++_ey) {
+                  for (_i_4 = _fn = 0; _fn < 1; _i_4 = ++_fn) {
 
                     /* NOPE */
                     hyp_list_4.push(node.value_array.clone());
                   }
-                  for (_i_4 = _ez = 0; _ez < 1; _i_4 = ++_ez) {
+                  for (_i_4 = _fo = 0; _fo < 1; _i_4 = ++_fo) {
                     if (b_3 >= length) {
                       node.value_array.pop();
                       continue;
                     }
                     list_4 = FAcache[b_3][38];
-                    for (_fa = 0, _len81 = list_4.length; _fa < _len81; _fa++) {
-                      tok = list_4[_fa];
+                    for (_fp = 0, _len90 = list_4.length; _fp < _len90; _fp++) {
+                      tok = list_4[_fp];
                       b_4 = tok.b;
                       node.value_array.push(tok);
                       hyp_list_4.push(node.value_array.clone());
@@ -5519,13 +5938,13 @@
                     }
                   }
                   node = old_node;
-                  for (_fb = 0, _len82 = hyp_list_4.length; _fb < _len82; _fb++) {
-                    tok_list = hyp_list_4[_fb];
+                  for (_fq = 0, _len91 = hyp_list_4.length; _fq < _len91; _fq++) {
+                    tok_list = hyp_list_4[_fq];
                     node.value_array.append(tok_list);
                     b_4 = node.value_array.last().b;
                     arg_list = node.value_array;
                     mx_hash_stub = node.mx_hash = {};
-                    mx_hash_stub.rule = "rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u102";
+                    mx_hash_stub.rule = "rule_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEif_tiEif_eolE1__u105";
                     mx_hash_stub.hash_key = "stmt";
                     mx_hash_stub.hash_key_idx = 24;
                     mx_hash_stub["ult"] = "if";
@@ -5541,13 +5960,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][111] = list_1.length;
-            FAcache[start_pos][132].append(ret_list);
+            FAcounter[b_0][126] = list_1.length;
+            FAcache[start_pos][138].append(ret_list);
             break;
-          case 134:
+          case 140:
 
-            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u106 queue */
-            chk_len = stack.push([134, start_pos, only_new]);
+            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u109 queue */
+            chk_len = stack.push([140, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -5559,7 +5978,7 @@
               }
             }
             list_1 = FAcache[b_0][24];
-            for (idx_1 = _fc = _ref93 = FAcounter[b_0][113], _ref94 = list_1.length; _fc < _ref94; idx_1 = _fc += 1) {
+            for (idx_1 = _fr = _ref105 = FAcounter[b_0][128], _ref106 = list_1.length; _fr < _ref106; idx_1 = _fr += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -5568,8 +5987,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_fd = 0, _len83 = list_2.length; _fd < _len83; _fd++) {
-                tok = list_2[_fd];
+              for (_fs = 0, _len92 = list_2.length; _fs < _len92; _fs++) {
+                tok = list_2[_fs];
                 if (tok.value !== "if") {
                   continue;
                 }
@@ -5591,19 +6010,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 135;
+              stack[chk_len - 1][0] = 141;
             }
             break;
-          case 135:
+          case 141:
 
-            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u106 collect */
+            /* rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u109 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][24];
-            for (idx_1 = _fe = _ref95 = FAcounter[b_0][116], _ref96 = list_1.length; _fe < _ref96; idx_1 = _fe += 1) {
+            for (idx_1 = _ft = _ref107 = FAcounter[b_0][131], _ref108 = list_1.length; _ft < _ref108; idx_1 = _ft += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -5612,8 +6031,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_ff = 0, _len84 = list_2.length; _ff < _len84; _ff++) {
-                tok = list_2[_ff];
+              for (_fu = 0, _len93 = list_2.length; _fu < _len93; _fu++) {
+                tok = list_2[_fu];
                 if (tok.value !== "if") {
                   continue;
                 }
@@ -5624,13 +6043,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][23];
-                for (_fg = 0, _len85 = list_3.length; _fg < _len85; _fg++) {
-                  tok = list_3[_fg];
+                for (_fv = 0, _len94 = list_3.length; _fv < _len94; _fv++) {
+                  tok = list_3[_fv];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u106";
+                  mx_hash_stub.rule = "rule_Hstmt_if_Hrvalue_ultEif_postfix_tiEif_postfix_eolE1__u109";
                   mx_hash_stub.hash_key = "stmt";
                   mx_hash_stub.hash_key_idx = 24;
                   mx_hash_stub["ult"] = "if_postfix";
@@ -5644,19 +6063,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][116] = list_1.length;
-            FAcache[start_pos][134].append(ret_list);
+            FAcounter[b_0][131] = list_1.length;
+            FAcache[start_pos][140].append(ret_list);
             break;
-          case 136:
+          case 142:
 
-            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u107 queue */
-            chk_len = stack.push([136, start_pos, only_new]);
+            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u110 queue */
+            chk_len = stack.push([142, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _fh = _ref97 = FAcounter[b_0][120], _ref98 = list_1.length; _fh < _ref98; idx_1 = _fh += 1) {
+            for (idx_1 = _fw = _ref109 = FAcounter[b_0][135], _ref110 = list_1.length; _fw < _ref110; idx_1 = _fw += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "switch") {
                 continue;
@@ -5674,8 +6093,8 @@
                 }
               }
               list_2 = FAcache[b_1][23];
-              for (_fi = 0, _len86 = list_2.length; _fi < _len86; _fi++) {
-                tok = list_2[_fi];
+              for (_fx = 0, _len95 = list_2.length; _fx < _len95; _fx++) {
+                tok = list_2[_fx];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5689,8 +6108,8 @@
                   }
                 }
                 list_3 = FAcache[b_2][27];
-                for (_fj = 0, _len87 = list_3.length; _fj < _len87; _fj++) {
-                  tok = list_3[_fj];
+                for (_fy = 0, _len96 = list_3.length; _fy < _len96; _fy++) {
+                  tok = list_3[_fy];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   if (b_3 >= length) {
@@ -5704,8 +6123,8 @@
                     }
                   }
                   list_4 = FAcache[b_3][39];
-                  for (_fk = 0, _len88 = list_4.length; _fk < _len88; _fk++) {
-                    tok = list_4[_fk];
+                  for (_fz = 0, _len97 = list_4.length; _fz < _len97; _fz++) {
+                    tok = list_4[_fz];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     if (b_4 >= length) {
@@ -5728,19 +6147,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 137;
+              stack[chk_len - 1][0] = 143;
             }
             break;
-          case 137:
+          case 143:
 
-            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u107 collect */
+            /* rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u110 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _fl = _ref99 = FAcounter[b_0][125], _ref100 = list_1.length; _fl < _ref100; idx_1 = _fl += 1) {
+            for (idx_1 = _ga = _ref111 = FAcounter[b_0][140], _ref112 = list_1.length; _ga < _ref112; idx_1 = _ga += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "switch") {
                 continue;
@@ -5752,8 +6171,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][23];
-              for (_fm = 0, _len89 = list_2.length; _fm < _len89; _fm++) {
-                tok = list_2[_fm];
+              for (_gb = 0, _len98 = list_2.length; _gb < _len98; _gb++) {
+                tok = list_2[_gb];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5761,8 +6180,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][27];
-                for (_fn = 0, _len90 = list_3.length; _fn < _len90; _fn++) {
-                  tok = list_3[_fn];
+                for (_gc = 0, _len99 = list_3.length; _gc < _len99; _gc++) {
+                  tok = list_3[_gc];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   if (b_3 >= length) {
@@ -5770,8 +6189,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][39];
-                  for (_fo = 0, _len91 = list_4.length; _fo < _len91; _fo++) {
-                    tok = list_4[_fo];
+                  for (_gd = 0, _len100 = list_4.length; _gd < _len100; _gd++) {
+                    tok = list_4[_gd];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     if (b_4 >= length) {
@@ -5779,13 +6198,13 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][29];
-                    for (_fp = 0, _len92 = list_5.length; _fp < _len92; _fp++) {
-                      tok = list_5[_fp];
+                    for (_ge = 0, _len101 = list_5.length; _ge < _len101; _ge++) {
+                      tok = list_5[_ge];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       arg_list = node.value_array;
                       mx_hash_stub = node.mx_hash = {};
-                      mx_hash_stub.rule = "rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u107";
+                      mx_hash_stub.rule = "rule_switch_Hrvalue_Hindent_Hswitch_tail_stmt_Hdedent_ultEswitch_tiEswitch_eolE1__u110";
                       mx_hash_stub.hash_key = "stmt";
                       mx_hash_stub.hash_key_idx = 24;
                       mx_hash_stub["ult"] = "switch";
@@ -5803,19 +6222,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][125] = list_1.length;
-            FAcache[start_pos][136].append(ret_list);
+            FAcounter[b_0][140] = list_1.length;
+            FAcache[start_pos][142].append(ret_list);
             break;
-          case 138:
+          case 144:
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u112 queue */
-            chk_len = stack.push([138, start_pos, only_new]);
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u115 queue */
+            chk_len = stack.push([144, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _fq = _ref101 = FAcounter[b_0][133], _ref102 = list_1.length; _fq < _ref102; idx_1 = _fq += 1) {
+            for (idx_1 = _gf = _ref113 = FAcounter[b_0][148], _ref114 = list_1.length; _gf < _ref114; idx_1 = _gf += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -5833,8 +6252,8 @@
                 }
               }
               list_2 = FAcache[b_1][2];
-              for (_fr = 0, _len93 = list_2.length; _fr < _len93; _fr++) {
-                tok = list_2[_fr];
+              for (_gg = 0, _len102 = list_2.length; _gg < _len102; _gg++) {
+                tok = list_2[_gg];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5842,8 +6261,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_fs = 0, _len94 = list_3.length; _fs < _len94; _fs++) {
-                  tok = list_3[_fs];
+                for (_gh = 0, _len103 = list_3.length; _gh < _len103; _gh++) {
+                  tok = list_3[_gh];
                   if (tok.value !== "in") {
                     continue;
                   }
@@ -5854,8 +6273,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_ft = 0, _len95 = list_4.length; _ft < _len95; _ft++) {
-                    tok = list_4[_ft];
+                  for (_gi = 0, _len104 = list_4.length; _gi < _len104; _gi++) {
+                    tok = list_4[_gi];
                     if (tok.value !== "[") {
                       continue;
                     }
@@ -5872,8 +6291,8 @@
                       }
                     }
                     list_5 = FAcache[b_4][23];
-                    for (_fu = 0, _len96 = list_5.length; _fu < _len96; _fu++) {
-                      tok = list_5[_fu];
+                    for (_gj = 0, _len105 = list_5.length; _gj < _len105; _gj++) {
+                      tok = list_5[_gj];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -5887,8 +6306,8 @@
                         }
                       }
                       list_6 = FAcache[b_5][40];
-                      for (_fv = 0, _len97 = list_6.length; _fv < _len97; _fv++) {
-                        tok = list_6[_fv];
+                      for (_gk = 0, _len106 = list_6.length; _gk < _len106; _gk++) {
+                        tok = list_6[_gk];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -5902,8 +6321,8 @@
                           }
                         }
                         list_7 = FAcache[b_6][23];
-                        for (_fw = 0, _len98 = list_7.length; _fw < _len98; _fw++) {
-                          tok = list_7[_fw];
+                        for (_gl = 0, _len107 = list_7.length; _gl < _len107; _gl++) {
+                          tok = list_7[_gl];
                           b_7 = tok.b;
                           node.value_array.push(tok);
                           if (b_7 >= length) {
@@ -5911,8 +6330,8 @@
                             continue;
                           }
                           list_8 = FAcache[b_7][0];
-                          for (_fx = 0, _len99 = list_8.length; _fx < _len99; _fx++) {
-                            tok = list_8[_fx];
+                          for (_gm = 0, _len108 = list_8.length; _gm < _len108; _gm++) {
+                            tok = list_8[_gm];
                             if (tok.value !== "]") {
                               continue;
                             }
@@ -5946,19 +6365,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 139;
+              stack[chk_len - 1][0] = 145;
             }
             break;
-          case 139:
+          case 145:
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u112 collect */
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u115 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _fy = _ref103 = FAcounter[b_0][142], _ref104 = list_1.length; _fy < _ref104; idx_1 = _fy += 1) {
+            for (idx_1 = _gn = _ref115 = FAcounter[b_0][157], _ref116 = list_1.length; _gn < _ref116; idx_1 = _gn += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -5970,8 +6389,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][2];
-              for (_fz = 0, _len100 = list_2.length; _fz < _len100; _fz++) {
-                tok = list_2[_fz];
+              for (_go = 0, _len109 = list_2.length; _go < _len109; _go++) {
+                tok = list_2[_go];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -5979,8 +6398,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_ga = 0, _len101 = list_3.length; _ga < _len101; _ga++) {
-                  tok = list_3[_ga];
+                for (_gp = 0, _len110 = list_3.length; _gp < _len110; _gp++) {
+                  tok = list_3[_gp];
                   if (tok.value !== "in") {
                     continue;
                   }
@@ -5991,8 +6410,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_gb = 0, _len102 = list_4.length; _gb < _len102; _gb++) {
-                    tok = list_4[_gb];
+                  for (_gq = 0, _len111 = list_4.length; _gq < _len111; _gq++) {
+                    tok = list_4[_gq];
                     if (tok.value !== "[") {
                       continue;
                     }
@@ -6003,8 +6422,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][23];
-                    for (_gc = 0, _len103 = list_5.length; _gc < _len103; _gc++) {
-                      tok = list_5[_gc];
+                    for (_gr = 0, _len112 = list_5.length; _gr < _len112; _gr++) {
+                      tok = list_5[_gr];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -6012,8 +6431,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][40];
-                      for (_gd = 0, _len104 = list_6.length; _gd < _len104; _gd++) {
-                        tok = list_6[_gd];
+                      for (_gs = 0, _len113 = list_6.length; _gs < _len113; _gs++) {
+                        tok = list_6[_gs];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -6021,8 +6440,8 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][23];
-                        for (_ge = 0, _len105 = list_7.length; _ge < _len105; _ge++) {
-                          tok = list_7[_ge];
+                        for (_gt = 0, _len114 = list_7.length; _gt < _len114; _gt++) {
+                          tok = list_7[_gt];
                           b_7 = tok.b;
                           node.value_array.push(tok);
                           if (b_7 >= length) {
@@ -6030,8 +6449,8 @@
                             continue;
                           }
                           list_8 = FAcache[b_7][0];
-                          for (_gf = 0, _len106 = list_8.length; _gf < _len106; _gf++) {
-                            tok = list_8[_gf];
+                          for (_gu = 0, _len115 = list_8.length; _gu < _len115; _gu++) {
+                            tok = list_8[_gu];
                             if (tok.value !== "]") {
                               continue;
                             }
@@ -6042,13 +6461,13 @@
                               continue;
                             }
                             list_9 = FAcache[b_8][26];
-                            for (_gg = 0, _len107 = list_9.length; _gg < _len107; _gg++) {
-                              tok = list_9[_gg];
+                            for (_gv = 0, _len116 = list_9.length; _gv < _len116; _gv++) {
+                              tok = list_9[_gv];
                               b_9 = tok.b;
                               node.value_array.push(tok);
                               arg_list = node.value_array;
                               mx_hash_stub = node.mx_hash = {};
-                              mx_hash_stub.rule = "rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u112";
+                              mx_hash_stub.rule = "rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_Hblock_ultEfor_range_tiEmacro_eolE1__u115";
                               mx_hash_stub.hash_key = "stmt";
                               mx_hash_stub.hash_key_idx = 24;
                               mx_hash_stub["ult"] = "for_range";
@@ -6074,19 +6493,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][142] = list_1.length;
-            FAcache[start_pos][138].append(ret_list);
+            FAcounter[b_0][157] = list_1.length;
+            FAcache[start_pos][144].append(ret_list);
             break;
-          case 140:
+          case 146:
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u113 queue */
-            chk_len = stack.push([140, start_pos, only_new]);
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u116 queue */
+            chk_len = stack.push([146, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _gh = _ref105 = FAcounter[b_0][152], _ref106 = list_1.length; _gh < _ref106; idx_1 = _gh += 1) {
+            for (idx_1 = _gw = _ref117 = FAcounter[b_0][167], _ref118 = list_1.length; _gw < _ref118; idx_1 = _gw += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -6104,8 +6523,8 @@
                 }
               }
               list_2 = FAcache[b_1][2];
-              for (_gi = 0, _len108 = list_2.length; _gi < _len108; _gi++) {
-                tok = list_2[_gi];
+              for (_gx = 0, _len117 = list_2.length; _gx < _len117; _gx++) {
+                tok = list_2[_gx];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -6113,8 +6532,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_gj = 0, _len109 = list_3.length; _gj < _len109; _gj++) {
-                  tok = list_3[_gj];
+                for (_gy = 0, _len118 = list_3.length; _gy < _len118; _gy++) {
+                  tok = list_3[_gy];
                   if (tok.value !== "in") {
                     continue;
                   }
@@ -6125,8 +6544,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_gk = 0, _len110 = list_4.length; _gk < _len110; _gk++) {
-                    tok = list_4[_gk];
+                  for (_gz = 0, _len119 = list_4.length; _gz < _len119; _gz++) {
+                    tok = list_4[_gz];
                     if (tok.value !== "[") {
                       continue;
                     }
@@ -6143,8 +6562,8 @@
                       }
                     }
                     list_5 = FAcache[b_4][23];
-                    for (_gl = 0, _len111 = list_5.length; _gl < _len111; _gl++) {
-                      tok = list_5[_gl];
+                    for (_ha = 0, _len120 = list_5.length; _ha < _len120; _ha++) {
+                      tok = list_5[_ha];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -6158,8 +6577,8 @@
                         }
                       }
                       list_6 = FAcache[b_5][40];
-                      for (_gm = 0, _len112 = list_6.length; _gm < _len112; _gm++) {
-                        tok = list_6[_gm];
+                      for (_hb = 0, _len121 = list_6.length; _hb < _len121; _hb++) {
+                        tok = list_6[_hb];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -6173,8 +6592,8 @@
                           }
                         }
                         list_7 = FAcache[b_6][23];
-                        for (_gn = 0, _len113 = list_7.length; _gn < _len113; _gn++) {
-                          tok = list_7[_gn];
+                        for (_hc = 0, _len122 = list_7.length; _hc < _len122; _hc++) {
+                          tok = list_7[_hc];
                           b_7 = tok.b;
                           node.value_array.push(tok);
                           if (b_7 >= length) {
@@ -6182,8 +6601,8 @@
                             continue;
                           }
                           list_8 = FAcache[b_7][0];
-                          for (_go = 0, _len114 = list_8.length; _go < _len114; _go++) {
-                            tok = list_8[_go];
+                          for (_hd = 0, _len123 = list_8.length; _hd < _len123; _hd++) {
+                            tok = list_8[_hd];
                             if (tok.value !== "]") {
                               continue;
                             }
@@ -6194,8 +6613,8 @@
                               continue;
                             }
                             list_9 = FAcache[b_8][0];
-                            for (_gp = 0, _len115 = list_9.length; _gp < _len115; _gp++) {
-                              tok = list_9[_gp];
+                            for (_he = 0, _len124 = list_9.length; _he < _len124; _he++) {
+                              tok = list_9[_he];
                               if (tok.value !== "by") {
                                 continue;
                               }
@@ -6212,8 +6631,8 @@
                                 }
                               }
                               list_10 = FAcache[b_9][23];
-                              for (_gq = 0, _len116 = list_10.length; _gq < _len116; _gq++) {
-                                tok = list_10[_gq];
+                              for (_hf = 0, _len125 = list_10.length; _hf < _len125; _hf++) {
+                                tok = list_10[_hf];
                                 b_10 = tok.b;
                                 node.value_array.push(tok);
                                 if (b_10 >= length) {
@@ -6248,19 +6667,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 141;
+              stack[chk_len - 1][0] = 147;
             }
             break;
-          case 141:
+          case 147:
 
-            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u113 collect */
+            /* rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u116 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _gr = _ref107 = FAcounter[b_0][163], _ref108 = list_1.length; _gr < _ref108; idx_1 = _gr += 1) {
+            for (idx_1 = _hg = _ref119 = FAcounter[b_0][178], _ref120 = list_1.length; _hg < _ref120; idx_1 = _hg += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -6272,8 +6691,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][2];
-              for (_gs = 0, _len117 = list_2.length; _gs < _len117; _gs++) {
-                tok = list_2[_gs];
+              for (_hh = 0, _len126 = list_2.length; _hh < _len126; _hh++) {
+                tok = list_2[_hh];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -6281,8 +6700,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_gt = 0, _len118 = list_3.length; _gt < _len118; _gt++) {
-                  tok = list_3[_gt];
+                for (_hi = 0, _len127 = list_3.length; _hi < _len127; _hi++) {
+                  tok = list_3[_hi];
                   if (tok.value !== "in") {
                     continue;
                   }
@@ -6293,8 +6712,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_gu = 0, _len119 = list_4.length; _gu < _len119; _gu++) {
-                    tok = list_4[_gu];
+                  for (_hj = 0, _len128 = list_4.length; _hj < _len128; _hj++) {
+                    tok = list_4[_hj];
                     if (tok.value !== "[") {
                       continue;
                     }
@@ -6305,8 +6724,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][23];
-                    for (_gv = 0, _len120 = list_5.length; _gv < _len120; _gv++) {
-                      tok = list_5[_gv];
+                    for (_hk = 0, _len129 = list_5.length; _hk < _len129; _hk++) {
+                      tok = list_5[_hk];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       if (b_5 >= length) {
@@ -6314,8 +6733,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][40];
-                      for (_gw = 0, _len121 = list_6.length; _gw < _len121; _gw++) {
-                        tok = list_6[_gw];
+                      for (_hl = 0, _len130 = list_6.length; _hl < _len130; _hl++) {
+                        tok = list_6[_hl];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -6323,8 +6742,8 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][23];
-                        for (_gx = 0, _len122 = list_7.length; _gx < _len122; _gx++) {
-                          tok = list_7[_gx];
+                        for (_hm = 0, _len131 = list_7.length; _hm < _len131; _hm++) {
+                          tok = list_7[_hm];
                           b_7 = tok.b;
                           node.value_array.push(tok);
                           if (b_7 >= length) {
@@ -6332,8 +6751,8 @@
                             continue;
                           }
                           list_8 = FAcache[b_7][0];
-                          for (_gy = 0, _len123 = list_8.length; _gy < _len123; _gy++) {
-                            tok = list_8[_gy];
+                          for (_hn = 0, _len132 = list_8.length; _hn < _len132; _hn++) {
+                            tok = list_8[_hn];
                             if (tok.value !== "]") {
                               continue;
                             }
@@ -6344,8 +6763,8 @@
                               continue;
                             }
                             list_9 = FAcache[b_8][0];
-                            for (_gz = 0, _len124 = list_9.length; _gz < _len124; _gz++) {
-                              tok = list_9[_gz];
+                            for (_ho = 0, _len133 = list_9.length; _ho < _len133; _ho++) {
+                              tok = list_9[_ho];
                               if (tok.value !== "by") {
                                 continue;
                               }
@@ -6356,8 +6775,8 @@
                                 continue;
                               }
                               list_10 = FAcache[b_9][23];
-                              for (_ha = 0, _len125 = list_10.length; _ha < _len125; _ha++) {
-                                tok = list_10[_ha];
+                              for (_hp = 0, _len134 = list_10.length; _hp < _len134; _hp++) {
+                                tok = list_10[_hp];
                                 b_10 = tok.b;
                                 node.value_array.push(tok);
                                 if (b_10 >= length) {
@@ -6365,13 +6784,13 @@
                                   continue;
                                 }
                                 list_11 = FAcache[b_10][26];
-                                for (_hb = 0, _len126 = list_11.length; _hb < _len126; _hb++) {
-                                  tok = list_11[_hb];
+                                for (_hq = 0, _len135 = list_11.length; _hq < _len135; _hq++) {
+                                  tok = list_11[_hq];
                                   b_11 = tok.b;
                                   node.value_array.push(tok);
                                   arg_list = node.value_array;
                                   mx_hash_stub = node.mx_hash = {};
-                                  mx_hash_stub.rule = "rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u113";
+                                  mx_hash_stub.rule = "rule_for_Htok_identifier_in_XXX_Hrvalue_Hranger_Hrvalue_XXX_by_Hrvalue_Hblock_ultEfor_range_tiEmacro_eolE1__u116";
                                   mx_hash_stub.hash_key = "stmt";
                                   mx_hash_stub.hash_key_idx = 24;
                                   mx_hash_stub["ult"] = "for_range";
@@ -6401,19 +6820,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][163] = list_1.length;
-            FAcache[start_pos][140].append(ret_list);
+            FAcounter[b_0][178] = list_1.length;
+            FAcache[start_pos][146].append(ret_list);
             break;
-          case 142:
+          case 148:
 
-            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u114 queue */
-            chk_len = stack.push([142, start_pos, only_new]);
+            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u117 queue */
+            chk_len = stack.push([148, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _hc = _ref109 = FAcounter[b_0][167], _ref110 = list_1.length; _hc < _ref110; idx_1 = _hc += 1) {
+            for (idx_1 = _hr = _ref121 = FAcounter[b_0][182], _ref122 = list_1.length; _hr < _ref122; idx_1 = _hr += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -6431,8 +6850,8 @@
                 }
               }
               list_2 = FAcache[b_1][2];
-              for (_hd = 0, _len127 = list_2.length; _hd < _len127; _hd++) {
-                tok = list_2[_hd];
+              for (_hs = 0, _len136 = list_2.length; _hs < _len136; _hs++) {
+                tok = list_2[_hs];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -6440,8 +6859,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_he = 0, _len128 = list_3.length; _he < _len128; _he++) {
-                  tok = list_3[_he];
+                for (_ht = 0, _len137 = list_3.length; _ht < _len137; _ht++) {
+                  tok = list_3[_ht];
                   if (tok.value !== "in") {
                     continue;
                   }
@@ -6458,8 +6877,8 @@
                     }
                   }
                   list_4 = FAcache[b_3][23];
-                  for (_hf = 0, _len129 = list_4.length; _hf < _len129; _hf++) {
-                    tok = list_4[_hf];
+                  for (_hu = 0, _len138 = list_4.length; _hu < _len138; _hu++) {
+                    tok = list_4[_hu];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     if (b_4 >= length) {
@@ -6482,19 +6901,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 143;
+              stack[chk_len - 1][0] = 149;
             }
             break;
-          case 143:
+          case 149:
 
-            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u114 collect */
+            /* rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u117 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _hg = _ref111 = FAcounter[b_0][172], _ref112 = list_1.length; _hg < _ref112; idx_1 = _hg += 1) {
+            for (idx_1 = _hv = _ref123 = FAcounter[b_0][187], _ref124 = list_1.length; _hv < _ref124; idx_1 = _hv += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -6506,8 +6925,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][2];
-              for (_hh = 0, _len130 = list_2.length; _hh < _len130; _hh++) {
-                tok = list_2[_hh];
+              for (_hw = 0, _len139 = list_2.length; _hw < _len139; _hw++) {
+                tok = list_2[_hw];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -6515,8 +6934,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_hi = 0, _len131 = list_3.length; _hi < _len131; _hi++) {
-                  tok = list_3[_hi];
+                for (_hx = 0, _len140 = list_3.length; _hx < _len140; _hx++) {
+                  tok = list_3[_hx];
                   if (tok.value !== "in") {
                     continue;
                   }
@@ -6527,8 +6946,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][23];
-                  for (_hj = 0, _len132 = list_4.length; _hj < _len132; _hj++) {
-                    tok = list_4[_hj];
+                  for (_hy = 0, _len141 = list_4.length; _hy < _len141; _hy++) {
+                    tok = list_4[_hy];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     if (b_4 >= length) {
@@ -6536,13 +6955,13 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][26];
-                    for (_hk = 0, _len133 = list_5.length; _hk < _len133; _hk++) {
-                      tok = list_5[_hk];
+                    for (_hz = 0, _len142 = list_5.length; _hz < _len142; _hz++) {
+                      tok = list_5[_hz];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       arg_list = node.value_array;
                       mx_hash_stub = node.mx_hash = {};
-                      mx_hash_stub.rule = "rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u114";
+                      mx_hash_stub.rule = "rule_for_Htok_identifier___________________in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u117";
                       mx_hash_stub.hash_key = "stmt";
                       mx_hash_stub.hash_key_idx = 24;
                       mx_hash_stub["ult"] = "for_col";
@@ -6560,19 +6979,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][172] = list_1.length;
-            FAcache[start_pos][142].append(ret_list);
+            FAcounter[b_0][187] = list_1.length;
+            FAcache[start_pos][148].append(ret_list);
             break;
-          case 144:
+          case 150:
 
-            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u115 queue */
-            chk_len = stack.push([144, start_pos, only_new]);
+            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u118 queue */
+            chk_len = stack.push([150, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _hl = _ref113 = FAcounter[b_0][178], _ref114 = list_1.length; _hl < _ref114; idx_1 = _hl += 1) {
+            for (idx_1 = _ia = _ref125 = FAcounter[b_0][193], _ref126 = list_1.length; _ia < _ref126; idx_1 = _ia += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -6590,8 +7009,8 @@
                 }
               }
               list_2 = FAcache[b_1][2];
-              for (_hm = 0, _len134 = list_2.length; _hm < _len134; _hm++) {
-                tok = list_2[_hm];
+              for (_ib = 0, _len143 = list_2.length; _ib < _len143; _ib++) {
+                tok = list_2[_ib];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -6599,8 +7018,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_hn = 0, _len135 = list_3.length; _hn < _len135; _hn++) {
-                  tok = list_3[_hn];
+                for (_ic = 0, _len144 = list_3.length; _ic < _len144; _ic++) {
+                  tok = list_3[_ic];
                   if (tok.value !== ",") {
                     continue;
                   }
@@ -6617,8 +7036,8 @@
                     }
                   }
                   list_4 = FAcache[b_3][2];
-                  for (_ho = 0, _len136 = list_4.length; _ho < _len136; _ho++) {
-                    tok = list_4[_ho];
+                  for (_id = 0, _len145 = list_4.length; _id < _len145; _id++) {
+                    tok = list_4[_id];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     if (b_4 >= length) {
@@ -6626,8 +7045,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_hp = 0, _len137 = list_5.length; _hp < _len137; _hp++) {
-                      tok = list_5[_hp];
+                    for (_ie = 0, _len146 = list_5.length; _ie < _len146; _ie++) {
+                      tok = list_5[_ie];
                       if (tok.value !== "in") {
                         continue;
                       }
@@ -6644,8 +7063,8 @@
                         }
                       }
                       list_6 = FAcache[b_5][23];
-                      for (_hq = 0, _len138 = list_6.length; _hq < _len138; _hq++) {
-                        tok = list_6[_hq];
+                      for (_if = 0, _len147 = list_6.length; _if < _len147; _if++) {
+                        tok = list_6[_if];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -6672,19 +7091,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 145;
+              stack[chk_len - 1][0] = 151;
             }
             break;
-          case 145:
+          case 151:
 
-            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u115 collect */
+            /* rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u118 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _hr = _ref115 = FAcounter[b_0][185], _ref116 = list_1.length; _hr < _ref116; idx_1 = _hr += 1) {
+            for (idx_1 = _ig = _ref127 = FAcounter[b_0][200], _ref128 = list_1.length; _ig < _ref128; idx_1 = _ig += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "for") {
                 continue;
@@ -6696,8 +7115,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][2];
-              for (_hs = 0, _len139 = list_2.length; _hs < _len139; _hs++) {
-                tok = list_2[_hs];
+              for (_ih = 0, _len148 = list_2.length; _ih < _len148; _ih++) {
+                tok = list_2[_ih];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -6705,8 +7124,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_ht = 0, _len140 = list_3.length; _ht < _len140; _ht++) {
-                  tok = list_3[_ht];
+                for (_ii = 0, _len149 = list_3.length; _ii < _len149; _ii++) {
+                  tok = list_3[_ii];
                   if (tok.value !== ",") {
                     continue;
                   }
@@ -6717,8 +7136,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][2];
-                  for (_hu = 0, _len141 = list_4.length; _hu < _len141; _hu++) {
-                    tok = list_4[_hu];
+                  for (_ij = 0, _len150 = list_4.length; _ij < _len150; _ij++) {
+                    tok = list_4[_ij];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     if (b_4 >= length) {
@@ -6726,8 +7145,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_hv = 0, _len142 = list_5.length; _hv < _len142; _hv++) {
-                      tok = list_5[_hv];
+                    for (_ik = 0, _len151 = list_5.length; _ik < _len151; _ik++) {
+                      tok = list_5[_ik];
                       if (tok.value !== "in") {
                         continue;
                       }
@@ -6738,8 +7157,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][23];
-                      for (_hw = 0, _len143 = list_6.length; _hw < _len143; _hw++) {
-                        tok = list_6[_hw];
+                      for (_il = 0, _len152 = list_6.length; _il < _len152; _il++) {
+                        tok = list_6[_il];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -6747,13 +7166,13 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][26];
-                        for (_hx = 0, _len144 = list_7.length; _hx < _len144; _hx++) {
-                          tok = list_7[_hx];
+                        for (_im = 0, _len153 = list_7.length; _im < _len153; _im++) {
+                          tok = list_7[_im];
                           b_7 = tok.b;
                           node.value_array.push(tok);
                           arg_list = node.value_array;
                           mx_hash_stub = node.mx_hash = {};
-                          mx_hash_stub.rule = "rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u115";
+                          mx_hash_stub.rule = "rule_for_Htok_identifier_XXX_Htok_identifier_in_Hrvalue_Hblock_ultEfor_col_tiEmacro_eolE1__u118";
                           mx_hash_stub.hash_key = "stmt";
                           mx_hash_stub.hash_key_idx = 24;
                           mx_hash_stub["ult"] = "for_col";
@@ -6775,13 +7194,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][185] = list_1.length;
-            FAcache[start_pos][144].append(ret_list);
+            FAcounter[b_0][200] = list_1.length;
+            FAcache[start_pos][150].append(ret_list);
             break;
-          case 146:
+          case 152:
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u119 queue */
-            chk_len = stack.push([146, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u122 queue */
+            chk_len = stack.push([152, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -6793,7 +7212,7 @@
               }
             }
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _hy = _ref117 = FAcounter[b_0][190], _ref118 = list_1.length; _hy < _ref118; idx_1 = _hy += 1) {
+            for (idx_1 = _in = _ref129 = FAcounter[b_0][205], _ref130 = list_1.length; _in < _ref130; idx_1 = _in += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -6802,8 +7221,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_hz = 0, _len145 = list_2.length; _hz < _len145; _hz++) {
-                tok = list_2[_hz];
+              for (_io = 0, _len154 = list_2.length; _io < _len154; _io++) {
+                tok = list_2[_io];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -6812,12 +7231,12 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _ia = 0; _ia < 1; _i_3 = ++_ia) {
+                for (_i_3 = _ip = 0; _ip < 1; _i_3 = ++_ip) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _ib = 0; _ib < 1; _i_3 = ++_ib) {
+                for (_i_3 = _iq = 0; _iq < 1; _i_3 = ++_iq) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
@@ -6829,8 +7248,8 @@
                     }
                   }
                   list_3 = FAcache[b_2][42];
-                  for (_ic = 0, _len146 = list_3.length; _ic < _len146; _ic++) {
-                    tok = list_3[_ic];
+                  for (_ir = 0, _len155 = list_3.length; _ir < _len155; _ir++) {
+                    tok = list_3[_ir];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -6838,8 +7257,8 @@
                   }
                 }
                 node = old_node;
-                for (_id = 0, _len147 = hyp_list_3.length; _id < _len147; _id++) {
-                  tok_list = hyp_list_3[_id];
+                for (_is = 0, _len156 = hyp_list_3.length; _is < _len156; _is++) {
+                  tok_list = hyp_list_3[_is];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -6847,8 +7266,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_ie = 0, _len148 = list_4.length; _ie < _len148; _ie++) {
-                    tok = list_4[_ie];
+                  for (_it = 0, _len157 = list_4.length; _it < _len157; _it++) {
+                    tok = list_4[_it];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -6859,8 +7278,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_if = 0, _len149 = list_5.length; _if < _len149; _if++) {
-                      tok = list_5[_if];
+                    for (_iu = 0, _len158 = list_5.length; _iu < _len158; _iu++) {
+                      tok = list_5[_iu];
                       if (tok.value !== ":") {
                         continue;
                       }
@@ -6888,19 +7307,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 147;
+              stack[chk_len - 1][0] = 153;
             }
             break;
-          case 147:
+          case 153:
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u119 collect */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u122 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _ig = _ref119 = FAcounter[b_0][197], _ref120 = list_1.length; _ig < _ref120; idx_1 = _ig += 1) {
+            for (idx_1 = _iv = _ref131 = FAcounter[b_0][212], _ref132 = list_1.length; _iv < _ref132; idx_1 = _iv += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -6909,8 +7328,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_ih = 0, _len150 = list_2.length; _ih < _len150; _ih++) {
-                tok = list_2[_ih];
+              for (_iw = 0, _len159 = list_2.length; _iw < _len159; _iw++) {
+                tok = list_2[_iw];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -6919,19 +7338,19 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _ii = 0; _ii < 1; _i_3 = ++_ii) {
+                for (_i_3 = _ix = 0; _ix < 1; _i_3 = ++_ix) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _ij = 0; _ij < 1; _i_3 = ++_ij) {
+                for (_i_3 = _iy = 0; _iy < 1; _i_3 = ++_iy) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
                   }
                   list_3 = FAcache[b_2][42];
-                  for (_ik = 0, _len151 = list_3.length; _ik < _len151; _ik++) {
-                    tok = list_3[_ik];
+                  for (_iz = 0, _len160 = list_3.length; _iz < _len160; _iz++) {
+                    tok = list_3[_iz];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -6939,8 +7358,8 @@
                   }
                 }
                 node = old_node;
-                for (_il = 0, _len152 = hyp_list_3.length; _il < _len152; _il++) {
-                  tok_list = hyp_list_3[_il];
+                for (_ja = 0, _len161 = hyp_list_3.length; _ja < _len161; _ja++) {
+                  tok_list = hyp_list_3[_ja];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -6948,8 +7367,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_im = 0, _len153 = list_4.length; _im < _len153; _im++) {
-                    tok = list_4[_im];
+                  for (_jb = 0, _len162 = list_4.length; _jb < _len162; _jb++) {
+                    tok = list_4[_jb];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -6960,8 +7379,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_in = 0, _len154 = list_5.length; _in < _len154; _in++) {
-                      tok = list_5[_in];
+                    for (_jc = 0, _len163 = list_5.length; _jc < _len163; _jc++) {
+                      tok = list_5[_jc];
                       if (tok.value !== ":") {
                         continue;
                       }
@@ -6972,8 +7391,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][34];
-                      for (_io = 0, _len155 = list_6.length; _io < _len155; _io++) {
-                        tok = list_6[_io];
+                      for (_jd = 0, _len164 = list_6.length; _jd < _len164; _jd++) {
+                        tok = list_6[_jd];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -6981,8 +7400,8 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][0];
-                        for (_ip = 0, _len156 = list_7.length; _ip < _len156; _ip++) {
-                          tok = list_7[_ip];
+                        for (_je = 0, _len165 = list_7.length; _je < _len165; _je++) {
+                          tok = list_7[_je];
                           if (tok.value !== "->") {
                             continue;
                           }
@@ -6990,7 +7409,7 @@
                           node.value_array.push(tok);
                           arg_list = node.value_array;
                           mx_hash_stub = node.mx_hash = {};
-                          mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u119";
+                          mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_ultEfn_decl__u122";
                           mx_hash_stub.hash_key = "stmt";
                           mx_hash_stub.hash_key_idx = 24;
                           mx_hash_stub["ult"] = "fn_decl";
@@ -7010,13 +7429,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][197] = list_1.length;
-            FAcache[start_pos][146].append(ret_list);
+            FAcounter[b_0][212] = list_1.length;
+            FAcache[start_pos][152].append(ret_list);
             break;
-          case 148:
+          case 154:
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u120 queue */
-            chk_len = stack.push([148, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u123 queue */
+            chk_len = stack.push([154, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -7028,7 +7447,7 @@
               }
             }
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _iq = _ref121 = FAcounter[b_0][204], _ref122 = list_1.length; _iq < _ref122; idx_1 = _iq += 1) {
+            for (idx_1 = _jf = _ref133 = FAcounter[b_0][219], _ref134 = list_1.length; _jf < _ref134; idx_1 = _jf += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -7037,8 +7456,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_ir = 0, _len157 = list_2.length; _ir < _len157; _ir++) {
-                tok = list_2[_ir];
+              for (_jg = 0, _len166 = list_2.length; _jg < _len166; _jg++) {
+                tok = list_2[_jg];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -7047,12 +7466,12 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _is = 0; _is < 1; _i_3 = ++_is) {
+                for (_i_3 = _jh = 0; _jh < 1; _i_3 = ++_jh) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _it = 0; _it < 1; _i_3 = ++_it) {
+                for (_i_3 = _ji = 0; _ji < 1; _i_3 = ++_ji) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
@@ -7064,8 +7483,8 @@
                     }
                   }
                   list_3 = FAcache[b_2][42];
-                  for (_iu = 0, _len158 = list_3.length; _iu < _len158; _iu++) {
-                    tok = list_3[_iu];
+                  for (_jj = 0, _len167 = list_3.length; _jj < _len167; _jj++) {
+                    tok = list_3[_jj];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -7073,8 +7492,8 @@
                   }
                 }
                 node = old_node;
-                for (_iv = 0, _len159 = hyp_list_3.length; _iv < _len159; _iv++) {
-                  tok_list = hyp_list_3[_iv];
+                for (_jk = 0, _len168 = hyp_list_3.length; _jk < _len168; _jk++) {
+                  tok_list = hyp_list_3[_jk];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -7082,8 +7501,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_iw = 0, _len160 = list_4.length; _iw < _len160; _iw++) {
-                    tok = list_4[_iw];
+                  for (_jl = 0, _len169 = list_4.length; _jl < _len169; _jl++) {
+                    tok = list_4[_jl];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -7094,8 +7513,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_ix = 0, _len161 = list_5.length; _ix < _len161; _ix++) {
-                      tok = list_5[_ix];
+                    for (_jm = 0, _len170 = list_5.length; _jm < _len170; _jm++) {
+                      tok = list_5[_jm];
                       if (tok.value !== ":") {
                         continue;
                       }
@@ -7112,8 +7531,8 @@
                         }
                       }
                       list_6 = FAcache[b_5][34];
-                      for (_iy = 0, _len162 = list_6.length; _iy < _len162; _iy++) {
-                        tok = list_6[_iy];
+                      for (_jn = 0, _len171 = list_6.length; _jn < _len171; _jn++) {
+                        tok = list_6[_jn];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -7121,8 +7540,8 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][0];
-                        for (_iz = 0, _len163 = list_7.length; _iz < _len163; _iz++) {
-                          tok = list_7[_iz];
+                        for (_jo = 0, _len172 = list_7.length; _jo < _len172; _jo++) {
+                          tok = list_7[_jo];
                           if (tok.value !== "->") {
                             continue;
                           }
@@ -7154,19 +7573,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 149;
+              stack[chk_len - 1][0] = 155;
             }
             break;
-          case 149:
+          case 155:
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u120 collect */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u123 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _ja = _ref123 = FAcounter[b_0][212], _ref124 = list_1.length; _ja < _ref124; idx_1 = _ja += 1) {
+            for (idx_1 = _jp = _ref135 = FAcounter[b_0][227], _ref136 = list_1.length; _jp < _ref136; idx_1 = _jp += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -7175,8 +7594,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_jb = 0, _len164 = list_2.length; _jb < _len164; _jb++) {
-                tok = list_2[_jb];
+              for (_jq = 0, _len173 = list_2.length; _jq < _len173; _jq++) {
+                tok = list_2[_jq];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -7185,19 +7604,19 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _jc = 0; _jc < 1; _i_3 = ++_jc) {
+                for (_i_3 = _jr = 0; _jr < 1; _i_3 = ++_jr) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _jd = 0; _jd < 1; _i_3 = ++_jd) {
+                for (_i_3 = _js = 0; _js < 1; _i_3 = ++_js) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
                   }
                   list_3 = FAcache[b_2][42];
-                  for (_je = 0, _len165 = list_3.length; _je < _len165; _je++) {
-                    tok = list_3[_je];
+                  for (_jt = 0, _len174 = list_3.length; _jt < _len174; _jt++) {
+                    tok = list_3[_jt];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -7205,8 +7624,8 @@
                   }
                 }
                 node = old_node;
-                for (_jf = 0, _len166 = hyp_list_3.length; _jf < _len166; _jf++) {
-                  tok_list = hyp_list_3[_jf];
+                for (_ju = 0, _len175 = hyp_list_3.length; _ju < _len175; _ju++) {
+                  tok_list = hyp_list_3[_ju];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -7214,8 +7633,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_jg = 0, _len167 = list_4.length; _jg < _len167; _jg++) {
-                    tok = list_4[_jg];
+                  for (_jv = 0, _len176 = list_4.length; _jv < _len176; _jv++) {
+                    tok = list_4[_jv];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -7226,8 +7645,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_jh = 0, _len168 = list_5.length; _jh < _len168; _jh++) {
-                      tok = list_5[_jh];
+                    for (_jw = 0, _len177 = list_5.length; _jw < _len177; _jw++) {
+                      tok = list_5[_jw];
                       if (tok.value !== ":") {
                         continue;
                       }
@@ -7238,8 +7657,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][34];
-                      for (_ji = 0, _len169 = list_6.length; _ji < _len169; _ji++) {
-                        tok = list_6[_ji];
+                      for (_jx = 0, _len178 = list_6.length; _jx < _len178; _jx++) {
+                        tok = list_6[_jx];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -7247,8 +7666,8 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][0];
-                        for (_jj = 0, _len170 = list_7.length; _jj < _len170; _jj++) {
-                          tok = list_7[_jj];
+                        for (_jy = 0, _len179 = list_7.length; _jy < _len179; _jy++) {
+                          tok = list_7[_jy];
                           if (tok.value !== "->") {
                             continue;
                           }
@@ -7259,13 +7678,13 @@
                             continue;
                           }
                           list_8 = FAcache[b_7][26];
-                          for (_jk = 0, _len171 = list_8.length; _jk < _len171; _jk++) {
-                            tok = list_8[_jk];
+                          for (_jz = 0, _len180 = list_8.length; _jz < _len180; _jz++) {
+                            tok = list_8[_jz];
                             b_8 = tok.b;
                             node.value_array.push(tok);
                             arg_list = node.value_array;
                             mx_hash_stub = node.mx_hash = {};
-                            mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u120";
+                            mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hblock_ultEfn_decl_eolE1__u123";
                             mx_hash_stub.hash_key = "stmt";
                             mx_hash_stub.hash_key_idx = 24;
                             mx_hash_stub["ult"] = "fn_decl";
@@ -7288,13 +7707,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][212] = list_1.length;
-            FAcache[start_pos][148].append(ret_list);
+            FAcounter[b_0][227] = list_1.length;
+            FAcache[start_pos][154].append(ret_list);
             break;
-          case 150:
+          case 156:
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u121 queue */
-            chk_len = stack.push([150, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u124 queue */
+            chk_len = stack.push([156, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -7306,7 +7725,7 @@
               }
             }
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _jl = _ref125 = FAcounter[b_0][219], _ref126 = list_1.length; _jl < _ref126; idx_1 = _jl += 1) {
+            for (idx_1 = _ka = _ref137 = FAcounter[b_0][234], _ref138 = list_1.length; _ka < _ref138; idx_1 = _ka += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -7315,8 +7734,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_jm = 0, _len172 = list_2.length; _jm < _len172; _jm++) {
-                tok = list_2[_jm];
+              for (_kb = 0, _len181 = list_2.length; _kb < _len181; _kb++) {
+                tok = list_2[_kb];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -7325,12 +7744,12 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _jn = 0; _jn < 1; _i_3 = ++_jn) {
+                for (_i_3 = _kc = 0; _kc < 1; _i_3 = ++_kc) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _jo = 0; _jo < 1; _i_3 = ++_jo) {
+                for (_i_3 = _kd = 0; _kd < 1; _i_3 = ++_kd) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
@@ -7342,8 +7761,8 @@
                     }
                   }
                   list_3 = FAcache[b_2][42];
-                  for (_jp = 0, _len173 = list_3.length; _jp < _len173; _jp++) {
-                    tok = list_3[_jp];
+                  for (_ke = 0, _len182 = list_3.length; _ke < _len182; _ke++) {
+                    tok = list_3[_ke];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -7351,8 +7770,8 @@
                   }
                 }
                 node = old_node;
-                for (_jq = 0, _len174 = hyp_list_3.length; _jq < _len174; _jq++) {
-                  tok_list = hyp_list_3[_jq];
+                for (_kf = 0, _len183 = hyp_list_3.length; _kf < _len183; _kf++) {
+                  tok_list = hyp_list_3[_kf];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -7360,8 +7779,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_jr = 0, _len175 = list_4.length; _jr < _len175; _jr++) {
-                    tok = list_4[_jr];
+                  for (_kg = 0, _len184 = list_4.length; _kg < _len184; _kg++) {
+                    tok = list_4[_kg];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -7372,8 +7791,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_js = 0, _len176 = list_5.length; _js < _len176; _js++) {
-                      tok = list_5[_js];
+                    for (_kh = 0, _len185 = list_5.length; _kh < _len185; _kh++) {
+                      tok = list_5[_kh];
                       if (tok.value !== ":") {
                         continue;
                       }
@@ -7390,8 +7809,8 @@
                         }
                       }
                       list_6 = FAcache[b_5][34];
-                      for (_jt = 0, _len177 = list_6.length; _jt < _len177; _jt++) {
-                        tok = list_6[_jt];
+                      for (_ki = 0, _len186 = list_6.length; _ki < _len186; _ki++) {
+                        tok = list_6[_ki];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -7399,8 +7818,8 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][0];
-                        for (_ju = 0, _len178 = list_7.length; _ju < _len178; _ju++) {
-                          tok = list_7[_ju];
+                        for (_kj = 0, _len187 = list_7.length; _kj < _len187; _kj++) {
+                          tok = list_7[_kj];
                           if (tok.value !== "->") {
                             continue;
                           }
@@ -7432,19 +7851,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 151;
+              stack[chk_len - 1][0] = 157;
             }
             break;
-          case 151:
+          case 157:
 
-            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u121 collect */
+            /* rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u124 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _jv = _ref127 = FAcounter[b_0][227], _ref128 = list_1.length; _jv < _ref128; idx_1 = _jv += 1) {
+            for (idx_1 = _kk = _ref139 = FAcounter[b_0][242], _ref140 = list_1.length; _kk < _ref140; idx_1 = _kk += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -7453,8 +7872,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_jw = 0, _len179 = list_2.length; _jw < _len179; _jw++) {
-                tok = list_2[_jw];
+              for (_kl = 0, _len188 = list_2.length; _kl < _len188; _kl++) {
+                tok = list_2[_kl];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -7463,19 +7882,19 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _jx = 0; _jx < 1; _i_3 = ++_jx) {
+                for (_i_3 = _km = 0; _km < 1; _i_3 = ++_km) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _jy = 0; _jy < 1; _i_3 = ++_jy) {
+                for (_i_3 = _kn = 0; _kn < 1; _i_3 = ++_kn) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
                   }
                   list_3 = FAcache[b_2][42];
-                  for (_jz = 0, _len180 = list_3.length; _jz < _len180; _jz++) {
-                    tok = list_3[_jz];
+                  for (_ko = 0, _len189 = list_3.length; _ko < _len189; _ko++) {
+                    tok = list_3[_ko];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -7483,8 +7902,8 @@
                   }
                 }
                 node = old_node;
-                for (_ka = 0, _len181 = hyp_list_3.length; _ka < _len181; _ka++) {
-                  tok_list = hyp_list_3[_ka];
+                for (_kp = 0, _len190 = hyp_list_3.length; _kp < _len190; _kp++) {
+                  tok_list = hyp_list_3[_kp];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -7492,8 +7911,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_kb = 0, _len182 = list_4.length; _kb < _len182; _kb++) {
-                    tok = list_4[_kb];
+                  for (_kq = 0, _len191 = list_4.length; _kq < _len191; _kq++) {
+                    tok = list_4[_kq];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -7504,8 +7923,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_kc = 0, _len183 = list_5.length; _kc < _len183; _kc++) {
-                      tok = list_5[_kc];
+                    for (_kr = 0, _len192 = list_5.length; _kr < _len192; _kr++) {
+                      tok = list_5[_kr];
                       if (tok.value !== ":") {
                         continue;
                       }
@@ -7516,8 +7935,8 @@
                         continue;
                       }
                       list_6 = FAcache[b_5][34];
-                      for (_kd = 0, _len184 = list_6.length; _kd < _len184; _kd++) {
-                        tok = list_6[_kd];
+                      for (_ks = 0, _len193 = list_6.length; _ks < _len193; _ks++) {
+                        tok = list_6[_ks];
                         b_6 = tok.b;
                         node.value_array.push(tok);
                         if (b_6 >= length) {
@@ -7525,8 +7944,8 @@
                           continue;
                         }
                         list_7 = FAcache[b_6][0];
-                        for (_ke = 0, _len185 = list_7.length; _ke < _len185; _ke++) {
-                          tok = list_7[_ke];
+                        for (_kt = 0, _len194 = list_7.length; _kt < _len194; _kt++) {
+                          tok = list_7[_kt];
                           if (tok.value !== "->") {
                             continue;
                           }
@@ -7537,13 +7956,13 @@
                             continue;
                           }
                           list_8 = FAcache[b_7][23];
-                          for (_kf = 0, _len186 = list_8.length; _kf < _len186; _kf++) {
-                            tok = list_8[_kf];
+                          for (_ku = 0, _len195 = list_8.length; _ku < _len195; _ku++) {
+                            tok = list_8[_ku];
                             b_8 = tok.b;
                             node.value_array.push(tok);
                             arg_list = node.value_array;
                             mx_hash_stub = node.mx_hash = {};
-                            mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u121";
+                            mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hfn_decl_arg_listO_XXX_XXX_Htype_XXXX_Hrvalue_ultEfn_decl__u124";
                             mx_hash_stub.hash_key = "stmt";
                             mx_hash_stub.hash_key_idx = 24;
                             mx_hash_stub["ult"] = "fn_decl";
@@ -7565,13 +7984,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][227] = list_1.length;
-            FAcache[start_pos][150].append(ret_list);
+            FAcounter[b_0][242] = list_1.length;
+            FAcache[start_pos][156].append(ret_list);
             break;
-          case 152:
+          case 158:
 
-            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u122 queue */
-            chk_len = stack.push([152, start_pos, only_new]);
+            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u125 queue */
+            chk_len = stack.push([158, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -7583,19 +8002,19 @@
               }
             }
             list_1 = FAcache[b_0][43];
-            for (idx_1 = _kg = _ref129 = FAcounter[b_0][229], _ref130 = list_1.length; _kg < _ref130; idx_1 = _kg += 1) {
+            for (idx_1 = _kv = _ref141 = FAcounter[b_0][244], _ref142 = list_1.length; _kv < _ref142; idx_1 = _kv += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _kh = 0; _kh < 1; _i_2 = ++_kh) {
+              for (_i_2 = _kw = 0; _kw < 1; _i_2 = ++_kw) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _ki = 0; _ki < 1; _i_2 = ++_ki) {
+              for (_i_2 = _kx = 0; _kx < 1; _i_2 = ++_kx) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
@@ -7607,8 +8026,8 @@
                   }
                 }
                 list_2 = FAcache[b_1][23];
-                for (_kj = 0, _len187 = list_2.length; _kj < _len187; _kj++) {
-                  tok = list_2[_kj];
+                for (_ky = 0, _len196 = list_2.length; _ky < _len196; _ky++) {
+                  tok = list_2[_ky];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -7616,8 +8035,8 @@
                 }
               }
               node = old_node;
-              for (_kk = 0, _len188 = hyp_list_2.length; _kk < _len188; _kk++) {
-                tok_list = hyp_list_2[_kk];
+              for (_kz = 0, _len197 = hyp_list_2.length; _kz < _len197; _kz++) {
+                tok_list = hyp_list_2[_kz];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 node.value_array.length -= tok_list.length;
@@ -7625,38 +8044,38 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 153;
+              stack[chk_len - 1][0] = 159;
             }
             break;
-          case 153:
+          case 159:
 
-            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u122 collect */
+            /* rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u125 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][43];
-            for (idx_1 = _kl = _ref131 = FAcounter[b_0][231], _ref132 = list_1.length; _kl < _ref132; idx_1 = _kl += 1) {
+            for (idx_1 = _la = _ref143 = FAcounter[b_0][246], _ref144 = list_1.length; _la < _ref144; idx_1 = _la += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _km = 0; _km < 1; _i_2 = ++_km) {
+              for (_i_2 = _lb = 0; _lb < 1; _i_2 = ++_lb) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _kn = 0; _kn < 1; _i_2 = ++_kn) {
+              for (_i_2 = _lc = 0; _lc < 1; _i_2 = ++_lc) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
                 }
                 list_2 = FAcache[b_1][23];
-                for (_ko = 0, _len189 = list_2.length; _ko < _len189; _ko++) {
-                  tok = list_2[_ko];
+                for (_ld = 0, _len198 = list_2.length; _ld < _len198; _ld++) {
+                  tok = list_2[_ld];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -7664,13 +8083,13 @@
                 }
               }
               node = old_node;
-              for (_kp = 0, _len190 = hyp_list_2.length; _kp < _len190; _kp++) {
-                tok_list = hyp_list_2[_kp];
+              for (_le = 0, _len199 = hyp_list_2.length; _le < _len199; _le++) {
+                tok_list = hyp_list_2[_le];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 arg_list = node.value_array;
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u122";
+                mx_hash_stub.rule = "rule_Hreturn_HrvalueO_ultEreturn_tiEreturn__u125";
                 mx_hash_stub.hash_key = "stmt";
                 mx_hash_stub.hash_key_idx = 24;
                 mx_hash_stub["ult"] = "return";
@@ -7681,19 +8100,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][231] = list_1.length;
-            FAcache[start_pos][152].append(ret_list);
+            FAcounter[b_0][246] = list_1.length;
+            FAcache[start_pos][158].append(ret_list);
             break;
-          case 154:
+          case 160:
 
-            /* rule_class_Htok_identifier_ultEclass_decl__u126 queue */
-            chk_len = stack.push([154, start_pos, only_new]);
+            /* rule_class_Htok_identifier_ultEclass_decl__u129 queue */
+            chk_len = stack.push([160, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _kq = _ref133 = FAcounter[b_0][232], _ref134 = list_1.length; _kq < _ref134; idx_1 = _kq += 1) {
+            for (idx_1 = _lf = _ref145 = FAcounter[b_0][247], _ref146 = list_1.length; _lf < _ref146; idx_1 = _lf += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "class") {
                 continue;
@@ -7714,19 +8133,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 155;
+              stack[chk_len - 1][0] = 161;
             }
             break;
-          case 155:
+          case 161:
 
-            /* rule_class_Htok_identifier_ultEclass_decl__u126 collect */
+            /* rule_class_Htok_identifier_ultEclass_decl__u129 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _kr = _ref135 = FAcounter[b_0][234], _ref136 = list_1.length; _kr < _ref136; idx_1 = _kr += 1) {
+            for (idx_1 = _lg = _ref147 = FAcounter[b_0][249], _ref148 = list_1.length; _lg < _ref148; idx_1 = _lg += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "class") {
                 continue;
@@ -7738,13 +8157,13 @@
                 continue;
               }
               list_2 = FAcache[b_1][2];
-              for (_ks = 0, _len191 = list_2.length; _ks < _len191; _ks++) {
-                tok = list_2[_ks];
+              for (_lh = 0, _len200 = list_2.length; _lh < _len200; _lh++) {
+                tok = list_2[_lh];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 arg_list = node.value_array;
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_class_Htok_identifier_ultEclass_decl__u126";
+                mx_hash_stub.rule = "rule_class_Htok_identifier_ultEclass_decl__u129";
                 mx_hash_stub.hash_key = "stmt";
                 mx_hash_stub.hash_key_idx = 24;
                 mx_hash_stub["ult"] = "class_decl";
@@ -7754,19 +8173,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][234] = list_1.length;
-            FAcache[start_pos][154].append(ret_list);
+            FAcounter[b_0][249] = list_1.length;
+            FAcache[start_pos][160].append(ret_list);
             break;
-          case 156:
+          case 162:
 
-            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u127 queue */
-            chk_len = stack.push([156, start_pos, only_new]);
+            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u130 queue */
+            chk_len = stack.push([162, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _kt = _ref137 = FAcounter[b_0][236], _ref138 = list_1.length; _kt < _ref138; idx_1 = _kt += 1) {
+            for (idx_1 = _li = _ref149 = FAcounter[b_0][251], _ref150 = list_1.length; _li < _ref150; idx_1 = _li += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "class") {
                 continue;
@@ -7784,8 +8203,8 @@
                 }
               }
               list_2 = FAcache[b_1][2];
-              for (_ku = 0, _len192 = list_2.length; _ku < _len192; _ku++) {
-                tok = list_2[_ku];
+              for (_lj = 0, _len201 = list_2.length; _lj < _len201; _lj++) {
+                tok = list_2[_lj];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -7804,19 +8223,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 157;
+              stack[chk_len - 1][0] = 163;
             }
             break;
-          case 157:
+          case 163:
 
-            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u127 collect */
+            /* rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u130 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _kv = _ref139 = FAcounter[b_0][239], _ref140 = list_1.length; _kv < _ref140; idx_1 = _kv += 1) {
+            for (idx_1 = _lk = _ref151 = FAcounter[b_0][254], _ref152 = list_1.length; _lk < _ref152; idx_1 = _lk += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "class") {
                 continue;
@@ -7828,8 +8247,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][2];
-              for (_kw = 0, _len193 = list_2.length; _kw < _len193; _kw++) {
-                tok = list_2[_kw];
+              for (_ll = 0, _len202 = list_2.length; _ll < _len202; _ll++) {
+                tok = list_2[_ll];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -7837,13 +8256,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][26];
-                for (_kx = 0, _len194 = list_3.length; _kx < _len194; _kx++) {
-                  tok = list_3[_kx];
+                for (_lm = 0, _len203 = list_3.length; _lm < _len203; _lm++) {
+                  tok = list_3[_lm];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u127";
+                  mx_hash_stub.rule = "rule_class_Htok_identifier_Hblock_ultEclass_decl_eolE1__u130";
                   mx_hash_stub.hash_key = "stmt";
                   mx_hash_stub.hash_key_idx = 24;
                   mx_hash_stub["ult"] = "class_decl";
@@ -7856,13 +8275,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][239] = list_1.length;
-            FAcache[start_pos][156].append(ret_list);
+            FAcounter[b_0][254] = list_1.length;
+            FAcache[start_pos][162].append(ret_list);
             break;
-          case 158:
+          case 164:
 
-            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u132 queue */
-            chk_len = stack.push([158, start_pos, only_new]);
+            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u135 queue */
+            chk_len = stack.push([164, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -7874,7 +8293,7 @@
               }
             }
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _ky = _ref141 = FAcounter[b_0][240], _ref142 = list_1.length; _ky < _ref142; idx_1 = _ky += 1) {
+            for (idx_1 = _ln = _ref153 = FAcounter[b_0][255], _ref154 = list_1.length; _ln < _ref154; idx_1 = _ln += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -7892,19 +8311,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 159;
+              stack[chk_len - 1][0] = 165;
             }
             break;
-          case 159:
+          case 165:
 
-            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u132 collect */
+            /* rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u135 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _kz = _ref143 = FAcounter[b_0][242], _ref144 = list_1.length; _kz < _ref144; idx_1 = _kz += 1) {
+            for (idx_1 = _lo = _ref155 = FAcounter[b_0][257], _ref156 = list_1.length; _lo < _ref156; idx_1 = _lo += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -7913,13 +8332,13 @@
                 continue;
               }
               list_2 = FAcache[b_1][26];
-              for (_la = 0, _len195 = list_2.length; _la < _len195; _la++) {
-                tok = list_2[_la];
+              for (_lp = 0, _len204 = list_2.length; _lp < _len204; _lp++) {
+                tok = list_2[_lp];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 arg_list = node.value_array;
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u132";
+                mx_hash_stub.rule = "rule_Hlvalue_Hblock_ultEdirective_fn_call_tiEmacro_eolE1__u135";
                 mx_hash_stub.hash_key = "stmt";
                 mx_hash_stub.hash_key_idx = 24;
                 mx_hash_stub["ult"] = "directive_fn_call";
@@ -7931,13 +8350,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][242] = list_1.length;
-            FAcache[start_pos][158].append(ret_list);
+            FAcounter[b_0][257] = list_1.length;
+            FAcache[start_pos][164].append(ret_list);
             break;
-          case 160:
+          case 166:
 
-            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u133 queue */
-            chk_len = stack.push([160, start_pos, only_new]);
+            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u136 queue */
+            chk_len = stack.push([166, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -7949,7 +8368,7 @@
               }
             }
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _lb = _ref145 = FAcounter[b_0][244], _ref146 = list_1.length; _lb < _ref146; idx_1 = _lb += 1) {
+            for (idx_1 = _lq = _ref157 = FAcounter[b_0][259], _ref158 = list_1.length; _lq < _ref158; idx_1 = _lq += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -7964,8 +8383,8 @@
                 }
               }
               list_2 = FAcache[b_1][44];
-              for (_lc = 0, _len196 = list_2.length; _lc < _len196; _lc++) {
-                tok = list_2[_lc];
+              for (_lr = 0, _len205 = list_2.length; _lr < _len205; _lr++) {
+                tok = list_2[_lr];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -7984,19 +8403,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 161;
+              stack[chk_len - 1][0] = 167;
             }
             break;
-          case 161:
+          case 167:
 
-            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u133 collect */
+            /* rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u136 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _ld = _ref147 = FAcounter[b_0][247], _ref148 = list_1.length; _ld < _ref148; idx_1 = _ld += 1) {
+            for (idx_1 = _ls = _ref159 = FAcounter[b_0][262], _ref160 = list_1.length; _ls < _ref160; idx_1 = _ls += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8005,8 +8424,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][44];
-              for (_le = 0, _len197 = list_2.length; _le < _len197; _le++) {
-                tok = list_2[_le];
+              for (_lt = 0, _len206 = list_2.length; _lt < _len206; _lt++) {
+                tok = list_2[_lt];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -8014,8 +8433,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][26];
-                for (_lf = 0, _len198 = list_3.length; _lf < _len198; _lf++) {
-                  tok = list_3[_lf];
+                for (_lu = 0, _len207 = list_3.length; _lu < _len207; _lu++) {
+                  tok = list_3[_lu];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
@@ -8024,7 +8443,7 @@
                     continue;
                   }
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u133";
+                  mx_hash_stub.rule = "rule_Hlvalue_Hfn_call_arg_list_Hblock_ultEdirective_fn_call_tiEmacro_eolE1_XXX1Xtail_space_u136";
                   mx_hash_stub.hash_key = "stmt";
                   mx_hash_stub.hash_key_idx = 24;
                   mx_hash_stub["ult"] = "directive_fn_call";
@@ -8038,13 +8457,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][247] = list_1.length;
-            FAcache[start_pos][160].append(ret_list);
+            FAcounter[b_0][262] = list_1.length;
+            FAcache[start_pos][166].append(ret_list);
             break;
-          case 162:
+          case 168:
 
-            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u134 queue */
-            chk_len = stack.push([162, start_pos, only_new]);
+            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u137 queue */
+            chk_len = stack.push([168, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8056,7 +8475,7 @@
               }
             }
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _lg = _ref149 = FAcounter[b_0][251], _ref150 = list_1.length; _lg < _ref150; idx_1 = _lg += 1) {
+            for (idx_1 = _lv = _ref161 = FAcounter[b_0][266], _ref162 = list_1.length; _lv < _ref162; idx_1 = _lv += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8065,8 +8484,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_lh = 0, _len199 = list_2.length; _lh < _len199; _lh++) {
-                tok = list_2[_lh];
+              for (_lw = 0, _len208 = list_2.length; _lw < _len208; _lw++) {
+                tok = list_2[_lw];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -8075,12 +8494,12 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _li = 0; _li < 1; _i_3 = ++_li) {
+                for (_i_3 = _lx = 0; _lx < 1; _i_3 = ++_lx) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _lj = 0; _lj < 1; _i_3 = ++_lj) {
+                for (_i_3 = _ly = 0; _ly < 1; _i_3 = ++_ly) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
@@ -8092,8 +8511,8 @@
                     }
                   }
                   list_3 = FAcache[b_2][44];
-                  for (_lk = 0, _len200 = list_3.length; _lk < _len200; _lk++) {
-                    tok = list_3[_lk];
+                  for (_lz = 0, _len209 = list_3.length; _lz < _len209; _lz++) {
+                    tok = list_3[_lz];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -8101,8 +8520,8 @@
                   }
                 }
                 node = old_node;
-                for (_ll = 0, _len201 = hyp_list_3.length; _ll < _len201; _ll++) {
-                  tok_list = hyp_list_3[_ll];
+                for (_ma = 0, _len210 = hyp_list_3.length; _ma < _len210; _ma++) {
+                  tok_list = hyp_list_3[_ma];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -8110,8 +8529,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_lm = 0, _len202 = list_4.length; _lm < _len202; _lm++) {
-                    tok = list_4[_lm];
+                  for (_mb = 0, _len211 = list_4.length; _mb < _len211; _mb++) {
+                    tok = list_4[_mb];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -8137,19 +8556,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 163;
+              stack[chk_len - 1][0] = 169;
             }
             break;
-          case 163:
+          case 169:
 
-            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u134 collect */
+            /* rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u137 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][25];
-            for (idx_1 = _ln = _ref151 = FAcounter[b_0][256], _ref152 = list_1.length; _ln < _ref152; idx_1 = _ln += 1) {
+            for (idx_1 = _mc = _ref163 = FAcounter[b_0][271], _ref164 = list_1.length; _mc < _ref164; idx_1 = _mc += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8158,8 +8577,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_lo = 0, _len203 = list_2.length; _lo < _len203; _lo++) {
-                tok = list_2[_lo];
+              for (_md = 0, _len212 = list_2.length; _md < _len212; _md++) {
+                tok = list_2[_md];
                 if (tok.value !== "(") {
                   continue;
                 }
@@ -8168,19 +8587,19 @@
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _lp = 0; _lp < 1; _i_3 = ++_lp) {
+                for (_i_3 = _me = 0; _me < 1; _i_3 = ++_me) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _lq = 0; _lq < 1; _i_3 = ++_lq) {
+                for (_i_3 = _mf = 0; _mf < 1; _i_3 = ++_mf) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
                   }
                   list_3 = FAcache[b_2][44];
-                  for (_lr = 0, _len204 = list_3.length; _lr < _len204; _lr++) {
-                    tok = list_3[_lr];
+                  for (_mg = 0, _len213 = list_3.length; _mg < _len213; _mg++) {
+                    tok = list_3[_mg];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -8188,8 +8607,8 @@
                   }
                 }
                 node = old_node;
-                for (_ls = 0, _len205 = hyp_list_3.length; _ls < _len205; _ls++) {
-                  tok_list = hyp_list_3[_ls];
+                for (_mh = 0, _len214 = hyp_list_3.length; _mh < _len214; _mh++) {
+                  tok_list = hyp_list_3[_mh];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -8197,8 +8616,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][0];
-                  for (_lt = 0, _len206 = list_4.length; _lt < _len206; _lt++) {
-                    tok = list_4[_lt];
+                  for (_mi = 0, _len215 = list_4.length; _mi < _len215; _mi++) {
+                    tok = list_4[_mi];
                     if (tok.value !== ")") {
                       continue;
                     }
@@ -8209,8 +8628,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][26];
-                    for (_lu = 0, _len207 = list_5.length; _lu < _len207; _lu++) {
-                      tok = list_5[_lu];
+                    for (_mj = 0, _len216 = list_5.length; _mj < _len216; _mj++) {
+                      tok = list_5[_mj];
                       b_5 = tok.b;
                       node.value_array.push(tok);
                       arg_list = node.value_array;
@@ -8219,7 +8638,7 @@
                         continue;
                       }
                       mx_hash_stub = node.mx_hash = {};
-                      mx_hash_stub.rule = "rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u134";
+                      mx_hash_stub.rule = "rule_Hlvalue_XXX_Hfn_call_arg_listO_XXX_Hblock_priorityEX9000_ultEdirective_fn_call_eolE1_XX1Xtail_space_u137";
                       mx_hash_stub.hash_key = "stmt";
                       mx_hash_stub.hash_key_idx = 24;
                       mx_hash_stub["priority"] = -9000;
@@ -8237,13 +8656,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][256] = list_1.length;
-            FAcache[start_pos][162].append(ret_list);
+            FAcounter[b_0][271] = list_1.length;
+            FAcache[start_pos][168].append(ret_list);
             break;
-          case 165:
+          case 171:
 
             /* rule_Htok_identifier_priorityEX9000_tail_spaceEX1Xtail_space_ultEid_tiEid__u7 queue */
-            chk_len = stack.push([165, start_pos, only_new]);
+            chk_len = stack.push([171, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8256,10 +8675,10 @@
             }
             list_1 = FAcache[b_0][2];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 166;
+              stack[chk_len - 1][0] = 172;
             }
             break;
-          case 166:
+          case 172:
 
             /* rule_Htok_identifier_priorityEX9000_tail_spaceEX1Xtail_space_ultEid_tiEid__u7 collect */
             ret_list = [];
@@ -8268,7 +8687,7 @@
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _lv = _ref153 = FAcounter[b_0][257], _ref154 = list_1.length; _lv < _ref154; idx_1 = _lv += 1) {
+            for (idx_1 = _mk = _ref165 = FAcounter[b_0][272], _ref166 = list_1.length; _mk < _ref166; idx_1 = _mk += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8285,13 +8704,13 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][257] = list_1.length;
-            FAcache[start_pos][165].append(ret_list);
+            FAcounter[b_0][272] = list_1.length;
+            FAcache[start_pos][171].append(ret_list);
             break;
-          case 167:
+          case 173:
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 queue */
-            chk_len = stack.push([167, start_pos, only_new]);
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u91 queue */
+            chk_len = stack.push([173, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8303,7 +8722,7 @@
               }
             }
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _lw = _ref155 = FAcounter[b_0][259], _ref156 = list_1.length; _lw < _ref156; idx_1 = _lw += 1) {
+            for (idx_1 = _ml = _ref167 = FAcounter[b_0][274], _ref168 = list_1.length; _ml < _ref168; idx_1 = _ml += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8312,8 +8731,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_lx = 0, _len208 = list_2.length; _lx < _len208; _lx++) {
-                tok = list_2[_lx];
+              for (_mm = 0, _len217 = list_2.length; _mm < _len217; _mm++) {
+                tok = list_2[_mm];
                 if (tok.value !== ".") {
                   continue;
                 }
@@ -8335,19 +8754,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 168;
+              stack[chk_len - 1][0] = 174;
             }
             break;
-          case 168:
+          case 174:
 
-            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88 collect */
+            /* rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u91 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _ly = _ref157 = FAcounter[b_0][262], _ref158 = list_1.length; _ly < _ref158; idx_1 = _ly += 1) {
+            for (idx_1 = _mn = _ref169 = FAcounter[b_0][277], _ref170 = list_1.length; _mn < _ref170; idx_1 = _mn += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8356,8 +8775,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_lz = 0, _len209 = list_2.length; _lz < _len209; _lz++) {
-                tok = list_2[_lz];
+              for (_mo = 0, _len218 = list_2.length; _mo < _len218; _mo++) {
+                tok = list_2[_mo];
                 if (tok.value !== ".") {
                   continue;
                 }
@@ -8368,8 +8787,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][2];
-                for (_ma = 0, _len210 = list_3.length; _ma < _len210; _ma++) {
-                  tok = list_3[_ma];
+                for (_mp = 0, _len219 = list_3.length; _mp < _len219; _mp++) {
+                  tok = list_3[_mp];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
@@ -8378,7 +8797,7 @@
                     continue;
                   }
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u88";
+                  mx_hash_stub.rule = "rule_Hrvalue_XXX_Htok_identifier_priorityEX9000_ultEfield_access_tiEmacro_tail_spaceEHtok_identifierXtail_space_X1XpriorityEEX9000_u91";
                   mx_hash_stub.hash_key = "lvalue";
                   mx_hash_stub.hash_key_idx = 25;
                   mx_hash_stub["priority"] = -9000;
@@ -8393,13 +8812,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][262] = list_1.length;
-            FAcache[start_pos][167].append(ret_list);
+            FAcounter[b_0][277] = list_1.length;
+            FAcache[start_pos][173].append(ret_list);
             break;
-          case 170:
+          case 176:
 
             /* rule_Hindent_Hstmt_plus_Hdedent_priorityEX9000_ultEblock_tiEblock__u6 queue */
-            chk_len = stack.push([170, start_pos, only_new]);
+            chk_len = stack.push([176, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8411,7 +8830,7 @@
               }
             }
             list_1 = FAcache[b_0][27];
-            for (idx_1 = _mb = _ref159 = FAcounter[b_0][264], _ref160 = list_1.length; _mb < _ref160; idx_1 = _mb += 1) {
+            for (idx_1 = _mq = _ref171 = FAcounter[b_0][279], _ref172 = list_1.length; _mq < _ref172; idx_1 = _mq += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8426,8 +8845,8 @@
                 }
               }
               list_2 = FAcache[b_1][28];
-              for (_mc = 0, _len211 = list_2.length; _mc < _len211; _mc++) {
-                tok = list_2[_mc];
+              for (_mr = 0, _len220 = list_2.length; _mr < _len220; _mr++) {
+                tok = list_2[_mr];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -8446,10 +8865,10 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 171;
+              stack[chk_len - 1][0] = 177;
             }
             break;
-          case 171:
+          case 177:
 
             /* rule_Hindent_Hstmt_plus_Hdedent_priorityEX9000_ultEblock_tiEblock__u6 collect */
             ret_list = [];
@@ -8458,7 +8877,7 @@
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][27];
-            for (idx_1 = _md = _ref161 = FAcounter[b_0][267], _ref162 = list_1.length; _md < _ref162; idx_1 = _md += 1) {
+            for (idx_1 = _ms = _ref173 = FAcounter[b_0][282], _ref174 = list_1.length; _ms < _ref174; idx_1 = _ms += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8467,8 +8886,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][28];
-              for (_me = 0, _len212 = list_2.length; _me < _len212; _me++) {
-                tok = list_2[_me];
+              for (_mt = 0, _len221 = list_2.length; _mt < _len221; _mt++) {
+                tok = list_2[_mt];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -8476,8 +8895,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][29];
-                for (_mf = 0, _len213 = list_3.length; _mf < _len213; _mf++) {
-                  tok = list_3[_mf];
+                for (_mu = 0, _len222 = list_3.length; _mu < _len222; _mu++) {
+                  tok = list_3[_mu];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
@@ -8496,13 +8915,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][267] = list_1.length;
-            FAcache[start_pos][170].append(ret_list);
+            FAcounter[b_0][282] = list_1.length;
+            FAcache[start_pos][176].append(ret_list);
             break;
-          case 174:
+          case 180:
 
-            /* rule_Hstmt_ultEdeep_scope_tiEpass__u75 queue */
-            chk_len = stack.push([174, start_pos, only_new]);
+            /* rule_Hstmt_ultEdeep_scope_tiEpass__u78 queue */
+            chk_len = stack.push([180, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8515,25 +8934,25 @@
             }
             list_1 = FAcache[b_0][24];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 175;
+              stack[chk_len - 1][0] = 181;
             }
             break;
-          case 175:
+          case 181:
 
-            /* rule_Hstmt_ultEdeep_scope_tiEpass__u75 collect */
+            /* rule_Hstmt_ultEdeep_scope_tiEpass__u78 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][24];
-            for (idx_1 = _mg = _ref163 = FAcounter[b_0][268], _ref164 = list_1.length; _mg < _ref164; idx_1 = _mg += 1) {
+            for (idx_1 = _mv = _ref175 = FAcounter[b_0][283], _ref176 = list_1.length; _mv < _ref176; idx_1 = _mv += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Hstmt_ultEdeep_scope_tiEpass__u75";
+              mx_hash_stub.rule = "rule_Hstmt_ultEdeep_scope_tiEpass__u78";
               mx_hash_stub.hash_key = "stmt_plus";
               mx_hash_stub.hash_key_idx = 28;
               mx_hash_stub["ult"] = "deep_scope";
@@ -8542,13 +8961,13 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][268] = list_1.length;
-            FAcache[start_pos][174].append(ret_list);
+            FAcounter[b_0][283] = list_1.length;
+            FAcache[start_pos][180].append(ret_list);
             break;
-          case 176:
+          case 182:
 
-            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u76 queue */
-            chk_len = stack.push([176, start_pos, only_new]);
+            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u79 queue */
+            chk_len = stack.push([182, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8560,7 +8979,7 @@
               }
             }
             list_1 = FAcache[b_0][24];
-            for (idx_1 = _mh = _ref165 = FAcounter[b_0][269], _ref166 = list_1.length; _mh < _ref166; idx_1 = _mh += 1) {
+            for (idx_1 = _mw = _ref177 = FAcounter[b_0][284], _ref178 = list_1.length; _mw < _ref178; idx_1 = _mw += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8578,19 +8997,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 177;
+              stack[chk_len - 1][0] = 183;
             }
             break;
-          case 177:
+          case 183:
 
-            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u76 collect */
+            /* rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u79 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][24];
-            for (idx_1 = _mi = _ref167 = FAcounter[b_0][271], _ref168 = list_1.length; _mi < _ref168; idx_1 = _mi += 1) {
+            for (idx_1 = _mx = _ref179 = FAcounter[b_0][286], _ref180 = list_1.length; _mx < _ref180; idx_1 = _mx += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8599,8 +9018,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][28];
-              for (_mj = 0, _len214 = list_2.length; _mj < _len214; _mj++) {
-                tok = list_2[_mj];
+              for (_my = 0, _len223 = list_2.length; _my < _len223; _my++) {
+                tok = list_2[_my];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 arg_list = node.value_array;
@@ -8609,7 +9028,7 @@
                   continue;
                 }
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u76";
+                mx_hash_stub.rule = "rule_Hstmt_Hstmt_plus_ultEdeep_scope_X1Xeol_u79";
                 mx_hash_stub.hash_key = "stmt_plus";
                 mx_hash_stub.hash_key_idx = 28;
                 mx_hash_stub["ult"] = "deep_scope";
@@ -8619,13 +9038,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][271] = list_1.length;
-            FAcache[start_pos][176].append(ret_list);
+            FAcounter[b_0][286] = list_1.length;
+            FAcache[start_pos][182].append(ret_list);
             break;
-          case 178:
+          case 184:
 
-            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u77 queue */
-            chk_len = stack.push([178, start_pos, only_new]);
+            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u80 queue */
+            chk_len = stack.push([184, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8637,7 +9056,7 @@
               }
             }
             list_1 = FAcache[b_0][24];
-            for (idx_1 = _mk = _ref169 = FAcounter[b_0][273], _ref170 = list_1.length; _mk < _ref170; idx_1 = _mk += 1) {
+            for (idx_1 = _mz = _ref181 = FAcounter[b_0][288], _ref182 = list_1.length; _mz < _ref182; idx_1 = _mz += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8652,8 +9071,8 @@
                 }
               }
               list_2 = FAcache[b_1][33];
-              for (_ml = 0, _len215 = list_2.length; _ml < _len215; _ml++) {
-                tok = list_2[_ml];
+              for (_na = 0, _len224 = list_2.length; _na < _len224; _na++) {
+                tok = list_2[_na];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -8672,19 +9091,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 179;
+              stack[chk_len - 1][0] = 185;
             }
             break;
-          case 179:
+          case 185:
 
-            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u77 collect */
+            /* rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u80 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][24];
-            for (idx_1 = _mm = _ref171 = FAcounter[b_0][276], _ref172 = list_1.length; _mm < _ref172; idx_1 = _mm += 1) {
+            for (idx_1 = _nb = _ref183 = FAcounter[b_0][291], _ref184 = list_1.length; _nb < _ref184; idx_1 = _nb += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8693,8 +9112,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][33];
-              for (_mn = 0, _len216 = list_2.length; _mn < _len216; _mn++) {
-                tok = list_2[_mn];
+              for (_nc = 0, _len225 = list_2.length; _nc < _len225; _nc++) {
+                tok = list_2[_nc];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -8702,13 +9121,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][28];
-                for (_mo = 0, _len217 = list_3.length; _mo < _len217; _mo++) {
-                  tok = list_3[_mo];
+                for (_nd = 0, _len226 = list_3.length; _nd < _len226; _nd++) {
+                  tok = list_3[_nd];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u77";
+                  mx_hash_stub.rule = "rule_Hstmt_Heol_Hstmt_plus_ultEdeep_scope_tiEstmt_plus_last_eol_passE1__u80";
                   mx_hash_stub.hash_key = "stmt_plus";
                   mx_hash_stub.hash_key_idx = 28;
                   mx_hash_stub["ult"] = "deep_scope";
@@ -8722,13 +9141,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][276] = list_1.length;
-            FAcache[start_pos][178].append(ret_list);
+            FAcounter[b_0][291] = list_1.length;
+            FAcache[start_pos][184].append(ret_list);
             break;
-          case 186:
+          case 192:
 
-            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u143 queue */
-            chk_len = stack.push([186, start_pos, only_new]);
+            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u146 queue */
+            chk_len = stack.push([192, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8740,19 +9159,19 @@
               }
             }
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _mp = _ref173 = FAcounter[b_0][279], _ref174 = list_1.length; _mp < _ref174; idx_1 = _mp += 1) {
+            for (idx_1 = _ne = _ref185 = FAcounter[b_0][294], _ref186 = list_1.length; _ne < _ref186; idx_1 = _ne += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _mq = 0; _mq < 1; _i_2 = ++_mq) {
+              for (_i_2 = _nf = 0; _nf < 1; _i_2 = ++_nf) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _mr = 0; _mr < 1; _i_2 = ++_mr) {
+              for (_i_2 = _ng = 0; _ng < 1; _i_2 = ++_ng) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
@@ -8764,8 +9183,8 @@
                   }
                 }
                 list_2 = FAcache[b_1][46];
-                for (_ms = 0, _len218 = list_2.length; _ms < _len218; _ms++) {
-                  tok = list_2[_ms];
+                for (_nh = 0, _len227 = list_2.length; _nh < _len227; _nh++) {
+                  tok = list_2[_nh];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -8773,19 +9192,19 @@
                 }
               }
               node = old_node;
-              for (_mt = 0, _len219 = hyp_list_2.length; _mt < _len219; _mt++) {
-                tok_list = hyp_list_2[_mt];
+              for (_ni = 0, _len228 = hyp_list_2.length; _ni < _len228; _ni++) {
+                tok_list = hyp_list_2[_ni];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _mu = 0; _mu < 1; _i_3 = ++_mu) {
+                for (_i_3 = _nj = 0; _nj < 1; _i_3 = ++_nj) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _mv = 0; _mv < 1; _i_3 = ++_mv) {
+                for (_i_3 = _nk = 0; _nk < 1; _i_3 = ++_nk) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
@@ -8797,8 +9216,8 @@
                     }
                   }
                   list_3 = FAcache[b_2][49];
-                  for (_mw = 0, _len220 = list_3.length; _mw < _len220; _mw++) {
-                    tok = list_3[_mw];
+                  for (_nl = 0, _len229 = list_3.length; _nl < _len229; _nl++) {
+                    tok = list_3[_nl];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -8806,8 +9225,8 @@
                   }
                 }
                 node = old_node;
-                for (_mx = 0, _len221 = hyp_list_3.length; _mx < _len221; _mx++) {
-                  tok_list = hyp_list_3[_mx];
+                for (_nm = 0, _len230 = hyp_list_3.length; _nm < _len230; _nm++) {
+                  tok_list = hyp_list_3[_nm];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   node.value_array.length -= tok_list.length;
@@ -8817,38 +9236,38 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 187;
+              stack[chk_len - 1][0] = 193;
             }
             break;
-          case 187:
+          case 193:
 
-            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u143 collect */
+            /* rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u146 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _my = _ref175 = FAcounter[b_0][282], _ref176 = list_1.length; _my < _ref176; idx_1 = _my += 1) {
+            for (idx_1 = _nn = _ref187 = FAcounter[b_0][297], _ref188 = list_1.length; _nn < _ref188; idx_1 = _nn += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _mz = 0; _mz < 1; _i_2 = ++_mz) {
+              for (_i_2 = _no = 0; _no < 1; _i_2 = ++_no) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _na = 0; _na < 1; _i_2 = ++_na) {
+              for (_i_2 = _np = 0; _np < 1; _i_2 = ++_np) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
                 }
                 list_2 = FAcache[b_1][46];
-                for (_nb = 0, _len222 = list_2.length; _nb < _len222; _nb++) {
-                  tok = list_2[_nb];
+                for (_nq = 0, _len231 = list_2.length; _nq < _len231; _nq++) {
+                  tok = list_2[_nq];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -8856,26 +9275,26 @@
                 }
               }
               node = old_node;
-              for (_nc = 0, _len223 = hyp_list_2.length; _nc < _len223; _nc++) {
-                tok_list = hyp_list_2[_nc];
+              for (_nr = 0, _len232 = hyp_list_2.length; _nr < _len232; _nr++) {
+                tok_list = hyp_list_2[_nr];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _nd = 0; _nd < 1; _i_3 = ++_nd) {
+                for (_i_3 = _ns = 0; _ns < 1; _i_3 = ++_ns) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _ne = 0; _ne < 1; _i_3 = ++_ne) {
+                for (_i_3 = _nt = 0; _nt < 1; _i_3 = ++_nt) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
                   }
                   list_3 = FAcache[b_2][49];
-                  for (_nf = 0, _len224 = list_3.length; _nf < _len224; _nf++) {
-                    tok = list_3[_nf];
+                  for (_nu = 0, _len233 = list_3.length; _nu < _len233; _nu++) {
+                    tok = list_3[_nu];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -8883,13 +9302,13 @@
                   }
                 }
                 node = old_node;
-                for (_ng = 0, _len225 = hyp_list_3.length; _ng < _len225; _ng++) {
-                  tok_list = hyp_list_3[_ng];
+                for (_nv = 0, _len234 = hyp_list_3.length; _nv < _len234; _nv++) {
+                  tok_list = hyp_list_3[_nv];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u143";
+                  mx_hash_stub.rule = "rule_Htok_identifier_Htype_nestO_Htype_fieldO_ultEtype_name_tiEpass__u146";
                   mx_hash_stub.hash_key = "type";
                   mx_hash_stub.hash_key_idx = 34;
                   mx_hash_stub["ult"] = "type_name";
@@ -8902,13 +9321,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][282] = list_1.length;
-            FAcache[start_pos][186].append(ret_list);
+            FAcounter[b_0][297] = list_1.length;
+            FAcache[start_pos][192].append(ret_list);
             break;
-          case 189:
+          case 195:
 
-            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u89 queue */
-            chk_len = stack.push([189, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u92 queue */
+            chk_len = stack.push([195, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -8920,7 +9339,7 @@
               }
             }
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _nh = _ref177 = FAcounter[b_0][284], _ref178 = list_1.length; _nh < _ref178; idx_1 = _nh += 1) {
+            for (idx_1 = _nw = _ref189 = FAcounter[b_0][299], _ref190 = list_1.length; _nw < _ref190; idx_1 = _nw += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8929,8 +9348,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_ni = 0, _len226 = list_2.length; _ni < _len226; _ni++) {
-                tok = list_2[_ni];
+              for (_nx = 0, _len235 = list_2.length; _nx < _len235; _nx++) {
+                tok = list_2[_nx];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -8952,19 +9371,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 190;
+              stack[chk_len - 1][0] = 196;
             }
             break;
-          case 190:
+          case 196:
 
-            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u89 collect */
+            /* rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u92 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _nj = _ref179 = FAcounter[b_0][287], _ref180 = list_1.length; _nj < _ref180; idx_1 = _nj += 1) {
+            for (idx_1 = _ny = _ref191 = FAcounter[b_0][302], _ref192 = list_1.length; _ny < _ref192; idx_1 = _ny += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -8973,8 +9392,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_nk = 0, _len227 = list_2.length; _nk < _len227; _nk++) {
-                tok = list_2[_nk];
+              for (_nz = 0, _len236 = list_2.length; _nz < _len236; _nz++) {
+                tok = list_2[_nz];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -8985,13 +9404,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][23];
-                for (_nl = 0, _len228 = list_3.length; _nl < _len228; _nl++) {
-                  tok = list_3[_nl];
+                for (_oa = 0, _len237 = list_3.length; _oa < _len237; _oa++) {
+                  tok = list_3[_oa];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u89";
+                  mx_hash_stub.rule = "rule_Htok_identifier_XXX_Hrvalue_eolEHrvalueXeol__u92";
                   mx_hash_stub.hash_key = "struct_init_kv";
                   mx_hash_stub.hash_key_idx = 35;
                   mx_hash_stub["eol"] = arg_list[2].mx_hash.eol;
@@ -9003,13 +9422,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][287] = list_1.length;
-            FAcache[start_pos][189].append(ret_list);
+            FAcounter[b_0][302] = list_1.length;
+            FAcache[start_pos][195].append(ret_list);
             break;
-          case 191:
+          case 197:
 
-            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u90 queue */
-            chk_len = stack.push([191, start_pos, only_new]);
+            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u93 queue */
+            chk_len = stack.push([197, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9021,7 +9440,7 @@
               }
             }
             list_1 = FAcache[b_0][10];
-            for (idx_1 = _nm = _ref181 = FAcounter[b_0][289], _ref182 = list_1.length; _nm < _ref182; idx_1 = _nm += 1) {
+            for (idx_1 = _ob = _ref193 = FAcounter[b_0][304], _ref194 = list_1.length; _ob < _ref194; idx_1 = _ob += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9030,8 +9449,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_nn = 0, _len229 = list_2.length; _nn < _len229; _nn++) {
-                tok = list_2[_nn];
+              for (_oc = 0, _len238 = list_2.length; _oc < _len238; _oc++) {
+                tok = list_2[_oc];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -9053,19 +9472,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 192;
+              stack[chk_len - 1][0] = 198;
             }
             break;
-          case 192:
+          case 198:
 
-            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u90 collect */
+            /* rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u93 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][10];
-            for (idx_1 = _no = _ref183 = FAcounter[b_0][292], _ref184 = list_1.length; _no < _ref184; idx_1 = _no += 1) {
+            for (idx_1 = _od = _ref195 = FAcounter[b_0][307], _ref196 = list_1.length; _od < _ref196; idx_1 = _od += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9074,8 +9493,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_np = 0, _len230 = list_2.length; _np < _len230; _np++) {
-                tok = list_2[_np];
+              for (_oe = 0, _len239 = list_2.length; _oe < _len239; _oe++) {
+                tok = list_2[_oe];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -9086,13 +9505,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][23];
-                for (_nq = 0, _len231 = list_3.length; _nq < _len231; _nq++) {
-                  tok = list_3[_nq];
+                for (_of = 0, _len240 = list_3.length; _of < _len240; _of++) {
+                  tok = list_3[_of];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u90";
+                  mx_hash_stub.rule = "rule_Htok_string_sq_XXX_Hrvalue_eolEHrvalueXeol__u93";
                   mx_hash_stub.hash_key = "struct_init_kv";
                   mx_hash_stub.hash_key_idx = 35;
                   mx_hash_stub["eol"] = arg_list[2].mx_hash.eol;
@@ -9104,13 +9523,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][292] = list_1.length;
-            FAcache[start_pos][191].append(ret_list);
+            FAcounter[b_0][307] = list_1.length;
+            FAcache[start_pos][197].append(ret_list);
             break;
-          case 193:
+          case 199:
 
-            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u91 queue */
-            chk_len = stack.push([193, start_pos, only_new]);
+            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u94 queue */
+            chk_len = stack.push([199, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9122,7 +9541,7 @@
               }
             }
             list_1 = FAcache[b_0][11];
-            for (idx_1 = _nr = _ref185 = FAcounter[b_0][294], _ref186 = list_1.length; _nr < _ref186; idx_1 = _nr += 1) {
+            for (idx_1 = _og = _ref197 = FAcounter[b_0][309], _ref198 = list_1.length; _og < _ref198; idx_1 = _og += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9131,8 +9550,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_ns = 0, _len232 = list_2.length; _ns < _len232; _ns++) {
-                tok = list_2[_ns];
+              for (_oh = 0, _len241 = list_2.length; _oh < _len241; _oh++) {
+                tok = list_2[_oh];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -9154,19 +9573,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 194;
+              stack[chk_len - 1][0] = 200;
             }
             break;
-          case 194:
+          case 200:
 
-            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u91 collect */
+            /* rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u94 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][11];
-            for (idx_1 = _nt = _ref187 = FAcounter[b_0][297], _ref188 = list_1.length; _nt < _ref188; idx_1 = _nt += 1) {
+            for (idx_1 = _oi = _ref199 = FAcounter[b_0][312], _ref200 = list_1.length; _oi < _ref200; idx_1 = _oi += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9175,8 +9594,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_nu = 0, _len233 = list_2.length; _nu < _len233; _nu++) {
-                tok = list_2[_nu];
+              for (_oj = 0, _len242 = list_2.length; _oj < _len242; _oj++) {
+                tok = list_2[_oj];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -9187,13 +9606,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][23];
-                for (_nv = 0, _len234 = list_3.length; _nv < _len234; _nv++) {
-                  tok = list_3[_nv];
+                for (_ok = 0, _len243 = list_3.length; _ok < _len243; _ok++) {
+                  tok = list_3[_ok];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u91";
+                  mx_hash_stub.rule = "rule_Htok_string_dq_XXX_Hrvalue_eolEHrvalueXeol__u94";
                   mx_hash_stub.hash_key = "struct_init_kv";
                   mx_hash_stub.hash_key_idx = 35;
                   mx_hash_stub["eol"] = arg_list[2].mx_hash.eol;
@@ -9205,13 +9624,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][297] = list_1.length;
-            FAcache[start_pos][193].append(ret_list);
+            FAcounter[b_0][312] = list_1.length;
+            FAcache[start_pos][199].append(ret_list);
             break;
-          case 196:
+          case 202:
 
-            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u92 queue */
-            chk_len = stack.push([196, start_pos, only_new]);
+            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u95 queue */
+            chk_len = stack.push([202, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9224,25 +9643,25 @@
             }
             list_1 = FAcache[b_0][35];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 197;
+              stack[chk_len - 1][0] = 203;
             }
             break;
-          case 197:
+          case 203:
 
-            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u92 collect */
+            /* rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u95 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _nw = _ref189 = FAcounter[b_0][298], _ref190 = list_1.length; _nw < _ref190; idx_1 = _nw += 1) {
+            for (idx_1 = _ol = _ref201 = FAcounter[b_0][313], _ref202 = list_1.length; _ol < _ref202; idx_1 = _ol += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u92";
+              mx_hash_stub.rule = "rule_Hstruct_init_kv_eolEX1Xeol_struct_init_inlineE1__u95";
               mx_hash_stub.hash_key = "struct_init_list";
               mx_hash_stub.hash_key_idx = 36;
               mx_hash_stub["eol"] = arg_list[0].mx_hash.eol;
@@ -9251,13 +9670,13 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][298] = list_1.length;
-            FAcache[start_pos][196].append(ret_list);
+            FAcounter[b_0][313] = list_1.length;
+            FAcache[start_pos][202].append(ret_list);
             break;
-          case 198:
+          case 204:
 
-            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u93 queue */
-            chk_len = stack.push([198, start_pos, only_new]);
+            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u96 queue */
+            chk_len = stack.push([204, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9269,7 +9688,7 @@
               }
             }
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _nx = _ref191 = FAcounter[b_0][299], _ref192 = list_1.length; _nx < _ref192; idx_1 = _nx += 1) {
+            for (idx_1 = _om = _ref203 = FAcounter[b_0][314], _ref204 = list_1.length; _om < _ref204; idx_1 = _om += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9287,19 +9706,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 199;
+              stack[chk_len - 1][0] = 205;
             }
             break;
-          case 199:
+          case 205:
 
-            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u93 collect */
+            /* rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u96 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _ny = _ref193 = FAcounter[b_0][301], _ref194 = list_1.length; _ny < _ref194; idx_1 = _ny += 1) {
+            for (idx_1 = _on = _ref205 = FAcounter[b_0][316], _ref206 = list_1.length; _on < _ref206; idx_1 = _on += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9308,8 +9727,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][36];
-              for (_nz = 0, _len235 = list_2.length; _nz < _len235; _nz++) {
-                tok = list_2[_nz];
+              for (_oo = 0, _len244 = list_2.length; _oo < _len244; _oo++) {
+                tok = list_2[_oo];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 arg_list = node.value_array;
@@ -9318,7 +9737,7 @@
                   continue;
                 }
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u93";
+                mx_hash_stub.rule = "rule_Hstruct_init_kv_Hstruct_init_list_struct_init_inlineE0_Hstruct_init_kvXeol_u96";
                 mx_hash_stub.hash_key = "struct_init_list";
                 mx_hash_stub.hash_key_idx = 36;
                 mx_hash_stub["struct_init_inline"] = 0;
@@ -9328,13 +9747,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][301] = list_1.length;
-            FAcache[start_pos][198].append(ret_list);
+            FAcounter[b_0][316] = list_1.length;
+            FAcache[start_pos][204].append(ret_list);
             break;
-          case 200:
+          case 206:
 
-            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u94 queue */
-            chk_len = stack.push([200, start_pos, only_new]);
+            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u97 queue */
+            chk_len = stack.push([206, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9346,7 +9765,7 @@
               }
             }
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _oa = _ref195 = FAcounter[b_0][303], _ref196 = list_1.length; _oa < _ref196; idx_1 = _oa += 1) {
+            for (idx_1 = _op = _ref207 = FAcounter[b_0][318], _ref208 = list_1.length; _op < _ref208; idx_1 = _op += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9361,8 +9780,8 @@
                 }
               }
               list_2 = FAcache[b_1][33];
-              for (_ob = 0, _len236 = list_2.length; _ob < _len236; _ob++) {
-                tok = list_2[_ob];
+              for (_oq = 0, _len245 = list_2.length; _oq < _len245; _oq++) {
+                tok = list_2[_oq];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -9381,19 +9800,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 201;
+              stack[chk_len - 1][0] = 207;
             }
             break;
-          case 201:
+          case 207:
 
-            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u94 collect */
+            /* rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u97 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _oc = _ref197 = FAcounter[b_0][306], _ref198 = list_1.length; _oc < _ref198; idx_1 = _oc += 1) {
+            for (idx_1 = _or = _ref209 = FAcounter[b_0][321], _ref210 = list_1.length; _or < _ref210; idx_1 = _or += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9402,8 +9821,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][33];
-              for (_od = 0, _len237 = list_2.length; _od < _len237; _od++) {
-                tok = list_2[_od];
+              for (_os = 0, _len246 = list_2.length; _os < _len246; _os++) {
+                tok = list_2[_os];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -9411,13 +9830,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][36];
-                for (_oe = 0, _len238 = list_3.length; _oe < _len238; _oe++) {
-                  tok = list_3[_oe];
+                for (_ot = 0, _len247 = list_3.length; _ot < _len247; _ot++) {
+                  tok = list_3[_ot];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u94";
+                  mx_hash_stub.rule = "rule_Hstruct_init_kv_Heol_Hstruct_init_list_struct_init_inlineE0__u97";
                   mx_hash_stub.hash_key = "struct_init_list";
                   mx_hash_stub.hash_key_idx = 36;
                   mx_hash_stub["struct_init_inline"] = 0;
@@ -9429,13 +9848,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][306] = list_1.length;
-            FAcache[start_pos][200].append(ret_list);
+            FAcounter[b_0][321] = list_1.length;
+            FAcache[start_pos][206].append(ret_list);
             break;
-          case 202:
+          case 208:
 
-            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u95 queue */
-            chk_len = stack.push([202, start_pos, only_new]);
+            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u98 queue */
+            chk_len = stack.push([208, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9447,7 +9866,7 @@
               }
             }
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _of = _ref199 = FAcounter[b_0][308], _ref200 = list_1.length; _of < _ref200; idx_1 = _of += 1) {
+            for (idx_1 = _ou = _ref211 = FAcounter[b_0][323], _ref212 = list_1.length; _ou < _ref212; idx_1 = _ou += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9456,8 +9875,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_og = 0, _len239 = list_2.length; _og < _len239; _og++) {
-                tok = list_2[_og];
+              for (_ov = 0, _len248 = list_2.length; _ov < _len248; _ov++) {
+                tok = list_2[_ov];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -9479,19 +9898,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 203;
+              stack[chk_len - 1][0] = 209;
             }
             break;
-          case 203:
+          case 209:
 
-            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u95 collect */
+            /* rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u98 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _oh = _ref201 = FAcounter[b_0][311], _ref202 = list_1.length; _oh < _ref202; idx_1 = _oh += 1) {
+            for (idx_1 = _ow = _ref213 = FAcounter[b_0][326], _ref214 = list_1.length; _ow < _ref214; idx_1 = _ow += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9500,8 +9919,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_oi = 0, _len240 = list_2.length; _oi < _len240; _oi++) {
-                tok = list_2[_oi];
+              for (_ox = 0, _len249 = list_2.length; _ox < _len249; _ox++) {
+                tok = list_2[_ox];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -9512,13 +9931,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][36];
-                for (_oj = 0, _len241 = list_3.length; _oj < _len241; _oj++) {
-                  tok = list_3[_oj];
+                for (_oy = 0, _len250 = list_3.length; _oy < _len250; _oy++) {
+                  tok = list_3[_oy];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u95";
+                  mx_hash_stub.rule = "rule_Hstruct_init_kv_XXX_Hstruct_init_list_struct_init_inlineEHstruct_init_listXstruct_init_inline__u98";
                   mx_hash_stub.hash_key = "struct_init_list";
                   mx_hash_stub.hash_key_idx = 36;
                   mx_hash_stub["struct_init_inline"] = arg_list[2].mx_hash.struct_init_inline;
@@ -9530,13 +9949,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][311] = list_1.length;
-            FAcache[start_pos][202].append(ret_list);
+            FAcounter[b_0][326] = list_1.length;
+            FAcache[start_pos][208].append(ret_list);
             break;
-          case 204:
+          case 210:
 
-            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u96 queue */
-            chk_len = stack.push([204, start_pos, only_new]);
+            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u99 queue */
+            chk_len = stack.push([210, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9548,7 +9967,7 @@
               }
             }
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _ok = _ref203 = FAcounter[b_0][314], _ref204 = list_1.length; _ok < _ref204; idx_1 = _ok += 1) {
+            for (idx_1 = _oz = _ref215 = FAcounter[b_0][329], _ref216 = list_1.length; _oz < _ref216; idx_1 = _oz += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9557,8 +9976,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_ol = 0, _len242 = list_2.length; _ol < _len242; _ol++) {
-                tok = list_2[_ol];
+              for (_pa = 0, _len251 = list_2.length; _pa < _len251; _pa++) {
+                tok = list_2[_pa];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -9575,8 +9994,8 @@
                   }
                 }
                 list_3 = FAcache[b_2][33];
-                for (_om = 0, _len243 = list_3.length; _om < _len243; _om++) {
-                  tok = list_3[_om];
+                for (_pb = 0, _len252 = list_3.length; _pb < _len252; _pb++) {
+                  tok = list_3[_pb];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   if (b_3 >= length) {
@@ -9597,19 +10016,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 205;
+              stack[chk_len - 1][0] = 211;
             }
             break;
-          case 205:
+          case 211:
 
-            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u96 collect */
+            /* rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u99 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][35];
-            for (idx_1 = _on = _ref205 = FAcounter[b_0][318], _ref206 = list_1.length; _on < _ref206; idx_1 = _on += 1) {
+            for (idx_1 = _pc = _ref217 = FAcounter[b_0][333], _ref218 = list_1.length; _pc < _ref218; idx_1 = _pc += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9618,8 +10037,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_oo = 0, _len244 = list_2.length; _oo < _len244; _oo++) {
-                tok = list_2[_oo];
+              for (_pd = 0, _len253 = list_2.length; _pd < _len253; _pd++) {
+                tok = list_2[_pd];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -9630,8 +10049,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][33];
-                for (_op = 0, _len245 = list_3.length; _op < _len245; _op++) {
-                  tok = list_3[_op];
+                for (_pe = 0, _len254 = list_3.length; _pe < _len254; _pe++) {
+                  tok = list_3[_pe];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   if (b_3 >= length) {
@@ -9639,13 +10058,13 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][36];
-                  for (_oq = 0, _len246 = list_4.length; _oq < _len246; _oq++) {
-                    tok = list_4[_oq];
+                  for (_pf = 0, _len255 = list_4.length; _pf < _len255; _pf++) {
+                    tok = list_4[_pf];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     arg_list = node.value_array;
                     mx_hash_stub = node.mx_hash = {};
-                    mx_hash_stub.rule = "rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u96";
+                    mx_hash_stub.rule = "rule_Hstruct_init_kv_XXX_Heol_Hstruct_init_list_struct_init_inlineE0__u99";
                     mx_hash_stub.hash_key = "struct_init_list";
                     mx_hash_stub.hash_key_idx = 36;
                     mx_hash_stub["struct_init_inline"] = 0;
@@ -9659,19 +10078,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][318] = list_1.length;
-            FAcache[start_pos][204].append(ret_list);
+            FAcounter[b_0][333] = list_1.length;
+            FAcache[start_pos][210].append(ret_list);
             break;
-          case 207:
+          case 213:
 
-            /* rule_XXX_Hstruct_init_listO_XXX___u97 queue */
-            chk_len = stack.push([207, start_pos, only_new]);
+            /* rule_XXX_Hstruct_init_listO_XXX___u100 queue */
+            chk_len = stack.push([213, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _or = _ref207 = FAcounter[b_0][320], _ref208 = list_1.length; _or < _ref208; idx_1 = _or += 1) {
+            for (idx_1 = _pg = _ref219 = FAcounter[b_0][335], _ref220 = list_1.length; _pg < _ref220; idx_1 = _pg += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "{") {
                 continue;
@@ -9681,12 +10100,12 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _os = 0; _os < 1; _i_2 = ++_os) {
+              for (_i_2 = _ph = 0; _ph < 1; _i_2 = ++_ph) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _ot = 0; _ot < 1; _i_2 = ++_ot) {
+              for (_i_2 = _pi = 0; _pi < 1; _i_2 = ++_pi) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
@@ -9698,8 +10117,8 @@
                   }
                 }
                 list_2 = FAcache[b_1][36];
-                for (_ou = 0, _len247 = list_2.length; _ou < _len247; _ou++) {
-                  tok = list_2[_ou];
+                for (_pj = 0, _len256 = list_2.length; _pj < _len256; _pj++) {
+                  tok = list_2[_pj];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -9707,8 +10126,8 @@
                 }
               }
               node = old_node;
-              for (_ov = 0, _len248 = hyp_list_2.length; _ov < _len248; _ov++) {
-                tok_list = hyp_list_2[_ov];
+              for (_pk = 0, _len257 = hyp_list_2.length; _pk < _len257; _pk++) {
+                tok_list = hyp_list_2[_pk];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 node.value_array.length -= tok_list.length;
@@ -9716,19 +10135,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 208;
+              stack[chk_len - 1][0] = 214;
             }
             break;
-          case 208:
+          case 214:
 
-            /* rule_XXX_Hstruct_init_listO_XXX___u97 collect */
+            /* rule_XXX_Hstruct_init_listO_XXX___u100 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _ow = _ref209 = FAcounter[b_0][323], _ref210 = list_1.length; _ow < _ref210; idx_1 = _ow += 1) {
+            for (idx_1 = _pl = _ref221 = FAcounter[b_0][338], _ref222 = list_1.length; _pl < _ref222; idx_1 = _pl += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "{") {
                 continue;
@@ -9738,19 +10157,19 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _ox = 0; _ox < 1; _i_2 = ++_ox) {
+              for (_i_2 = _pm = 0; _pm < 1; _i_2 = ++_pm) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _oy = 0; _oy < 1; _i_2 = ++_oy) {
+              for (_i_2 = _pn = 0; _pn < 1; _i_2 = ++_pn) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
                 }
                 list_2 = FAcache[b_1][36];
-                for (_oz = 0, _len249 = list_2.length; _oz < _len249; _oz++) {
-                  tok = list_2[_oz];
+                for (_po = 0, _len258 = list_2.length; _po < _len258; _po++) {
+                  tok = list_2[_po];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -9758,8 +10177,8 @@
                 }
               }
               node = old_node;
-              for (_pa = 0, _len250 = hyp_list_2.length; _pa < _len250; _pa++) {
-                tok_list = hyp_list_2[_pa];
+              for (_pp = 0, _len259 = hyp_list_2.length; _pp < _len259; _pp++) {
+                tok_list = hyp_list_2[_pp];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -9767,8 +10186,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_pb = 0, _len251 = list_3.length; _pb < _len251; _pb++) {
-                  tok = list_3[_pb];
+                for (_pq = 0, _len260 = list_3.length; _pq < _len260; _pq++) {
+                  tok = list_3[_pq];
                   if (tok.value !== "}") {
                     continue;
                   }
@@ -9776,7 +10195,7 @@
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_XXX_Hstruct_init_listO_XXX___u97";
+                  mx_hash_stub.rule = "rule_XXX_Hstruct_init_listO_XXX___u100";
                   mx_hash_stub.hash_key = "struct_init";
                   mx_hash_stub.hash_key_idx = 37;
                   node.b = node.value_array.last().b;
@@ -9787,19 +10206,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][323] = list_1.length;
-            FAcache[start_pos][207].append(ret_list);
+            FAcounter[b_0][338] = list_1.length;
+            FAcache[start_pos][213].append(ret_list);
             break;
-          case 209:
+          case 215:
 
-            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u98 queue */
-            chk_len = stack.push([209, start_pos, only_new]);
+            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u101 queue */
+            chk_len = stack.push([215, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _pc = _ref211 = FAcounter[b_0][326], _ref212 = list_1.length; _pc < _ref212; idx_1 = _pc += 1) {
+            for (idx_1 = _pr = _ref223 = FAcounter[b_0][341], _ref224 = list_1.length; _pr < _ref224; idx_1 = _pr += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "{") {
                 continue;
@@ -9817,19 +10236,19 @@
                 }
               }
               list_2 = FAcache[b_1][27];
-              for (_pd = 0, _len252 = list_2.length; _pd < _len252; _pd++) {
-                tok = list_2[_pd];
+              for (_ps = 0, _len261 = list_2.length; _ps < _len261; _ps++) {
+                tok = list_2[_ps];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _pe = 0; _pe < 1; _i_3 = ++_pe) {
+                for (_i_3 = _pt = 0; _pt < 1; _i_3 = ++_pt) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _pf = 0; _pf < 1; _i_3 = ++_pf) {
+                for (_i_3 = _pu = 0; _pu < 1; _i_3 = ++_pu) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
@@ -9841,8 +10260,8 @@
                     }
                   }
                   list_3 = FAcache[b_2][36];
-                  for (_pg = 0, _len253 = list_3.length; _pg < _len253; _pg++) {
-                    tok = list_3[_pg];
+                  for (_pv = 0, _len262 = list_3.length; _pv < _len262; _pv++) {
+                    tok = list_3[_pv];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -9850,8 +10269,8 @@
                   }
                 }
                 node = old_node;
-                for (_ph = 0, _len254 = hyp_list_3.length; _ph < _len254; _ph++) {
-                  tok_list = hyp_list_3[_ph];
+                for (_pw = 0, _len263 = hyp_list_3.length; _pw < _len263; _pw++) {
+                  tok_list = hyp_list_3[_pw];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -9872,19 +10291,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 210;
+              stack[chk_len - 1][0] = 216;
             }
             break;
-          case 210:
+          case 216:
 
-            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u98 collect */
+            /* rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u101 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _pi = _ref213 = FAcounter[b_0][331], _ref214 = list_1.length; _pi < _ref214; idx_1 = _pi += 1) {
+            for (idx_1 = _px = _ref225 = FAcounter[b_0][346], _ref226 = list_1.length; _px < _ref226; idx_1 = _px += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "{") {
                 continue;
@@ -9896,26 +10315,26 @@
                 continue;
               }
               list_2 = FAcache[b_1][27];
-              for (_pj = 0, _len255 = list_2.length; _pj < _len255; _pj++) {
-                tok = list_2[_pj];
+              for (_py = 0, _len264 = list_2.length; _py < _len264; _py++) {
+                tok = list_2[_py];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 hyp_list_3 = [];
                 old_node = node;
                 node = this.proxy;
-                for (_i_3 = _pk = 0; _pk < 1; _i_3 = ++_pk) {
+                for (_i_3 = _pz = 0; _pz < 1; _i_3 = ++_pz) {
 
                   /* NOPE */
                   hyp_list_3.push(node.value_array.clone());
                 }
-                for (_i_3 = _pl = 0; _pl < 1; _i_3 = ++_pl) {
+                for (_i_3 = _qa = 0; _qa < 1; _i_3 = ++_qa) {
                   if (b_2 >= length) {
                     node.value_array.pop();
                     continue;
                   }
                   list_3 = FAcache[b_2][36];
-                  for (_pm = 0, _len256 = list_3.length; _pm < _len256; _pm++) {
-                    tok = list_3[_pm];
+                  for (_qb = 0, _len265 = list_3.length; _qb < _len265; _qb++) {
+                    tok = list_3[_qb];
                     b_3 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_3.push(node.value_array.clone());
@@ -9923,8 +10342,8 @@
                   }
                 }
                 node = old_node;
-                for (_pn = 0, _len257 = hyp_list_3.length; _pn < _len257; _pn++) {
-                  tok_list = hyp_list_3[_pn];
+                for (_qc = 0, _len266 = hyp_list_3.length; _qc < _len266; _qc++) {
+                  tok_list = hyp_list_3[_qc];
                   node.value_array.append(tok_list);
                   b_3 = node.value_array.last().b;
                   if (b_3 >= length) {
@@ -9932,8 +10351,8 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][29];
-                  for (_po = 0, _len258 = list_4.length; _po < _len258; _po++) {
-                    tok = list_4[_po];
+                  for (_qd = 0, _len267 = list_4.length; _qd < _len267; _qd++) {
+                    tok = list_4[_qd];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     if (b_4 >= length) {
@@ -9941,8 +10360,8 @@
                       continue;
                     }
                     list_5 = FAcache[b_4][0];
-                    for (_pp = 0, _len259 = list_5.length; _pp < _len259; _pp++) {
-                      tok = list_5[_pp];
+                    for (_qe = 0, _len268 = list_5.length; _qe < _len268; _qe++) {
+                      tok = list_5[_qe];
                       if (tok.value !== "}") {
                         continue;
                       }
@@ -9950,7 +10369,7 @@
                       node.value_array.push(tok);
                       arg_list = node.value_array;
                       mx_hash_stub = node.mx_hash = {};
-                      mx_hash_stub.rule = "rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u98";
+                      mx_hash_stub.rule = "rule_XXX_Hindent_Hstruct_init_listO_Hdedent_XXX___u101";
                       mx_hash_stub.hash_key = "struct_init";
                       mx_hash_stub.hash_key_idx = 37;
                       node.b = node.value_array.last().b;
@@ -9965,13 +10384,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][331] = list_1.length;
-            FAcache[start_pos][209].append(ret_list);
+            FAcounter[b_0][346] = list_1.length;
+            FAcache[start_pos][215].append(ret_list);
             break;
-          case 211:
+          case 217:
 
-            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u100 queue */
-            chk_len = stack.push([211, start_pos, only_new]);
+            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u103 queue */
+            chk_len = stack.push([217, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -9983,7 +10402,7 @@
               }
             }
             list_1 = FAcache[b_0][27];
-            for (idx_1 = _pq = _ref215 = FAcounter[b_0][333], _ref216 = list_1.length; _pq < _ref216; idx_1 = _pq += 1) {
+            for (idx_1 = _qf = _ref227 = FAcounter[b_0][348], _ref228 = list_1.length; _qf < _ref228; idx_1 = _qf += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -9998,8 +10417,8 @@
                 }
               }
               list_2 = FAcache[b_1][36];
-              for (_pr = 0, _len260 = list_2.length; _pr < _len260; _pr++) {
-                tok = list_2[_pr];
+              for (_qg = 0, _len269 = list_2.length; _qg < _len269; _qg++) {
+                tok = list_2[_qg];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -10018,19 +10437,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 212;
+              stack[chk_len - 1][0] = 218;
             }
             break;
-          case 212:
+          case 218:
 
-            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u100 collect */
+            /* rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u103 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][27];
-            for (idx_1 = _ps = _ref217 = FAcounter[b_0][336], _ref218 = list_1.length; _ps < _ref218; idx_1 = _ps += 1) {
+            for (idx_1 = _qh = _ref229 = FAcounter[b_0][351], _ref230 = list_1.length; _qh < _ref230; idx_1 = _qh += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -10039,8 +10458,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][36];
-              for (_pt = 0, _len261 = list_2.length; _pt < _len261; _pt++) {
-                tok = list_2[_pt];
+              for (_qi = 0, _len270 = list_2.length; _qi < _len270; _qi++) {
+                tok = list_2[_qi];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -10048,13 +10467,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][29];
-                for (_pu = 0, _len262 = list_3.length; _pu < _len262; _pu++) {
-                  tok = list_3[_pu];
+                for (_qj = 0, _len271 = list_3.length; _qj < _len271; _qj++) {
+                  tok = list_3[_qj];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u100";
+                  mx_hash_stub.rule = "rule_Hindent_Hstruct_init_list_Hdedent_bracketless_hashE1__u103";
                   mx_hash_stub.hash_key = "struct_init";
                   mx_hash_stub.hash_key_idx = 37;
                   mx_hash_stub["bracketless_hash"] = 1;
@@ -10066,13 +10485,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][336] = list_1.length;
-            FAcache[start_pos][211].append(ret_list);
+            FAcounter[b_0][351] = list_1.length;
+            FAcache[start_pos][217].append(ret_list);
             break;
-          case 213:
+          case 219:
 
-            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u101 queue */
-            chk_len = stack.push([213, start_pos, only_new]);
+            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u104 queue */
+            chk_len = stack.push([219, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -10085,19 +10504,19 @@
             }
             list_1 = FAcache[b_0][36];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 214;
+              stack[chk_len - 1][0] = 220;
             }
             break;
-          case 214:
+          case 220:
 
-            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u101 collect */
+            /* rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u104 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][36];
-            for (idx_1 = _pv = _ref219 = FAcounter[b_0][337], _ref220 = list_1.length; _pv < _ref220; idx_1 = _pv += 1) {
+            for (idx_1 = _qk = _ref231 = FAcounter[b_0][352], _ref232 = list_1.length; _qk < _ref232; idx_1 = _qk += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -10107,7 +10526,7 @@
                 continue;
               }
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u101";
+              mx_hash_stub.rule = "rule_Hstruct_init_list_bracketless_hashE1_X1Xstruct_init_inline_u104";
               mx_hash_stub.hash_key = "struct_init";
               mx_hash_stub.hash_key_idx = 37;
               mx_hash_stub["bracketless_hash"] = 1;
@@ -10115,19 +10534,19 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][337] = list_1.length;
-            FAcache[start_pos][213].append(ret_list);
+            FAcounter[b_0][352] = list_1.length;
+            FAcache[start_pos][219].append(ret_list);
             break;
-          case 216:
+          case 222:
 
-            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u103 queue */
-            chk_len = stack.push([216, start_pos, only_new]);
+            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u106 queue */
+            chk_len = stack.push([222, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _pw = _ref221 = FAcounter[b_0][342], _ref222 = list_1.length; _pw < _ref222; idx_1 = _pw += 1) {
+            for (idx_1 = _ql = _ref233 = FAcounter[b_0][357], _ref234 = list_1.length; _ql < _ref234; idx_1 = _ql += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "else") {
                 continue;
@@ -10139,8 +10558,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_px = 0, _len263 = list_2.length; _px < _len263; _px++) {
-                tok = list_2[_px];
+              for (_qm = 0, _len272 = list_2.length; _qm < _len272; _qm++) {
+                tok = list_2[_qm];
                 if (tok.value !== "if") {
                   continue;
                 }
@@ -10157,8 +10576,8 @@
                   }
                 }
                 list_3 = FAcache[b_2][23];
-                for (_py = 0, _len264 = list_3.length; _py < _len264; _py++) {
-                  tok = list_3[_py];
+                for (_qn = 0, _len273 = list_3.length; _qn < _len273; _qn++) {
+                  tok = list_3[_qn];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   if (b_3 >= length) {
@@ -10172,19 +10591,19 @@
                     }
                   }
                   list_4 = FAcache[b_3][26];
-                  for (_pz = 0, _len265 = list_4.length; _pz < _len265; _pz++) {
-                    tok = list_4[_pz];
+                  for (_qo = 0, _len274 = list_4.length; _qo < _len274; _qo++) {
+                    tok = list_4[_qo];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_5 = [];
                     old_node = node;
                     node = this.proxy;
-                    for (_i_5 = _qa = 0; _qa < 1; _i_5 = ++_qa) {
+                    for (_i_5 = _qp = 0; _qp < 1; _i_5 = ++_qp) {
 
                       /* NOPE */
                       hyp_list_5.push(node.value_array.clone());
                     }
-                    for (_i_5 = _qb = 0; _qb < 1; _i_5 = ++_qb) {
+                    for (_i_5 = _qq = 0; _qq < 1; _i_5 = ++_qq) {
                       if (b_4 >= length) {
                         node.value_array.pop();
                         continue;
@@ -10196,8 +10615,8 @@
                         }
                       }
                       list_5 = FAcache[b_4][38];
-                      for (_qc = 0, _len266 = list_5.length; _qc < _len266; _qc++) {
-                        tok = list_5[_qc];
+                      for (_qr = 0, _len275 = list_5.length; _qr < _len275; _qr++) {
+                        tok = list_5[_qr];
                         b_5 = tok.b;
                         node.value_array.push(tok);
                         hyp_list_5.push(node.value_array.clone());
@@ -10205,8 +10624,8 @@
                       }
                     }
                     node = old_node;
-                    for (_qd = 0, _len267 = hyp_list_5.length; _qd < _len267; _qd++) {
-                      tok_list = hyp_list_5[_qd];
+                    for (_qs = 0, _len276 = hyp_list_5.length; _qs < _len276; _qs++) {
+                      tok_list = hyp_list_5[_qs];
                       node.value_array.append(tok_list);
                       b_5 = node.value_array.last().b;
                       node.value_array.length -= tok_list.length;
@@ -10220,19 +10639,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 217;
+              stack[chk_len - 1][0] = 223;
             }
             break;
-          case 217:
+          case 223:
 
-            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u103 collect */
+            /* rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u106 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _qe = _ref223 = FAcounter[b_0][347], _ref224 = list_1.length; _qe < _ref224; idx_1 = _qe += 1) {
+            for (idx_1 = _qt = _ref235 = FAcounter[b_0][362], _ref236 = list_1.length; _qt < _ref236; idx_1 = _qt += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "else") {
                 continue;
@@ -10244,8 +10663,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_qf = 0, _len268 = list_2.length; _qf < _len268; _qf++) {
-                tok = list_2[_qf];
+              for (_qu = 0, _len277 = list_2.length; _qu < _len277; _qu++) {
+                tok = list_2[_qu];
                 if (tok.value !== "if") {
                   continue;
                 }
@@ -10256,8 +10675,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][23];
-                for (_qg = 0, _len269 = list_3.length; _qg < _len269; _qg++) {
-                  tok = list_3[_qg];
+                for (_qv = 0, _len278 = list_3.length; _qv < _len278; _qv++) {
+                  tok = list_3[_qv];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   if (b_3 >= length) {
@@ -10265,26 +10684,26 @@
                     continue;
                   }
                   list_4 = FAcache[b_3][26];
-                  for (_qh = 0, _len270 = list_4.length; _qh < _len270; _qh++) {
-                    tok = list_4[_qh];
+                  for (_qw = 0, _len279 = list_4.length; _qw < _len279; _qw++) {
+                    tok = list_4[_qw];
                     b_4 = tok.b;
                     node.value_array.push(tok);
                     hyp_list_5 = [];
                     old_node = node;
                     node = this.proxy;
-                    for (_i_5 = _qi = 0; _qi < 1; _i_5 = ++_qi) {
+                    for (_i_5 = _qx = 0; _qx < 1; _i_5 = ++_qx) {
 
                       /* NOPE */
                       hyp_list_5.push(node.value_array.clone());
                     }
-                    for (_i_5 = _qj = 0; _qj < 1; _i_5 = ++_qj) {
+                    for (_i_5 = _qy = 0; _qy < 1; _i_5 = ++_qy) {
                       if (b_4 >= length) {
                         node.value_array.pop();
                         continue;
                       }
                       list_5 = FAcache[b_4][38];
-                      for (_qk = 0, _len271 = list_5.length; _qk < _len271; _qk++) {
-                        tok = list_5[_qk];
+                      for (_qz = 0, _len280 = list_5.length; _qz < _len280; _qz++) {
+                        tok = list_5[_qz];
                         b_5 = tok.b;
                         node.value_array.push(tok);
                         hyp_list_5.push(node.value_array.clone());
@@ -10292,13 +10711,13 @@
                       }
                     }
                     node = old_node;
-                    for (_ql = 0, _len272 = hyp_list_5.length; _ql < _len272; _ql++) {
-                      tok_list = hyp_list_5[_ql];
+                    for (_ra = 0, _len281 = hyp_list_5.length; _ra < _len281; _ra++) {
+                      tok_list = hyp_list_5[_ra];
                       node.value_array.append(tok_list);
                       b_5 = node.value_array.last().b;
                       arg_list = node.value_array;
                       mx_hash_stub = node.mx_hash = {};
-                      mx_hash_stub.rule = "rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u103";
+                      mx_hash_stub.rule = "rule_else_if_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u106";
                       mx_hash_stub.hash_key = "if_tail_stmt";
                       mx_hash_stub.hash_key_idx = 38;
                       mx_hash_stub["ult"] = "else_if";
@@ -10316,13 +10735,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][347] = list_1.length;
-            FAcache[start_pos][216].append(ret_list);
+            FAcounter[b_0][362] = list_1.length;
+            FAcache[start_pos][222].append(ret_list);
             break;
-          case 218:
+          case 224:
 
-            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u104 queue */
-            chk_len = stack.push([218, start_pos, only_new]);
+            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u107 queue */
+            chk_len = stack.push([224, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -10331,7 +10750,7 @@
             old_node = node;
             node = this.proxy;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _qm = _ref225 = FAcounter[b_0][351], _ref226 = list_1.length; _qm < _ref226; idx_1 = _qm += 1) {
+            for (idx_1 = _rb = _ref237 = FAcounter[b_0][366], _ref238 = list_1.length; _rb < _ref238; idx_1 = _rb += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "elseif") {
                 continue;
@@ -10342,7 +10761,7 @@
               node.value_array.pop();
             }
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _qn = _ref227 = FAcounter[b_0][352], _ref228 = list_1.length; _qn < _ref228; idx_1 = _qn += 1) {
+            for (idx_1 = _rc = _ref239 = FAcounter[b_0][367], _ref240 = list_1.length; _rc < _ref240; idx_1 = _rc += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "elsif") {
                 continue;
@@ -10353,7 +10772,7 @@
               node.value_array.pop();
             }
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _qo = _ref229 = FAcounter[b_0][353], _ref230 = list_1.length; _qo < _ref230; idx_1 = _qo += 1) {
+            for (idx_1 = _rd = _ref241 = FAcounter[b_0][368], _ref242 = list_1.length; _rd < _ref242; idx_1 = _rd += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "elif") {
                 continue;
@@ -10364,8 +10783,8 @@
               node.value_array.pop();
             }
             node = old_node;
-            for (_qp = 0, _len273 = hyp_list_1.length; _qp < _len273; _qp++) {
-              tok_list = hyp_list_1[_qp];
+            for (_re = 0, _len282 = hyp_list_1.length; _re < _len282; _re++) {
+              tok_list = hyp_list_1[_re];
               node.value_array.append(tok_list);
               if (b_1 >= length) {
                 node.value_array.pop();
@@ -10378,8 +10797,8 @@
                 }
               }
               list_2 = FAcache[b_1][23];
-              for (_qq = 0, _len274 = list_2.length; _qq < _len274; _qq++) {
-                tok = list_2[_qq];
+              for (_rf = 0, _len283 = list_2.length; _rf < _len283; _rf++) {
+                tok = list_2[_rf];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -10393,19 +10812,19 @@
                   }
                 }
                 list_3 = FAcache[b_2][26];
-                for (_qr = 0, _len275 = list_3.length; _qr < _len275; _qr++) {
-                  tok = list_3[_qr];
+                for (_rg = 0, _len284 = list_3.length; _rg < _len284; _rg++) {
+                  tok = list_3[_rg];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_4 = [];
                   old_node = node;
                   node = this.proxy;
-                  for (_i_4 = _qs = 0; _qs < 1; _i_4 = ++_qs) {
+                  for (_i_4 = _rh = 0; _rh < 1; _i_4 = ++_rh) {
 
                     /* NOPE */
                     hyp_list_4.push(node.value_array.clone());
                   }
-                  for (_i_4 = _qt = 0; _qt < 1; _i_4 = ++_qt) {
+                  for (_i_4 = _ri = 0; _ri < 1; _i_4 = ++_ri) {
                     if (b_3 >= length) {
                       node.value_array.pop();
                       continue;
@@ -10417,8 +10836,8 @@
                       }
                     }
                     list_4 = FAcache[b_3][38];
-                    for (_qu = 0, _len276 = list_4.length; _qu < _len276; _qu++) {
-                      tok = list_4[_qu];
+                    for (_rj = 0, _len285 = list_4.length; _rj < _len285; _rj++) {
+                      tok = list_4[_rj];
                       b_4 = tok.b;
                       node.value_array.push(tok);
                       hyp_list_4.push(node.value_array.clone());
@@ -10426,8 +10845,8 @@
                     }
                   }
                   node = old_node;
-                  for (_qv = 0, _len277 = hyp_list_4.length; _qv < _len277; _qv++) {
-                    tok_list = hyp_list_4[_qv];
+                  for (_rk = 0, _len286 = hyp_list_4.length; _rk < _len286; _rk++) {
+                    tok_list = hyp_list_4[_rk];
                     node.value_array.append(tok_list);
                     b_4 = node.value_array.last().b;
                     node.value_array.length -= tok_list.length;
@@ -10439,12 +10858,12 @@
               node.value_array.length -= tok_list.length;
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 219;
+              stack[chk_len - 1][0] = 225;
             }
             break;
-          case 219:
+          case 225:
 
-            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u104 collect */
+            /* rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u107 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -10454,7 +10873,7 @@
             old_node = node;
             node = this.proxy;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _qw = _ref231 = FAcounter[b_0][357], _ref232 = list_1.length; _qw < _ref232; idx_1 = _qw += 1) {
+            for (idx_1 = _rl = _ref243 = FAcounter[b_0][372], _ref244 = list_1.length; _rl < _ref244; idx_1 = _rl += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "elseif") {
                 continue;
@@ -10464,9 +10883,9 @@
               hyp_list_1.push(node.value_array.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][357] = list_1.length;
+            FAcounter[b_0][372] = list_1.length;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _qx = _ref233 = FAcounter[b_0][358], _ref234 = list_1.length; _qx < _ref234; idx_1 = _qx += 1) {
+            for (idx_1 = _rm = _ref245 = FAcounter[b_0][373], _ref246 = list_1.length; _rm < _ref246; idx_1 = _rm += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "elsif") {
                 continue;
@@ -10476,9 +10895,9 @@
               hyp_list_1.push(node.value_array.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][358] = list_1.length;
+            FAcounter[b_0][373] = list_1.length;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _qy = _ref235 = FAcounter[b_0][359], _ref236 = list_1.length; _qy < _ref236; idx_1 = _qy += 1) {
+            for (idx_1 = _rn = _ref247 = FAcounter[b_0][374], _ref248 = list_1.length; _rn < _ref248; idx_1 = _rn += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "elif") {
                 continue;
@@ -10488,18 +10907,18 @@
               hyp_list_1.push(node.value_array.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][359] = list_1.length;
+            FAcounter[b_0][374] = list_1.length;
             node = old_node;
-            for (_qz = 0, _len278 = hyp_list_1.length; _qz < _len278; _qz++) {
-              tok_list = hyp_list_1[_qz];
+            for (_ro = 0, _len287 = hyp_list_1.length; _ro < _len287; _ro++) {
+              tok_list = hyp_list_1[_ro];
               node.value_array.append(tok_list);
               if (b_1 >= length) {
                 node.value_array.pop();
                 continue;
               }
               list_2 = FAcache[b_1][23];
-              for (_ra = 0, _len279 = list_2.length; _ra < _len279; _ra++) {
-                tok = list_2[_ra];
+              for (_rp = 0, _len288 = list_2.length; _rp < _len288; _rp++) {
+                tok = list_2[_rp];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -10507,26 +10926,26 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][26];
-                for (_rb = 0, _len280 = list_3.length; _rb < _len280; _rb++) {
-                  tok = list_3[_rb];
+                for (_rq = 0, _len289 = list_3.length; _rq < _len289; _rq++) {
+                  tok = list_3[_rq];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_4 = [];
                   old_node = node;
                   node = this.proxy;
-                  for (_i_4 = _rc = 0; _rc < 1; _i_4 = ++_rc) {
+                  for (_i_4 = _rr = 0; _rr < 1; _i_4 = ++_rr) {
 
                     /* NOPE */
                     hyp_list_4.push(node.value_array.clone());
                   }
-                  for (_i_4 = _rd = 0; _rd < 1; _i_4 = ++_rd) {
+                  for (_i_4 = _rs = 0; _rs < 1; _i_4 = ++_rs) {
                     if (b_3 >= length) {
                       node.value_array.pop();
                       continue;
                     }
                     list_4 = FAcache[b_3][38];
-                    for (_re = 0, _len281 = list_4.length; _re < _len281; _re++) {
-                      tok = list_4[_re];
+                    for (_rt = 0, _len290 = list_4.length; _rt < _len290; _rt++) {
+                      tok = list_4[_rt];
                       b_4 = tok.b;
                       node.value_array.push(tok);
                       hyp_list_4.push(node.value_array.clone());
@@ -10534,13 +10953,13 @@
                     }
                   }
                   node = old_node;
-                  for (_rf = 0, _len282 = hyp_list_4.length; _rf < _len282; _rf++) {
-                    tok_list = hyp_list_4[_rf];
+                  for (_ru = 0, _len291 = hyp_list_4.length; _ru < _len291; _ru++) {
+                    tok_list = hyp_list_4[_ru];
                     node.value_array.append(tok_list);
                     b_4 = node.value_array.last().b;
                     arg_list = node.value_array;
                     mx_hash_stub = node.mx_hash = {};
-                    mx_hash_stub.rule = "rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u104";
+                    mx_hash_stub.rule = "rule_elseifXelsifXelif_Hrvalue_Hblock_Hif_tail_stmtO_ultEelse_if_tiEelse_if_eolE1__u107";
                     mx_hash_stub.hash_key = "if_tail_stmt";
                     mx_hash_stub.hash_key_idx = 38;
                     mx_hash_stub["ult"] = "else_if";
@@ -10556,18 +10975,18 @@
               }
               node.value_array.length -= tok_list.length;
             }
-            FAcache[start_pos][218].append(ret_list);
+            FAcache[start_pos][224].append(ret_list);
             break;
-          case 220:
+          case 226:
 
-            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u105 queue */
-            chk_len = stack.push([220, start_pos, only_new]);
+            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u108 queue */
+            chk_len = stack.push([226, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _rg = _ref237 = FAcounter[b_0][360], _ref238 = list_1.length; _rg < _ref238; idx_1 = _rg += 1) {
+            for (idx_1 = _rv = _ref249 = FAcounter[b_0][375], _ref250 = list_1.length; _rv < _ref250; idx_1 = _rv += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "else") {
                 continue;
@@ -10588,19 +11007,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 221;
+              stack[chk_len - 1][0] = 227;
             }
             break;
-          case 221:
+          case 227:
 
-            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u105 collect */
+            /* rule_else_Hblock_ultEelse_tiEelse_eolE1__u108 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _rh = _ref239 = FAcounter[b_0][362], _ref240 = list_1.length; _rh < _ref240; idx_1 = _rh += 1) {
+            for (idx_1 = _rw = _ref251 = FAcounter[b_0][377], _ref252 = list_1.length; _rw < _ref252; idx_1 = _rw += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "else") {
                 continue;
@@ -10612,13 +11031,13 @@
                 continue;
               }
               list_2 = FAcache[b_1][26];
-              for (_ri = 0, _len283 = list_2.length; _ri < _len283; _ri++) {
-                tok = list_2[_ri];
+              for (_rx = 0, _len292 = list_2.length; _rx < _len292; _rx++) {
+                tok = list_2[_rx];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 arg_list = node.value_array;
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_else_Hblock_ultEelse_tiEelse_eolE1__u105";
+                mx_hash_stub.rule = "rule_else_Hblock_ultEelse_tiEelse_eolE1__u108";
                 mx_hash_stub.hash_key = "if_tail_stmt";
                 mx_hash_stub.hash_key_idx = 38;
                 mx_hash_stub["ult"] = "else";
@@ -10630,19 +11049,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][362] = list_1.length;
-            FAcache[start_pos][220].append(ret_list);
+            FAcounter[b_0][377] = list_1.length;
+            FAcache[start_pos][226].append(ret_list);
             break;
-          case 223:
+          case 229:
 
-            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u108 queue */
-            chk_len = stack.push([223, start_pos, only_new]);
+            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u111 queue */
+            chk_len = stack.push([229, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _rj = _ref241 = FAcounter[b_0][366], _ref242 = list_1.length; _rj < _ref242; idx_1 = _rj += 1) {
+            for (idx_1 = _ry = _ref253 = FAcounter[b_0][381], _ref254 = list_1.length; _ry < _ref254; idx_1 = _ry += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "when") {
                 continue;
@@ -10660,8 +11079,8 @@
                 }
               }
               list_2 = FAcache[b_1][23];
-              for (_rk = 0, _len284 = list_2.length; _rk < _len284; _rk++) {
-                tok = list_2[_rk];
+              for (_rz = 0, _len293 = list_2.length; _rz < _len293; _rz++) {
+                tok = list_2[_rz];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -10675,19 +11094,19 @@
                   }
                 }
                 list_3 = FAcache[b_2][26];
-                for (_rl = 0, _len285 = list_3.length; _rl < _len285; _rl++) {
-                  tok = list_3[_rl];
+                for (_sa = 0, _len294 = list_3.length; _sa < _len294; _sa++) {
+                  tok = list_3[_sa];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_4 = [];
                   old_node = node;
                   node = this.proxy;
-                  for (_i_4 = _rm = 0; _rm < 1; _i_4 = ++_rm) {
+                  for (_i_4 = _sb = 0; _sb < 1; _i_4 = ++_sb) {
 
                     /* NOPE */
                     hyp_list_4.push(node.value_array.clone());
                   }
-                  for (_i_4 = _rn = 0; _rn < 1; _i_4 = ++_rn) {
+                  for (_i_4 = _sc = 0; _sc < 1; _i_4 = ++_sc) {
                     if (b_3 >= length) {
                       node.value_array.pop();
                       continue;
@@ -10699,8 +11118,8 @@
                       }
                     }
                     list_4 = FAcache[b_3][39];
-                    for (_ro = 0, _len286 = list_4.length; _ro < _len286; _ro++) {
-                      tok = list_4[_ro];
+                    for (_sd = 0, _len295 = list_4.length; _sd < _len295; _sd++) {
+                      tok = list_4[_sd];
                       b_4 = tok.b;
                       node.value_array.push(tok);
                       hyp_list_4.push(node.value_array.clone());
@@ -10708,8 +11127,8 @@
                     }
                   }
                   node = old_node;
-                  for (_rp = 0, _len287 = hyp_list_4.length; _rp < _len287; _rp++) {
-                    tok_list = hyp_list_4[_rp];
+                  for (_se = 0, _len296 = hyp_list_4.length; _se < _len296; _se++) {
+                    tok_list = hyp_list_4[_se];
                     node.value_array.append(tok_list);
                     b_4 = node.value_array.last().b;
                     node.value_array.length -= tok_list.length;
@@ -10721,19 +11140,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 224;
+              stack[chk_len - 1][0] = 230;
             }
             break;
-          case 224:
+          case 230:
 
-            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u108 collect */
+            /* rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u111 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _rq = _ref243 = FAcounter[b_0][370], _ref244 = list_1.length; _rq < _ref244; idx_1 = _rq += 1) {
+            for (idx_1 = _sf = _ref255 = FAcounter[b_0][385], _ref256 = list_1.length; _sf < _ref256; idx_1 = _sf += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "when") {
                 continue;
@@ -10745,8 +11164,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][23];
-              for (_rr = 0, _len288 = list_2.length; _rr < _len288; _rr++) {
-                tok = list_2[_rr];
+              for (_sg = 0, _len297 = list_2.length; _sg < _len297; _sg++) {
+                tok = list_2[_sg];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -10754,26 +11173,26 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][26];
-                for (_rs = 0, _len289 = list_3.length; _rs < _len289; _rs++) {
-                  tok = list_3[_rs];
+                for (_sh = 0, _len298 = list_3.length; _sh < _len298; _sh++) {
+                  tok = list_3[_sh];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_4 = [];
                   old_node = node;
                   node = this.proxy;
-                  for (_i_4 = _rt = 0; _rt < 1; _i_4 = ++_rt) {
+                  for (_i_4 = _si = 0; _si < 1; _i_4 = ++_si) {
 
                     /* NOPE */
                     hyp_list_4.push(node.value_array.clone());
                   }
-                  for (_i_4 = _ru = 0; _ru < 1; _i_4 = ++_ru) {
+                  for (_i_4 = _sj = 0; _sj < 1; _i_4 = ++_sj) {
                     if (b_3 >= length) {
                       node.value_array.pop();
                       continue;
                     }
                     list_4 = FAcache[b_3][39];
-                    for (_rv = 0, _len290 = list_4.length; _rv < _len290; _rv++) {
-                      tok = list_4[_rv];
+                    for (_sk = 0, _len299 = list_4.length; _sk < _len299; _sk++) {
+                      tok = list_4[_sk];
                       b_4 = tok.b;
                       node.value_array.push(tok);
                       hyp_list_4.push(node.value_array.clone());
@@ -10781,13 +11200,13 @@
                     }
                   }
                   node = old_node;
-                  for (_rw = 0, _len291 = hyp_list_4.length; _rw < _len291; _rw++) {
-                    tok_list = hyp_list_4[_rw];
+                  for (_sl = 0, _len300 = hyp_list_4.length; _sl < _len300; _sl++) {
+                    tok_list = hyp_list_4[_sl];
                     node.value_array.append(tok_list);
                     b_4 = node.value_array.last().b;
                     arg_list = node.value_array;
                     mx_hash_stub = node.mx_hash = {};
-                    mx_hash_stub.rule = "rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u108";
+                    mx_hash_stub.rule = "rule_when_Hrvalue_Hblock_Hswitch_tail_stmtO_ultEswitch_when_tiEswitch_when_eolE1__u111";
                     mx_hash_stub.hash_key = "switch_tail_stmt";
                     mx_hash_stub.hash_key_idx = 39;
                     mx_hash_stub["ult"] = "switch_when";
@@ -10803,19 +11222,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][370] = list_1.length;
-            FAcache[start_pos][223].append(ret_list);
+            FAcounter[b_0][385] = list_1.length;
+            FAcache[start_pos][229].append(ret_list);
             break;
-          case 225:
+          case 231:
 
-            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u109 queue */
-            chk_len = stack.push([225, start_pos, only_new]);
+            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u112 queue */
+            chk_len = stack.push([231, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _rx = _ref245 = FAcounter[b_0][371], _ref246 = list_1.length; _rx < _ref246; idx_1 = _rx += 1) {
+            for (idx_1 = _sm = _ref257 = FAcounter[b_0][386], _ref258 = list_1.length; _sm < _ref258; idx_1 = _sm += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "else") {
                 continue;
@@ -10836,19 +11255,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 226;
+              stack[chk_len - 1][0] = 232;
             }
             break;
-          case 226:
+          case 232:
 
-            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u109 collect */
+            /* rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u112 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _ry = _ref247 = FAcounter[b_0][373], _ref248 = list_1.length; _ry < _ref248; idx_1 = _ry += 1) {
+            for (idx_1 = _sn = _ref259 = FAcounter[b_0][388], _ref260 = list_1.length; _sn < _ref260; idx_1 = _sn += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "else") {
                 continue;
@@ -10860,13 +11279,13 @@
                 continue;
               }
               list_2 = FAcache[b_1][26];
-              for (_rz = 0, _len292 = list_2.length; _rz < _len292; _rz++) {
-                tok = list_2[_rz];
+              for (_so = 0, _len301 = list_2.length; _so < _len301; _so++) {
+                tok = list_2[_so];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 arg_list = node.value_array;
                 mx_hash_stub = node.mx_hash = {};
-                mx_hash_stub.rule = "rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u109";
+                mx_hash_stub.rule = "rule_else_Hblock_ultEswitch_else_tiEswitch_else_eolE1__u112";
                 mx_hash_stub.hash_key = "switch_tail_stmt";
                 mx_hash_stub.hash_key_idx = 39;
                 mx_hash_stub["ult"] = "switch_else";
@@ -10878,13 +11297,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][373] = list_1.length;
-            FAcache[start_pos][225].append(ret_list);
+            FAcounter[b_0][388] = list_1.length;
+            FAcache[start_pos][231].append(ret_list);
             break;
-          case 229:
+          case 235:
 
-            /* rule_Htok_identifier_XXX_Htype___u116 queue */
-            chk_len = stack.push([229, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Htype___u119 queue */
+            chk_len = stack.push([235, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -10896,7 +11315,7 @@
               }
             }
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _sa = _ref249 = FAcounter[b_0][375], _ref250 = list_1.length; _sa < _ref250; idx_1 = _sa += 1) {
+            for (idx_1 = _sp = _ref261 = FAcounter[b_0][390], _ref262 = list_1.length; _sp < _ref262; idx_1 = _sp += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -10905,8 +11324,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_sb = 0, _len293 = list_2.length; _sb < _len293; _sb++) {
-                tok = list_2[_sb];
+              for (_sq = 0, _len302 = list_2.length; _sq < _len302; _sq++) {
+                tok = list_2[_sq];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -10928,19 +11347,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 230;
+              stack[chk_len - 1][0] = 236;
             }
             break;
-          case 230:
+          case 236:
 
-            /* rule_Htok_identifier_XXX_Htype___u116 collect */
+            /* rule_Htok_identifier_XXX_Htype___u119 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _sc = _ref251 = FAcounter[b_0][378], _ref252 = list_1.length; _sc < _ref252; idx_1 = _sc += 1) {
+            for (idx_1 = _sr = _ref263 = FAcounter[b_0][393], _ref264 = list_1.length; _sr < _ref264; idx_1 = _sr += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -10949,8 +11368,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_sd = 0, _len294 = list_2.length; _sd < _len294; _sd++) {
-                tok = list_2[_sd];
+              for (_ss = 0, _len303 = list_2.length; _ss < _len303; _ss++) {
+                tok = list_2[_ss];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -10961,13 +11380,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][34];
-                for (_se = 0, _len295 = list_3.length; _se < _len295; _se++) {
-                  tok = list_3[_se];
+                for (_st = 0, _len304 = list_3.length; _st < _len304; _st++) {
+                  tok = list_3[_st];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htok_identifier_XXX_Htype___u116";
+                  mx_hash_stub.rule = "rule_Htok_identifier_XXX_Htype___u119";
                   mx_hash_stub.hash_key = "fn_decl_arg";
                   mx_hash_stub.hash_key_idx = 41;
                   node.b = node.value_array.last().b;
@@ -10978,13 +11397,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][378] = list_1.length;
-            FAcache[start_pos][229].append(ret_list);
+            FAcounter[b_0][393] = list_1.length;
+            FAcache[start_pos][235].append(ret_list);
             break;
-          case 232:
+          case 238:
 
-            /* rule_Hfn_decl_arg___u117 queue */
-            chk_len = stack.push([232, start_pos, only_new]);
+            /* rule_Hfn_decl_arg___u120 queue */
+            chk_len = stack.push([238, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -10997,38 +11416,38 @@
             }
             list_1 = FAcache[b_0][41];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 233;
+              stack[chk_len - 1][0] = 239;
             }
             break;
-          case 233:
+          case 239:
 
-            /* rule_Hfn_decl_arg___u117 collect */
+            /* rule_Hfn_decl_arg___u120 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][41];
-            for (idx_1 = _sf = _ref253 = FAcounter[b_0][379], _ref254 = list_1.length; _sf < _ref254; idx_1 = _sf += 1) {
+            for (idx_1 = _su = _ref265 = FAcounter[b_0][394], _ref266 = list_1.length; _su < _ref266; idx_1 = _su += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Hfn_decl_arg___u117";
+              mx_hash_stub.rule = "rule_Hfn_decl_arg___u120";
               mx_hash_stub.hash_key = "fn_decl_arg_list";
               mx_hash_stub.hash_key_idx = 42;
               node.b = node.value_array.last().b;
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][379] = list_1.length;
-            FAcache[start_pos][232].append(ret_list);
+            FAcounter[b_0][394] = list_1.length;
+            FAcache[start_pos][238].append(ret_list);
             break;
-          case 234:
+          case 240:
 
-            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u118 queue */
-            chk_len = stack.push([234, start_pos, only_new]);
+            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u121 queue */
+            chk_len = stack.push([240, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11040,7 +11459,7 @@
               }
             }
             list_1 = FAcache[b_0][41];
-            for (idx_1 = _sg = _ref255 = FAcounter[b_0][381], _ref256 = list_1.length; _sg < _ref256; idx_1 = _sg += 1) {
+            for (idx_1 = _sv = _ref267 = FAcounter[b_0][396], _ref268 = list_1.length; _sv < _ref268; idx_1 = _sv += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11049,8 +11468,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_sh = 0, _len296 = list_2.length; _sh < _len296; _sh++) {
-                tok = list_2[_sh];
+              for (_sw = 0, _len305 = list_2.length; _sw < _len305; _sw++) {
+                tok = list_2[_sw];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11072,19 +11491,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 235;
+              stack[chk_len - 1][0] = 241;
             }
             break;
-          case 235:
+          case 241:
 
-            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u118 collect */
+            /* rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u121 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][41];
-            for (idx_1 = _si = _ref257 = FAcounter[b_0][384], _ref258 = list_1.length; _si < _ref258; idx_1 = _si += 1) {
+            for (idx_1 = _sx = _ref269 = FAcounter[b_0][399], _ref270 = list_1.length; _sx < _ref270; idx_1 = _sx += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11093,8 +11512,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_sj = 0, _len297 = list_2.length; _sj < _len297; _sj++) {
-                tok = list_2[_sj];
+              for (_sy = 0, _len306 = list_2.length; _sy < _len306; _sy++) {
+                tok = list_2[_sy];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11105,13 +11524,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][42];
-                for (_sk = 0, _len298 = list_3.length; _sk < _len298; _sk++) {
-                  tok = list_3[_sk];
+                for (_sz = 0, _len307 = list_3.length; _sz < _len307; _sz++) {
+                  tok = list_3[_sz];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u118";
+                  mx_hash_stub.rule = "rule_Hfn_decl_arg_XXX_Hfn_decl_arg_list___u121";
                   mx_hash_stub.hash_key = "fn_decl_arg_list";
                   mx_hash_stub.hash_key_idx = 42;
                   node.b = node.value_array.last().b;
@@ -11122,13 +11541,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][384] = list_1.length;
-            FAcache[start_pos][234].append(ret_list);
+            FAcounter[b_0][399] = list_1.length;
+            FAcache[start_pos][240].append(ret_list);
             break;
-          case 238:
+          case 244:
 
-            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u128 queue */
-            chk_len = stack.push([238, start_pos, only_new]);
+            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u131 queue */
+            chk_len = stack.push([244, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11141,25 +11560,25 @@
             }
             list_1 = FAcache[b_0][23];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 239;
+              stack[chk_len - 1][0] = 245;
             }
             break;
-          case 239:
+          case 245:
 
-            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u128 collect */
+            /* rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u131 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _sl = _ref259 = FAcounter[b_0][385], _ref260 = list_1.length; _sl < _ref260; idx_1 = _sl += 1) {
+            for (idx_1 = _ta = _ref271 = FAcounter[b_0][400], _ref272 = list_1.length; _ta < _ref272; idx_1 = _ta += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u128";
+              mx_hash_stub.rule = "rule_Hrvalue_bracketless_hashEX1Xbracketless_hash__u131";
               mx_hash_stub.hash_key = "fn_call_arg_list";
               mx_hash_stub.hash_key_idx = 44;
               mx_hash_stub["bracketless_hash"] = arg_list[0].mx_hash.bracketless_hash;
@@ -11167,13 +11586,13 @@
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][385] = list_1.length;
-            FAcache[start_pos][238].append(ret_list);
+            FAcounter[b_0][400] = list_1.length;
+            FAcache[start_pos][244].append(ret_list);
             break;
-          case 240:
+          case 246:
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u129 queue */
-            chk_len = stack.push([240, start_pos, only_new]);
+            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u132 queue */
+            chk_len = stack.push([246, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11185,7 +11604,7 @@
               }
             }
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _sm = _ref261 = FAcounter[b_0][387], _ref262 = list_1.length; _sm < _ref262; idx_1 = _sm += 1) {
+            for (idx_1 = _tb = _ref273 = FAcounter[b_0][402], _ref274 = list_1.length; _tb < _ref274; idx_1 = _tb += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11194,8 +11613,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_sn = 0, _len299 = list_2.length; _sn < _len299; _sn++) {
-                tok = list_2[_sn];
+              for (_tc = 0, _len308 = list_2.length; _tc < _len308; _tc++) {
+                tok = list_2[_tc];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11217,19 +11636,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 241;
+              stack[chk_len - 1][0] = 247;
             }
             break;
-          case 241:
+          case 247:
 
-            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u129 collect */
+            /* rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u132 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][23];
-            for (idx_1 = _so = _ref263 = FAcounter[b_0][390], _ref264 = list_1.length; _so < _ref264; idx_1 = _so += 1) {
+            for (idx_1 = _td = _ref275 = FAcounter[b_0][405], _ref276 = list_1.length; _td < _ref276; idx_1 = _td += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11238,8 +11657,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_sp = 0, _len300 = list_2.length; _sp < _len300; _sp++) {
-                tok = list_2[_sp];
+              for (_te = 0, _len309 = list_2.length; _te < _len309; _te++) {
+                tok = list_2[_te];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11250,8 +11669,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][44];
-                for (_sq = 0, _len301 = list_3.length; _sq < _len301; _sq++) {
-                  tok = list_3[_sq];
+                for (_tf = 0, _len310 = list_3.length; _tf < _len310; _tf++) {
+                  tok = list_3[_tf];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
@@ -11260,7 +11679,7 @@
                     continue;
                   }
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u129";
+                  mx_hash_stub.rule = "rule_Hrvalue_XXX_Hfn_call_arg_list_bracketless_hashEX1Xbracketless_hash_XX1Xbracketless_hashXXXX3Xbracketless_hash_u132";
                   mx_hash_stub.hash_key = "fn_call_arg_list";
                   mx_hash_stub.hash_key_idx = 44;
                   mx_hash_stub["bracketless_hash"] = arg_list[0].mx_hash.bracketless_hash;
@@ -11272,13 +11691,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][390] = list_1.length;
-            FAcache[start_pos][240].append(ret_list);
+            FAcounter[b_0][405] = list_1.length;
+            FAcache[start_pos][246].append(ret_list);
             break;
-          case 243:
+          case 249:
 
-            /* rule_Htype___u136 queue */
-            chk_len = stack.push([243, start_pos, only_new]);
+            /* rule_Htype___u139 queue */
+            chk_len = stack.push([249, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11291,38 +11710,38 @@
             }
             list_1 = FAcache[b_0][34];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 244;
+              stack[chk_len - 1][0] = 250;
             }
             break;
-          case 244:
+          case 250:
 
-            /* rule_Htype___u136 collect */
+            /* rule_Htype___u139 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][34];
-            for (idx_1 = _sr = _ref265 = FAcounter[b_0][391], _ref266 = list_1.length; _sr < _ref266; idx_1 = _sr += 1) {
+            for (idx_1 = _tg = _ref277 = FAcounter[b_0][406], _ref278 = list_1.length; _tg < _ref278; idx_1 = _tg += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htype___u136";
+              mx_hash_stub.rule = "rule_Htype___u139";
               mx_hash_stub.hash_key = "type_list";
               mx_hash_stub.hash_key_idx = 45;
               node.b = node.value_array.last().b;
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][391] = list_1.length;
-            FAcache[start_pos][243].append(ret_list);
+            FAcounter[b_0][406] = list_1.length;
+            FAcache[start_pos][249].append(ret_list);
             break;
-          case 245:
+          case 251:
 
-            /* rule_Htype_XXX_Htype_list___u137 queue */
-            chk_len = stack.push([245, start_pos, only_new]);
+            /* rule_Htype_XXX_Htype_list___u140 queue */
+            chk_len = stack.push([251, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11334,7 +11753,7 @@
               }
             }
             list_1 = FAcache[b_0][34];
-            for (idx_1 = _ss = _ref267 = FAcounter[b_0][393], _ref268 = list_1.length; _ss < _ref268; idx_1 = _ss += 1) {
+            for (idx_1 = _th = _ref279 = FAcounter[b_0][408], _ref280 = list_1.length; _th < _ref280; idx_1 = _th += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11343,8 +11762,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_st = 0, _len302 = list_2.length; _st < _len302; _st++) {
-                tok = list_2[_st];
+              for (_ti = 0, _len311 = list_2.length; _ti < _len311; _ti++) {
+                tok = list_2[_ti];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11366,19 +11785,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 246;
+              stack[chk_len - 1][0] = 252;
             }
             break;
-          case 246:
+          case 252:
 
-            /* rule_Htype_XXX_Htype_list___u137 collect */
+            /* rule_Htype_XXX_Htype_list___u140 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][34];
-            for (idx_1 = _su = _ref269 = FAcounter[b_0][396], _ref270 = list_1.length; _su < _ref270; idx_1 = _su += 1) {
+            for (idx_1 = _tj = _ref281 = FAcounter[b_0][411], _ref282 = list_1.length; _tj < _ref282; idx_1 = _tj += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11387,8 +11806,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_sv = 0, _len303 = list_2.length; _sv < _len303; _sv++) {
-                tok = list_2[_sv];
+              for (_tk = 0, _len312 = list_2.length; _tk < _len312; _tk++) {
+                tok = list_2[_tk];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11399,13 +11818,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][45];
-                for (_sw = 0, _len304 = list_3.length; _sw < _len304; _sw++) {
-                  tok = list_3[_sw];
+                for (_tl = 0, _len313 = list_3.length; _tl < _len313; _tl++) {
+                  tok = list_3[_tl];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htype_XXX_Htype_list___u137";
+                  mx_hash_stub.rule = "rule_Htype_XXX_Htype_list___u140";
                   mx_hash_stub.hash_key = "type_list";
                   mx_hash_stub.hash_key_idx = 45;
                   node.b = node.value_array.last().b;
@@ -11416,19 +11835,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][396] = list_1.length;
-            FAcache[start_pos][245].append(ret_list);
+            FAcounter[b_0][411] = list_1.length;
+            FAcache[start_pos][251].append(ret_list);
             break;
-          case 248:
+          case 254:
 
-            /* rule_XXX_Htype_list_XXX___u138 queue */
-            chk_len = stack.push([248, start_pos, only_new]);
+            /* rule_XXX_Htype_list_XXX___u141 queue */
+            chk_len = stack.push([254, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _sx = _ref271 = FAcounter[b_0][397], _ref272 = list_1.length; _sx < _ref272; idx_1 = _sx += 1) {
+            for (idx_1 = _tm = _ref283 = FAcounter[b_0][412], _ref284 = list_1.length; _tm < _ref284; idx_1 = _tm += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "<") {
                 continue;
@@ -11449,19 +11868,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 249;
+              stack[chk_len - 1][0] = 255;
             }
             break;
-          case 249:
+          case 255:
 
-            /* rule_XXX_Htype_list_XXX___u138 collect */
+            /* rule_XXX_Htype_list_XXX___u141 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _sy = _ref273 = FAcounter[b_0][400], _ref274 = list_1.length; _sy < _ref274; idx_1 = _sy += 1) {
+            for (idx_1 = _tn = _ref285 = FAcounter[b_0][415], _ref286 = list_1.length; _tn < _ref286; idx_1 = _tn += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "<") {
                 continue;
@@ -11473,8 +11892,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][45];
-              for (_sz = 0, _len305 = list_2.length; _sz < _len305; _sz++) {
-                tok = list_2[_sz];
+              for (_to = 0, _len314 = list_2.length; _to < _len314; _to++) {
+                tok = list_2[_to];
                 b_2 = tok.b;
                 node.value_array.push(tok);
                 if (b_2 >= length) {
@@ -11482,8 +11901,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_ta = 0, _len306 = list_3.length; _ta < _len306; _ta++) {
-                  tok = list_3[_ta];
+                for (_tp = 0, _len315 = list_3.length; _tp < _len315; _tp++) {
+                  tok = list_3[_tp];
                   if (tok.value !== ">") {
                     continue;
                   }
@@ -11491,7 +11910,7 @@
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_XXX_Htype_list_XXX___u138";
+                  mx_hash_stub.rule = "rule_XXX_Htype_list_XXX___u141";
                   mx_hash_stub.hash_key = "type_nest";
                   mx_hash_stub.hash_key_idx = 46;
                   node.b = node.value_array.last().b;
@@ -11502,13 +11921,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][400] = list_1.length;
-            FAcache[start_pos][248].append(ret_list);
+            FAcounter[b_0][415] = list_1.length;
+            FAcache[start_pos][254].append(ret_list);
             break;
-          case 251:
+          case 257:
 
-            /* rule_Htok_identifier_XXX_Htype___u139 queue */
-            chk_len = stack.push([251, start_pos, only_new]);
+            /* rule_Htok_identifier_XXX_Htype___u142 queue */
+            chk_len = stack.push([257, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11520,7 +11939,7 @@
               }
             }
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _tb = _ref275 = FAcounter[b_0][402], _ref276 = list_1.length; _tb < _ref276; idx_1 = _tb += 1) {
+            for (idx_1 = _tq = _ref287 = FAcounter[b_0][417], _ref288 = list_1.length; _tq < _ref288; idx_1 = _tq += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11529,8 +11948,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_tc = 0, _len307 = list_2.length; _tc < _len307; _tc++) {
-                tok = list_2[_tc];
+              for (_tr = 0, _len316 = list_2.length; _tr < _len316; _tr++) {
+                tok = list_2[_tr];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -11552,19 +11971,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 252;
+              stack[chk_len - 1][0] = 258;
             }
             break;
-          case 252:
+          case 258:
 
-            /* rule_Htok_identifier_XXX_Htype___u139 collect */
+            /* rule_Htok_identifier_XXX_Htype___u142 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][2];
-            for (idx_1 = _td = _ref277 = FAcounter[b_0][405], _ref278 = list_1.length; _td < _ref278; idx_1 = _td += 1) {
+            for (idx_1 = _ts = _ref289 = FAcounter[b_0][420], _ref290 = list_1.length; _ts < _ref290; idx_1 = _ts += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11573,8 +11992,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_te = 0, _len308 = list_2.length; _te < _len308; _te++) {
-                tok = list_2[_te];
+              for (_tt = 0, _len317 = list_2.length; _tt < _len317; _tt++) {
+                tok = list_2[_tt];
                 if (tok.value !== ":") {
                   continue;
                 }
@@ -11585,13 +12004,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][34];
-                for (_tf = 0, _len309 = list_3.length; _tf < _len309; _tf++) {
-                  tok = list_3[_tf];
+                for (_tu = 0, _len318 = list_3.length; _tu < _len318; _tu++) {
+                  tok = list_3[_tu];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htok_identifier_XXX_Htype___u139";
+                  mx_hash_stub.rule = "rule_Htok_identifier_XXX_Htype___u142";
                   mx_hash_stub.hash_key = "type_field_kv";
                   mx_hash_stub.hash_key_idx = 47;
                   node.b = node.value_array.last().b;
@@ -11602,13 +12021,13 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][405] = list_1.length;
-            FAcache[start_pos][251].append(ret_list);
+            FAcounter[b_0][420] = list_1.length;
+            FAcache[start_pos][257].append(ret_list);
             break;
-          case 254:
+          case 260:
 
-            /* rule_Htype_field_kv___u140 queue */
-            chk_len = stack.push([254, start_pos, only_new]);
+            /* rule_Htype_field_kv___u143 queue */
+            chk_len = stack.push([260, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11621,38 +12040,38 @@
             }
             list_1 = FAcache[b_0][47];
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 255;
+              stack[chk_len - 1][0] = 261;
             }
             break;
-          case 255:
+          case 261:
 
-            /* rule_Htype_field_kv___u140 collect */
+            /* rule_Htype_field_kv___u143 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][47];
-            for (idx_1 = _tg = _ref279 = FAcounter[b_0][406], _ref280 = list_1.length; _tg < _ref280; idx_1 = _tg += 1) {
+            for (idx_1 = _tv = _ref291 = FAcounter[b_0][421], _ref292 = list_1.length; _tv < _ref292; idx_1 = _tv += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
               arg_list = node.value_array;
               mx_hash_stub = node.mx_hash = {};
-              mx_hash_stub.rule = "rule_Htype_field_kv___u140";
+              mx_hash_stub.rule = "rule_Htype_field_kv___u143";
               mx_hash_stub.hash_key = "type_field_kv_list";
               mx_hash_stub.hash_key_idx = 48;
               node.b = node.value_array.last().b;
               ret_list.push(node.clone());
               node.value_array.pop();
             }
-            FAcounter[b_0][406] = list_1.length;
-            FAcache[start_pos][254].append(ret_list);
+            FAcounter[b_0][421] = list_1.length;
+            FAcache[start_pos][260].append(ret_list);
             break;
-          case 256:
+          case 262:
 
-            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u141 queue */
-            chk_len = stack.push([256, start_pos, only_new]);
+            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u144 queue */
+            chk_len = stack.push([262, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
@@ -11664,7 +12083,7 @@
               }
             }
             list_1 = FAcache[b_0][47];
-            for (idx_1 = _th = _ref281 = FAcounter[b_0][408], _ref282 = list_1.length; _th < _ref282; idx_1 = _th += 1) {
+            for (idx_1 = _tw = _ref293 = FAcounter[b_0][423], _ref294 = list_1.length; _tw < _ref294; idx_1 = _tw += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11673,8 +12092,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_ti = 0, _len310 = list_2.length; _ti < _len310; _ti++) {
-                tok = list_2[_ti];
+              for (_tx = 0, _len319 = list_2.length; _tx < _len319; _tx++) {
+                tok = list_2[_tx];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11696,19 +12115,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 257;
+              stack[chk_len - 1][0] = 263;
             }
             break;
-          case 257:
+          case 263:
 
-            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u141 collect */
+            /* rule_Htype_field_kv_XXX_Htype_field_kv_list___u144 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][47];
-            for (idx_1 = _tj = _ref283 = FAcounter[b_0][411], _ref284 = list_1.length; _tj < _ref284; idx_1 = _tj += 1) {
+            for (idx_1 = _ty = _ref295 = FAcounter[b_0][426], _ref296 = list_1.length; _ty < _ref296; idx_1 = _ty += 1) {
               tok = list_1[idx_1];
               b_1 = tok.b;
               node.value_array.push(tok);
@@ -11717,8 +12136,8 @@
                 continue;
               }
               list_2 = FAcache[b_1][0];
-              for (_tk = 0, _len311 = list_2.length; _tk < _len311; _tk++) {
-                tok = list_2[_tk];
+              for (_tz = 0, _len320 = list_2.length; _tz < _len320; _tz++) {
+                tok = list_2[_tz];
                 if (tok.value !== ",") {
                   continue;
                 }
@@ -11729,13 +12148,13 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][48];
-                for (_tl = 0, _len312 = list_3.length; _tl < _len312; _tl++) {
-                  tok = list_3[_tl];
+                for (_ua = 0, _len321 = list_3.length; _ua < _len321; _ua++) {
+                  tok = list_3[_ua];
                   b_3 = tok.b;
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_Htype_field_kv_XXX_Htype_field_kv_list___u141";
+                  mx_hash_stub.rule = "rule_Htype_field_kv_XXX_Htype_field_kv_list___u144";
                   mx_hash_stub.hash_key = "type_field_kv_list";
                   mx_hash_stub.hash_key_idx = 48;
                   node.b = node.value_array.last().b;
@@ -11746,19 +12165,19 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][411] = list_1.length;
-            FAcache[start_pos][256].append(ret_list);
+            FAcounter[b_0][426] = list_1.length;
+            FAcache[start_pos][262].append(ret_list);
             break;
-          case 259:
+          case 265:
 
-            /* rule_XXX_Htype_field_kv_listO_XXX___u142 queue */
-            chk_len = stack.push([259, start_pos, only_new]);
+            /* rule_XXX_Htype_field_kv_listO_XXX___u145 queue */
+            chk_len = stack.push([265, start_pos, only_new]);
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _tm = _ref285 = FAcounter[b_0][413], _ref286 = list_1.length; _tm < _ref286; idx_1 = _tm += 1) {
+            for (idx_1 = _ub = _ref297 = FAcounter[b_0][428], _ref298 = list_1.length; _ub < _ref298; idx_1 = _ub += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "{") {
                 continue;
@@ -11768,12 +12187,12 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _tn = 0; _tn < 1; _i_2 = ++_tn) {
+              for (_i_2 = _uc = 0; _uc < 1; _i_2 = ++_uc) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _to = 0; _to < 1; _i_2 = ++_to) {
+              for (_i_2 = _ud = 0; _ud < 1; _i_2 = ++_ud) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
@@ -11785,8 +12204,8 @@
                   }
                 }
                 list_2 = FAcache[b_1][48];
-                for (_tp = 0, _len313 = list_2.length; _tp < _len313; _tp++) {
-                  tok = list_2[_tp];
+                for (_ue = 0, _len322 = list_2.length; _ue < _len322; _ue++) {
+                  tok = list_2[_ue];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -11794,8 +12213,8 @@
                 }
               }
               node = old_node;
-              for (_tq = 0, _len314 = hyp_list_2.length; _tq < _len314; _tq++) {
-                tok_list = hyp_list_2[_tq];
+              for (_uf = 0, _len323 = hyp_list_2.length; _uf < _len323; _uf++) {
+                tok_list = hyp_list_2[_uf];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 node.value_array.length -= tok_list.length;
@@ -11803,19 +12222,19 @@
               node.value_array.pop();
             }
             if (chk_len === stack.length) {
-              stack[chk_len - 1][0] = 260;
+              stack[chk_len - 1][0] = 266;
             }
             break;
-          case 260:
+          case 266:
 
-            /* rule_XXX_Htype_field_kv_listO_XXX___u142 collect */
+            /* rule_XXX_Htype_field_kv_listO_XXX___u145 collect */
             ret_list = [];
             b_0 = start_pos;
             node = this.proxy2;
             node.value_array.clear();
             node.a = start_pos;
             list_1 = FAcache[b_0][0];
-            for (idx_1 = _tr = _ref287 = FAcounter[b_0][416], _ref288 = list_1.length; _tr < _ref288; idx_1 = _tr += 1) {
+            for (idx_1 = _ug = _ref299 = FAcounter[b_0][431], _ref300 = list_1.length; _ug < _ref300; idx_1 = _ug += 1) {
               tok = list_1[idx_1];
               if (tok.value !== "{") {
                 continue;
@@ -11825,19 +12244,19 @@
               hyp_list_2 = [];
               old_node = node;
               node = this.proxy;
-              for (_i_2 = _ts = 0; _ts < 1; _i_2 = ++_ts) {
+              for (_i_2 = _uh = 0; _uh < 1; _i_2 = ++_uh) {
 
                 /* NOPE */
                 hyp_list_2.push(node.value_array.clone());
               }
-              for (_i_2 = _tt = 0; _tt < 1; _i_2 = ++_tt) {
+              for (_i_2 = _ui = 0; _ui < 1; _i_2 = ++_ui) {
                 if (b_1 >= length) {
                   node.value_array.pop();
                   continue;
                 }
                 list_2 = FAcache[b_1][48];
-                for (_tu = 0, _len315 = list_2.length; _tu < _len315; _tu++) {
-                  tok = list_2[_tu];
+                for (_uj = 0, _len324 = list_2.length; _uj < _len324; _uj++) {
+                  tok = list_2[_uj];
                   b_2 = tok.b;
                   node.value_array.push(tok);
                   hyp_list_2.push(node.value_array.clone());
@@ -11845,8 +12264,8 @@
                 }
               }
               node = old_node;
-              for (_tv = 0, _len316 = hyp_list_2.length; _tv < _len316; _tv++) {
-                tok_list = hyp_list_2[_tv];
+              for (_uk = 0, _len325 = hyp_list_2.length; _uk < _len325; _uk++) {
+                tok_list = hyp_list_2[_uk];
                 node.value_array.append(tok_list);
                 b_2 = node.value_array.last().b;
                 if (b_2 >= length) {
@@ -11854,8 +12273,8 @@
                   continue;
                 }
                 list_3 = FAcache[b_2][0];
-                for (_tw = 0, _len317 = list_3.length; _tw < _len317; _tw++) {
-                  tok = list_3[_tw];
+                for (_ul = 0, _len326 = list_3.length; _ul < _len326; _ul++) {
+                  tok = list_3[_ul];
                   if (tok.value !== "}") {
                     continue;
                   }
@@ -11863,7 +12282,7 @@
                   node.value_array.push(tok);
                   arg_list = node.value_array;
                   mx_hash_stub = node.mx_hash = {};
-                  mx_hash_stub.rule = "rule_XXX_Htype_field_kv_listO_XXX___u142";
+                  mx_hash_stub.rule = "rule_XXX_Htype_field_kv_listO_XXX___u145";
                   mx_hash_stub.hash_key = "type_field";
                   mx_hash_stub.hash_key_idx = 49;
                   node.b = node.value_array.last().b;
@@ -11874,8 +12293,8 @@
               }
               node.value_array.pop();
             }
-            FAcounter[b_0][416] = list_1.length;
-            FAcache[start_pos][259].append(ret_list);
+            FAcounter[b_0][431] = list_1.length;
+            FAcache[start_pos][265].append(ret_list);
         }
       }
     };
