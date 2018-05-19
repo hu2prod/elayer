@@ -154,17 +154,27 @@ q('stmt', 'for #tok_identifier                   in #rvalue #block').mx("ult=for
 q('stmt', 'for #tok_identifier "," #tok_identifier in #rvalue #block').mx("ult=for_col ti=macro eol=1")
 
 q('fn_decl_arg', '#tok_identifier ":" #type')
+q('fn_decl_arg', '#tok_identifier')
 q('fn_decl_arg_list', '#fn_decl_arg')
 q('fn_decl_arg_list', '#fn_decl_arg "," #fn_decl_arg_list')
+
+q('stmt', '#return #rvalue?')                     .mx('ult=return ti=return')
+
 q('stmt', '#tok_identifier "(" #fn_decl_arg_list? ")" ":" #type "->"').mx('ult=fn_decl')
 q('stmt', '#tok_identifier "(" #fn_decl_arg_list? ")" ":" #type "->" #block').mx('ult=fn_decl eol=1')
 q('stmt', '#tok_identifier "(" #fn_decl_arg_list? ")" ":" #type "->" #rvalue').mx('ult=fn_decl')
 
-q('stmt', '#return #rvalue?')                     .mx('ult=return ti=return')
+q('stmt', '#tok_identifier "(" #fn_decl_arg_list? ")"  "->"').mx('ult=fn_decl')
+q('stmt', '#tok_identifier "(" #fn_decl_arg_list? ")"  "->" #block').mx('ult=fn_decl eol=1')
+q('stmt', '#tok_identifier "(" #fn_decl_arg_list? ")"  "->" #rvalue').mx('ult=fn_decl')
 
 q('rvalue', '"(" #fn_decl_arg_list? ")" ":" #type "=>"').mx("priority=#{base_priority} ult=cl_decl")
 q('rvalue', '"(" #fn_decl_arg_list? ")" ":" #type "=>" #block').mx("priority=#{base_priority} ult=cl_decl eol=1")
 q('rvalue', '"(" #fn_decl_arg_list? ")" ":" #type "=>" #rvalue').mx("priority=#{base_priority} ult=cl_decl")
+
+q('rvalue', '"(" #fn_decl_arg_list? ")"  "=>"').mx("priority=#{base_priority} ult=cl_decl")
+q('rvalue', '"(" #fn_decl_arg_list? ")"  "=>" #block').mx("priority=#{base_priority} ult=cl_decl eol=1")
+q('rvalue', '"(" #fn_decl_arg_list? ")"  "=>" #rvalue').mx("priority=#{base_priority} ult=cl_decl")
 
 q('stmt', 'class #tok_identifier')                .mx('ult=class_decl')
 q('stmt', 'class #tok_identifier #block')         .mx('ult=class_decl eol=1')

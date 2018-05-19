@@ -355,6 +355,19 @@ describe 'trans section', ()->
             b
           '''
           
+          """
+          a()->
+          """ : '''
+          a = ()->
+            
+          '''
+          
+          """
+          a(b)->
+          """ : '''
+          a = (b)->
+            
+          '''
         for mbg_code, coffee_code of hash
           mbg_code = mbg_code.replace "->", arrow
           do (mbg_code, coffee_code)->

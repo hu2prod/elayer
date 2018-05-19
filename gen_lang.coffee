@@ -81,6 +81,8 @@ main.inject ()->
   col.gen 'gram_for_col'
   fnd = col.gen 'gram_fn_decl'
   fnd.hash.closure = true
+  fnd.hash.no_ret_type = true
+  fnd.hash.no_arg_type = true
   col.gen 'gram_class_decl'
   # col.gen 'gram_require'
   # extras
