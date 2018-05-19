@@ -32,6 +32,8 @@ describe 'trans section', ()->
       'a++' : '(a)++'
       'a[b]' : '(a)[b]'
       'a.b' : '(a).b'
+      '@b' : '(this).b'
+      '@.b' : '(this).b'
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->

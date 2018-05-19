@@ -499,6 +499,25 @@ ast_call = (target, arg_list, scope)->
       scope = seek_token 'block', root
       ast_call macro, arg_list, scope
     
+    when "at"
+      ret = new ast.Var
+      seek_and_set_line_pos ret, root
+      ret.name = "this"
+      # ret.type = new Type "" # LATER
+      
+      ret
+    
+    when "at_field_access"
+      ret = new ast.Field_access
+      
+      a_this = new ast.Var
+      a_this.name = "this"
+      seek_and_set_line_pos ret, root
+      ret.t = a_this
+      ret.name = root.value_array[1].value
+      
+      ret
+    
     else
       ### !pragma coverage-skip-block ###
       perr root

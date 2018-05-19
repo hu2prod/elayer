@@ -118,6 +118,9 @@ q('stmt', 'var #tok_identifier ":" #type')          .mx("ult=var_decl ti=var_dec
 
 q('lvalue', '#rvalue "." #tok_identifier')          .mx("priority=#{base_priority} ult=field_access ti=macro tail_space=#tok_identifier.tail_space").strict("$1.priority==#{base_priority}")
 
+q('rvalue', '"@"')                          .mx("priority=#{base_priority} ult=at tail_space=$1.tail_space")
+q('lvalue', '"@" #tok_identifier')          .mx("priority=#{base_priority} ult=at_field_access ti=macro tail_space=#tok_identifier.tail_space")
+
 q('struct_init_kv', '#tok_identifier ":" #rvalue').mx('eol=#rvalue.eol')
 q('struct_init_kv', '#tok_string_sq ":" #rvalue') .mx('eol=#rvalue.eol')
 q('struct_init_kv', '#tok_string_dq ":" #rvalue') .mx('eol=#rvalue.eol')
