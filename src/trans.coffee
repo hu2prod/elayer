@@ -694,6 +694,23 @@ class @Gen_context
         """
     
     when "Struct_init"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        ast_jl = []
+        for k,v of ast.hash
+          ast_jl.push """
+            #{JSON.stringify k} : #{gen(v, ctx)}
+            """
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.hash = {
+            #{join_list ast_jl, '    '}
+          }
+          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{var_name}
+        )()
+        """
       jl = []
       for k,v of ast.hash
         jl.push "#{JSON.stringify k}: #{gen v, ctx}"

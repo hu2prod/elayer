@@ -1243,3 +1243,66 @@ describe 'trans ast section', ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
   
+  # ###################################################################################################
+  #    struct init
+  # ###################################################################################################
+  describe "struct_init", ()->
+    hash =
+      '''
+      block
+        a:1
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Struct_init_1 = new ast.Struct_init
+            _tmp_Struct_init_1.hash = {
+              "a" : (()->
+                _tmp_Const_2 = new ast.Const
+                _tmp_Const_2.val = "1"
+                _tmp_Const_2
+              )()
+            }
+            _tmp_Struct_init_1.type = new Type "struct{a: int}"
+            _tmp_Struct_init_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+      '''
+      block
+        a:1,b:2
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Struct_init_1 = new ast.Struct_init
+            _tmp_Struct_init_1.hash = {
+              "a" : (()->
+                _tmp_Const_2 = new ast.Const
+                _tmp_Const_2.val = "1"
+                _tmp_Const_2
+              )()
+              "b" : (()->
+                _tmp_Const_3 = new ast.Const
+                _tmp_Const_3.val = "2"
+                _tmp_Const_3
+              )()
+            }
+            _tmp_Struct_init_1.type = new Type "struct{a: int, b: int}"
+            _tmp_Struct_init_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
