@@ -507,3 +507,15 @@ describe 'trans section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+  
+  describe "array_init", ()->
+    hash =
+      '[]'          : '[]'
+      '[1]'         : '[1]'
+      '[1,2]'       : '[1, 2]'
+    
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code

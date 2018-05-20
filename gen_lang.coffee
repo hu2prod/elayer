@@ -70,6 +70,7 @@ main.inject ()->
   gram_struct_init = col.gen 'gram_struct_init'
   gram_struct_init.hash.bracketless_indent = true
   gram_struct_init.hash.bracketless_inline = true
+  col.gen 'gram_array_init'
   # macro = col.gen 'gram_macro'
   # macro.hash.token = 'rvalue'
   # macro.hash.aux_mx = 'priority=-9000'

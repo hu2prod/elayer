@@ -486,6 +486,16 @@ ast_call = (target, arg_list, scope)->
         ret.hash[key] = value
       
       ret
+    
+    when "array_init"
+      ret = new ast.Array_init
+      seek_and_set_line_pos ret, root
+      
+      value_list = seek_token_list_deep 'rvalue', root
+      for value in value_list
+        ret.list.push gen value, opt
+      
+      ret
     # ###################################################################################################
     #    mbg special
     # ###################################################################################################

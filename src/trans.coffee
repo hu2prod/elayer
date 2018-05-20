@@ -716,6 +716,12 @@ class @Gen_context
         jl.push "#{JSON.stringify k}: #{gen v, ctx}"
       "{#{jl.join ', '}}"
     
+    when "Array_init"
+      jl = []
+      for v in ast.list
+        jl.push gen v, ctx
+      "[#{jl.join ', '}]"
+    
     when "Ast_call"
       ctx_nest = ctx.mk_nest()
       ctx_nest.is_serialized_block = false
