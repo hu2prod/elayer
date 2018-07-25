@@ -100,10 +100,13 @@ class @Gen_context
     when "Const"
       if ctx.is_serialized_block
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        val = ast.val
+        if ast.type.main == 'string'
+          val = eval val # unquote string
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
-          #{var_name}.val = #{JSON.stringify ast.val}
+          #{var_name}.val = #{JSON.stringify val}
           #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
           #{var_name}
         )()

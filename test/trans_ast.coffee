@@ -299,7 +299,7 @@ describe 'trans ast section', ()->
         _tmp_Scope_0.list = [
           (()->
             _tmp_Const_1 = new ast.Const
-            _tmp_Const_1.val = "'1'"
+            _tmp_Const_1.val = "1"
             _tmp_Const_1.type = new Type "string"
             _tmp_Const_1
           )()
@@ -317,7 +317,7 @@ describe 'trans ast section', ()->
         _tmp_Scope_0.list = [
           (()->
             _tmp_Const_1 = new ast.Const
-            _tmp_Const_1.val = "\\"1\\""
+            _tmp_Const_1.val = "1"
             _tmp_Const_1.type = new Type "string"
             _tmp_Const_1
           )()
