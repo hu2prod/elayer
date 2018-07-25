@@ -104,6 +104,7 @@ class @Gen_context
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.val = #{JSON.stringify ast.val}
+          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
           #{var_name}
         )()
         """

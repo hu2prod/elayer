@@ -282,6 +282,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Const_1 = new ast.Const
             _tmp_Const_1.val = "1"
+            _tmp_Const_1.type = new Type "int"
             _tmp_Const_1
           )()
           ]
@@ -299,6 +300,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Const_1 = new ast.Const
             _tmp_Const_1.val = "'1'"
+            _tmp_Const_1.type = new Type "string"
             _tmp_Const_1
           )()
           ]
@@ -316,6 +318,7 @@ describe 'trans ast section', ()->
           (()->
             _tmp_Const_1 = new ast.Const
             _tmp_Const_1.val = "\\"1\\""
+            _tmp_Const_1.type = new Type "string"
             _tmp_Const_1
           )()
           ]
@@ -1261,6 +1264,7 @@ describe 'trans ast section', ()->
               "a" : (()->
                 _tmp_Const_2 = new ast.Const
                 _tmp_Const_2.val = "1"
+                _tmp_Const_2.type = new Type "int"
                 _tmp_Const_2
               )()
             }
@@ -1285,11 +1289,13 @@ describe 'trans ast section', ()->
               "a" : (()->
                 _tmp_Const_2 = new ast.Const
                 _tmp_Const_2.val = "1"
+                _tmp_Const_2.type = new Type "int"
                 _tmp_Const_2
               )()
               "b" : (()->
                 _tmp_Const_3 = new ast.Const
                 _tmp_Const_3.val = "2"
+                _tmp_Const_3.type = new Type "int"
                 _tmp_Const_3
               )()
             }
