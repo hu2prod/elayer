@@ -1183,12 +1183,14 @@ describe 'trans ast section', ()->
               _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
-            _tmp_Fn_call_1.arg_list = [(()->
-              _tmp_Var_3 = new ast.Var
-              _tmp_Var_3.name = "a"
-              _tmp_Var_3.type = new Type "any"
-              _tmp_Var_3
-            )()]
+            _tmp_Fn_call_1.arg_list = [
+              (()->
+                _tmp_Var_3 = new ast.Var
+                _tmp_Var_3.name = "a"
+                _tmp_Var_3.type = new Type "any"
+                _tmp_Var_3
+              )()
+            ]
             _tmp_Fn_call_1
           )()
           ]
@@ -1211,18 +1213,20 @@ describe 'trans ast section', ()->
               _tmp_Var_2.type = new Type "any"
               _tmp_Var_2
             )()
-            _tmp_Fn_call_1.arg_list = [(()->
-              _tmp_Var_3 = new ast.Var
-              _tmp_Var_3.name = "a"
-              _tmp_Var_3.type = new Type "any"
-              _tmp_Var_3
-            )()
-            (()->
-              _tmp_Var_4 = new ast.Var
-              _tmp_Var_4.name = "b"
-              _tmp_Var_4.type = new Type "any"
-              _tmp_Var_4
-            )()]
+            _tmp_Fn_call_1.arg_list = [
+              (()->
+                _tmp_Var_3 = new ast.Var
+                _tmp_Var_3.name = "a"
+                _tmp_Var_3.type = new Type "any"
+                _tmp_Var_3
+              )()
+              (()->
+                _tmp_Var_4 = new ast.Var
+                _tmp_Var_4.name = "b"
+                _tmp_Var_4.type = new Type "any"
+                _tmp_Var_4
+              )()
+            ]
             _tmp_Fn_call_1
           )()
           ]
@@ -1269,6 +1273,24 @@ describe 'trans ast section', ()->
   # ###################################################################################################
   describe "struct_init", ()->
     hash =
+      '''
+      block
+        {}
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Struct_init_1 = new ast.Struct_init
+            _tmp_Struct_init_1.hash = {}
+            _tmp_Struct_init_1.type = new Type "struct"
+            _tmp_Struct_init_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      
       '''
       block
         a:1
@@ -1319,6 +1341,35 @@ describe 'trans ast section', ()->
             }
             _tmp_Struct_init_1.type = new Type "struct{a: int, b: int}"
             _tmp_Struct_init_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+      '''
+      block
+        f {}
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Fn_call_1 = new ast.Fn_call
+            _tmp_Fn_call_1.fn = (()->
+              _tmp_Var_2 = new ast.Var
+              _tmp_Var_2.name = "f"
+              _tmp_Var_2.type = new Type "any"
+              _tmp_Var_2
+            )()
+            _tmp_Fn_call_1.arg_list = [
+              (()->
+                _tmp_Struct_init_3 = new ast.Struct_init
+                _tmp_Struct_init_3.hash = {}
+                _tmp_Struct_init_3.type = new Type "struct"
+                _tmp_Struct_init_3
+              )()
+            ]
+            _tmp_Fn_call_1
           )()
           ]
         _tmp_Scope_0

@@ -201,9 +201,9 @@ class_prepare = (ctx, t)->
       
       when "Fn_call"
         root_type = walk t.fn, ctx
-        return null if !root_type
         for arg in t.arg_list
           walk arg, ctx
+        return null if !root_type
         t.type = root_type.nest_list[0]
       
       when "Continue", "Break"

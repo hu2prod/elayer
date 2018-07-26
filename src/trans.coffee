@@ -234,15 +234,16 @@ class @Gen_context
         fn = gen(ast.fn, ctx)
         arg_list = []
         for v in ast.arg_list
-          arg_list.push gen v, ctx
-        arg_list_str = ''
+          arg_list.push '  '+gen v, ctx
         if arg_list.length
-          arg_list_str = arg_list.join '\n'
+          arg_list = arg_list.map (t)-> make_tab t, '  '
+          arg_list.unshift ""
+          arg_list.push ""
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.fn = #{make_tab fn, '  '}
-          #{var_name}.arg_list = [#{make_tab arg_list_str, '  '}]
+          #{var_name}.arg_list = [#{join_list arg_list, '  '}]
           #{var_name}
         )()
         """
@@ -702,15 +703,16 @@ class @Gen_context
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
         ast_jl = []
         for k,v of ast.hash
-          ast_jl.push """
-            #{JSON.stringify k} : #{gen(v, ctx)}
-            """
+          ast_jl.push "  #{JSON.stringify k} : #{gen(v, ctx)}"
+        if ast_jl.length
+          ast_jl = ast_jl.map (t)-> make_tab t, '  '
+          ast_jl.unshift ""
+          ast_jl.push ""
+        
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
-          #{var_name}.hash = {
-            #{join_list ast_jl, '    '}
-          }
+          #{var_name}.hash = {#{join_list ast_jl, '  '}}
           #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
           #{var_name}
         )()
