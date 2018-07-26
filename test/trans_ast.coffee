@@ -122,6 +122,24 @@ describe 'trans ast section', ()->
         _tmp_Scope_0
       )())
       '''
+      # fn_call hash
+      '''
+      block({})
+        z
+      ''' : '''
+      ((block)({}).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Var_1 = new ast.Var
+            _tmp_Var_1.name = "z"
+            _tmp_Var_1.type = new Type "any"
+            _tmp_Var_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
       
       # macro
       '''

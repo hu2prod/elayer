@@ -246,6 +246,8 @@ class_prepare = (ctx, t)->
         t.type
       
       when "Ast_call"
+        for arg in t.arg_list
+          walk arg, ctx
         walk t.scope, ctx.mk_nest()
         null
         # root_type = walk t.fn, ctx
