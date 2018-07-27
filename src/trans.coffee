@@ -304,14 +304,15 @@ class @Gen_context
         list_jl = []
         for v in ast.list
           t = gen v, ctx
-          list_jl.push t if t != ''
+          list_jl.push '  '+t if t != ''
         if list_jl.length
+          list_jl = list_jl.map (t)-> make_tab t, '  '
           list_jl.unshift ""
           list_jl.push ""
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
-          #{var_name}.list = [#{join_list list_jl, '    '}]
+          #{var_name}.list = [#{join_list list_jl, '  '}]
           #{var_name}
         )()
         """

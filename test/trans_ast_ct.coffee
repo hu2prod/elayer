@@ -30,7 +30,7 @@ describe 'trans ast section', ()->
             _tmp_Var_2.type = new Type "int"
             _tmp_Var_2
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -83,7 +83,7 @@ describe 'trans ast section', ()->
             _tmp_Bin_op_2.op = "ASSIGN"
             _tmp_Bin_op_2
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -123,7 +123,7 @@ describe 'trans ast section', ()->
                     _tmp_Var_2.type = new Type "any"
                     _tmp_Var_2
                   )()
-                  ]
+                ]
                 _tmp_Scope_1
               )()
             else
@@ -136,11 +136,11 @@ describe 'trans ast section', ()->
                     _tmp_Var_4.type = new Type "any"
                     _tmp_Var_4
                   )()
-                  ]
+                ]
                 _tmp_Scope_3
               )()
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -172,7 +172,7 @@ describe 'trans ast section', ()->
                     _tmp_Var_3.type = new Type "any"
                     _tmp_Var_3
                   )()
-                  ]
+                ]
                 _tmp_Scope_1
               )()
             else
@@ -182,7 +182,7 @@ describe 'trans ast section', ()->
                 _tmp_Scope_4
               )()
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -210,7 +210,7 @@ describe 'trans ast section', ()->
                     _tmp_Var_2.type = new Type "any"
                     _tmp_Var_2
                   )()
-                  ]
+                ]
                 _tmp_Scope_1
               )()
             else
@@ -223,11 +223,11 @@ describe 'trans ast section', ()->
                     _tmp_Var_4.type = new Type "any"
                     _tmp_Var_4
                   )()
-                  ]
+                ]
                 _tmp_Scope_3
               )()
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -266,7 +266,7 @@ describe 'trans ast section', ()->
                       _tmp_Var_2.type = new Type "any"
                       _tmp_Var_2
                     )()
-                    ]
+                  ]
                   _tmp_Scope_1
                 )()
               else
@@ -276,7 +276,7 @@ describe 'trans ast section', ()->
                   _tmp_Scope_3
                 )()
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -305,7 +305,7 @@ describe 'trans ast section', ()->
                       _tmp_Var_2.type = new Type "any"
                       _tmp_Var_2
                     )()
-                    ]
+                  ]
                   _tmp_Scope_1
                 )()
               else
@@ -318,11 +318,11 @@ describe 'trans ast section', ()->
                       _tmp_Var_4.type = new Type "any"
                       _tmp_Var_4
                     )()
-                    ]
+                  ]
                   _tmp_Scope_3
                 )()
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -358,11 +358,11 @@ describe 'trans ast section', ()->
                     _tmp_Var_2.type = new Type "any"
                     _tmp_Var_2
                   )()
-                  ]
+                ]
                 _tmp_Scope_1
               )()
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
@@ -431,11 +431,11 @@ describe 'trans ast section', ()->
                     _tmp_Const_2.type = wrap_ct_type(_tmp_expr)
                     _tmp_Const_2
                   )()
-                  ]
+                ]
                 _tmp_Scope_1
               )()
           )()
-          ]
+        ]
         _tmp_Scope_0
       )())
       '''
