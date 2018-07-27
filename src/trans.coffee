@@ -103,11 +103,14 @@ class @Gen_context
         val = ast.val
         if ast.type.main == 'string'
           val = eval val # unquote string
+        aux_type = ""
+        if ast.type
+          aux_type = "#{var_name}.type = new Type #{JSON.stringify ast.type.toString()}"
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.val = #{JSON.stringify val}
-          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{aux_type}
           #{var_name}
         )()
         """
@@ -122,7 +125,6 @@ class @Gen_context
     when "Var"
       # NOTE BUG rt + ct
       # ct is not detecting properly yet!!!
-      ast.type ?= new Type "any"
       if ctx.is_serialized_block
         if ast.is_ct
           var_name = "_tmp_Const_#{ctx.uid()}"
@@ -137,11 +139,14 @@ class @Gen_context
           """
         # can be translated to const if ct var
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        aux_type = ""
+        if ast.type
+          aux_type = "#{var_name}.type = new Type #{JSON.stringify ast.type.toString()}"
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.name = #{JSON.stringify ast.name}
-          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{aux_type}
           #{var_name}
         )()
         """
@@ -209,16 +214,18 @@ class @Gen_context
       module.un_op_name_cb_map[ast.op] gen ast.a, ctx
     # ###################################################################################################
     when "Field_access"
-      ast.type ?= new Type "any"
       if ctx.is_serialized_block
         # if ctx.is_ct
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        aux_type = ""
+        if ast.type
+          aux_type = "#{var_name}.type = new Type #{JSON.stringify ast.type.toString()}"
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.t = #{make_tab gen(ast.t, ctx), '  '}
           #{var_name}.name = #{JSON.stringify ast.name}
-          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{aux_type}
           #{var_name}
         )()
         """
@@ -630,11 +637,14 @@ class @Gen_context
     when "Var_decl"
       if ctx.is_serialized_block
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        aux_type = ""
+        if ast.type
+          aux_type = "#{var_name}.type = new Type #{JSON.stringify ast.type.toString()}"
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.name = #{JSON.stringify ast.name}
-          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{aux_type}
           #{var_name}
         )()
         """
@@ -680,12 +690,15 @@ class @Gen_context
     when "Fn_decl"
       if ctx.is_serialized_block
         var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        aux_type = ""
+        if ast.type
+          aux_type = "#{var_name}.type = new Type #{JSON.stringify ast.type.toString()}"
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.name = #{JSON.stringify ast.name}
           #{var_name}.arg_name_list = #{JSON.stringify ast.arg_name_list}
-          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{aux_type}
           #{var_name}.scope = #{make_tab gen(ast.scope, ctx), '  '}
           #{var_name}
         )()
@@ -720,11 +733,22 @@ class @Gen_context
           ast_jl.unshift ""
           ast_jl.push ""
         
+        aux_type = ""
+        if ast.type
+          # null fields hack
+          old_field_hash = ast.type.field_hash
+          field_hash = {}
+          for k,v of ast.type.field_hash
+            if v
+              field_hash[k] = v
+          ast.type.field_hash = field_hash
+          aux_type = "#{var_name}.type = new Type #{JSON.stringify ast.type.toString()}"
+          ast.type.field_hash = old_field_hash
         return """
         (()->
           #{var_name} = new ast.#{ast.constructor.name}
           #{var_name}.hash = {#{join_list ast_jl, '  '}}
-          #{var_name}.type = new Type #{JSON.stringify ast.type.toString()}
+          #{aux_type}
           #{var_name}
         )()
         """
