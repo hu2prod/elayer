@@ -134,6 +134,8 @@ q('struct_init', '"{" #indent #struct_init_list? #dedent "}"')
 q('rvalue', '#struct_init') .mx("priority=#{base_priority} ult=struct_init bracketless_hash=$1.bracketless_hash")
 q('struct_init', '#indent #struct_init_list #dedent').mx('bracketless_hash=1')
 q('struct_init', '#struct_init_list').mx('bracketless_hash=1').strict('$1.struct_init_inline')
+q('struct_init_kv', '#return ":" #rvalue').mx('eol=#rvalue.eol')
+q('struct_init_kv', '#_ ":" #rvalue').mx('eol=#rvalue.eol').strict('$1.remap')
 
 q('array_init_list', '#rvalue')
 q('array_init_list', '#rvalue #eol     #array_init_list')

@@ -43,6 +43,7 @@ tokenizer.parser_list.push(new Token_parser 'tok_identifier', /^[_$a-z][_$a-z0-9
     v.mx_hash.hash_key = 'return'
   if v.value in ['var', 'class', 'in', 'if', 'else', 'elseif', 'elsif', 'elif', 'switch', 'when', 'and', 'or', 'xor', 'not']
     v.mx_hash.hash_key = '_'
+    v.mx_hash.remap = '1'
   ret_proxy.push [v]
   return
 )
