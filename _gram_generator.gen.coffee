@@ -49,7 +49,7 @@ q("bin_op", "\"<=\"")                             .mx("priority=9 tail_space=$1.
 q("bin_op", "\">\"")                              .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
 q("bin_op", "\">=\"")                             .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
 q("bin_op", "\"<>\"")                             .mx("priority=9 tail_space=$1.tail_space  eol=$1.eol")#
-q("bin_op", "\"=\"")                              .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
+q("bin_op", "\"=\"")                              .mx("priority=12 tail_space=$1.tail_space  left_assoc=1 eol=$1.eol")#
 q("bin_op", "\"+=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
 q("bin_op", "\"-=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
 q("bin_op", "\"*=\"")                             .mx("priority=12 tail_space=$1.tail_space  eol=$1.eol")#
