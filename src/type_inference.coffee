@@ -224,7 +224,7 @@ class_prepare = (ctx, t)->
       when "Struct_init"
         field_hash = {}
         for k,v of t.hash
-          field_hash[k] = walk v, opt
+          field_hash[k] = walk v, ctx
         t.type = new Type "struct"
         t.type.field_hash = field_hash
         t.type
@@ -232,7 +232,7 @@ class_prepare = (ctx, t)->
       when "Array_init"
         type_list = []
         for v in t.list
-          type_list.push walk v, opt
+          type_list.push walk v, ctx
         for v,k in type_list
           if !v.cmp type_list[0]
             throw new Error "not all type in array_init are equal. [#{k}] #{v} != [0] #{type_list[0]}"

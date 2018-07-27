@@ -501,6 +501,12 @@ describe 'trans section', ()->
       c =
         a:1,b:2
       ''' : '(c = {"a": 1, "b": 2})'
+      '''
+      var props: struct{value:int}
+      {
+        a   : props.value
+      }
+      ''' : '{"a": (props).value}'
       
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
@@ -513,6 +519,10 @@ describe 'trans section', ()->
       '[]'          : '[]'
       '[1]'         : '[1]'
       '[1,2]'       : '[1, 2]'
+      '''
+      var props: struct{value:int}
+      [props.value]
+      ''' : '[(props).value]'
     
     for mbg_code, coffee_code of hash
       do (mbg_code, coffee_code)->
