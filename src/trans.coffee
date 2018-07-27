@@ -643,6 +643,16 @@ class @Gen_context
         ""
     
     when "Class_decl"
+      if ctx.is_serialized_block
+        var_name = "_tmp_#{ast.constructor.name}_#{ctx.uid()}"
+        return """
+        (()->
+          #{var_name} = new ast.#{ast.constructor.name}
+          #{var_name}.name = #{JSON.stringify ast.name}
+          #{var_name}.scope = #{make_tab gen(ast.scope, ctx), '  '}
+          #{var_name}
+        )()
+        """
       ctx_nest = ctx.mk_nest()
       ctx_nest.in_class = true
       # TODO seek constructor code

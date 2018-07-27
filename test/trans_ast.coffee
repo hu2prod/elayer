@@ -1381,3 +1381,34 @@ describe 'trans ast section', ()->
         it "'#{mbg_code}' -> '#{coffee_code}'", ()->
           res = _gen mbg_code
           assert.equal res, coffee_code
+  # ###################################################################################################
+  #    class decl
+  # ###################################################################################################
+  hash =
+      
+      '''
+      block
+        class Com
+      ''' : '''
+      ((block).ast_call (()->
+        _tmp_Scope_0 = new ast.Scope
+        _tmp_Scope_0.list = [
+          (()->
+            _tmp_Class_decl_1 = new ast.Class_decl
+            _tmp_Class_decl_1.name = "Com"
+            _tmp_Class_decl_1.scope = (()->
+              _tmp_Scope_2 = new ast.Scope
+              _tmp_Scope_2.list = []
+              _tmp_Scope_2
+            )()
+            _tmp_Class_decl_1
+          )()
+          ]
+        _tmp_Scope_0
+      )())
+      '''
+    for mbg_code, coffee_code of hash
+      do (mbg_code, coffee_code)->
+        it "'#{mbg_code}' -> '#{coffee_code}'", ()->
+          res = _gen mbg_code
+          assert.equal res, coffee_code
