@@ -537,6 +537,8 @@ ast_call = (target, arg_list, scope)->
       ret
     
     else
+      if opt.next_gen?
+        return opt.next_gen root
       ### !pragma coverage-skip-block ###
       perr root
       throw new Error "unknown ult=#{root.mx_hash.ult}"

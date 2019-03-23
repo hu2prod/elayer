@@ -174,7 +174,7 @@ class Context
         walk ast.scope, ctx.mk_nest_rt()
         ast
       else
-        p "unimplemented '#{ast.constructor.name}'"
+        puts "RT CT inference unimplemented '#{ast.constructor.name}'"
         # throw new Error "unimplemented"
   
   walk root, new Context
