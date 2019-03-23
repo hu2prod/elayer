@@ -291,16 +291,16 @@ ast_call = (target, arg_list, scope)->
       
       ret = new ast.If
       seek_and_set_line_pos ret, block
-      ret.cond= gen condition
-      ret.t   = wrap_scope gen block
+      ret.cond= gen condition, opt
+      ret.t   = wrap_scope gen block, opt
       ret
     
     when "if"
       if_walk = (condition, block, if_tail_stmt)->
         _ret = new ast.If
         seek_and_set_line_pos _ret, block
-        _ret.cond= gen condition
-        _ret.t   = gen block
+        _ret.cond= gen condition, opt
+        _ret.t   = gen block, opt
         
         if if_tail_stmt
           value0 = if_tail_stmt.value_array[0].value
@@ -317,7 +317,7 @@ ast_call = (target, arg_list, scope)->
             new_if_tail_stmt = seek_token 'if_tail_stmt', if_tail_stmt
             _ret.f.list.push if_walk condition, block, new_if_tail_stmt
           else
-            _ret.f = gen seek_token 'block', if_tail_stmt
+            _ret.f = gen seek_token('block', if_tail_stmt), opt
         _ret
       
       condition = seek_token 'rvalue', root
@@ -331,19 +331,19 @@ ast_call = (target, arg_list, scope)->
       
       ret = new ast.Switch
       seek_and_set_line_pos ret, root
-      ret.cond= gen condition
+      ret.cond= gen condition, opt
       
       while switch_tail_stmt
         switch switch_tail_stmt.mx_hash.ult
           when 'switch_when'
-            condition = gen seek_token 'rvalue', switch_tail_stmt
+            condition = gen seek_token('rvalue', switch_tail_stmt), opt
             v = switch_tail_stmt
             unless condition instanceof ast.Const
               perr condition
               throw new Error "when cond should be const"
-            ret.hash[condition.val] = gen seek_token 'block', switch_tail_stmt
+            ret.hash[condition.val] = gen seek_token('block', switch_tail_stmt), opt
           when 'switch_else'
-            ret.f = gen seek_token 'block', switch_tail_stmt
+            ret.f = gen seek_token('block', switch_tail_stmt), opt
           else
             ### !pragma coverage-skip-block ###
             perr root
